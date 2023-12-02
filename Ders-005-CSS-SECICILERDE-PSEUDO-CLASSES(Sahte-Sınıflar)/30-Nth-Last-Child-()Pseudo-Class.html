@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ul li:nth-last-child(3) {
+            color: red;
+        }
+
+        ul li:nth-last-child(2n+1) {
+            background-color: #f1f1f1;
+        }
+
+        ul li:nth-last-child(n+4) {
+            font-weight: bold;
+        }
+
+        ul li:nth-last-child(-n+4) {
+            font-style: italic;
+        }
+
+        ul li:nth-child(1n+2):nth-last-child(1n+4) {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>NTH-LAST-CHILD() PSEUDO CLASS (SAHTE SINIFI)</h2>
+    <p>Belirtilen html elementi baz alınarak,üst elementine göre kardeş element türüne bakılmaksızın son (çocuk)child
+        durumundaki elementten başlayarak sıra numarasına göre stil tanımlar.Elemanları sırasını sayarken türüne
+        bakmaksızın hepsini sayar.
+    </p>
+    <p>odd: Tek haneye göre sıralama</p>
+    <p>even: Çift haneye göre sıralama</p>
+
+
+    <h3>Örnek;</h3>
+    <h4>EĞİTİMLER</h4>
+    <ul>
+        <li>HTML Eğitimi</li>
+        <li>CSS Eğitimi</li>
+        <li>JAVASCRİPT Eğitimi</li>
+        <li>PHP Eğitimi</li>
+        <li>XML Eğitimi</li>
+        <li>SEO Eğitimi</li>
+    </ul>
+    <hr>
+
+    <p>
+        ul li:nth-last-child(3) { <br>
+        color: red; <br>
+        } <br>
+    <p> Alttan üçüncü elemana stil tanımlar.</p>
+    </p>
+    <hr>
+    <p>
+        ul li:nth-last-child(2n+1) { <br>
+        background-color: #f1f1f1; <br>
+        } <br>
+    </p>
+    <p>Altan başlayarak ikişer ikişer stil tanımlar </p>
+    <hr>
+    <p>
+        ul li:nth-last-child(odd) { <br>
+        background-color: #f1f1f1; <br>
+        } <br>
+    </p>
+    <p>Alttan başlayarak sıra numarası tek sayılı elemanlara işlem yapar. </p>
+    <hr>
+    <p>
+        ul li:nth-lats-child(even) { <br>
+        background-color: #f1f1f1; <br>
+        } <br>
+    </p>
+    <p>Alttan başlayarak sıra numarası çift sayılı elemanlara işlem yapar. </p>
+    <hr>
+    <p>
+        ul li:nth-last-child(n+4) { <br>
+        font-weight: bold; <br>
+        } <br>
+    </p>
+    <p>Alttan dört'ten başlayıp listenin başına kadar elemana işlem yapar. </p>
+    <hr>
+    <p>
+        ul li:nth-last-child(-n+4) { <br>
+        font-style: italic; <br>
+        } <br>
+    </p>
+    <p>Sondan dört'ten başlayıp listenin sonuna kadar elemana işlem yapar. </p>
+    <hr>
+    <p>
+        ul li:nth-child(1n+2):nth-last-child(1n+4) { <br>
+        text-decoration: underline; <br>
+        } <br>
+    </p>
+    <p>dört'ten başlayıp yukarı doğru ikinci satıra kadar işlem yapar.</p>
+
+
+</body>
+
+</html>

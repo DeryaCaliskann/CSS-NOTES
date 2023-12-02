@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* LENGTH  */
+        div.ornek1 {
+            background-color: yellow;
+            min-height: 10px;
+        }
+
+        div.ornek2 {
+            background-color: yellow;
+            min-height: 50px;
+        }
+
+        div.ornek3 {
+            background-color: blue;
+            min-height: 10px;
+        }
+
+        p.ornek3 {
+            background-color: yellow;
+            min-height: 20px;
+        }
+
+        /* YUZDE */
+        div.ornek4 {
+            background-color: yellow;
+            min-height: 50%;
+        }
+
+        /* INITIAL(VARSAYILAN)*/
+        div.ornek5 {
+            background-color: blue;
+            min-height: 50px;
+        }
+
+        div.ornek5 {
+            background-color: blue;
+            min-height: initial;
+        }
+
+        /* INHERIT(MİRAS)*/
+        div.ornek6 {
+            background-color: blue;
+            min-height: 10px;
+        }
+
+        p.ornek6 {
+            background-color: yellow;
+            min-height: inherit;
+        }
+
+        #AnaEleman {
+            background-color: blue;
+            height: 50px;
+        }
+
+        #UstEleman {
+            min-height: 20px;
+        }
+
+        #Bir {
+            background-color: yellow;
+            min-height: inherit;
+        }
+
+        #Iki {
+            background-color: yellow;
+            min-height: inherit;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>MIN-HEIGHT ÖZELLİĞİNİN KULLANIMI</h2>
+    <p>Html elementinin minimum yüksekliğini belirler. Yukarı çıkabilirsin ama azalamazsın demek oluyor.</p>
+    <h3>DEĞERLER</h3>
+    <ol>
+        <li><span>length;</span>Uzunluk değeri. </li>
+        <li><span>% ;</span> Yüzde değeridir. Minimum yükseklik değeridir. Bunun altına düşemezsin ama yükselebilirsin
+            demek.</li>
+        <li><span>İnitial(varsayılan);</span> Html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li><span>İnherit(miras);</span> Html elementi üst elementinin biçimlendirme değerini alır.</li>
+    </ol>
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">div: min-height;10px</div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2">div: min-height;50px</div>
+
+    <h3>Örnek-3 ;</h3>
+    <div class="ornek3">
+        <p class="ornek3">div: min-height;10px (mavi) > p: min-height;20px (sarı)</p>
+    </div>
+
+    <h3>Örnek-4 ;</h3>
+    <div class="ornek4">div: min-height;50% </div>
+
+    <h3>Örnek-5;</h3>
+    <div class="ornek5">div: min-height;50px / div: min-height;initial (varsayılan)</div>
+
+
+    <h3>Örnek-6;</h3>
+    <div class="ornek6">
+        <p class="ornek6">div: min-height;10px (mavi) > p: min-height;inherit(miras)(sarı)</p>
+    </div>
+
+    <h3>Örnek-7</h3>
+
+    <div id="AnaEleman">
+        <div id="UstEleman">
+            <div id="Bir">İnherit değerini</div>
+            <div id="Iki">Anlamak için örnek.</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

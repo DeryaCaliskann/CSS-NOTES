@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li {
+            font-size: large;
+        }
+
+        li[name="tamdeger" i] {
+            color: red;
+        }
+
+        li[name~="iceren"] {
+            color: blue;
+        }
+
+        li[title*="iceren"] {
+            color: purple;
+        }
+
+        li[name^="b"] {
+            color: green;
+        }
+
+        li[lang|="en-us"] {
+            color: brown;
+        }
+
+        li[title$="ten"] {
+            color:yellowgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>ATTRİBUTE (ÖZELLİK) SEÇİCİ</h2>
+    <p>Belirtilecek olan özelliğe sahip html elemanını seçer.</p>
+
+    <h3>ATTRİBUTE (ÖZELLİK) SEÇİCİLERİ İÇİN FİLTRELER</h3>
+    <ul>
+        <li name="tamDeger"> Tam değer filtresi; [özellik adı="değer"] (Özellik değerinin tam
+            olarak yazılması gerekiyor. i harfi büyük harf küçük harf duyarlılığına bakma demek.)</li>
+        <li name="iceren tam"> İçeren tam değer filtresi; [özellik adı~="değer"](Özellik değerinin yazılan kısmının
+            başındaysa sonunda, sonundaysa başında, ortadaysa her iki tarafında boşluk olması gerekli.)</li>
+        <li title="icerendeger">İçeren değer filtresi; [özellik adı*="değer"] (Kelimenin başında ve sonunda boşluk
+            olması gerekmez.)</li>
+        <li name="baslayan">Başlayan değer filtresi; [özellik adı^="değer"] (Örneğin özellik değer ismi b harfiyle
+            başlayanları seçer.)</li>
+        <li lang="en-Us">Tireli ve tiresiz başlayan değer filtresi; [özellik adı|="değer"](Genelde lang özelliği için
+            kullanılır Örneğin sadece en yada en- olanları seçer)</li>
+        <li title="biten">Biten değer filtresi; [özellik adı$="değer"](Belirtilecek olan özelliğe ve belirtilecek olan
+            değere bitişine Html elementini seçer.</li>
+    </ul>
+</body>
+
+</html>

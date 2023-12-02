@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>CSS ÖLÇÜLENDİRME BİRİMLERİ</h2>
+    <p>Css'de genişlik, yükseklik, konum, boyut, kalınlık vb. ölçülendirme işlemlerinde kullanılan farklı farklı
+        birimler bulunmaktadır. Bu birimler sayılar ile birlikte kullanılmaktadır. Css ölçülendirme birimlerinde
+        kullanılan sayılar ; tam sayılar, ondalıklı sayılar ve yüzdeler olmak üzere üç farklı şekildedirler. Bazı
+        durumlarda ölçülendirme birimlerinde kullanılan sayılar negatif değerler de alabilirler. En önemli kural hangi
+        sayının hangi birim ile kullanılması gerektiğni bilmektir.</p>
+    <p>Css'de relative (göreceli), absolute (kesin) olmak üzere iki farklı ölçülendirme türü vardır. Her iki türünde
+        kendilerine has kullanılan birimleri mevcuttur.</p>
+    <h3>RELATIVE (GÖRECELİ) ÖLÇÜLENDİRME BİRİMLERİ</h3>
+    <table border="1">
+        <tr>
+            <th>BİRİM (UNIT)</th>
+            <th>TANIM (DESCRIPTION</th>
+            <th>ÖRNEK (EXAMPLE)</th>
+        </tr>
+        <tr>
+            <td>em</td>
+            <td>Boyuta bağlı ölçülendirme birimidir. Atanmış boyut değerine göre hesaplanarak bulunur.</td>
+            <td>Boyut 12 px atanmış ise: 1 em = 12 px. Boyut atanmamış ise, varsayılan boyut olarak font yazı tipi
+                ailesinde yer alan "M" harfinin genişliği ve yüksekliği baz alınır. </td>
+        </tr>
+        <tr>
+            <td>rem</td>
+            <td>Boyuta bağlı ölçülendirme birimidir. Belgenin root (kök) elementine atanmış boyut değerine göre
+                hesaplanarak bulunur.</td>
+            <td>Boyut 12 px atanmış ise: 1 rem = 12 px'dir </td>
+        </tr>
+        <tr>
+            <td>ex</td>
+            <td>Font (yazı tipi) boyuta bağlı ölçülendirme birimidir. Font boyutunun "X" yüksekliği değerine göre
+                hesaplanarak bulunur. Başka bir değişle fontun orta işaretidir. Değişiklik gösterebilir. Bu nedenle
+                nadir kullanılan bir ölçüdür.</td>
+            <td></td>
+
+        </tr>
+        <tr>
+            <td>ch</td>
+            <td>"0" genişliğine bağlı ölçülendirme birimidir. Font boyutunun atanmış boyut değerine göre hesaplanarak
+                bulunur.</td>
+            <td>Boyut 12 px atanmış ise 1ch = 6 px'dir. Boyut atanmamış ise varsayılan boyut olarak font ailesinde
+                yeralan "0" rakamının genişliği ve yüksekliği baz alınır.</td>
+        </tr>
+        <tr>
+            <td>vw</td>
+            <td>Viewport (görünür alan) genişlik boyutuna bağlı ölçülendirme birimidir. Hesaplama formülü ; viewport
+                genişliğinin %1 'i olarak belirlenmiştir.</td>
+            <td>Viewport genişlik boyutu 1200px ise : 1 vw = 12 px </td>
+        </tr>
+        <tr>
+            <td>vh</td>
+            <td>Viewport (görünür alan) yükseklik boyutuna bağlı ölçülendirme birimidir. Hesaplama formülü ; viewport
+                %1 'i olarak belirlenmiştir.</td>
+            <td>Viewport yükseklik boyutu 900px ise : 1 vh = 9 px </td>
+        </tr>
+        <tr>
+            <td>vmin</td>
+            <td>Viewport (görünür alan) boyutuna bağlı ölçülendirme birimidir. Viewport boyutlarının diğerine
+                kıyasla daha küçük alanın değerine göre hesaplanarakcbulunur. Hesaplama formülü; viewport genişliğinin
+                veya yüksekliğinin küçük alanı baz alınarak %1 olarak belirlenmiştir.</td>
+            <td>Viewport genişlik ve yükseklik boyutunun küçük alanı 1000px ise : 1 vmin = 10 px </td>
+        </tr>
+        <tr>
+            <td>vmax</td>
+            <td>Viewport (görünür alan) boyutuna bağlı ölçülendirme birimidir. Viewport boyutlarının diğerine
+                kıyasla daha büyük alanın değerine göre hesaplanarakcbulunur. Hesaplama formülü; viewport genişliğinin
+                veya yüksekliğinin büyük alanı baz alınarak %1 olarak belirlenmiştir.</td>
+            <td>Viewport genişlik ve yükseklik boyutunun büyük alanı 1000px ise : 1 vmax= 10 px </td>
+        </tr>
+        <tr>
+            <td>%</td>
+            <td>Yüzdesel ölçülendirme birimidir. Daima başka bir ölçülendirme birimine orantılı olarak çalışır Hesaplama
+                formülü; üst ölçülendirme değeri / (bölü) 100 * değerdir.</td>
+            <td>üst ölçülendirme boyutu değeri 1000px ise; 50% = 500 px'dir.</td>
+        </tr>
+    </table>
+</body>
+
+</html>

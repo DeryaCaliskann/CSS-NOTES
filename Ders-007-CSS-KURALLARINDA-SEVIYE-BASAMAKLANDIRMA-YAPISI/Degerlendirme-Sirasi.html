@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+p {
+color:blue !important
+}
+p#paragraf {
+color: red;
+}
+    </style>
+</head>
+
+<body>
+    <h2>CSS KURALLARINDA SEVİYE BASAMAKLANDIRMA YAPISI;</h2>
+    <p style="color: yellow;">Css ile Html elemanlarına biçimlendirme yapıldığında, browser'lar web sayfalarını görüntülerken bir seviye
+        basamaklandırma yapısı kurarlar. Bu sayede web sayfasının Css ile atanmış biçimlendirmesi oluşmuş olur. Bu işlem
+        sırasında 4 temel birim üzerinden işlem gerçeleşir ve bir numaralandırma yapısı kurulur.</p>
+
+    <h3> Değerlendirme sırası şu şekildedir.</h3>
+
+    <ol>
+        <li>Satır içi CSS tanımı (1000)</li>
+        <li>ID Tanımı (100)</li>
+        <li>Class seçici ile Css tanımı (10)</li>
+        <li>Element seçicisi ile Css tanımı(1)</li>
+    </ol>
+    <h3>ÖRNEKLER;</h3>
+    <table border="1">
+        <tr>
+            <th>SEÇİCİ</th>
+            <th>SEÇİCİ DEĞERLENDİRMESİ</th>
+            <th>SEVİYE</th>
+        </tr>
+        <tr>
+            <td>* (Hiç bir brime ait değildir.)</td>
+            <td>Genel/evrensel seçici </td>
+            <td>0000</td>
+        </tr>
+        <tr>
+            <td>div</td>
+            <td>Element seçici</td>
+            <td>0001</td>
+        </tr>
+        <tr>
+            <td>ul li</td>
+            <td>İkili element seçici</td>
+            <td>0002</td>
+        </tr>
+        <tr>
+            <td>div div+span</td>
+            <td>üçlü element seçici</td>
+            <td>0003</td>
+        </tr>
+
+        <tr>
+            <td>img [title="saat"](sınıf olarak kabul edilir.)</td>
+            <td>element ve isim seçici</td>
+            <td>0011</td>
+        </tr>
+        <tr>
+            <td>.renkler</td>
+            <td>class seçici</td>
+            <td>0010</td>
+        </tr>
+        <tr>
+            <td>div .renkler</td>
+            <td>Element ve class seçici</td>
+            <td>0011</td>
+        </tr>
+        <tr>
+            <td>#esyalar</td>
+            <td>ID (Benzersiz kimlik) seçici</td>
+            <td>0100</td>
+        </tr>
+        <tr>
+            <td>div #esyalar</td>
+            <td>Eleement ve ID seçici</td>
+            <td>0101</td>
+        </tr>
+        <tr>
+            <td>Satır içi tanımlama</td>
+            <td>Satır içi tanımlama</td>
+            <td>1000</td>
+        </tr>
+
+    </table>
+    <h3>CSS KURALLARI SEVİYE BASAMAKLANDIRMA YAPISINDA ÖNCELİĞİ DEĞİŞTİRME</h3>
+    <p id="paragraf">İmportant özelliğini kullanarak atamış olduğumuz stillerin önceliğini değiştirebiliriz.</p>
+
+</body>
+
+</html>

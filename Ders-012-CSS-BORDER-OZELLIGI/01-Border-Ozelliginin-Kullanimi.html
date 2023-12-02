@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        span.ornek1 {
+            border: 2px solid blue;
+        }
+
+        span.ornek2 {
+            border: thin solid blue;
+        }
+
+        span.ornek3 {
+            border: medium solid blue;
+        }
+
+        span.ornek4 {
+            border: thick solid blue;
+        }
+
+        span.ornek5 {
+            border: thick solid blue;
+        }
+
+        span.ornek5 {
+            border: initial;
+        }
+
+        div.ornek6 {
+            width: 150px;
+            height: 60px;
+            border: thin solid blue;
+        }
+
+        span#bir {
+            border: inherit;
+        }
+
+        span#iki {
+            border: inherit;
+        }
+
+        span#uc {
+            border: inherit;
+        }
+
+        p.ornek7 {
+            border: none;
+        }
+
+        p.ornek8 {
+            border: hidden;
+        }
+
+        p.ornek9 {
+            border: 2px solid blue;
+        }
+
+        p.ornek10 {
+            border: 4px double blue;
+        }
+
+        p.ornek11 {
+            border: 2px dashed blue;
+        }
+
+        p.ornek12 {
+            border: 2px dotted blue;
+        }
+
+        p.ornek13 {
+            border: 10px groove skyblue;
+        }
+
+        p.ornek14 {
+            border: 10px ridge skyblue;
+        }
+
+        p.ornek15 {
+            border: 10px inset skyblue;
+        }
+
+        p.ornek16 {
+            border: 10px outset skyblue;
+        }
+
+        p.ornek17 {
+            border: 2px solid;
+        }
+
+        p.ornek18 {
+            border: dashed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS'DE BORDER ÖZELLİĞİ </h1>
+    <p>Html elementinin kenarlık, çerçeve özelliliklerini belirler.</p>
+    <h2>PARAMETRELER ;</h2>
+    <p>Length, Style , Color parametrelerini alır. </p>
+    <h3>1 - LENGTH</h3>
+    <h4>Değerleri :</h4>
+    <ul>
+        <li>length ; uzunluk</li>
+        <li>initial ; html elementi varsayılan değerine döner.</li>
+        <li>inherit ; html elementi üst elementinin değerini alır.</li>
+        <li>thin ; ince</li>
+        <li>medium ; orta</li>
+        <li>thick ; kalın</li>
+    </ul>
+    <h3>2 - STYLE </h3>
+    <h4>Değerleri :</h4>
+    <ul>
+        <li>none ; değer yok</li>
+        <li>hidden ; gizli</li>
+        <li>solid ; düz çizgi</li>
+        <li>double ; çift çizgi</li>
+        <li>dashed ; keşikli çizgi</li>
+        <li>dotted ;noktalı çizgi</li>
+        <li>groove ; içe dönük gölgeli çizgi</li>
+        <li>ridge ; dışa dönük gölgeli çizgi</li>
+        <li>inset ; içe dönük derin çizgi</li>
+        <li>outset; dışa dönük derin çizgi</li>
+    </ul>
+    <h3>3 - COLOR</h3>
+    <p>Kenarlıkları renklerini belirler.</p>
+
+    <h3>ÖRNEKLER</h3>
+
+    <h3>Örnek-1</h3>
+    <span class="ornek1"> border: 1px solid blue</span>
+    <h3>Örnek-2</h3>
+    <span class="ornek2"> border: thin solid blue</span>
+    <h3>Örnek-3</h3>
+    <span class="ornek3"> border: medium solid blue</span>
+    <h3>Örnek-4</h3>
+    <span class="ornek4"> border: thick solid blue</span>
+    <h3>Örnek-5</h3>
+    <span class="ornek5"> border: initial (varsayılan)</span>
+    <h3>Örnek-6</h3>
+    <div class="ornek6">
+        <span id="bir">span;inherit</span>
+        <br>
+        <span id="iki">span;inherit</span>
+        <br>
+        <span id="uc">span;inherit</span>
+    </div>
+    <h3>Örnek-7</h3>
+    <p class="ornek7"> border: none (border yok demek. Bazı tarayıcılar otomatik olarak border verebilir. Bunu önlemek
+        için kullanırız.)</p>
+    <h3>Örnek-8</h3>
+    <p class="ornek8"> border: hidden (border var ama gizli demek. Olaya duyarlı işlemler yapacağımız zaman kullanırız.)
+    </p>
+    <h3>Örnek-9</h3>
+    <p class="ornek9"> border: 2px solid blue</p>
+    <h3>Örnek-10</h3>
+    <p class="ornek10"> border: 4px double blue (Not:Her iki çizginin ve arada kalan boşluğun genişliği 4 px)</p>
+    <h3>Örnek-11</h3>
+    <p class="ornek11"> border: 2px dashed blue</p>
+    <h3>Örnek-12</h3>
+    <p class="ornek12"> border: 2px dotted blue</p>
+    <h3>Örnek-13</h3>
+    <p class="ornek13"> border: 10px groove skyblue</p>
+    <h3>Örnek-14</h3>
+    <p class="ornek14"> border: 10px ridge skyblue</p>
+    <h3>Örnek-15</h3>
+    <p class="ornek15"> border: 10px inset skyblue</p>
+    <h3>Örnek-16</h3>
+    <p class="ornek16"> border: 10px outset skyblue</p>
+    <h3>Örnek-17</h3>
+    <p class="ornek17"> border: 2px solid (Renk parametresi belirtmezsek varsayılan renk değeri olan siyah rengi alır.)
+    </p>
+    <h3>Örnek-18</h3>
+    <p class="ornek18"> border:dashed (Ölçü belirtmezsek varsayılan ölçü değerini alır.) </p>
+
+
+</body>
+
+</html>

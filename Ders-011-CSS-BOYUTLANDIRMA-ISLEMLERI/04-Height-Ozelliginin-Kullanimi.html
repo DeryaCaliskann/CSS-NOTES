@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* AUTO  */
+        div.ornek1 {
+            background-color: yellow;
+            height: auto;
+        }
+
+        /* LENGTH  */
+
+        div.ornek2 {
+            background-color: yellow;
+            height: 100px;
+        }
+
+        div.ornek3 {
+            background-color: blue;
+            height: 100px;
+        }
+
+        p.ornek3 {
+            background-color: yellow;
+            height: 50px;
+        }
+
+        div.ornek4 {
+            background-color: blue;
+            height: 50px;
+        }
+
+        p.ornek4 {
+            background-color: yellow;
+            height: 100px;
+        }
+
+        /* YÜZDE */
+
+        div.ornek5 {
+            background-color: yellow;
+            height: 100%;
+        }
+
+        /* İNİTİAL(VARSAYILAN) */
+        div.ornek6 {
+            background-color: yellow;
+            height: 100px;
+        }
+
+        div.ornek6 {
+            height: initial;
+        }
+
+
+        /* İNHERİT(MİRAS) */
+        div.ornek7 {
+            background-color: blue;
+            height: 100px;
+        }
+
+        p.ornek7{
+            background-color: yellow;
+            height: inherit;
+        }
+
+
+        span {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>HEİGHT(YÜKSEKLİK) ÖZELLİĞİNİN KULLANIMI</h2>
+    <p>Html elementinin yüksekliğini belirtir.Yükseklik değeri genişlik değeri gibi değildir.İçeriğe göre değişir.Hiçbir
+        zaman bir elementin yüksekliği kendi içeriğinden daha fazla olmaz.</p>
+    <h3>DEĞERLER</h3>
+    <ol>
+        <li><span>auto; </span>Otomatik değer alır. Auto'da içeriğin yüksekliğinden fazla değer almaz.</li>
+        <li><span>length;</span>Yüksekliğin uzunluk değerini belirler. Ekran küçülürse scroll çıkar.İçteki eleman daha
+            yüksek olursa taşma yapar.</li>
+        <li><span>% ;</span> Yüzde değeridir. Yüzdesel bir değer verdiğimizde içeriği baz alır.</li>
+        <li><span>İnitial;</span> Html elementi varsayılan biçimlendirme değerine döner. </li>
+        <li><span>İnherit;</span> Html elementi üst elementinin biçimlendirme değerini alır. Yani miras alır. </li>
+    </ol>
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">
+        div: height;auto
+        <br>
+        içeriğe göre artar.
+    </div>
+    <br>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2">div: min-height;50px</div>
+    <br>
+
+    <h3>Örnek-3 ;</h3>
+    <div class="ornek3">
+        <p class="ornek3">div: height;100px (mavi) > p: height;50px (sarı)</p>
+    </div>
+
+    <h3>Örnek-4;</h3>
+    <div class="ornek4">
+        <p class="ornek4">div: height;50px (mavi) > div: height;100px (sarı)</p>
+    </div>
+    <br>
+    <br>
+
+    <h3>Örnek-5 ;</h3>
+    <div class="ornek5">div: height;100%</div>
+    <br>
+
+    <h3>Örnek-6;</h3>
+    <div class="ornek6"> div: height;100px / div: height;initial (varsayılan)</div>
+    <br>
+
+    <h3>Örnek-7;</h3>
+    <div class="ornek7">
+        <p class="ornek7">div: height;100px (mavi) > p: height;inheri (sarı) (miras)</p>
+    </div>
+</body>
+
+</html>

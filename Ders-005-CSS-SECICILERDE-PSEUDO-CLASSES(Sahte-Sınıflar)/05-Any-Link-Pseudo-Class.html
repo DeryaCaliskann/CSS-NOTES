@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        a:-webkit-any-link {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:-moz-any-link {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:-o-any-link {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:-ms-any-link {
+            color: red;
+            text-decoration: none;
+        }
+
+        a:any-link {
+            color: red;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>ANY-LINK PSEUDO CLASS (SAHTE SINIFI)</h2>
+    <p>Dökümanın içerisinde bulunan html'in link elementinin URL değeri boş değil ise stil tanımlar. any-link sınıfının
+        her tarayıcıda doğru çalışması için prefix'lerle beraber kullanılır. any-link sahte sınıfının kullanımında URL değeri href
+        olarak belirlendikten sonra içersine hiç bir şey yazılmasa dahi stil tanımlar.</p>
+    <h3>Örnek ;</h3>
+    <a>MYNET</a> <br>
+    <a href="">GOOGLE</a> <br>
+    <a href="https://www.mynet.com">YANDEX</a>
+
+</body>
+
+</html>
