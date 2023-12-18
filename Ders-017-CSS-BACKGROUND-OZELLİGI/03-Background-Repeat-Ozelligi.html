@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(../img/desen.jpg);
+            background-repeat: repeat;
+        }
+
+        div.ornek1 {
+            width: 1000px;
+            height: 100px;
+            border: 2px solid;
+            background-image: url(../img/desen-3.jpeg);
+            background-repeat: space;
+        }
+
+        div.ornek2 {
+            width: 1000px;
+            height: 100px;
+            border: 2px solid;
+            background-image: url(../img/desen-3.jpeg);
+            background-repeat: round;
+        }
+
+        div.ornek3 {
+            width: 1000px;
+            height: 100px;
+            border: 2px solid;
+            background-image: url(../img/desen-3.jpeg);
+            background-repeat: no-repeat;
+        }
+
+        div.ornek4 {
+            width: 1000px;
+            height: 100px;
+            border: 2px solid;
+            background-image: url(../img/desen-3.jpeg);
+            background-repeat: repeat-x;
+        }
+
+        div.ornek5 {
+            width: 1000px;
+            height: 300px;
+            border: 2px solid;
+            background-image: url(../img/desen-3.jpeg);
+            background-repeat: repeat-y;
+        }
+
+        div.ornek6 {
+            width: 1000px;
+            height: 100px;
+            border: 2px solid;
+            background-image: url(../img/desen-3.jpeg);
+            background-repeat: round;
+        }
+
+        div.ornek6 {
+            background-repeat: initial;
+        }
+
+        div.ornek7 {
+            width: 1000px;
+            height: 100px;
+            border: 2px solid;
+            background-image: url(../img/desen-2.jpg);
+            background-repeat: round;
+        }
+
+        p.ornek7 {
+            width: 500px;
+            height: 50px;
+            border: 2px solid;
+            background-image: url(../img/desen-2.jpg);
+            background-repeat: inherit;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h2>BACKGROUND-REPEAT ÖZELLİĞİ</h2>
+    <p>html elementinin atanmış olan arkapalan resminin tekrarlanma özelliğini belirler.</p>
+    <h3>DEĞERLER ;</h3>
+    <ul>
+        <li>repeat ; tekrar et (varsayılan)</li>
+        <li>space; boşluk (x ekseni boyunca)</li>
+        <li>round; yuvarla</li>
+        <li>no-repeat ; tekrar yok</li>
+        <li>repeat-x ; x ekseni boyunca tekrar et.</li>
+        <li>repeat-y; y ekseni boyunca tekrar et.</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li>inherit ; html elementi üst elementinin biçimlendirme değerini alır.</li>
+    </ul>
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1"> background-repeat: space;</div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2"> background-repeat: round;</div>
+
+    <h3>Örnek-3 ;</h3>
+    <div class="ornek3"> background-repeat: no-repeat;</div>
+
+    <h3>Örnek-4 ;</h3>
+    <div class="ornek4"> background-repeat: repeat-x;</div>
+
+    <h3>Örnek-5 ;</h3>
+    <div class="ornek5"> background-repeat: repeat-y;</div>
+
+    <h3>Örnek-6 ;</h3>
+    <div class="ornek6"> background-image: initial;(varsayılan) </div>
+
+    <h3>Örnek-7;</h3>
+    <div class="ornek7"> background-image: url(../img/desen-3.jpeg);
+        <p class="ornek7"> background-image: inherit; (miras)</p>
+    </div>
+
+
+</body>
+
+</html>

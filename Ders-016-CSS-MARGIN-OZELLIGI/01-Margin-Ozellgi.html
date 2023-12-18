@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ornek1 {
+
+            margin: 100px;
+        }
+
+        div.ornek2 {
+            margin: 100px 50px 75px 25px;
+            /* üst, sağ, alt, sol) */
+        }
+
+        p.ornek3 {
+            margin: 0;
+            margin: 10%;
+        }
+
+        div.ornek4 {
+            width: 250px;
+            height: 50px;          
+            margin: 0px auto;
+
+        }
+
+        div.ornek5 {
+            margin: 100px;
+        }
+
+        div.ornek5 {
+
+            margin: initial;
+        }
+
+        div.ornek6 {
+            margin: 100px;
+        }
+
+        p.ornek6 {
+            margin: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>MARGIN ÖZELLİĞİNİN KULLANIMI</h2>
+    <p>Html elementinin kenar boşluğu (dış boşluk) özelliklerini belirler. Bazı elementlerin varsayılan margin değerleri
+        vardır. Örneğin p, body tagı gibi. Biçimlendirme yapmadan önce bunları sıfırlamalıyız (margin:0) </p>
+    <h3>DEGERLER</h3>
+    <ul>
+        <li>length ; Uzunluk değeri</li>
+        <li>% ; yüzde değeri ;</li>
+        <li>auto ; otomatik değer alır</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li>inherit ; html elementi üst elementinin biçimlendirme değerini alır.</li>
+    </ul> 
+    <h3>Örnek-1 :</h3>
+    <div class="ornek1"> margin: 100px;</div>
+
+    <h3>Örnek-2 :</h3>
+    <div class="ornek2"> margin: 100px 50px 75px 25px;
+        /* üst, sağ, alt, sol) */</div>
+
+    <h3>Örnek-3 :</h3>
+    <p class="ornek3"> margin: 10%;</p>
+
+    <h3>Örnek-4 :</h3>
+    <div class="ornek4"> margin:0 auto; (sayfayı yatay ortalar) </div>
+
+    <h3>Örnek-5:</h3>
+    <div class="ornek5"> margin: initial;</div>
+
+    <h3>Örnek-6:</h3>
+    <div class="ornek6"> margin: 100px;
+        <p class="ornek6"> margin: inherit;</p>
+    </div>
+
+</body>
+
+</html>

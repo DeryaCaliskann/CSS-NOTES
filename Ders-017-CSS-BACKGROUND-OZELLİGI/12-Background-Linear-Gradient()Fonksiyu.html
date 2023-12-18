@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: -webkit- linear-gradient(pink, purple);
+            background: -moz- linear-gradient(pink, purple);
+            background: -o- linear-gradient(pink, purple);
+            background: -ms- linear-gradient(pink, purple);
+            background: linear-gradient(pink, purple);
+        }
+
+        div.ornek1 {
+            width: 500px;
+            height: 250px;
+            border: 2px solid black;
+            background: -webkit- linear-gradient(blue, yellow, green);
+            background: -moz- linear-gradient(blue, yellow, green);
+            background: -o- linear-gradient(blue, yellow, green);
+            background: -ms- linear-gradient(blue, yellow, green);
+            background: linear-gradient(blue, yellow, green);
+        }
+
+        div.ornek2 {
+            width: 500px;
+            height: 250px;
+            border: 2px solid black;
+            background: -webkit- linear-gradient(to right, blue, yellow, green);
+            background: -moz- linear-gradient(to right, blue, yellow, green);
+            background: -o- linear-gradient(to right, blue, yellow, green);
+            background: -ms- linear-gradient(to right, blue, yellow, green);
+            background: linear-gradient(to right, blue, yellow, green);
+        }
+
+        div.ornek3 {
+            width: 500px;
+            height: 250px;
+            border: 2px solid black;
+            background: -webkit- linear-gradient(to bottom right, blue, yellow, green);
+            background: -moz- linear-gradient(to bottom right, blue, yellow, green);
+            background: -o- linear-gradient(to bottom right, yellow, green);
+            background: -ms- linear-gradient(to bottom right, yellow, green);
+            background: linear-gradient(to bottom right, blue, yellow, green);
+        }
+
+        div.ornek4 {
+            width: 500px;
+            height: 250px;
+            border: 2px solid black;
+            background: -webkit- linear-gradient(90deg, blue, yellow, green);
+            background: -moz- linear-gradient(90deg, blue, yellow, green);
+            background: -o- linear-gradient(90deg, yellow, green);
+            background: -ms- linear-gradient(90deg, yellow, green);
+            background: linear-gradient(90deg, blue, yellow, green);
+        }
+
+        div.ornek5 {
+            width: 500px;
+            height: 250px;
+            border: 2px solid black;
+            background: -webkit- linear-gradient(28deg, blue, yellow, green);
+            background: -moz- linear-gradient(28deg, blue, yellow, green);
+            background: -o- linear-gradient(28deg, yellow, green);
+            background: -ms- linear-gradient(28deg, yellow, green);
+            background: linear-gradient(28deg, blue, yellow, green);
+        }
+
+        div.ornek6 {
+            width: 500px;
+            height: 250px;
+            border: 2px solid black;
+            background: -webkit- linear-gradient(-45deg, blue, yellow, green);
+            background: -moz- linear-gradient(-45deg, blue, yellow, green);
+            background: -o- linear-gradient(-45deg, yellow, green);
+            background: -ms- linear-gradient(-45deg, yellow, green);
+            background: linear-gradient(-45deg, blue, yellow, green);
+        }
+
+        div.ornek7 {
+            width: 500px;
+            height: 250px;
+            border: 2px solid black;
+            background: -webkit- linear-gradient(to right, blue 0%, yellow 40%);
+            background: -moz- linear-gradient(to right, blue 0%, yellow 40%);
+            background: -o- linear-gradient(to right, blue 0%, yellow 40%);
+            background: -ms- linear-gradient(to right, blue 0%, yellow 40%);
+            background: linear-gradient(to right, blue 0%, yellow 40%);
+        }
+
+        div.ornek8 {
+            width: 500px;
+            height: 250px;
+            border: 2px solid black;
+            background: -webkit- linear-gradient(to top, blue 0%, yellow 20%, red 30%);
+            background: -moz- linear-gradient(to top, blue 0%, yellow 20%, red 30%);
+            background: -o- linear-gradient(to top, blue 0%, yellow 20%, red 30%);
+            background: -ms- linear-gradient(to top, blue 0%, yellow 20%, red 30%);
+            background: linear-gradient(to top, blue 0%, yellow 20%, red 30%);
+        }
+
+        div.ornek9 {
+            width: 500px;
+            height: 250px;
+            border: 2px solid black;
+            background: -webkit- linear-gradient(to right, yellow 20%, red 30%);
+            background: -moz- linear-gradient(to right, yellow 20%, red 30%);
+            background: -o- linear-gradient(to right, yellow 20%, red 30%);
+            background: -ms- linear-gradient(to right, yellow 20%, red 30%);
+            background: linear-gradient(to right, yellow 20%, red 30%);
+        }
+
+        div.ornek10 {
+            width: 500px;
+            height: 250px;
+            border: 2px solid black;
+            background: -webkit- linear-gradient(to bottom, blue 0%, yellow 5%, red 10%, green 15%, pink 20%, black 25%);
+            background: -moz- linear-gradient(to bottom, blue 0%, yellow 5%, red 10%, green 15%, pink 20%, black 25%);
+            background: -o- linear-gradient(to bottom, blue 0%, yellow 5%, red 10%, green 15%, pink 20%, black 25%);
+            background: -ms- linear-gradient(to bottom, blue 0%, yellow 5%, red 10%, green 15%, pink 20%, black 25%);
+            background: linear-gradient(to bottom, blue 0%, yellow 5%, red 10%, green 15%, pink 20%, black 25%);
+        }
+    </style>
+</head>S
+
+<body>
+    <h2>BACKGROUND: LINEAR-GRADIENT() FONKSİYONU</h2>
+    <p>html elementinin doğrusal arkaplan renk geçişi özelliklerini belirler. Her tarayıcıda doğru çalışması için
+        prefix'ler eklenmelidir.</p>
+    <h3>PARAMETRELER</h3>
+    <ul>
+        <li>Direction; yön</li>
+        <ul>
+            <li>Başlangıç noktası (açı - derece)</li>
+        </ul>
+        <li>Color; renk</li>
+        <ul>
+            <li>başlangıç rengin - bitiş rengi</li>
+        </ul>
+
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1"> background: linear-gradient(blue, yellow, green); </div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2"> background: linear-gradient(to right, blue, yellow, green); </div>
+
+    <h3>Örnek-3 ;</h3>
+    <div class="ornek3"> background: linear-gradient(to bottom right, blue, yellow, green); </div>
+
+    <h3>Örnek-4 ;</h3>
+    <div class="ornek4"> background: linear-gradient(90deg, blue, yellow, green);</div>
+
+    <h3>Örnek-5 ;</h3>
+    <div class="ornek5"> background: linear-gradient(28deg, blue, yellow, green);</div>
+
+    <h3>Örnek-6 ;</h3>
+    <div class="ornek6"> background: linear-gradient(-45deg, blue, yellow, green);</div>
+
+    <h3>Örnek-7 ;</h3>
+    <div class="ornek7"> background: linear-gradient(to right, blue 0%, yellow 40%);</div>
+
+    <h3>Örnek-8 ;</h3>
+    <div class="ornek8"> background: linear-gradient(to top, blue 0%, yellow 20%,red 30%);</div>
+
+    <h3>Örnek-9 ;</h3>
+    <div class="ornek9"> background: linear-gradient(to right, yellow 20%,red 30%); </div>
+
+    <h3>Örnek-10 ;</h3>
+    <div class="ornek10"> background: linear-gradient(to bottom, blue 0%, yellow 5%, red 10%, green 15%, pink 20%, black
+        25%);</div>
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(../img/manzara-3.jpg);
+            background-attachment: fixed;
+        }
+
+        #ornek1 {
+            width: 1000px;
+            height: 300px;
+            border: solid 2px red;
+            background-image: url(../img/manzara-2.jpg);
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            overflow: auto;
+        }
+
+        #ornek2 {
+            width: 1000px;
+            height: 300px;
+            border: solid 2px red;
+            background-image: url(../img/manzara-2.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: auto;
+        }
+
+        #ornek3 {
+            width: 1000px;
+            height: 300px;
+            border: solid 2px red;
+            background-image: url(../img/manzara-2.jpg);
+            background-repeat: no-repeat;
+            background-attachment: local;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>BACKGROUND-ATTACHMENT ÖZELLİĞİ</h2>
+    <p>Html elementine atanmış olan arka plan resminin sayfa hareketlerine göre davranış özelliklerini belirler.</p>
+    <h3>DEĞERLER ;</h3>
+    <ul>
+        <li>scroll ; kaydırma (elementin scroll'u kaydığında sabit kalır)</li>
+        <li>fixed ; sabit (ister sayfanın ister elementin scroll'u kaysın her zaman sabit kalır.)</li>
+        <li>local ; yerel (elementin scroll'u kaydığında içerikle beraber resim de kayar.)</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner. Varsayılan değer scroll'dur.</li>
+        <li>inherit ; html elementi üst elementinin biçimlendirme değerini alır.</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    <div id="ornek1">background-attachment:scroll; <br>background-attachment:scroll; <br>background-attachment:scroll;
+        <br>background-attachment:scroll; <br>background-attachment:scroll; <br>background-attachment:scroll;
+        <br>background-attachment:scroll; <br>background-attachment:scroll; <br>background-attachment:scroll;
+        <br>background-attachment:scroll; <br>background-attachment:scroll; <br>background-attachment:scroll;
+        <br>background-attachment:scroll; <br>background-attachment:scroll; <br>background-attachment:scroll;
+        <br>background-attachment:scroll; <br>background-attachment:scroll; <br>background-attachment:scroll;
+        <br>background-attachment:scroll; <br>background-attachment:scroll; <br>background-attachment:scroll;
+        <br>background-attachment:scroll; <br>background-attachment:scroll; <br>background-attachment:scroll;
+        <br>background-attachment:scroll; <br>background-attachment:scroll; <br>background-attachment:scroll;
+        <br>background-attachment:scroll; <br>background-attachment:scroll; <br>background-attachment:scroll;
+        <br>background-attachment:scroll; <br>background-attachment:scroll; <br>background-attachment:scroll;
+        <br>background-attachment:scroll; <br>background-attachment:scroll; <br>background-attachment:scroll;
+        <br>background-attachment:scroll; <br>background-attachment:scroll; <br>background-attachment:scroll;
+        <br>background-attachment:scroll; <br>background-attachment:scroll; <br>
+    </div>
+
+    <h3>Örnek-2 ;</h3>
+    <div id="ornek2">background-attachment:fixed; <br>background-attachment:fixed; <br>background-attachment:fixed;
+        <br>background-attachment:fixed; <br>background-attachment:fixed; <br>background-attachment:fixed;
+        <br>background-attachment:fixed; <br>background-attachment:fixed; <br>background-attachment:fixed;
+        <br>background-attachment:fixed; <br>background-attachment:fixed; <br>background-attachment:fixed;
+        <br>background-attachment:fixed; <br>background-attachment:fixed; <br>background-attachment:fixed;
+        <br>background-attachment:fixed; <br>background-attachment:fixed; <br>background-attachment:fixed;
+        <br>background-attachment:fixed; <br>background-attachment:fixed; <br>background-attachment:fixed;
+        <br>background-attachment:fixed; <br>background-attachment:fixed; <br>background-attachment:fixed;
+        <br>background-attachment:fixed; <br>background-attachment:fixed; <br>background-attachment:fixed;
+        <br>background-attachment:fixed; <br>background-attachment:fixed; <br>background-attachment:fixed;
+        <br>background-attachment:fixed; <br>background-attachment:fixed; <br>background-attachment:fixed;
+        <br>background-attachment:fixed; <br>background-attachment:fixed; <br>background-attachment:fixed;
+        <br>background-attachment:fixed; <br>background-attachment:fixed; <br>background-attachment:fixed;
+        <br>background-attachment:fixed; <br>background-attachment:fixed; <br>background-attachment:fixed;
+
+    </div>
+
+    <h3>Örnek-3 ;</h3>
+    <div id="ornek3">background-attachment:local; <br>background-attachment:local; <br>background-attachment:local;
+        <br>background-attachment:local; <br>background-attachment:local; <br>background-attachment:local;
+        <br>background-attachment:local; <br>background-attachment:local; <br>background-attachment:local;
+        <br>background-attachment:local; <br>background-attachment:local; <br>background-attachment:local;
+        <br>background-attachment:local; <br>background-attachment:local; <br>background-attachment:local;
+        <br>background-attachment:local; <br>background-attachment:local; <br>background-attachment:local;
+        <br>background-attachment:local; <br>background-attachment:local; <br>background-attachment:local;
+        <br>background-attachment:local; <br>background-attachment:local; <br>background-attachment:local;
+        <br>background-attachment:local; <br>background-attachment:local; <br>background-attachment:local;
+        <br>background-attachment:local; <br>background-attachment:local; <br>background-attachment:local;
+        <br>background-attachment:local; <br>background-attachment:local; <br>background-attachment:local;
+        <br>background-attachment:local; <br>background-attachment:local; <br>background-attachment:local;
+        <br>background-attachment:local; <br>background-attachment:local; <br>background-attachment:local;
+        <br>background-attachment:local; <br>background-attachment:local; <br>background-attachment:local;
+    </div>
+</body>
+
+</html>

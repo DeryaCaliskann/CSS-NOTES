@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(../img/manzara-3.jpg);
+            background-position: top;
+        }
+
+        div.ornek1 {
+            width: 1000px;
+            height: 200px;
+            border: 2px solid;
+            background-image: url(../img/manzara.jpeg);
+            background-repeat: no-repeat;
+            background-position: 100px;
+        }
+
+        div.ornek2 {
+            width: 1000px;
+            height: 200px;
+            border: 2px solid;
+            background-image: url(../img/manzara.jpeg);
+            background-repeat: no-repeat;
+            background-position: 100px 25px;
+        }
+
+        div.ornek3 {
+            width: 1000px;
+            height: 200px;
+            border: 2px solid;
+            background-image: url(../img/manzara.jpeg);
+            background-repeat: no-repeat;
+            background-position: 25%;
+        }
+
+        div.ornek4 {
+            width: 1000px;
+            height: 200px;
+            border: 2px solid;
+            background-image: url(../img/manzara.jpeg);
+            background-repeat: no-repeat;
+            background-position: 50% 80%;
+        }
+
+        div.ornek5 {
+            width: 1000px;
+            height: 200px;
+            border: 2px solid;
+            background-image: url(../img/manzara.jpeg);
+            background-repeat: no-repeat;
+            background-position: 50% 0%;
+        }
+
+        div.ornek6 {
+            width: 1000px;
+            height: 200px;
+            border: 2px solid;
+            background-image: url(../img/manzara.jpeg);
+            background-repeat: no-repeat;
+            background-position: 50% -20%;
+        }
+
+        div.ornek7 {
+            width: 1000px;
+            height: 200px;
+            border: 2px solid;
+            background-image: url(../img/manzara.jpeg);
+            background-repeat: no-repeat;
+            background-position: 500px -30px;
+        }
+
+        div.ornek8 {
+            width: 1000px;
+            height: 200px;
+            border: 2px solid;
+            background-image: url(../img/manzara.jpeg);
+            background-repeat: no-repeat;
+            background-position: top left;
+        }
+
+        div.ornek9 {
+            width: 1000px;
+            height: 200px;
+            border: 2px solid;
+            background-image: url(../img/manzara.jpeg);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+
+        div.ornek10 {
+            width: 1000px;
+            height: 200px;
+            border: 2px solid;
+            background-image: url(../img/manzara.jpeg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        div.ornek11 {
+            width: 1000px;
+            height: 200px;
+            border: 2px solid;
+            background-image: url(../img/manzara.jpeg);
+            background-repeat: no-repeat;
+            background-position: center left;
+        }
+
+        div.ornek12 {
+            width: 1000px;
+            height: 200px;
+            border: 2px solid;
+            background-image: url(../img/manzara.jpeg);
+            background-repeat: no-repeat;
+            background-position: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>BACKGROUND-POSITION ÖZELLİĞİ</h2>
+    <p>html elementine atanmış olan arka plan resminin konum özellklerini belirler. Konumlandırmalar body yani gövde
+        içerisinde ve element içerisinde farklılık gösterebilir.</p>
+    <h3>DEĞERLER ;</h3>
+    <ul>
+        <li>length ;uzunluk değeri</li>
+        <li>% ;yüzde değeri</li>
+        <li>position ;top,right,bottom,left,center değerlerini alır.</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li>inherit ; html elementi üst elementinin biçimlendirme değerini alır.</li>
+    </ul>
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">background-position: 100px; (Tek parametrede soldan 100px ileri iter, yükseklik değerini ortadan
+        ikiye kesip y
+        ekseninde %50 ye resmi yerleştiriyor.)</div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2"> background-position: 100px 25px;(ilk parametre x eseninde ikinci parametre y ekseninde çalışır)
+        konumlandırır.</div>
+
+    <h3>Örnek-3;</h3>
+    <div class="ornek3"> background-position: 25%; (element genişliğini baz alarak resmi ortalar ve %25 sola iter.)
+    </div>
+
+    <h3>Örnek-4 ;</h3>
+    <div class="ornek4"> background-position: 50% 80%; (ilk parametre x ekseninde ikinci parametre y ekseninde çalışır)
+    </div>
+
+    <h3>Örnek-5 ;</h3>
+    <div class="ornek5">background-position: 50% 0%;</div>
+
+    <h3>Örnek-6 ;</h3>
+    <div class="ornek6">background-position: 50% -20%;(eksi değer elementte dışa iter. Gövdede içe iter)</div>
+
+    <h3>Örnek-7 ;</h3>
+    <div class="ornek7">background-position: 500px -30px;</div>
+
+    <h3>Örnek-8 ;</h3>
+    <div class="ornek8"> background-position:top left;</div>
+
+    <h3>Örnek-9 ;</h3>
+    <div class="ornek9"> background-position:bottom right;</div>
+
+    <h3>Örnek-10 ;</h3>
+    <div class="ornek10"> background-position:center;</div>
+
+    <h3>Örnek-11 ;</h3>
+    <div class="ornek11"> background-position:center left;</div>
+
+    <h3>Örnek-12 ;</h3>
+    <div class="ornek12"> background-position:right;</div>
+
+</body>
+
+</html>
