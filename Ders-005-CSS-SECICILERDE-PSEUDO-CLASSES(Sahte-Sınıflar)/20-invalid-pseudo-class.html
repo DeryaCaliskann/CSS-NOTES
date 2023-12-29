@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input:invalid {
+            background-color: red;
+        }
+
+        input:valid {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>invalid pseudo class</h1>
+    <p> Belirtilen html elementin bilgi girişi geçersiz bir değer olduğunda stil tanımlar. Belirtilen html elementi
+        bilgigirişi geçerli bir değer olduğunda stil normale döner. Örneğin e-mail formatının dışında bir giriş yaparsak
+        stil
+        tanımlar. Geçerli bir e-mail formatı girdiğimizde stil normale döner.Valid sahte sınıfını tam tersiişlem yapar.
+    </p>
+    <h3>Örnek -1 :</h3>
+    <p>
+        input:invalid { <br>
+        background-color: red; <br>
+        } <br>
+<br>
+        input:valid { <br>
+        background-color: green; <br>
+        } <br>
+        <br>
+
+    </p>
+    <form action="">
+        Adınız : <input name="Adiniz" type="text"> <br>
+        <br>
+        Soyadınız : <input name="Soyadiniz" type="text"> <br>
+        <br>
+        E-Mail Adresiniz:<input name="E-mail" type="email"> <br>
+        <br>
+        <input type="submit" value="Gönder">
+    </form>
+
+    <h3>Örnek -2 :</h3>
+    <form action="https://www.google.com.tr/search" method="get">
+        Google'da Ara : <input name="q" type="text"> <br>
+        <br>
+        <input type="submit" value="Gönder">
+    </form>
+
+</body>
+
+</html>

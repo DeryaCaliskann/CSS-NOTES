@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ornek1 {
+            border: 4px solid;
+            border-color: red;
+        }
+
+        div.ornek2 {
+            border: 4px solid;
+            border-color: transparent;
+        }
+
+        div.ornek3 {
+            border: 4px solid;
+            border-color: blue;
+        }
+
+        div.ornek3 {
+            border: 4px solid;
+            border-color: initial;
+        }
+
+        div.ornek4 {
+            border: 4px solid;
+            border-color: red;
+        }
+
+        span.ornek4 {
+            border: 4px solid;
+            border-color: inherit;
+        }
+
+        div.ornek5 {
+            border: 6px solid;
+            border-color: blue yellow green red;
+        }
+
+        div.ornek6 {
+            border: 6px solid;
+            border-color: blue yellow green;
+        }
+
+        div.ornek7 {
+            border: 6px solid;
+            border-color: blue yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>border-color özelliği</h1>
+    <p>Html elementinin kenarlık, çerçeve rengini belirler.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>color; renk</li>
+        <li>transparent; transparan</li>
+        <li>initial ; html elementi varsayılan değerine döner.</li>
+        <li>inherit ; html elementi üst elementinin değerini alır.</li>
+    </ul>
+
+    <h3>Örnek-1</h3>
+    <div class="ornek1">border-color:red</div>
+
+    <h3>Örnek-2</h3>
+    <div class="ornek2">border-color:transparent</div>
+
+    <h3>Örnek-3</h3>
+    <div class="ornek3">border-color:initial (varsayılan)</div>
+
+    <h3>Örnek-4</h3>
+    <div class="ornek4">
+        <span class="ornek4">div: border-color:blue > span: border-color;inherit (miras)</span>
+    </div>
+
+    <h3>Örnek-5</h3>
+    <div class="ornek5">border-color: blue yellow green red (1.parametre;üst 2.parametre;sağ 3.parametre;alt
+        4.parametre;sol
+        saat yönünde gider)</div>
+
+    <h3>Örnek-6</h3>
+    <div class="ornek6">border-color: blue yellow green (1.parametre;üst 2.parametre;sağ-sol 3.parametre;alt)</div>
+
+    <h3>Örnek-7</h3>
+    <div class="ornek7">border-color: blue yellow (1.parametre;üst-alt 2.parametre;sağ-sol) </div>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div>p>span {
+            text-decoration: underline;
+        }
+
+        div>p#kirmiziyazi {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>child (çocuk) seçici </h1>
+        <p>Ana elemanın bir altındaki eleman çocuk elemandır. Ana tag'dan sonra <span>büyüktür ">" </span> işareti koyup
+            tag ismi yazılarak seçilir.</p>
+        <p id="kirmiziyazi"> Çocuk seçici id ve Class seçiciyle beraber de kullanılabilir. Tüm Seçiciciler iç içe
+            kullanılabilir.</p>
+    </div>
+
+    <h3>Örnek ;</h3>
+
+    <p>
+        div>p>span { <br>
+        text-decoration: underline; <br>
+        } <br>
+
+        div>p#kirmiziyazi { <br>
+        color: red; <br>
+        }
+    </p>
+</body>
+
+</html>

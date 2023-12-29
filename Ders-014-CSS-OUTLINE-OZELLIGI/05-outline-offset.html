@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div.ornek1 {
+            width: 1000px;
+            height: 50px;
+            outline: 2px double blue;
+            outline-offset: 5px;
+        }
+
+        div.ornek2 {
+            width: 1000px;
+            height: 50px;
+            border: 2px solid red;
+            outline: 2px solid blue;
+            outline-offset: 5px;
+        }
+
+        div.ornek3 {
+            width: 1000px;
+            height: 50px;
+            border: 2px solid red;
+            outline: 2px solid blue;
+            outline-offset: -5px;
+        }
+
+        div.ornek4 {
+            width: 1000px;
+            height: 50px;
+            border: 2px solid red;
+            outline: 2px solid blue;
+            outline-offset: 5px;
+        }
+
+        div.ornek4 {
+            outline-offset: initial;
+        }
+
+        div.ornek5 {
+            width: 1000px;
+            height: 125px;
+            border: 2px solid red;
+            outline: 2px solid blue;
+            outline-offset: 5px;
+        }
+
+        p.ornek5 {           
+            width: 800px;
+            height: 50px;
+            border: 2px solid red;
+            outline: 2px solid blue;
+            outline-offset:inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS'de outline-offset özelliği</h1>
+    <p>Html elementi içi anahat ile kenarlık arasındaki mesafeyi belirler. Negatif deeğer de alabilir.</p>
+
+    <h2>değerler ;</h2>
+    <ul>
+        <li>length ; uzunluk</li>
+        <li>initial ; html elementi varsayılan değerine döner.</li>
+        <li>inherit ; html elementi üst elementinin değerini alır.</li>
+    </ul>
+
+
+    <h3>Örnek-1</h3>
+    <div class="ornek1"> outline-offset: 5px;</div>
+
+    <h3>Örnek-2</h3>
+    <div class="ornek2"> outline-offset: 5px;</div>
+
+    <h3>Örnek-3</h3>
+    <div class="ornek3"> outline-offset: -5px;</div>
+
+    <h3>Örnek-4</h3>
+    <div class="ornek4"> outline-offset: initial;</div>
+
+    <h3>Örnek-5</h3>
+    <div class="ornek5"> div:  outline-offset: 5px;
+        <p class="ornek5"> p:  outline-offset: inherit;</p>
+    </div>
+    
+</body>
+
+</html>

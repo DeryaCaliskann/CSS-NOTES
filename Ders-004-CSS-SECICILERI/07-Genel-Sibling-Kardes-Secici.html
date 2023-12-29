@@ -7,21 +7,27 @@
     <title>Document</title>
 
     <style>
-        h2~p {
-            color: red;
+        h1~p {
+            color:blue;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <h2>GENEL SİBLİNG (KARDEŞ) SEÇİCİ</h2>
-        <span></span>
-        <p>Belirttiğimiz elemandan sonra gelenler kardeş oluyor. Kardeş elemanı seçmek için ~ işaretini kullanıyoruz.
-            Kardeş seçici de muhakkak belirttiğimiz tagdan sonra gelmesi gerekiyor. Arada başka elemanlar olsada sonucu
-            değiştirmez.
-        </p>       
-    </div>
+    <h1>genel sibling (kardeş) seçici</h1>
+
+    <p>Belirttiğimiz elemandan sonra gelenler kardeş oluyor. Kardeş elemanı seçmek için ~ işaretini kullanıyoruz.
+        Kardeş seçici de muhakkak belirttiğimiz tagdan sonra gelmesi gerekiyor. Arada başka elemanlar olsada sonucu
+        değiştirmez.
+    </p>
+
+    <h3>Örnek ;</h3>
+    <p>
+        h1~p { <br>
+        color: blue; <br>
+        }
+    </p>
+
 </body>
 
 </html>

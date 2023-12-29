@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ornek1 {
+            direction: rtl;
+            unicode-bidi: normal;
+        }
+
+        div.ornek2 {
+            direction: rtl;
+            unicode-bidi: embed;
+        }
+
+
+        div.ornek3 {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        div.ornek4 {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        span {
+            unicode-bidi: embed;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>unicode-bidi</h1>
+    <p>Metnin direction özelliği ile belirtilmiş akış yönü özelliğinin döndürme durumunu belirler. </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>normal; normal değer. </li>
+        <li>embed; gömülü demek.Tek element varsa normalden farkı olmaz. İç elementler varsa bunlarada değer
+            tanımlanmışsa embed değeriyle metnin yönünü döndüre biliyoruz. (örnek-4 deki gibi)</li>
+        <li>bidi-override; geçersiz kılma.</li>
+        <li>initial; html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li>inherit; html elementi üst elementinin biçimlendirme değerini alır. </li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1"> unicode-bidi: normal; <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt voluptatibus sapiente alias
+        veritatis. Dolor dignissimos id delectus, omnis amet placeat explicabo exercitationem. Quo asperiores est
+        laudantium ipsum! Quaerat repellendus quidem ad? Tenetur hic quis natus, sint sequi voluptas error?
+    </div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2"> unicode-bidi: embed; <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt voluptatibus sapiente alias
+        veritatis. Dolor dignissimos id delectus, omnis amet placeat explicabo exercitationem. Quo asperiores est
+        laudantium ipsum! Quaerat repellendus quidem ad? Tenetur hic quis natus, sint sequi voluptas error?
+    </div>
+
+
+    <h3>Örnek-3 ;</h3>
+    <div class="ornek3"> unicode-bidi: bidi-override; <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt voluptatibus sapiente alias
+        veritatis. Dolor dignissimos id delectus, omnis amet placeat explicabo exercitationem. Quo asperiores est
+        laudantium ipsum! Quaerat repellendus quidem ad? Tenetur hic quis natus, sint sequi voluptas error?
+    </div>
+
+    <h3>Örnek-4;</h3>
+    <div class="ornek4"> <span>unicode-bidi: embed;</span> <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt voluptatibus sapiente alias
+        veritatis. Dolor dignissimos id delectus, omnis amet placeat explicabo exercitationem. Quo asperiores est
+        laudantium ipsum! Quaerat repellendus quidem ad? Tenetur hic quis natus, sint sequi voluptas error?
+    </div>
+
+
+</body>
+
+</html>

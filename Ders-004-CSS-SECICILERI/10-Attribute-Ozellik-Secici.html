@@ -31,16 +31,16 @@
         }
 
         li[title$="ten"] {
-            color:yellowgreen;
+            color: yellow;
         }
     </style>
 </head>
 
 <body>
-    <h2>ATTRİBUTE (ÖZELLİK) SEÇİCİ</h2>
+    <h1>attribute (özellik) seçici </h1>
     <p>Belirtilecek olan özelliğe sahip html elemanını seçer.</p>
 
-    <h3>ATTRİBUTE (ÖZELLİK) SEÇİCİLERİ İÇİN FİLTRELER</h3>
+    <h2>Attribute (özellik) seçicileri için filtreler</h2>
     <ul>
         <li name="tamDeger"> Tam değer filtresi; [özellik adı="değer"] (Özellik değerinin tam
             olarak yazılması gerekiyor. i harfi büyük harf küçük harf duyarlılığına bakma demek.)</li>
@@ -55,6 +55,38 @@
         <li title="biten">Biten değer filtresi; [özellik adı$="değer"](Belirtilecek olan özelliğe ve belirtilecek olan
             değere bitişine Html elementini seçer.</li>
     </ul>
+
+    <h3>Örnek ;</h3>
+
+    <p>
+        ul li { <br>
+        font-size: large; <br>
+        } <br>
+        <br>
+        li[name="tamdeger" i] { <br>
+        color: red; <br>
+        } <br>
+        <br>
+        li[name~="iceren"] { <br>
+        color: blue; <br>
+        } <br>
+        <br>
+        li[title*="iceren"] { <br>
+        color: purple; <br>
+        } <br>
+        <br>
+        li[name^="b"] { <br>
+        color: green; <br>
+        } <br>
+        <br>
+        li[lang|="en-us"] { <br>
+        color: brown;<br>
+        } <br>
+        <br>
+        li[title$="ten"] { <br>
+        color:yellow; <br>
+        } <br>
+    </p>
 </body>
 
 </html>

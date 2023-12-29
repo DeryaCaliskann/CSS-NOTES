@@ -14,16 +14,10 @@
 </head>
 
 <body>
-    <h2>OUT-OF-RANGE PSEUDO CLASS (SAHTE SINIFI)</h2>
+    <h1>out-of-range pseudo class</h1>
     <p>Belirtilen html elementin bilgi girişi belirtilen aralıklar dışında bir değer olduğunda stil tanımlar. Belirtilen
         aralıklar dahilinde olursa stil normale döner. in-range sahte sınıfının tam tersi işlem yapar.</p>
     <h3>Örnek ;</h3>
-    <form>
-        Adınız Soyadınız : <input type="text"> <br>
-        <br>
-        Yaşınız :<input type="number" min="18" max="100">
-    </form>
-    <hr>
     <p>
         input[type="number"]:out-of-range { <br>
         color: red; <br>
@@ -32,9 +26,16 @@
         input:out-of-range { <br>
         color: red; <br>
         } <br>
-        Not: Her iki kullanım da doğru çalışır. Ama yukarıda ki kullanım şekli daha doğrudur.
+        Not: Her iki kullanım da doğru çalışır. Ama yukarıda ki kullanım şekli daha doğrudur. <br>
+        <br>
     </p>
-
+    
+    
+    <form>
+        Adınız Soyadınız : <input type="text"> <br>
+        <br>
+        Yaşınız :<input type="number" min="18" max="100">
+    </form>
 </body>
 
 </html>

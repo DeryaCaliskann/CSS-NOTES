@@ -12,16 +12,26 @@
         }
 
         :not(li) {
-            color: green;
+            color:black;
         }
     </style>
 </head>
 
 <body>
-    <h2>NOT() PSEUDO CLASS (SAHTE SINIFI)</h2>
+    <h1>not( ) pseudo class </h1>
     <p>Belirtilen Html elementi hariç tüm Html elementlerine stil tanımlar. :not() pseudo class'ın doğru çalışması için
         önce ilgili tag'a stil tanımlamalıyız.</p>
     <h3>Örnek ;</h3>
+    <p>
+        li { <br>
+        color: blue; <br>
+        } <br>
+        <br>
+        :not(li) { <br>
+        color: black; <br>
+        } <br>
+        <br>
+    </p>
     <ul>
         <li>Html</li>
         <li>JavaScript</li>

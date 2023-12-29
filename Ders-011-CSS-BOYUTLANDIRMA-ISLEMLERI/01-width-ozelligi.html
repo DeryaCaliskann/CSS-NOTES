@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* AUTO  */
+        div.ornek1 {
+            background-color: yellow;
+            width: auto;
+        }
+
+        /* LENGTH  */
+
+        div.ornek2 {
+            background-color: yellow;
+            width: 750px;
+        }
+
+        /* YÜZDE */
+
+        div.ornek3 {
+            background-color: yellow;
+            width: 50%;
+        }
+
+        /* İNİTİAL(VARSAYILAN) */
+
+        div.ornek4 {
+            background-color: yellow;
+            width: 500px;
+        }
+        div.ornek4 {
+            width: initial;
+        }
+
+        /* İNHERİT(MİRAS) */
+        div.ornek5 {
+            background-color: red;
+            width: 75%;
+        }
+        p.ornek5{
+            background-color: yellow;
+            width: inherit;
+        }
+
+
+        span {
+            text-decoration: underline;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <h1>width (genişlik) özelliği</h1>
+    <p>Html elementinin genişliğini belirtir.</p>
+    <h2>değerler ;</h2>
+    <ol>
+        <li><span>auto; </span>Otomatik değer alır.Üst elementin genişliği ne kadarsa o kadar değer alır.Ekran küçülürse
+            küçülür büyürse büyür.</li>
+        <li><span>length;</span>Genişliğin uzunluk değerini belirler. Length değeri atanırsa üst elementine göre yada
+            üst elementi
+            baz aldırmadan da değer verebiliriz.Elementleri iç içe kullandığımızda alttaki ölçeklendirme dğeri üsttekini
+            geçebilir.Dışarı taşmasın istiyorsak overflov özelliğini kullanabiliriz.</li>
+        <li><span>% ;</span> Yüzde değeridir. İlgili üst elementi baz alır ve boyutlandırma yapar. Aynı auto'da olduğu
+            gibi üst
+            elementinin bir genişlik değeri yoksa bady'nin yani tarayıcının genişlik değerini baz alır.Auto değerinde
+            olduğu gibi ekran büyürse büyür küçülürse küçülür.</li>
+        <li><span>İnitial;</span> Html elementi varsayılan biçimlendirme değerine döner.
+        </li>
+        <li><span>İnherit;</span> Html elementi üst elementinin biçimlendirme değerini alır. Yani miras alır. </li>
+    </ol>
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">div: width;auto</div>
+    
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2">div: width;750px</div>
+    
+    <h3>Örnek-3 ;</h3>
+    <div class="ornek3">div: width;50%</div>
+    
+    <h3>Örnek-4 ;</h3>
+    <div class="ornek4">div: width;500px / div: width;initial(varsayılan)</div>    
+
+    <h3>Örnek-5 ;</h3>
+    <div class="ornek5">
+        <p class="ornek5">div: width;75% (kırmızı) > p: width;inherit(miras) (sarı)</p>
+    </div>
+</body>
+
+</html>

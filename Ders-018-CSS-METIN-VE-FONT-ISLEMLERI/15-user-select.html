@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ornek1 {
+            width: 500px;
+            height: 200px;
+            border: 2px solid red;
+            user-select: auto;
+        }
+
+        div.ornek2 {
+            width: 500px;
+            height: 200px;
+            border: 2px solid red;
+            user-select: none;
+        }
+
+        div.ornek3 {
+            width: 500px;
+            height: 200px;
+            border: 2px solid red;
+            user-select: text;
+        }
+
+        div.ornek4 {
+            width: 500px;
+            height: 200px;
+            border: 2px solid red;
+            user-select: all;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>user-select</h1>
+    <p>Metnin kullanıcı tarafında seçilebilme durumunu belirler.prefixle beraber kullanılır.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>auto; otamatik değer alır (varsayılan)</li>
+        <li>none; değer yok (metin seçilemez)</li>
+        <li>text; metin (metin seçilebilir)</li>
+        <li>all; tümü (tüm metin bir seferde seçilebilir)</li>
+        <li>İnitial; html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li>İnherit; html elementi üst elementinin biçimlendirme değerini alır. </li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1"> user-select: auto; <br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        doloremque laborum voluptatibus reprehenderit quibusdam similique quae magni necessitatibus ipsam, qui sapiente
+        mollitia, quis sit corporis molestias id tenetur, voluptate aliquam omnis saepe autem odit cum! Laboriosam
+        placeat vel dolores inventore facilis, officia molestiae necessitatibus reprehenderit saepe recusandae maxime.
+    </div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2"> user-select: none; <br> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        doloremque laborum voluptatibus reprehenderit quibusdam similique quae magni necessitatibus ipsam,
+        mollitia, quis sit corporis molestias id tenetur, voluptate aliquam omnis saepe autem odit cum! Laboriosam
+        placeat vel dolores inventore facilis, officia molestiae necessitatibus reprehenderit saepe recusandae maxime.
+    </div>
+
+    <h3>Örnek-3 ;</h3>
+    <div class="ornek3"> user-select: text;<br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        doloremque laborum voluptatibus reprehenderit quibusdam similique quae magni necessitatibus ipsam,
+        mollitia, quis sit corporis molestias id tenetur, voluptate aliquam omnis saepe autem odit cum! Laboriosam
+        placeat vel dolores inventore facilis, officia molestiae necessitatibus reprehenderit saepe recusandae maxime.
+    </div>
+
+    <h3>Örnek-4;</h3>
+    <div class="ornek4"> user-select: all;<br><br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        doloremque laborum voluptatibus reprehenderit quibusdam similique quae magni necessitatibus ipsam,
+        mollitia, quis sit corporis molestias id tenetur, voluptate aliquam omnis saepe autem odit cum! Laboriosam
+        placeat vel dolores inventore facilis, officia molestiae necessitatibus reprehenderit saepe recusandae maxime.
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ornek1 {
+            width: 400px;
+            height: 200px;
+            border: 30px solid transparent;
+            -webkit-border-image: url(../img/desen1.jpg);
+            -moz-border-image: url(../img/desen1.jpg);
+            -o-border-image: url(../img/desen1.jpg);
+            -ms-border-image: url(../img/desen1.jpg);
+            border-image: url(../img/desen1.jpg);
+        }
+
+        div.ornek2 {
+            width: 400px;
+            height: 200px;
+            border: 30px solid transparent;
+            -webkit-border-image: url(../img/desen1.jpg)30 stretch;
+            -moz-border-image: url(../img/desen1.jpg) 30 stretch ;
+            -o-border-image: url(../img/desen1.jpg) 30 stretch;
+            -ms-border-image: url(../img/desen1.jpg) 30 stretch;
+            border-image: url(../img/desen1.jpg) 30 stretch;
+        }
+
+        div.ornek3 {
+            width: 400px;
+            height: 200px;
+            border: 30px solid transparent;
+            -webkit-border-image: url(../img/desen1.jpg)33%;
+            -moz-border-image: url(../img/desen1.jpg)33%;
+            -o-border-image: url(../img/desen1.jpg) 33%;
+            -ms-border-image: url(../img/desen1.jpg) 33%;
+            border-image: url(../img/desen1.jpg) 33%;
+        }
+
+        div.ornek4 {
+            width: 400px;
+            height: 200px;
+            border: 30px solid transparent;
+            -webkit-border-image: url(../img/desen1.jpg)25 30 10 20;
+            -moz-border-image: url(../img/desen1.jpg)25 30 10 20;
+            -o-border-image: url(../img/desen1.jpg)25 30 10 20;
+            -ms-border-image: url(../img/desen1.jpg) 25 30 10 20;
+            border-image: url(../img/desen1.jpg)25 30 10 20;
+        }
+
+        div.ornek5 {
+            width: 400px;
+            height: 200px;
+            border: 30px solid transparent;
+            -webkit-border-image: url(../img/desen1.jpg)25 30;
+            -moz-border-image: url(../img/desen1.jpg)25 30;
+            -o-border-image: url(../img/desen1.jpg)25 30;
+            -ms-border-image: url(../img/desen1.jpg) 25 30;
+            border-image: url(../img/desen1.jpg)25 30;
+        }
+
+        div.ornek6 {
+            width: 400px;
+            height: 200px;
+            border: 30px solid transparent;
+            -webkit-border-image: url(../img/desen1.jpg)30 repeat;
+            -moz-border-image: url(../img/desen1.jpg) 30 repeat;
+            -o-border-image: url(../img/desen1.jpg) 30 repeat;
+            -ms-border-image: url(../img/desen1.jpg) 30 repeat;
+            border-image: url(../img/desen1.jpg) 30 repeat;
+        }
+
+        div.ornek7 {
+            width: 400px;
+            height: 200px;
+            border: 30px solid transparent;
+            -webkit-border-image: url(../img/desen1.jpg)30 round;
+            -moz-border-image: url(../img/desen1.jpg) 30 round;
+            -o-border-image: url(../img/desen1.jpg) 30 round;
+            -ms-border-image: url(../img/desen1.jpg) 30 round;
+            border-image: url(../img/desen1.jpg) 30 round;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>border-image </h1>
+    <p>Html elementinin kenarlık resim özelliklerini belirler. Prefix'lerle beraber kullanılır.</p>
+    <h2>parametreler ;</h2>
+    <h3>1- image (resim)</h3>
+    <ul>
+        <li>İmage;resim değeri</li>
+        <li>initial;varsayılan değere döner.</li>
+        <li>inherit;üst elementinin değerini alır.</li>
+    </ul>
+    <h3>2- slice(dilimleme)</h3>
+    <ul>
+        <li>length ; uzunluk değeri</li>
+        <li> % ; yüzde değeri</li>
+    </ul>
+    <h3>3- repeat (tekrarlama)</h3>
+    <ul>
+        <li>repeat ; tekrarla</li>
+        <li>round ; yuvarla</li>
+        <li>stretch ; uzat,gerdir,esnet </li>
+    </ul>
+    <h3>Örnek-1 :</h3>
+    <div class="ornek1"> border-image: url(../img/desen1.jpg);</div>
+    
+    <h3>Örnek-2 :</h3>
+    <div class="ornek2"> border-image: url(../img/desen1.jpg) 30 stretch;(esnet)<br>(Varsayılan değer stretch'dir.)</div>
+    
+    <h3>Örnek-3 :</h3>
+    <div class="ornek3"> border-image: url(../img/desen1.jpg) 33%;</div>
+    
+    <h3>Örnek-4 :</h3>
+    <div class="ornek4"> border-image: url(../img/desen1.jpg)25 30 10 20; <br>1.parametre;sağ üstten yükseklik <br>2.
+        parametre;sağ üstten genişlik. <br>3. parametre;sağ alttan yükseklik. <br>4. parametre; sol üstten genişlik
+    </div>
+    
+    <h3>Örnek-5 :</h3>
+    <div class="ornek5"> border-image: url(../img/desen1.jpg) 25 30; <br>1.parametre;sağ üstten yükseklik <br>2.
+        parametre;sağ üstten genişlik.
+    </div>
+    
+    <h3>Örnek-6 :</h3>
+    <div class="ornek6">border-image: url(../img/desen1.jpg) 30 repeat;(tekrarla)</div>
+    
+    <h3>Örnek-7 :</h3>
+    <div class="ornek7">border-image: url(../img/desen1.jpg) 30 round;(yuvarla)</div>
+    
+</body>
+
+</html>

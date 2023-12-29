@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div.ornek1 {
+            width: 1000px;
+            height: 50px;
+            outline: 4px solid blue;
+            outline-style: none;
+        }
+
+        div.ornek2 {
+            width: 1000px;
+            height: 50px;
+            outline-width: 4px;
+            outline-color: red;
+            outline-style: hidden;
+        }
+
+        div.ornek3 {
+            width: 1000px;
+            height: 50px;
+            outline: 4px double blue;
+            outline-style: solid;
+        }
+
+        div.ornek4 {
+            width: 1000px;
+            height: 50px;
+            outline: 4px double blue;
+            outline-style: double;
+        }
+
+
+        div.ornek5 {
+            width: 1000px;
+            height: 50px;
+            outline: 4px double blue;
+            outline-style: dotted;
+        }
+
+        div.ornek6 {
+            width: 1000px;
+            height: 50px;
+            outline: 4px double blue;
+            outline-style: dashed;
+        }
+
+        div.ornek7 {
+            width: 1000px;
+            height: 50px;
+            outline: 4px double blue;
+            outline-style: groove;
+        }
+
+        div.ornek8 {
+            width: 1000px;
+            height: 50px;
+            outline: 4px double blue;
+            outline-style: ridge;
+        }
+
+        div.ornek9 {
+            width: 1000px;
+            height: 50px;
+            outline: 4px double blue;
+            outline-style: inset;
+        }
+
+        div.ornek10 {
+            width: 1000px;
+            height: 50px;
+            outline: 4px double blue;
+            outline-style: outset;
+        }
+
+        div.ornek11 {
+            width: 1000px;
+            height: 50px;
+            outline: 4px double blue;
+            outline-style: solid;
+        }
+
+        div.ornek11 {
+            outline-style: initial;
+        }
+
+        div.ornek12 {
+            width: 1000px;
+            height: 100px;
+            outline: 4px double blue;
+            outline-style: dashed;
+        }
+
+        p.ornek12 {
+            width: 900px;
+            height: 50px;
+            outline: 4px double blue;
+            outline-style: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS'de outline-style özelliği</h1>
+    <p>Html elementinin anahat stilini belirler.</p>
+
+    <h2>değerler ;</h2>
+    <ul>
+        <li>none ; değer yok</li>
+        <li>hidden ; gizli</li>
+        <li>solid ; düz çizgi</li>
+        <li>double ; çift çizgi</li>
+        <li>dashed ; keşikli çizgi</li>
+        <li>dotted ;noktalı çizgi</li>
+        <li>groove ; içe dönük gölgeli çizgi</li>
+        <li>ridge ; dışa dönük gölgeli çizgi</li>
+        <li>inset ; içe dönük derin çizgi</li>
+        <li>outset ; dışa dönük derin çizgi</li>
+        <li>initial ; html elementi varsayılan değerine döner.</li>
+        <li>inherit ; html elementi üst elementinin değerini alır.</li>
+    </ul>
+
+    <h3>Örnek-1</h3>
+    <div class="ornek1"> outline-style: none; (değeri yok eder)</div>
+
+    <h3>Örnek-2</h3>
+    <div class="ornek2"> outline-style: hidden;(özellikler parçalı girilirse stili gizler)</div>
+
+    <h3>Örnek-3</h3>
+    <div class="ornek3"> outline-style:solid;</div>
+
+    <h3>Örnek-4</h3>
+    <div class="ornek4"> outline-style:double;</div>
+
+    <h3>Örnek-5</h3>
+    <div class="ornek5"> outline-style:dodtet;</div>
+
+    <h3>Örnek-6</h3>
+    <div class="ornek6">outline-style:dashed;</div>
+
+    <h3>Örnek-7</h3>
+    <div class="ornek7"> outline-style:groove;</div>
+
+    <h3>Örnek-8</h3>
+    <div class="ornek8"> outline-style:ridge;</div>
+
+    <h3>Örnek-9</h3>
+    <div class="ornek9"> outline-style:inset;</div>
+
+    <h3>Örnek-10</h3>
+    <div class="ornek10"> outline-style:outset;</div>
+
+    <h3>Örnek-11</h3>
+    <div class="ornek11"> outline-style:initial;</div>
+
+    <h3>Örnek-12</h3>
+    <div class="ornek12"> div: outline-style:dashed;
+        <p class="ornek12"> p: outline-style:inherit; (miras)</p>
+    </div>
+
+
+
+</body>
+
+</html>

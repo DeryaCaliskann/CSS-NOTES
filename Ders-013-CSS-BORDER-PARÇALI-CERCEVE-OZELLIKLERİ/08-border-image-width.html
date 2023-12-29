@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ornek1 {
+            width: -webkit-calc(100%-60px);
+            width: -moz-calc(100%-60px);
+            width: -o-calc(100%-60px);
+            width: -ms-calc(100%-60px);
+            width: calc(100%-60px);
+            height: 100px;
+            border: 30px solid transparent;
+            border-image-source: url(../img/desen1.jpg);
+            border-image-slice: 30;
+            border-image-width: auto;
+        }
+
+        div.ornek2 {
+            width: -webkit-calc(100%-60px);
+            width: -moz-calc(100%-60px);
+            width: -o-calc(100%-60px);
+            width: -ms-calc(100%-60px);
+            width: calc(100%-60px);
+            height: 100px;
+            border: 30px solid transparent;
+            border-image-source: url(../img/desen1.jpg);
+            border-image-slice: 30;
+            border-image-width: 15px;
+        }
+
+        div.ornek3 {
+            width: -webkit-calc(100%-60px);
+            width: -moz-calc(100%-60px);
+            width: -o-calc(100%-60px);
+            width: -ms-calc(100%-60px);
+            width: calc(100%-60px);
+            height: 100px;
+            border: 30px solid transparent;
+            border-image-source: url(../img/desen1.jpg);
+            border-image-slice: 30;
+            border-image-width: 15px 30px;
+        }
+
+        div.ornek4 {
+            width: -webkit-calc(100%-60px);
+            width: -moz-calc(100%-60px);
+            width: -o-calc(100%-60px);
+            width: -ms-calc(100%-60px);
+            width: calc(100%-60px);
+            height: 100px;
+            border: 30px solid transparent;
+            border-image-source: url(../img/desen1.jpg);
+            border-image-slice: 30;
+            border-image-width: 30px 30px 10px;
+        }
+
+        div.ornek5 {
+            width: -webkit-calc(100%-60px);
+            width: -moz-calc(100%-60px);
+            width: -o-calc(100%-60px);
+            width: -ms-calc(100%-60px);
+            width: calc(100%-60px);
+            height: 100px;
+            border: 30px solid transparent;
+            border-image-source: url(../img/desen1.jpg);
+            border-image-slice: 30;
+            border-image-width: 30px 20px 15px 25px;
+        }
+
+        div.ornek6 {
+            width: -webkit-calc(100%-60px);
+            width: -moz-calc(100%-60px);
+            width: -o-calc(100%-60px);
+            width: -ms-calc(100%-60px);
+            width: calc(100%-60px);
+            height: 100px;
+            border: 30px solid transparent;
+            border-image-source: url(../img/desen1.jpg);
+            border-image-slice: 30;
+            border-image-width: 20%;
+        }
+
+        div.ornek7 {
+            width: -webkit-calc(100%-60px);
+            width: -moz-calc(100%-60px);
+            width: -o-calc(100%-60px);
+            width: -ms-calc(100%-60px);
+            width: calc(100%-60px);
+            height: 100px;
+            border: 30px solid transparent;
+            border-image-source: url(../img/desen1.jpg);
+            border-image-slice: 30;
+            border-image-width: 10px;
+        }
+
+        div.ornek7 {
+            border-image-width: initial;
+        }
+
+        div.ornek8 {
+            width: -webkit-calc(100%-60px);
+            width: -moz-calc(100%-60px);
+            width: -o-calc(100%-60px);
+            width: -ms-calc(100%-60px);
+            width: calc(100%-60px);
+            height: 100px;
+            border: 30px solid transparent;
+            border-image-source: url(../img/desen1.jpg);
+            border-image-slice: 30;
+            border-image-width: 10px;
+        }
+
+        p.ornek8 {
+            width: -webkit-calc(100%-60px);
+            width: -moz-calc(100%-60px);
+            width: -o-calc(100%-60px);
+            width: -ms-calc(100%-60px);
+            width: calc(100%-60px);
+            height: 100px;
+            border: 30px solid transparent;
+            border-image-source: url(../img/desen1.jpg);
+            border-image-slice: 30;
+            border-image-width: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>border-image-width</h1>
+    <p>Html elementinin kenarlık resminin genişliğini belirler.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>auto; otomatik değer alır. (varsayılan değerdir)</li>
+        <li>length ; uzunluk değeri</li>
+        <li> % ; yüzde değeri</li>
+        <li>initial ; html elementi varsayılan değere döner.</li>
+        <li>inherit ; html elementi üst elementinin biçimlendirme değerini alır.</li>
+    </ul>
+
+    <h3>Örnek-1 :</h3>
+    <div class="ornek1"> border-image-width: auto;</div>
+
+    <h3>Örnek-2 :</h3>
+    <div class="ornek2"> border-image-width: 15px;</div>
+
+    <h3>Örnek-3 :</h3>
+    <div class="ornek3"> border-image-width: 15px; 30px; </div>
+
+    <h3>Örnek-4 :</h3>
+    <div class="ornek4"> border-image-width: 30px 30px 10px; </div>
+
+    <h3>Örnek-5 :</h3>
+    <div class="ornek5"> border-image-width: 30px 30px 15px 25px; </div>
+
+    <h3>Örnek-6 :</h3>
+    <div class="ornek6"> border-image-width: 20%;</div>
+
+    <h3>Örnek-7 :</h3>
+    <div class="ornek7"> border-image-width:initial ; </div>
+
+    <h3>Örnek-8 :</h3>
+    <div class="ornek8">  border-image-width:10px;
+        <p class="ornek8">  border-image-width: initial;</p>
+    </div>
+</body>
+
+</html>

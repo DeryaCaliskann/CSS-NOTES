@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* LENGTH  */
+
+        div.ornek1 {
+            background-color: yellow;
+            min-width: 750px;
+        }
+
+        div.ornek2 {
+            background-color: blue;
+            width: 80%;
+        }
+
+        p.ornek2{
+            background-color: yellow;
+            min-width: 500px;
+        }
+
+        div.ornek3 {
+            background-color: blue;
+            width: 500px;
+        }
+
+        p.ornek3 {
+            background-color: yellow;
+            min-width: 750px;
+        }
+
+        /* YUZDE */
+        div.ornek4 {
+            background-color: blue;
+            width: 80%;
+        }
+        p.ornek4{
+            background-color: yellow;
+            min-width: 50%;
+        }
+
+        /* INITIAL */
+        div.ornek5 {
+            background-color: blue;
+            min-width: 750px;
+        }
+        div.ornek5 {
+            background-color: yellow;
+            min-width: initial;
+        }
+
+        /* INHERIT */
+        div.ornek6 {
+            background-color: blue;
+            min-width: 500px;
+        }
+        p.ornek6 {
+            background-color: yellow;
+            min-width: inherit;
+        }
+
+
+        span {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>min-width özelliği</h1>
+    <p>Html elementinin minimum genişliğini belirler.</p>
+    <h2>değerler ;</h2>
+    <ol>
+        <li><span>length;</span>Uzunluk değeri. Minimum belirtilen değere kadar küçülür daha fazla küçülmez. Daha fazla
+            küçültürsek altta scrool çubuğu çıkar. içerisinde olduğu elementin dışına taşabilir.</li>
+        <li><span>% ;</span> Yüzde değeridir.</li>
+        <li><span>İnitial(varsayılan);</span> Html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li><span>İnherit(miras);</span> Html elementi üst elementinin biçimlendirme değerini alır.</li>
+    </ol>
+
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">div: min-width;750px</div>    
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2">
+        <p class="ornek2">div: width;80% (mavi) > p:min-width;500px (sarı)</p>
+    </div>
+    
+    <h3>Örnek-3;</h3>
+    <div class="ornek3">
+        <p class="ornek3">div: width;500px (mavi) > div:min-width;750px (sarı)</p>
+    </div>
+    
+    <h3>Örnek-4 ;</h3>
+    <div class="ornek4">
+        <p class="ornek4">div: width;80% (mavi) > div: min-width;50% (sarı)</p>
+    </div>    
+
+    <h3>Örnek-5 ;</h3>
+    <div class="ornek5">div: min-width;750px / div: min-width;initial(varsayılan)</div>    
+
+    <h3>Örnek-6;</h3>
+    <div class="ornek6">
+        <p class="ornek6">div: min-width;500px (mavi) > p:min-width;inherit(miras) (sarı)</p>
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ornek1 {
+            width: 200px;
+            height: 300px;
+            border: 2px solid red;
+            -webkit-writing-mode: vertical-lr;
+            -moz-writing-mode: vertical-lr;
+            -o-writing-mode: vertical-lr;
+            -ms-writing-mode: vertical-lr;
+            writing-mode: vertical-lr;
+            -webkit-text-orientation: mixed;
+            -moz-text-orientation: mixed;
+            -o-text-orientation: mixed;
+            -ms-text-orientation: mixed;
+            text-orientation: mixed;
+        }
+
+        div.ornek2 {
+            width: 200px;
+            height: 300px;
+            border: 2px solid red;
+            -webkit-writing-mode: vertical-lr;
+            -moz-writing-mode: vertical-lr;
+            -o-writing-mode: vertical-lr;
+            -ms-writing-mode: vertical-lr;
+            writing-mode: vertical-lr;
+            -webkit-text-orientation: upright;
+            -moz-text-orientation: upright;
+            -o-text-orientation: upright;
+            -ms-text-orientation: upright;
+            text-orientation: upright;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>text-oriantation</h1>
+    <p>Metnin writing-mode özelliği ile belirtilmiş hizalama yönü özelliğinin döndürme durumunu belirler. prefixlerle
+        kullanılır. </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>Mixed; Karışık (varsayılan değerdir)</li>
+        <li>Upright; Dik</li>
+        <li>İnitial; html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li>İnherit; html elementi üst elementinin biçimlendirme değerini alır. </li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1"> text-orientation: mixed;</div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2"> text-orientation: upright;</div>
+
+
+</body>
+
+</html>

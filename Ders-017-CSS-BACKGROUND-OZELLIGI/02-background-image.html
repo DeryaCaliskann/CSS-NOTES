@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image:none;
+        }
+
+        div.ornek1 {
+            width: 1000px;
+            height: 100px;
+            border: 2px solid;
+            background-image: url(../img/manzara.jpeg);
+        }
+
+        div.ornek2 {
+            width: 1000px;
+            height: 100px;
+            border: 2px solid;
+            background-image: none;
+        }
+
+        div.ornek3 {
+            width: 1000px;
+            height: 100px;
+            border: 2px solid;
+            background-image: url(../img/manzara.jpeg);
+        }
+
+        div.ornek3 {
+            background-image: initial;
+        }
+
+        div.ornek4 {
+            width: 1000px;
+            height: 100px;
+            border: 2px solid;
+            background-image: url(../img/manzara.jpeg);
+        }
+
+        p.ornek4 {
+            width: 500px;
+            height: 50px;
+            border: 2px solid;
+            background-image: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>background-image</h1>
+    <p>html elementinin arka plan resmini belirler</p>
+    <h2>değerler;</h2>
+    <ul>
+        <li>none ; değer yok (varsayılan değer)</li>
+        <li>image ; resim</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li>inherit ; html elementi üst elementinin biçimlendirme değerini alır.</li>
+    </ul>
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1"> background-image: url(../img/desen2.jpg);</div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2"> background-image: none;</div>
+
+    <h3>Örnek-3 ;</h3>
+    <div class="ornek3"> background-image: initial;(varsayılan) </div>
+
+    <h3>Örnek-4;</h3>
+    <div class="ornek4"> background-image: url(../img/desen-3.jpeg);
+        <p class="ornek4"> background-image: inherit; (miras)</p>
+    </div>
+
+
+</body>
+
+</html>

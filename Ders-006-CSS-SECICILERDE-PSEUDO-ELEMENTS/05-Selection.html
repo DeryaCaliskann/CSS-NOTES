@@ -34,11 +34,38 @@
 </head>
 
 <body>
-    <h2>5-SELECTION PSEUDO ELEMENT</h2>
+    <h1>5-selection pseudo element</h1>
     <p>Belirtilen Html elementinin kullanıcı tarafından seçilen kısmına stil tanımlar.Yani mause ile sağ tıklayıp
         seçtiğimiz kısım. Selection sahte sınıfının bütün tarayıcılarda doğru çalışması için prefix'lerle beraber
         kullanmalıyız.</p>
 
+    <h3>Örnek ;</h3>
+    <p>
+        p::-webkit-selection { <br>
+        background-color: red; <br>
+        color: white; <br>
+        } <br>
+        <br>
+        p::-moz-selection { <br>
+        background-color: red; <br>
+        color: white; <br>
+        } <br>
+        <br>
+        p::-o-selection {<br>
+        background-color: red; <br>
+        color: white; <br>
+        } <br>
+        <br>
+        p::-ms-selection { <br>
+        background-color: red; <br>
+        color: white; <br>
+        } <br>
+        <br>
+        p::selection { <br>
+        background-color: red; <br>
+        color: white; <br>
+        } <br>
+    </p>
 
 </body>
 

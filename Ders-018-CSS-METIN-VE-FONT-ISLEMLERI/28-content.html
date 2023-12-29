@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ornek1::before {
+            color: red;
+            content: "başa eklenen değer";
+        }
+
+        div.ornek1::after {
+            color: red;
+            content: "sona eklene değer";
+        }
+
+        div.ornek2::before {
+            content: open-quote;
+        }
+
+        div.ornek2::after {
+            content: close-quote;
+        }
+
+        q.ornek3::before {
+            content: no-open-quote;
+        }
+
+        q.ornek3::after {
+            content: no-close-quote;
+        }
+
+
+        div.ornek4::before {
+            content: url(../img/manzara.jpeg);
+        }
+
+        div.ornek4::after {
+            content: url(../img/manzara.jpeg);
+        }
+
+
+        a::before {
+            content: attr(href)"---";
+        }
+
+        a::after {
+            content: "---" attr(target);
+        }
+
+        a::after {
+            content: "---" attr(title);
+        }
+
+        /* attr değeri sadece a tagında değil tüm elementletde kullanılabilir */
+
+        li{
+            counter-increment:sayac;
+        }
+
+        li::before {         
+            content:counter(sayac)".";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>content özelliği</h1>
+    <p>before veya after sahte elementi ile birlikte üretilecek olan içeriği metne eklemek için kullanılır
+        belirler.
+    </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>normal; normal </li>
+        <li>none; değer yok</li>
+        <li>string; içeriğe yeni bir dize ekler</li>
+        <li>open-quote; içeriğe açılış tırnak işareti ekler </li>
+        <li>close-quote; içeriğe kapanış tırnak işareti ekler</li>
+        <li>no-open-quote; içeriğin açılış tırnak işaretini kaldırır</li>
+        <li>no-close-quote; içeriğin kapanış tırnak işaretini kaldırır</li>
+        <li>url; içeriğe medya dosyası ekler</li>
+        <li>attr; içeriğin bulunduğu elementin belirtilecek olan herhangi bir özellik bilgisine erişerek değerini ekler
+        </li>
+        <li>counter; belirtilecek olan herhangi bir elementin sayaç bilgisine erişerek değerini ekler</li>
+        <li>İnitial; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+
+    <h3>Örnek-3 ;</h3>
+    <q class="ornek3">Lorem ipsum dolor sit amet consectetur adipisicing elit. </q>
+
+    <h3>Örnek-4 ;</h3>
+    <div class="ornek4">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+
+    <h3>Örnek-5 ;</h3>
+    <a href="https://www.Google.com" target="top" title="arama motoru">Google</a>
+
+    <h3>örnek-6</h3>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>normal; normal </li>
+        <li>none; değer yok</li>
+        <li>string; içeriğe yeni bir dize ekler</li>
+        <li>open-quote; içeriğe açılış tırnak işareti ekler </li>
+        <li>close-quote; içeriğe kapanış tırnak işareti ekler</li>
+        <li>no-open-quote; içeriğin açılış tırnak işaretini kaldırır</li>
+        <li>no-close-quote; içeriğin kapanış tırnak işaretini kaldırır</li>
+        <li>url; içeriğe medya dosyası ekler</li>
+        <li>attr; içeriğin bulunduğu elementin belirtilecek olan herhangi bir özellik bilgisine erişerek değerini ekler
+        </li>
+        <li>counter; belirtilecek olan herhangi bir elementin sayaç bilgisine erişerek değerini ekler</li>
+        <li>İnitial; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+</body>
+
+</html>

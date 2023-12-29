@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* NONE  */
+        div.ornek1 {
+            background-color: yellow;
+            max-width: none;
+        }
+
+        /* LENGTH  */
+
+        div.ornek2 {
+            background-color: yellow;
+            max-width: 750px;
+        }
+
+
+        div.ornek3 {
+            background-color: red;
+            width: 750px;
+        }
+        p.ornek3{
+            background-color: yellow;
+            max-width: 500px;
+        }
+
+
+        div.ornek4 {
+            background-color: red;
+            width: 500px;
+        }
+        p.ornek4{
+            background-color: yellow;
+            max-width: 750px;
+        }
+
+
+        /* YUZDE  */
+        div.ornek5 {
+            background-color: red;
+            width: 75%;
+        }
+        p.ornek5{
+            background-color: yellow;
+            max-width: 50%;
+        }
+
+
+        div.ornek6 {
+            background-color: red;
+            width: 50%;
+        }
+        p.ornek6{
+            background-color: yellow;
+            max-width: 75%;
+        }
+
+        /* INITIAL(VARSAYILAN)*/
+        div.ornek7 {
+            background-color: red;
+            max-width: 750px;
+        }
+        div.ornek7 {
+            max-width: initial;
+        }
+
+        /* INHERIT(MİRAS)*/
+        div.ornek8 {
+            background-color: red;
+            max-width: 75%;
+        }
+        p.ornek8 {
+            background-color: yellow;
+            max-width: inherit;
+        }
+
+        span {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>max-width özelliği</h1>
+    <p>Html elementinin maksimum genişliğini belirler.</p>
+    <h2>değerler ;</h2>
+    <ol>
+        <li><span>none; </span>Değer yok. Üst elemanının kapladığı alan kadar yer kaplar. Maksimum genişlik değeri verilmemiş anlamına gelir.Kapsayabileceği maksimum genişliği kapsar.</li>
+        <li><span>length;</span>Uzunluk değeri. Sayfa küçülünce küçülür. Maksimum verilen uzunluk değerine kadar göster demek. </li>
+        <li><span>% ;</span> Yüzde değeridir.</li>
+        <li><span>İnitial(varsayılan);</span> Html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li><span>İnherit(miras);</span> Html elementi üst elementinin biçimlendirme değerini alır.</li>
+    </ol>
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">div: max-width;none</div>    
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2">div: max-width;750px</div>    
+
+    <h3>Örnek-3</h3>
+    <div class="ornek3">
+        <p class="ornek3">div: width;750px (kırmızı) > p: max-width;500px (sarı)</p>
+    </div>    
+
+    <h3>Örnek-4</h3>
+    <div class="ornek4">
+        <p class="ornek4">div: width;500px (kırmızı)> p: max-width;750px (sarı)</p>
+    </div>
+
+    <h3>Örnek-5</h3>
+    <div class="ornek5">
+        <p class="ornek5">div: width;75% (kırmızı) > p: max-width;50% (sarı)</p>
+    </div>
+
+    <h3>Örnek-6</h3>
+    <div class="ornek6">
+        <p class="ornek6">div: width;50% (kırmızı) > p: max-width;75% (sarı)</p>
+    </div>
+
+    <h3>Örnek-7 ;</h3>
+    <div class="ornek7">div: max-width;initial(varsayılan)</div>    
+
+    <h3>Örnek-8</h3>
+    <div class="ornek8">
+        <p class="ornek8">div: max-width;75% (kırmızı) > p: max-width;inherit(miras) (sarı)</p>
+    </div>
+    
+</body>
+
+</html>

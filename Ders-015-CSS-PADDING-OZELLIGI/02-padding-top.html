@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ornek1 {
+            width: 200px;
+            height: 100px;
+            border: 1px solid red;
+            padding-top: 25px;
+        }
+
+
+        div.ornek2 {
+            width: 200px;
+            height: 100px;
+            border: 1px solid red;
+            padding-top: 5%;
+        }
+
+        div.ornek3 {
+            width: 200px;
+            height: 100px;
+            border: 1px solid red;
+            padding-top: 25px;
+        }
+
+        div.ornek3 {
+            padding-top: initial;
+        }
+
+
+        div.ornekdis {
+            width: 200px;
+            height: 100px;
+            border: 1px solid red;
+            padding-top: 25px;
+        }
+
+        div.ornekic {
+            width: 100px;
+            height: 50px;
+            border: 1px solid red;
+            padding-top: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>padding-top özelliğinin kullanımı</h1>
+    <p>Html elementinin üst dolgu (iç boşluk) özelliklerini belirler.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>length ; uzunluk değeri ;</li>
+        <li>% ;yüzde değeri ;</li>
+        <li>initial; html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li>inherit ;html elementi üst elementinin biçimlendirme değerini alır.</li>
+    </ul>
+    <h3>Örnek-1 :</h3>
+    <div class="ornek1"> padding-top: 25px;</div>
+    <h3>Örnek-2:</h3>
+    <div class="ornek2"> padding-top:5%;</div>
+    <h3>Örnek-3:</h3>
+    <div class="ornek3"> padding-top:initial;</div>
+    <h3>Örnek-4:</h3>
+    <div class="ornekdis">
+        <div class="ornekic">padding-top:inherit</div>
+    </div>
+</body>
+
+</html>

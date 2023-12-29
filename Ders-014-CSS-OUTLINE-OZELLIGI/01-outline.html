@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div.ornek1 {
+            width: 1000px;
+            height: 50px;
+            outline: 2px solid blue;
+        }
+
+        div.ornek2 {
+            width: 1000px;
+            height: 50px;
+            outline: thin solid blue;
+        }
+
+        div.ornek3 {
+            width: 1000px;
+            height: 50px;
+            outline: medium solid blue;
+        }
+
+        div.ornek4 {
+            width: 1000px;
+            height: 50px;
+            outline: thick solid blue;
+        }
+
+        div.ornek5 {
+            width: 1000px;
+            height: 50px;
+            outline: thick solid blue;
+        }
+
+        div.ornek5 {
+            outline: initial;
+        }
+
+        div.ornek6 {
+            width: 1000px;
+            height: 100px;
+            outline: thick solid blue;
+        }
+
+        p.ornek6 {
+            width: 800px;
+            height: 35px;
+            outline: inherit;
+        }
+
+        div.ornek7 {
+            width: 1000px;
+            height: 50px;
+            outline: none;
+        }
+
+        div.ornek8 {
+            width: 1000px;
+            height: 50px;
+            outline: hidden;
+        }
+
+        div.ornek9 {
+            width: 1000px;
+            height: 50px;
+            outline: 8px solid blue;
+        }
+
+        div.ornek10 {
+            width: 1000px;
+            height: 50px;
+            outline: 8px double blue;
+        }
+
+        div.ornek11 {
+            width: 1000px;
+            height: 50px;
+            outline: 8px dotted blue;
+        }
+
+        div.ornek12 {
+            width: 1000px;
+            height: 50px;
+            outline: 8px dashed blue;
+        }
+
+        div.ornek13 {
+            width: 1000px;
+            height: 50px;
+            outline: 8px groove blue;
+        }
+
+        div.ornek14 {
+            width: 1000px;
+            height: 50px;
+            outline: 8px ridge blue;
+        }
+
+        div.ornek15 {
+            width: 1000px;
+            height: 50px;
+            outline: 8px inset blue;
+        }
+
+        div.ornek16 {
+            width: 1000px;
+            height: 50px;
+            outline: 8px outset blue;
+        }
+
+        div.ornek17 {
+            width: 1000px;
+            height: 50px;
+            outline: 8px outset rgba(0, 0, 255, 0.5);
+        }
+
+        div.ornek18 {
+            width: 1000px;
+            height: 50px;
+            background-color: blue;
+        }
+
+        p.ornek18 {
+            width: 1000px;
+            height: 50px;
+            outline: 20px solid invert;
+        }
+
+        div.ornek19 {
+            width: 1000px;
+            height: 50px;
+            border: 4px solid blue;
+            outline: 4px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS'de outline özelliği</h1>
+    <p>Html elementinin anahat /dış çizgi özelliliklerini belirler. Border özelliğine benzer ama aynı değildir. border
+        sayfa akışına etki eder outline etmez. Border her kenar için farklı olabilir ama outline bütün kenarlar için
+        aynı verilebilir. Outline bir kenarlık değildir. Kenarlığın dışındaki anahat çizgisidir. Her kenar için ayrı ayrı
+        değerler verilemez.</p>
+    <h2>parametreler ;</h2>
+    <h3>1 - length ; </h3>
+    <ul>
+        <li>length ; uzunluk</li>
+        <li>thin ; ince</li>
+        <li>medium ; orta</li>
+        <li>thick ; kalın</li>
+        <li>initial ; html elementi varsayılan değerine döner.</li>
+        <li>inherit ; html elementi üst elementinin değerini alır.</li>
+    </ul>
+    <h3>2 - style </h3>
+    <ul>
+        <li>none ; değer yok</li>
+        <li>hidden ; gizli</li>
+        <li>solid ; düz çizgi</li>
+        <li>double ; çift çizgi</li>
+        <li>dashed ; keşikli çizgi</li>
+        <li>dotted ;noktalı çizgi</li>
+        <li>groove ; içe dönük gölgeli çizgi</li>
+        <li>ridge ; dışa dönük gölgeli çizgi</li>
+        <li>inset ; içe dönük derin çizgi</li>
+        <li>outset ; dışa dönük derin çizgi</li>
+    </ul>
+    <h3>3 - color</h3>
+    <ul>
+        <li>color ; renk</li>
+        <li>invert ;ters çevir</li>
+    </ul>
+
+    <h3>Örnek-1</h3>
+    <div class="ornek1"> outline: 2px solid blue;</div>
+
+    <h3>Örnek-2</h3>
+    <div class="ornek2"> outline: thin solid blue;</div>
+
+    <h3>Örnek-3</h3>
+    <div class="ornek3"> outline: medium solid blue;</div>
+
+    <h3>Örnek-4</h3>
+    <div class="ornek4"> outline: thick solid blue;</div>
+
+    <h3>Örnek-5</h3>
+    <div class="ornek5"> outline: initial; (varsayılan)</div>
+
+    <h3>Örnek-6</h3>
+    <div class="ornek6"> div: outline: 2px thick blue;
+        <p class="ornek6"> p: outline: inherit; (miras)</p>
+    </div>
+
+    <h3>Örnek-7</h3>
+    <div class="ornek7"> outline:none (değeri yok eder)</div>
+
+    <h3>Örnek-8</h3>
+    <div class="ornek8"> outline:hidden (değeri gizler)</div>
+
+    <h3>Örnek-9</h3>
+    <div class="ornek9"> outline:8px solid blue;</div>
+
+    <h3>Örnek-10</h3>
+    <div class="ornek10"> outline:8px double blue;</div>
+
+    <h3>Örnek-11</h3>
+    <div class="ornek11"> outline:8px dodtet blue;</div>
+
+    <h3>Örnek-12</h3>
+    <div class="ornek12"> outline:8px dashed blue;</div>
+
+    <h3>Örnek-13</h3>
+    <div class="ornek13"> outline:8px groove blue;</div>
+
+    <h3>Örnek-14</h3>
+    <div class="ornek14"> outline:8px ridge blue;</div>
+
+    <h3>Örnek-15</h3>
+    <div class="ornek15"> outline:8px inset blue;</div>
+
+    <h3>Örnek-16</h3>
+    <div class="ornek16"> outline:8x outset blue;</div>
+
+    <h3>Örnek-17</h3>
+    <div class="ornek17"> outline: 8px outset rgba(0,0,255,0.5);</div>
+
+    <h3>Örnek-18</h3>
+    <div class="ornek18"> background-color: blue;</div>
+    <p class="ornek18"> outline: 20px solid invert;(tutarsız tarayıcılarda çalışır)</p>
+
+    <h3>Örnek-19</h3>
+    <div class="ornek19"> border: 4px solid blue; outline: 4px solid red; </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ornek1 {
+            font-size: 50px;
+            text-shadow: none;
+        }
+
+        div.ornek2 {
+            font-size: 50px;
+            text-shadow: 0px 0px 4px red;
+            /*yatay gölge - dikey gölge - bulanıklık- renk*/
+        }
+
+        div.ornek3 {
+            font-size: 50px;
+            text-shadow: 5px 0px 4px red;
+        }
+
+        div.ornek4 {
+            font-size: 50px;
+            text-shadow: 0px 5px 4px red;
+        }
+
+        div.ornek5 {
+            font-size: 50px;
+            text-shadow: 5px 5px 4px red;
+        }
+
+        div.ornek6 {
+            font-size: 50px;
+            text-shadow: 5px -5px 4px red;
+        }
+
+
+        div.ornek7 {
+            font-size: 50px;
+            text-shadow: -5px -5px 4px red;
+        }
+
+        div.ornek8 {
+            font-size: 50px;
+            text-shadow: -5px -5px 0px gray;
+        }
+
+        div.ornek9 {
+            font-size: 50px;
+            text-shadow: -5px -5px 0px rgba(204, 204, 204, 0.5);
+        }
+
+        div.ornek10 {
+            font-size: 50px;
+            text-shadow: 0px 0px 4px red, 0px 0px 4px blue;
+        }
+
+        div.ornek11 {
+            font-size: 50px;
+            text-shadow: 0px 0px 2px yellow, 0px 0px 10px red;
+        }
+
+        div.ornek12 {
+            width: 700px;
+            background-color: black;
+            color: white;
+            font-size: 50px;
+            text-shadow: 0px 0px 4px #ccc, 0px -5px 4px #ffff33, 2px -10px 6px #ffdd33, -2px -15px 10px #ff8800, 2px -20px 20px #ff2200;
+        }
+
+        div.ornek13 {
+            width: 700px;
+            background-color: black;
+            color: #f6f996;
+            font-size: 50px;
+            text-shadow: 0px 0px 4px #ccc, 0px -5px 4px #ffff33, 2px -10px 6px #ffdd33, -2px -15px 10px #ff8800, 2px -20px 20px #ff2200;
+        }
+
+        div.ornek14 {
+        width: 500px;
+            background-image: url(../img/alev.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: white;
+            font-size: 50px;
+            text-shadow: 0px 0px 4px #ccc, 0px -5px 4px #ffff33, 2px -10px 6px #ffdd33, -2px -15px 10px #ff8800, 2px -20px 20px #ff2200;
+        }
+
+        div.ornek15 {
+            width: 490px;
+            background-image: url(../img/alev.jpeg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            color: white;
+            font-size: 50px;
+            text-shadow: 0px 0px 4px #ccc, 0px -5px 4px #ffff33, 2px -10px 6px #ffdd33, -2px -15px 10px #ff8800, 2px -20px 20px #ff2200;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>text-shadow</h1>
+    <p>Metnin gölgelendirme özelliklerini belirler.</p>
+    <h2>parametreler;</h2>
+    <ul>
+        <li>horizantal-shadow; yatay gölge</li>
+        <li>vertical-shadow; dikey gölge</li>
+        <li>blur-radius; bulanıklık yarıçapı</li>
+        <li>color; renk</li>
+    </ul>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>none; değer yok</li>
+        <li>length; uzunluk değeri</li>
+        <li>İnitial; html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li>İnherit; html elementi üst elementinin biçimlendirme değerini alır. </li>
+        <li>blur-radius; bulanıklık yarıçapı depğeri</li>
+        <li>color ;renk</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1"> text-shadow: none;</div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2"> text-shadow: 0px 0px 4px red;</div>
+
+    <h3>Örnek-3 ;</h3>
+    <div class="ornek3"> text-shadow: 5px 0px 4px red; </div>
+
+    <h3>Örnek-4 ;</h3>
+    <div class="ornek4"> text-shadow: 0px 5px 4px red; </div>
+
+    <h3>Örnek-5 ;</h3>
+    <div class="ornek5"> text-shadow: 5px 5px 4px red;</div>
+
+    <h3>Örnek-6 ;</h3>
+    <div class="ornek6"> text-shadow: 5px -5px 4px red;</div>
+
+    <h3>Örnek-7 ;</h3>
+    <div class="ornek7"> text-shadow: -5px -5px 4px red;</div>
+
+    <h3>Örnek-8 ;</h3>
+    <div class="ornek8"> text-shadow: -5px -5px 0px gray;</div>
+
+    <h3>Örnek-9 ;</h3>
+    <div class="ornek9"> text-shadow: -5px -5px 0px rgba(204, 204, 204, 0.5);</div>
+
+    <h3>Örnek-10 ;</h3>
+    <div class="ornek10"> text-shadow: 0px 0px 4px red, 0px 0px 4px blue;</div>
+
+    <h3>Örnek-11;</h3>
+    <div class="ornek11"> text-shadow: 0px 0px 2px yellow, 0px 0px 10px red;</div>
+
+    <h3>Örnek-12;</h3>
+    <div class="ornek12"> text-shadow: 0px 0px 4px #ccc, <br>0px -5px 4px #ffff33, <br>2px -10px 6px #ffdd33, <br> -2px
+        -15px 10px #ff8800, <br> 2px -20px 20px #ff2200; </div>
+
+    <h3>Örnek-13;</h3>
+    <div class="ornek13"> text-shadow: 0px 0px 4px #ccc, <br>0px -5px 4px #ffff33, <br>2px -10px 6px #ffdd33, <br> -2px
+        -15px 10px #ff8800, <br> 2px -20px 20px #ff2200; </div>
+
+    <h3>Örnek-14;</h3>
+    <div class="ornek14"> text-shadow: 0px 0px 4px #ccc, <br>0px -5px 4px #ffff33, <br>2px -10px 6px #ffdd33, <br> -2px
+        -15px 10px #ff8800, <br> 2px -20px 20px #ff2200; </div>
+
+    <h3>Örnek-15;</h3>
+    <div class="ornek15">  GALATASARAY -1905 </div>
+
+
+
+
+
+</body>
+
+</html>

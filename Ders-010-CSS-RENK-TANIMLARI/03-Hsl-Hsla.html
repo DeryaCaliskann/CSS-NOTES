@@ -5,10 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        h1 {
+            color: hsl(0, 100%, 50%)
+        }
+    </style>
 </head>
 
 <body>
-    <h2>HSL VE HSLA</h2>
+    <h1>hsl ve hsla</h1>
     <p>İngilizce olarak hue (renk özü), saturation (doygunluk), lightness (açıklık) kelimelerinin baş harflerinden
         adını almış olan bir renk uzayıdır. Doğada ki tüm renkleri tanımlayabilir.</p>
     <p>Renk tanımlaması bu üç referans ile belirtilir. Aslında hsl bir renk kontrol ve düzeltme metodu olarak bilinir.
@@ -23,14 +29,19 @@
         oranını belirler. Yüzdesel değer alır. Bu değer %0 ile %100 arasındaki kombinasyon değeridir.Yüzde değeri
         düştükçe renk tonu değeri koyulaşır. Değer yükseldikçe renk tonu değeri açıklaşır. </p>
     <p>Bu renkler Css kodları içerisinde yazılarak kullanılabilir.</p>
-    <h3>Örnek;</h3>
     <p>hsl (0,%0,%0) siyah ,hsl (360,100%,100%) beyaz ,hsl (0,100%,50%) kırmızı vs</p>
-    <p>Bir de hsl renk hsl renk tanımlama işleminde alpha (alfa) kanalı mevcuttur. Alpha şeffalık/saydamlık ölçüsü
+    <p>Bir de hsl renk tanımlama işleminde alpha (alfa) kanalı mevcuttur. Alpha şeffalık/saydamlık ölçüsü
         özelliği taşır. Hsla olarak kullanılır. Ölçü değer 0.0 ile 1.0 arasında yazılır.</p>
-    <h3>Örnek;</h3>
     <p>hsla (0,0%,0%,0.5) siyah ve %50 saydam </p>
     <p>hsla (360,100%,100%,0.7) beyaz ve %30 saydam</p>
     <p>hsla (0,100%,50%,1.0) kırmızı ve saydam değil</p>
+
+    <h3>örnek ; </h3>
+    <p>
+        h1 { <br>
+        color:hsl(0, 100%, 50%) <br>
+        } <br>
+    </p>
 
 
 

@@ -6,30 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        ::first-letter {
-            font-size: 30px;
-        }
-
-        h1#baslik::first-letter {
-            color: blue;
-        }
-
-        h2[name="altbaslik"]::first-letter {
-            color: green;
-        }
-
-        p::first-letter {
+        h1::first-letter {
             color: red;
         }
     </style>
 </head>
 
 <body>
-    <h1 id="baslik">CSS SEÇİCİLERİNDE PSEUDO ELEMENTS</h1>
-    <p>CSS seçicilerinde kullanılan beş farklı pseudo element türü bulunmaktadır.Bu sayede istenilen bir veya daha fazla
+
+    <p>Tanım : CSS seçicilerinde kullanılan beş farklı pseudo element türü bulunmaktadır.Bu sayede istenilen bir veya
+        daha fazla
         elementin üzerinde biçimlendirme işlemleri yapılabilir.</p>
-    <h2 name="altbaslik">1-FIRST-LETTER PSEUDO ELEMENT</h2>
+    <h1>1-first-letter pseudo element</h1>
     <p>Belirtilen Html elementininin ilk karakterine stil tanımlar.</p>
+
+    <h3>Örnek ;</h3>
+    <p>        
+        h1::first-letter { <br>
+        color: red; <br>
+        } <br>
+    </p>
 </body>
 
 </html>

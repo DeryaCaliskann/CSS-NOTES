@@ -13,35 +13,51 @@
         }
 
         input:focus {
-            background-color: blueviolet;
+            background-color: green;
         }
 
         div:focus {
-            background-color: cadetblue;
+            background-color:yellow;
         }
     </style>
 </head>
 
 <body>
-    <h2>FOCUS PSEUDO CLASS (SAHTE SINIFI)</h2>
-    <p>Belitilen Html elementine odaklanıldığında (tıklandığında) stil tanımlar. Belirtilen Html elementinin odağından çıkıldığında stil
+    <h1>focus pseudo class</h1>
+    <p>Belitilen Html elementine odaklanıldığında (tıklandığında) stil tanımlar. Belirtilen Html elementinin odağından
+        çıkıldığında stil
         normale döner.</p>
     <h3>Örnek-1</h3>
-    <a href="https://www.google.com">GOOGLE</a>   
+    <p>
+    a:focus { <br>
+    color: red; <br>
+    text-decoration: none; <br>
+    } <br>
+    </p>
+    <br>
+    <a href="https://www.google.com">GOOGLE</a>
 
     <h3>Örnek-2</h3>
+    input:focus { <br>
+    background-color: green; <br>
+    } <br>
+    <br>
     <input type="text"><br>
     <input type="text"><br>
     <input type="text"><br>
-    <input type="text"><br>    
+    <input type="text"><br>
 
     <h3>Örnek-3</h3>
+    div:focus { <br>
+    background-color: yellow; <br>
+    } <br>
+    <br>
     <div tabindex="1"> Html'in tabindex özelliğini</div>
     <div tabindex="2">kullanarak böyle bir kullanım </div>
     <div tabindex="3"> şekli sağlayabiliriz.</div>
     <div tabindex="4">div etiketinde focus özelliğini </div>
     <div tabindex="5">tab tuşuna basarak bu şekilde kullanabiliriz.</div>
-    
+
 </body>
 
 </html>

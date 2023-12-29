@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ornek1::after {
+            content: "(class degeri : " attr(class)")";
+        }
+
+        div.ornek2::after {
+            content: "(contenditrable degeri : " attr(contenditrable)")";
+        }
+
+        div.ornek3::after {
+            content: "(data degeri : " attr(data-ornek3)")";
+        }
+
+        div.ornek4::after {
+            content: "( yön degeri : " attr(dir)")";
+        }
+
+        a::after {
+            content: "( href degeri : " attr(href)")";
+        }
+
+        div.ornek6::after {
+            content: "( dersin adı: " attr(css-ogreniyoruz)")";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>attr () fonksiyonu</h1>
+    <p>Html elementinin belirtilecek olan herhangi bir özellik bilgisine erişmek için kullanılır. </p>
+
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1"> content: "(class degeri : " attr(class)")";<br><br>Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Adipisci
+        doloremque laborum voluptatibus reprehenderit quibusdam similique quae magni necessitatibus ipsam, qui sapiente
+        mollitia, quis sit corporis molestias id tenetur, voluptate aliquam omnis saepe autem odit cum!
+    </div>
+
+    <h3>Örnek-2;</h3>
+    <div class="ornek2" contenteditable="true"><br> content: "(contenditrable degeri : "
+        attr(contenditrable)")";<br>Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Adipisci
+        doloremque laborum voluptatibus reprehenderit quibusdam similique quae magni necessitatibus ipsam, qui sapiente
+        mollitia, quis sit corporis molestias id tenetur, voluptate aliquam omnis saepe autem odit cum!
+    </div>
+
+    <h3>Örnek-3;</h3>
+    <div class="ornek3" data-ornek3="ornek3"><br> content:"(data degeri : " attr(data-ornek3)")";<br>Lorem ipsum dolor
+        sit amet consectetur
+        adipisicing elit. Adipisci
+        doloremque laborum voluptatibus reprehenderit quibusdam similique quae magni necessitatibus ipsam, qui sapiente
+        mollitia, quis sit corporis molestias id tenetur, voluptate aliquam omnis saepe autem odit cum!
+    </div>
+
+    <h3>Örnek-4;</h3>
+    <div class="ornek4" dir="rtl"><br> content: "(yön degeri : " attr(dir)")";<br>Lorem ipsum dolor
+        sit amet consectetur
+        adipisicing elit. Adipisci
+        doloremque laborum voluptatibus reprehenderit quibusdam similique quae magni necessitatibus ipsam, qui sapiente
+        mollitia, quis sit corporis molestias id tenetur, voluptate aliquam omnis saepe autem odit cum!
+    </div>
+
+    <h3>Örnek-5 ;</h3>
+    <a href="https://www.Google.com">Google</a>
+
+    <h3>Örnek-6;</h3>
+    <div class="ornek6" css-ogreniyoruz="css de attr() fonksiyonu kullanımı"><br> content: "( dersin adı: "
+        attr(css-ogreniyoruz)")"; <br>
+        sit amet consectetur
+        adipisicing elit. Adipisci
+        doloremque laborum voluptatibus reprehenderit quibusdam similique quae magni necessitatibus ipsam, qui sapiente
+        mollitia, quis sit corporis molestias id tenetur, voluptate aliquam omnis saepe autem odit cum!
+    </div>
+
+
+</body>
+
+</html>

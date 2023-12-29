@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>       
+
+        div.ornek1 {
+            width: 500px;
+            height: 250px;
+            border: 2px solid black;
+            background: -webkit- repeating-radial-gradient(yellow 0%, blue 25%);
+            background: -moz- repeating-radial-gradient(yellow 0%, blue 25%);
+            background: -o- repeating-radial-gradient(yellow 0%, blue 25%);
+            background: -ms- repeating-radial-gradient(yellow 0%, blue 25%);
+            background: repeating-radial-gradient(yellow 0%, blue 25%);
+        }
+
+        div.ornek2 {
+            width: 500px;
+            height: 250px;
+            border: 2px solid black;
+            background: -webkit- repeating-radial-gradient(circle, yellow 10px, blue, red 50px);
+            background: -moz- repeating-radial-gradient(circle, yellow 10px, blue, red 50px);
+            background: -o- repeating-radial-gradient(circle, yellow 10px, blue, red 50px);
+            background: -ms- repeating-radial-gradient(circle, yellow 10px, blue, red 50px);
+            background: repeating-radial-gradient(circle, yellow 10px, blue, red 50px);
+        }
+
+        div.ornek3 {
+            width: 500px;
+            height: 250px;
+            border: 2px solid black;
+            background: -webkit- repeating-radial-gradient(circle, yellow 10%, blue, red 50%);
+            background: -moz- repeating-radial-gradient(circle, yellow 10%, blue, red 50%);
+            background: -o- repeating-radial-gradient(circle, yellow 10%, blue, red 50%);
+            background: -ms- repeating-radial-gradient(circle, yellow 10%, blue, red 50%);
+            background: repeating-radial-gradient(circle, yellow 10%, blue, red 50%);
+        }
+
+        div.ornek4 {
+            width: 500px;
+            height: 250px;
+            border: 2px solid black;
+            background: -webkit- repeating-radial-gradient(circle, yellow 10px, yellow 25px, blue 25px, blue 50px, red 50px, red 100px);
+            background: -moz- repeating-radial-gradient(circle, yellow 10px, yellow 25px, blue 25px, blue 50px, red 50px, red 100px);
+            background: -o- repeating-radial-gradient(circle, yellow 10px, yellow 25px, blue 25px, blue 50px, red 50px, red 100px);
+            background: -ms- repeating-radial-gradient(circle, yellow 10px, yellow 25px, blue 25px, blue 50px, red 50px, red 100px);
+            background: repeating-radial-gradient(circle, yellow 10px, yellow 25px, blue 25px, blue 50px, red 50px, red 100px);
+        }
+
+        div.ornek5 {
+            width: 500px;
+            height: 250px;
+            border: 2px solid black;
+            background: -webkit- repeating-radial-gradient(circle at 0% 50%, yellow 10px, yellow 25px, blue 25px, blue 50px, red 50px, red 100px);
+            background: -moz- repeating-radial-gradient(circle at 0% 50%, yellow 10px, yellow 25px, blue 25px, blue 50px, red 50px, red 100px);
+            background: -o- repeating-radial-gradient(circle at 0% 50%, yellow 10px, yellow 25px, blue 25px, blue 50px, red 50px, red 100px);
+            background: -ms- repeating-radial-gradient(circle at 0% 50%, yellow 10px, yellow 25px, blue 25px, blue 50px, red 50px, red 100px);
+            background: repeating-radial-gradient(circle at 0% 50%, yellow 10px, yellow 25px, blue 25px, blue 50px, red 50px, red 100px);
+        }
+
+        div.ornek6 {
+            width: 500px;
+            height: 250px;
+            border: 2px solid black;
+            background: -webkit- repeating-radial-gradient(circle at 50% 0%, white 0px, white 20px, black 20px, black 80px);
+            background: -moz- repeating-radial-gradient(circle at 50% 0%, white 0px, white 20px, black 20px, black 80px);
+            background: -o- repeating-radial-gradient(circle at 50% 0%, white 0px, white 20px, black 20px, black 80px);
+            background: -ms- repeating-radial-gradient(circle at 50% 0%, white 0px, white 20px, black 20px, black 80px);
+            background: repeating-radial-gradient(circle at 50% 0%, white 0px, white 20px, black 20px, black 80px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>background: repeating-radial-gradient () fonksiyonu </h1>
+    <p>Html elementinin dairesel arkaplan renk geçişinin tekarlanma özelliklerini belirler. Her tarayıcıda doğru
+        çalışması için
+        prefix'ler eklenmelidir.</p>
+    <h2>parametreler ;</h2>
+    <ul>
+        <li>Shape; şekil </li>
+        <ul>
+            <li>ellipse; elips</li>
+            <li>circle; daire</li>
+        </ul>
+        <li>Size ; boyut</li>
+        <ul>
+            <li>farthest-corner; en uzak köşe</li>
+            <li>closest-corner; en yakın köşe</li>
+            <li>farthest-side; en uzak taraf</li>
+            <li>closest-side; en yakın taraf</li>
+        </ul>
+        <li>Direction; yön</li>
+        <ul>
+            <li>Başlangıç noktası (açı - derece)</li>
+        </ul>
+        <li>Color; renk</li>
+        <ul>
+            <li>başlangıç rengin - bitiş rengi</li>
+        </ul>
+        <li>Dilimleme</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1"> background: repeating-radial-gradient( yellow 0%, blue 25%); </div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2"> background: repeating-radial-gradient(circle, yellow 10px, blue, red 50px)</div>
+
+    <h3>Örnek-3 ;</h3>
+    <div class="ornek3"> background: repeating-radial-gradient(circle, yellow 10%, blue, red 50%);</div>
+
+    <h3>Örnek-4 ;</h3>
+    <div class="ornek4">background: repeating-radial-gradient(circle, yellow 10px, yellow 25px,blue 25px, blue 50px, red
+        50px, red 100px);</div>
+
+    <h3>Örnek-5 ;</h3>
+    <div class="ornek5">background: repeating-radial-gradient(circle at 0% 50%, yellow 10px, yellow 25px,blue 25px, blue
+        50px, red 50px, red 100px);</div>
+
+    <h3>Örnek-6 ;</h3>
+    <div class="ornek6"> background: repeating-radial-gradient(circle at 50% 0%, white 20px, black 20px, black 80px);</div>
+
+</body>
+
+</html>

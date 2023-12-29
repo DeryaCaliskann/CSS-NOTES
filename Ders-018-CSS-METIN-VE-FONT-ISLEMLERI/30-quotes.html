@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        q.ornek3 {
+            quotes: none;
+        }
+
+        q.ornek4 {
+            quotes: "x" "x";
+        }
+
+        q.ornek5 {
+            quotes: "x" "x" "q" "q";
+        }
+
+        q.ornek6 {
+            quotes: "**" "***";
+        }
+
+        q.ornek7 {
+            quotes: "\05D0" "\05D0";
+        }
+
+        q.ornek8 {
+            quotes: "\05D0" "\05D0" "\058D" "\058D";
+        }
+
+        /* unicode-table.com  */
+    </style>
+</head>
+
+<body>
+    <h1>quotes ozelliği</h1>
+    <p>html'in q tagı için tırnak işareti türü değerini belirler </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>none; değer yok</li>
+        <li>string; rakam , simge vs.</li>
+        <li>İnitial; html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li>inherit;html elementi üst elementinin biçimlendirme değerini alır.</li>
+    </ul>
+
+
+    <h3>Örnek-1 ;</h3>
+    <q class="ornek1">Lorem ipsum dolor sit amet consectetur adipisicing elit. </q>
+
+    <h3>Örnek-2 ;</h3>
+    <q class="ornek2">Lorem ipsum dolor sit <q>Lorem, ipsum dolor.</q> amet consectetur adipisicing elit. </q>
+
+    <h3>Örnek-3 ;</h3>
+    quotes: none; <br>
+    <q class="ornek3">Lorem ipsum dolor sit amet consectetur adipisicing elit. </q>
+
+    <h3>Örnek-4 ;</h3>
+    quotes:"x" "x"; <br>
+    <q class="ornek4">Lorem ipsum dolor sit amet consectetur adipisicing elit. </q>
+
+    <h3>Örnek-5 ;</h3>
+    quotes:"x" "x" "q" "q";<br>
+    <q class="ornek5">Lorem ipsum dolor sit <q>Lorem, ipsum dolor.</q> amet consectetur adipisicing elit. </q>
+
+    <h3>Örnek-6;</h3>
+    quotes: "**" "***"; <br>
+    <q class="ornek6">Lorem ipsum dolor sit amet consectetur adipisicing elit. </q>
+
+    <h3>Örnek-7;</h3>
+    quotes: "\05D0" "\05D0"; <br>
+    <q class="ornek7">Lorem ipsum dolor sit amet consectetur adipisicing elit. </q>
+
+    <h3>Örnek-8 ;</h3>
+    quotes: "\05D0" "\05D0" "\058D" "\058D" ;<br>
+    <q class="ornek8">Lorem ipsum dolor sit <q>Lorem, ipsum dolor.</q> amet consectetur adipisicing elit. </q>
+
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ornek1 {
+            width: 50%;
+            height: 50px;
+            border: 10px solid red;
+            -webkit-border-image: url(../img/desen1.jpg) 30 round;
+            -moz-border-image: url(../img/desen1.jpg) 30 round;
+            -o-border-image: url(../img/desen1.jpg) 30 round;
+            -ms-border-image: url(../img/desen1.jpg) 30 round;
+            border-image: url(../img/desen1.jpg) 30 round;
+            border-image-outset: 10px;
+        }
+
+        div.ornek2 {
+            width: 50%;
+            height: 50px;
+            border: 10px solid red;
+            -webkit-border-image: url(../img/desen1.jpg) 30 round;
+            -moz-border-image: url(../img/desen1.jpg) 30 round;
+            -o-border-image: url(../img/desen1.jpg) 30 round;
+            -ms-border-image: url(../img/desen1.jpg) 30 round;
+            border-image: url(../img/desen1.jpg) 30 round;
+            border-image-outset: 10px 200px 50px 20px;
+        }
+
+        div.ornek3 {
+            width: 50%;
+            height: 50px;
+            border: 10px solid red;
+            -webkit-border-image: url(../img/desen1.jpg) 30 round;
+            -moz-border-image: url(../img/desen1.jpg) 30 round;
+            -o-border-image: url(../img/desen1.jpg) 30 round;
+            -ms-border-image: url(../img/desen1.jpg) 30 round;
+            border-image: url(../img/desen1.jpg) 30 round;
+            border-image-outset: 20px 10px 30px;
+        }
+
+        div.ornek4 {
+            width: 50%;
+            height: 50px;
+            border: 10px solid red;
+            -webkit-border-image: url(../img/desen1.jpg) 30 round;
+            -moz-border-image: url(../img/desen1.jpg) 30 round;
+            -o-border-image: url(../img/desen1.jpg) 30 round;
+            -ms-border-image: url(../img/desen1.jpg) 30 round;
+            border-image: url(../img/desen1.jpg) 30 round;
+            border-image-outset: 20px 10px;
+        }
+
+        div.ornek5 {
+            width: 50%;
+            height: 50px;
+            border: 10px solid red;
+            -webkit-border-image: url(../img/desen1.jpg) 30 round;
+            -moz-border-image: url(../img/desen1.jpg) 30 round;
+            -o-border-image: url(../img/desen1.jpg) 30 round;
+            -ms-border-image: url(../img/desen1.jpg) 30 round;
+            border-image: url(../img/desen1.jpg) 30 round;
+            border-image-outset: 20px 10px;
+        }
+
+        div.ornek5 {
+            border-image-outset: initial;            
+        }
+
+        div.ornek6 {
+            width: 50%;
+            height: 70px;
+            border: 10px solid red;
+            -webkit-border-image: url(../img/desen1.jpg) 30 round;
+            -moz-border-image: url(../img/desen1.jpg) 30 round;
+            -o-border-image: url(../img/desen1.jpg) 30 round;
+            -ms-border-image: url(../img/desen1.jpg) 30 round;
+            border-image: url(../img/desen1.jpg) 30 round;
+            border-image-outset:3px;
+        }
+
+        p.ornek6 {
+            width: 50%;
+            height: 50px;
+            border: 10px solid red;
+            -webkit-border-image: url(../img/desen1.jpg) 30 round;
+            -moz-border-image: url(../img/desen1.jpg) 30 round;
+            -o-border-image: url(../img/desen1.jpg) 30 round;
+            -ms-border-image: url(../img/desen1.jpg) 30 round;
+            border-image: url(../img/desen1.jpg) 30 round;
+            border-image-outset: inherit;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>border-image-outset</h1>
+    <p>Html elementinin kenarlık sınırından taşma özelliklerini belirler.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>length ; uzunluk</li>
+        <li>initial ; html elementi varsayılan değere döner.</li>
+        <li>inherit ;html elementi üst elementinin biçimlendirme değerini alır.</li>
+    </ul>
+
+    <h3>Örnek-1 :</h3>
+    <div class="ornek1"> border-image-outset:10px;</div>
+    <br>
+
+
+    <h3>Örnek-2 :</h3>
+    <div class="ornek2"> border-image-outset: 10px 200px 50px 20px;</div>
+    <br>
+    <br>
+    <br>
+
+    <h3>Örnek-3 :</h3>
+    <div class="ornek3"> border-image-outset: 20px 10px 30px;</div>
+    <br>
+    <br>
+    <br>
+
+    <h3>Örnek-4 :</h3>
+    <div class="ornek4"> border-image-outset: 20px 10px;</div>
+    <br>
+    <br>
+
+    <h3>Örnek-5 :</h3>
+    <div class="ornek5"> border-image-repeat:initial; </div>
+    <br>
+    <br>
+
+    <h3>Örnek-6 :</h3>
+    <div class="ornek6"> border-image-outset: 3px;
+        <p class="ornek6"> border-image-outset: inherit;</p>
+    </div>
+</body>
+
+</html>

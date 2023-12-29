@@ -1,29 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    ::after{
-    font-size: 25px;
-    }
-    p.deneme::after {
-    content: " tanımlar.";
-    color: green;
-    }
-    p#ornek::after{
-    content: "\2600 \2601 \2602 \2603  ";
-    }
-    button::after{
-    content: "\2705";
-    }
+        ::after {
+            font-size: 25px;
+        }
+
+        p.deneme::after {
+            content: " tanımlar.";
+            color: green;
+        }
+
+        p#ornek::after {
+            content: "\2600 \2601 \2602 \2603  ";
+        }
+
+        button::after {
+            content: "\2705";
+        }
     </style>
 </head>
+
 <body>
-    <h2>4-AFTER PSEUDO ELEMENT</h2>
-    <p class="deneme">Html elementinin sonrasına içerik atayarak stil  </p>
+    <h1>4-after pseudo element</h1>
+    <p class="deneme">Html elementinin sonrasına içerik atayarak stil </p>
     <p id="ornek">Not:Html Unicode sembollerinide after sahte elementiyle ekleyebiliriz.</p>
-    <p ><button>Buton</button> tag'larınada after sahte elementini kullanarak içerik atayabiliriz.</p>
+    <p><button>Buton</button> tag'larınada after sahte elementini kullanarak içerik atayabiliriz.</p>
+    <h3>Örnek ;</h3>
+    <p>
+        ::after{ <br>
+        font-size: 25px; <br>
+        } <br>
+        <br>
+        p.deneme::after { <br>
+        content: " tanımlar."; <br>
+        color: green; <br>
+        } <br>
+        <br>
+        p#ornek::after{ <br>
+        content: "\2600 \2601 \2602 \2603 "; <br>
+        } <br>
+        <br>
+        button::after{ <br>
+        content: "\2705";<br>
+        }
+    </p>
 </body>
+
 </html>

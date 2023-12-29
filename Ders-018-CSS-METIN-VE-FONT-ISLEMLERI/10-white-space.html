@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ornek1 {
+            width: 500px;
+            height: auto;
+            border: 2px solid red;
+            white-space: normal;
+        }
+
+        div.ornek2 {
+            width: 500px;
+            height: auto;
+            border: 2px solid red;
+            white-space:nowrap;
+        }
+
+        div.ornek3 {
+            width: 500px;
+            height: auto;
+            border: 2px solid red;
+            white-space:pre;
+        }
+
+        div.ornek4 {
+            width: 500px;
+            height: auto;
+            border: 2px solid red;
+            white-space:pre-line;
+        }
+
+        div.ornek5 {
+            width: 500px;
+            height: auto;
+            border: 2px solid red;
+            white-space:pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>white-space </h1>
+    <p>Html elementi içerisinde bulunan metin boşluk değerleri için davranış özelliklerini belirler. </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>normal; satır boşluk dizeleri ile birlikte metin içi boşluk dizeleri de tek boşluk olur.</li>
+        <li>nowrap; satır boşluk dizeleri ile birlikte metin içi boşluk dizeleri de tek boşluk olur ve satır sonları hiç
+            bir zaman alt satıra geçmez. Taşarak devam eder. </li>
+        <li>pre; satır boşluk dizeleri ile birlikte metin içi boşluk dizeleri de korunur ve satır sonları hiçbir zaman
+            alt satıra geçmez. Taşarak devam eder. </li>
+        <li>pre-line; satır boşluk dizeleri korunur ve metin içi boşluk dizeleri de tek boşluk olur.</li>
+        <li>pre-wrap; satır boşluk dizeleri ile birlikte metin içi boşluk dizeleri korunur.</li>
+        <li>İnitial; html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li>İnherit; html elementi üst elementinin biçimlendirme değerini alır. </li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1"> white-space: normal;<br><br>
+    Lorem ipsum dolor sit amet consectetur,
+    
+    
+                                               adipisicing elit. 
+     
+     
+     
+     Aliquam veritatis eligendi                                     possimus mollitia impedit itaque.
+
+      
+    </div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2"> white-space: nowrap;<br><br>
+
+       Lorem ipsum dolor sit amet consectetur,
+    
+    
+                                               adipisicing elit. 
+     
+     
+     
+     Aliquam veritatis eligendi                                       possimus mollitia impedit itaque.
+
+    </div>
+
+    <h3>Örnek-3 ;</h3>
+    <div class="ornek3"> white-space: pre;<br><br>
+
+       Lorem ipsum dolor sit amet consectetur,
+    
+    
+                                               adipisicing elit. 
+     
+     
+     
+     Aliquam veritatis eligendi                                        possimus mollitia impedit itaque.
+
+    </div>
+
+    <h3>Örnek-4 ;</h3>
+    <div class="ornek4"> white-space: pre-line;<br><br>
+
+        Lorem ipsum dolor sit amet consectetur,
+    
+    
+                                               adipisicing elit. 
+     
+     
+     
+     Aliquam veritatis eligendi                                         possimus mollitia impedit itaque.
+    </div>
+
+    <h3>Örnek-5 ;</h3>
+    <div class="ornek5">  white-space: pre-wrap;<br><br>
+
+       Lorem ipsum dolor sit amet consectetur,
+    
+    
+                                               adipisicing elit. 
+     
+     
+     
+     Aliquam veritatis eligendi                                          possimus mollitia impedit itaque.
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ornek1 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            -webkit-writing-mode: horizontal-tb;
+            -moz-writing-mode: horizontal-tb;
+            -o-writing-mode: horizontal-tb;
+            -ms-writing-mode: horizontal-tb;
+            writing-mode: horizontal-tb;
+        }
+
+        div.ornek2 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            -webkit-writing-mode: vertical-lr;
+            -moz-writing-mode: vertical-lr;
+            -o-writing-mode: vertical-lr;
+            -ms-writing-mode: vertical-lr;
+            writing-mode: vertical-lr;
+        }
+
+        div.ornek3 {
+            width: 200px;
+            height: 200px;
+            border: 2px solid red;
+            -webkit-writing-mode: vertical-rl;
+            -moz-writing-mode: vertical-rl;
+            -o-writing-mode: vertical-rl;
+            -ms-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>writing-mode</h1>
+    <p>Metnin veya içeriğin hizalama yönü özelliklerini belirler. prefixlerle kullanılır. </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>Horizontal-tb; yatay sekme. (varsayılan değer)</li>
+        <li>Vertical-lr; Dikey (sol).</li>
+        <li>Vertical-rl; Dikey (sağ).</li>
+        <li>İnitial; html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li>İnherit; html elementi üst elementinin biçimlendirme değerini alır. </li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1"> writing-mode: horizontal-tb;</div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2">writing-mode: vertical-lr;</div>
+
+    <h3>Örnek-3 ;</h3>
+    <div class="ornek3">writing-mode: vertical-rl;</div>
+
+</body>
+
+</html>

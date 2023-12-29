@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* NONE  */
+        div.ornek1 {
+            background-color: yellow;
+            max-height: none;
+        }
+
+        /* LENGTH  */
+        div.ornek2 {
+            background-color: yellow;
+            max-height: 500px;
+        }
+
+        div.ornek3 {
+            background-color: blue;
+            height: 100px;
+        }
+
+        p.ornek3 {
+            background-color: yellow;
+            max-height: 200px;
+        }
+
+        div.ornek4 {
+            background-color: blue;
+            height: 200px;
+        }
+
+        p.ornek4 {
+            background-color: yellow;
+            max-height: 100px;
+        }
+
+        /* YUZDE */
+        div.ornek5 {
+            background-color: yellow;
+            max-height: 75%;
+        }
+
+        div.ornek6 {
+            background-color: blue;
+            height: 50px;
+        }
+
+        p.ornek6 {
+            background-color: yellow;
+            max-height: 15%;
+        }
+
+        /* INITIAL(VARSAYILAN)*/
+        div.ornek7 {
+            background-color: blue;
+            max-height: 10px;
+        }
+
+        div.ornek7 {
+            background-color: blue;
+            max-height: initial;
+        }
+
+        /* INHERIT(MİRAS)*/
+        div.ornek8 {
+            background-color: blue;
+            max-height: 10px;
+        }
+
+        p.ornek8 {
+            background-color: yellow;
+            max-height: inherit;
+        }
+
+        #AnaEleman {
+            background-color: blue;
+            height: 40px;
+        }
+
+        #Araci {
+            background-color: blue;
+            max-height: 10px;
+        }
+
+        #Bir {
+            background-color: yellow;
+            max-height: inherit;
+            overflow: hidden;
+        }
+
+        #Iki {
+            background-color: red;
+            max-height: inherit;
+            overflow: hidden;
+        }
+
+        span {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>max-height özelliği</h1>
+    <p>Html elementinin maksimum yüksekliğini belirler. Max-width'den farklı çalışır. Max-height'e bir değer atasanız
+        bile elementin içeriğinden daha fazla bir alan ekrana yansımaz.</p>
+    <h2>değerler ;</h2>
+    <ol>
+        <li><span>none; </span>Değer yok. Ölçü değeri yok demek. İçeriğe göre işleme tabi tutar.</li>
+        <li><span>length;</span>Uzunluk değeri. Vereceğimiz değer sadece içerik bazında olur.İçerik fazla olursa dışarı
+            taşabilir.</li>
+        <li><span>% ;</span> Yüzde değeridir. Burada da işleyiş aynı. Hiçbir içerik olmazsa içerik kadar yer kaplayacağı
+            için yine bir değişiklik olmaz. </li>
+        <li><span>İnitial(varsayılan);</span> Html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li><span>İnherit(miras);</span> Html elementi üst elementinin biçimlendirme değerini alır.</li>
+    </ol>
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">div: max-height;none</div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2">div: max-height;500px</div>
+
+    <h3>Örnek-3 ;</h3>
+    <div class="ornek3">
+        <p class="ornek3">div: height;100px (mavi) > p: max-height;200px (sarı)</p>
+    </div>
+
+    <h3>Örnek-4 ;</h3>
+    <div class="ornek4">
+        <p class="ornek4">div: height;200px (mavi) > p: max-height;100px (sarı)</p>
+    </div>
+
+    <h3>Örnek-5;</h3>
+    <div class="ornek5">div: max-height;75%</div>
+
+    <h3>Örnek-6;</h3>
+    <div class="ornek6">
+        <p class="ornek6">div: height;50px (mavi) > p: max-height;15% (sarı)</p>
+    </div>
+
+    <h3>Örnek-7;</h3>
+    <div class="ornek7">div: max-height;10px / div: max-height;initial (varsayılan)</div>
+
+    <h3>Örnek-8;</h3>
+    <div class="ornek8">
+        <p class="ornek8">div: max-height;10px (mavi) > p: max-height;inheri (miras)(sarı)</p>
+    </div>
+
+    <h3>Örnek-9</h3>
+
+    <div id="AnaEleman">
+        <div id="Araci">
+            <div id="Bir">İnherit değerini</div>
+            <div id="Iki">Anlamak için örnek.</div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

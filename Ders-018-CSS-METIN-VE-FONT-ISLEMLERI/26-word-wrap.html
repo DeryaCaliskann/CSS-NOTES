@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ornek1 {
+            width: 200px;
+            border: thin solid red;
+            word-wrap: normal;
+        }
+
+        div.ornek2 {
+            width: 200px;
+            border: thin solid red;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>word-wrap</h1>
+    <p>Html elementinin boyutlandırılmış alanına sığmayacak kadar büyük kelimenin satır kırılma özelliklerini belirler.
+    </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>normal; normal (varsayılan değer)</li>
+        <li>break-word; kelimeyi kırar</li>
+        <li>İnitial; html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li>İnherit; html elementi üst elementinin biçimlendirme değerini alır. </li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">  word-wrap: normal;<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+        doloremque laborum voluptatibus reprehenderit quibusdam similique quae magni necessitatibus ipsam, qui sapiente
+        mollitia, quis sit corporis molestias id tenetur, voluptate aliquam omnis saepe autem odit cum! Laboriosam
+        placeat vel dolores inventore facilis, officia molestiae necessitatibusreprehenderitsaeprecusandae
+    </div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2">  word-wrap: break-word; <br> <br>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Adipisci
+        doloremque laborum voluptatibus reprehenderit quibusdam similique quae magni necessitatibus ipsam,
+        mollitia, quis sit corporis molestias id tenetur, voluptate aliquam omnis saepe autem odit cum! Laboriosam
+        placeat vel dolores inventore facilis, officia molestiae necessitatibusreprehenderitsaeperecusandaemaxime.
+    </div>
+
+
+
+</body>
+
+</html>
