@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 li {
+            list-style-position: outside;
+        }
+
+        .ornek2 li {
+            list-style-position: inside;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>list-style-position</h1>
+    <p>Listedeki madde işaretçisinin içerik akışındaki konum özelliklerini belirler. </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>outside; dışında </li>
+        <li>inside; içinde</li>
+        <li>initial; html elementi varsayılan biçimlendirme değerine döner</li>
+        <li>inherit; html elementi üst elementini biçimlendirme değerini alır</li>
+    </ul>
+
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">
+        outside
+        <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>js</li>
+            <li>Asp</li>
+        </ul>
+    </div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2">
+        inside
+        <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>js</li>
+            <li>Asp</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

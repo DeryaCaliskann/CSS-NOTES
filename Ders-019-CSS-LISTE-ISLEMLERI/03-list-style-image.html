@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 li {
+            list-style-image: url(../img/kucukcicek.png);
+        }
+
+        .ornek2 li {
+            list-style-image: url(../img/kucukcicek.png);
+            list-style-image: none;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>list-style-image</h1>
+    <p>Listedeki madde işaretçisinin resim özelliklerini belirler. </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>none; değer yok </li>
+        <li>url; dosya adresi</li>
+        <li>initial; html elementi varsayılan biçimlendirme değerine döner</li>
+        <li>inherit; html elementi üst elementini biçimlendirme değerini alır</li>
+    </ul>
+
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">
+        list-style-image:url(../img/kucukcicek.png);
+        <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>js</li>
+            <li>Asp</li>
+        </ul>
+    </div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2">
+        "none" resim tanımlanmışsa değeri kaldırır.
+        <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>js</li>
+            <li>Asp</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* BODY ELEMENTİNE SAYAÇ EKLEME */
+        /* body {
+            counter-reset: sayac;
+        }
+
+          p::before {
+            counter-increment: sayac;
+            content: counter(sayac)" : ";
+        } */
+
+        /* İKİ FARKILI SAYAÇ EKLEME */
+        /* body{
+        counter-reset:Anasayac;
+        }
+        div{
+        color:red;
+        counter-reset:sayac;
+        }
+
+        div::before {
+        counter-increment:Anasayac;
+        content: counter(Anasayac)" : ";
+        }
+        p{
+        color:initial;
+        }
+        p::before{
+        counter-increment: sayac;
+        content:counter(sayac) " : "
+        } */
+
+
+
+        div {
+            counter-reset: sayac;
+        }
+
+        .ornek1 p::before {
+            counter-increment: sayac;
+            content: counter(sayac, upper-alpha)" - ";
+        }
+
+        ul {
+            counter-reset: sayac;
+            list-style: none;
+        }
+
+        li::before {
+            counter-increment: sayac;
+            content: counter(sayac)" : ";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>counter özellikleri ile birlikte counter() fonksiyonunun kullanımı</h1>
+    <h2>counter-reset;</h2>
+    <p>Bir yada fazla sayaç oluşturmak veya sıfırlamak için kullanılır.</p>
+    <h2>counter-increment;</h2>
+    <p>Bir yada fazla sayacın değerini arttırmak için kullanılır.</p>
+    <h2>counter () ;</h2>
+    <p>Oluşturulmuş olan sayacın değerini Html elementine eklemek için kullanılır. </p>
+    <h2>counter () Parametreleri ;</h2>
+    <ul>
+        <li>conuter name; sayaç adı</li>
+        <li>style-type değerleri;</li>
+        <ul>
+            <li>decimal; ondalık sayı</li>
+            <li>decimal-leading-zero; ondalık sayı. Tek haneli sayılarda 0 takısı eklenir</li>
+            <li>lower-alpha; küçük harf</li>
+            <li>upper-alpha; büyük harf</li>
+            <li>lower-roman; küçük harfli roma rakamı.</li>
+            <li>upper-roman; büyük harfli roma rakamı. </li>
+        </ul>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">
+        <p>Html</p>
+        <p>Css</p>
+        <p>Javascript</p>
+        <p>Asp</p>
+    </div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek1">
+        <p>Html</p>
+        <p>Css</p>
+        <p>Javascript</p>
+        <p>Asp</p>
+    </div>
+    Not:Sayaç div de oluşur sayfadaki bütün p leri sayar. Farklı div'e geçildiğinde sıfırlar baştan saymaya başlar
+    Sayacın çalışması için p etiketinin div'lerin içinde olmasına gerek yoktur.İç içe olmasada çalışır. Sayaç belirtilen
+    etiketi görünce çalışır ve ilgili elemente sayaç atar.
+
+
+
+</body>
+
+</html>

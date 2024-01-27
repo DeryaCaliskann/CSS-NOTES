@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 li {
+            list-style: square;
+        }
+
+        .ornek2 li {
+            list-style: circle inside;
+        }
+
+        .ornek3 li {
+            list-style: inside url(../img/kucukcicek.png);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>list-style özelliğinin kullanımı;</h1>
+    <p>Listedeki madde işaretçisinin tüm özelliklerini belirler. </p>
+    <h2>parametreler;</h2>
+    <ul>
+        <li>list-style-type ;listedeki madde işaretçisinin türü. </li>
+        <li>list-style-position ;listedeki madde işaretçisinin içerik akışındaki konumu </li>
+        <li>list-style-image ;listedeki madde işaretçisinin resmi</li>
+        <li>initial; html elementi varsayılan biçimlendirme değerine döner</li>
+        <li>inherit; html elementi üst elementini biçimlendirme değerini alır</li>
+    </ul>
+
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">
+        list-style:square;
+        <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>js</li>
+            <li>Asp</li>
+        </ul>
+    </div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2">
+        list-style: circle inside;
+        <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>js</li>
+            <li>Asp</li>
+        </ul>
+    </div>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek3">
+        list-style: inside url(../img/kucukcicek.png);
+        <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>js</li>
+            <li>Asp</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

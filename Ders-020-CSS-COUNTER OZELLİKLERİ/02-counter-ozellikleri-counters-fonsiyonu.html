@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+            counter-reset: sayac;
+        }
+
+        li::before {
+            counter-increment: sayac;
+            content: counters(sayac, " . ", lower-alpha) " - ";
+        }
+    </style>
+</head>
+
+<body>
+    <h1>counter özellikleri ile birlikte counters() fonksiyonunun kullanımı</h1>
+    <h2>counter-reset;</h2>
+    <p>Bir yada fazla sayaç oluşturmak veya sıfırlamak için kullanılır.</p>
+    <h2>counter-increment;</h2>
+    <p>Bir yada fazla sayacın değerini arttırmak için kullanılır.</p>
+    <h2>counters () ;</h2>
+    <p>Oluşturulmuş olan ve iç içe geçmiş sayacın değerini Html elementine eklemek için kullanılır. </p>
+    <h2>counters () Parametreleri ;</h2>
+    <ul>
+        <li>conuter name; sayaç adı</li>
+        <li>style-type değerleri;</li>
+        <ul>
+            <li>decimal; ondalık sayı</li>
+            <li>decimal-leading-zero; ondalık sayı. Tek haneli sayılarda 0 takısı eklenir</li>
+            <li>lower-alpha; küçük harf</li>
+            <li>upper-alpha; büyük harf</li>
+            <li>lower-roman; küçük harfli roma rakamı.</li>
+            <li>upper-roman; büyük harfli roma rakamı. </li>
+        </ul>
+    </ul>
+
+    <h2>Örnek:</h2>
+    <div>
+        ul { <br>
+        list-style-type: none; <br>
+        counter-reset: sayac; <br>
+        } <br>
+
+        li::before { <br>
+        counter-increment: sayac; <br>
+        content: counters(sayac," . ",lower-alpha) " - "; <br>
+        } <br>
+    </div>
+</body>
+
+</html>
