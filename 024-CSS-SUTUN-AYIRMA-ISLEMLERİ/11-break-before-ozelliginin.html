@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 {
+            border: 2px solid black;
+            padding: 10px;
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            -o-column-count: 2;
+            -ms-column-count: 2;
+            column-count: 2;           
+        } 
+
+        .orneka{
+        break-before: auto;
+        }   
+
+          .ornek2 {
+            border: 2px solid black;
+            padding: 10px;
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            -o-column-count: 2;
+            -ms-column-count: 2;
+            column-count: 2;           
+        } 
+
+        .ornekb {
+        break-before: column;
+        }         
+
+      
+    </style>
+</head>
+
+<body>
+    <h1>break-before özelliği</h1>
+    <p> Html elementinin çok sütunlu düzeni için bölünen sütununların arasındaki belirtilecek olan elementin sonrasında
+        bölünme davranış özelliklerini belirler.
+        Prefix'lerle beraber kullanılır.</p>
+
+    <h2>değerler ;</h2>
+    <ul>
+        <li>auto ; otomatik değer alır (varsayılan)</li>
+        <li>column ; sütunu böler</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+     <h3>Örnek-1</h3> 
+    <div class="ornek1">
+        <h2> break-before: auto;</h2>
+        <p > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae molestias nemo tenetur.
+            Consequatur dignissimos perferendis nesciunt modi possimus voluptatibus est ducimus? Explicabo, dolorum?
+            </p>
+        <h2 class="orneka"> break-before: auto;</h2>
+        <p> minus neque ipsam perspiciatis id ut necessitatibus
+            ducimus libero, perferendis dignissimos temporibus qui quidem molestias veritatis eius vitae iure doloremque
+            non
+            nobis dicta? Perferendis fugit doloremque veniam, delectus nobis eos eligendi dolorum accusantium. Deleniti,
+            dolore. Tempore repudiandae tenetur reprehenderit magnam quisquam possimus, ullam minima obcaecati porro
+            neque
+            voluptatem dicta vitae, molestiae exercitationem iusto commodi id voluptatibus modi aspernatur nostrum amet
+            cupiditate. Doloremque dolores quod blanditiis asperiores voluptatibus!</p>
+    </div>
+
+    <h3>Örnek-2</h3> 
+    <div class="ornek2">
+        <h2> break-before: auto;</h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae molestias nemo tenetur.
+            Consequatur dignissimos perferendis nesciunt modi possimus voluptatibus est ducimus? Explicabo, dolorum?
+            </p>
+        <h2 class="ornekb"> break-before: auto;</h2>
+        <p> minus neque ipsam perspiciatis id ut necessitatibus
+            ducimus libero, perferendis dignissimos temporibus qui quidem molestias veritatis eius vitae iure doloremque
+            non
+            nobis dicta? Perferendis fugit doloremque veniam, delectus nobis eos eligendi dolorum accusantium. Deleniti,
+            dolore. Tempore repudiandae tenetur reprehenderit magnam quisquam possimus, ullam minima obcaecati porro
+            neque
+            voluptatem dicta vitae, molestiae exercitationem iusto commodi id voluptatibus modi aspernatur nostrum amet
+            cupiditate. Doloremque dolores quod blanditiis asperiores voluptatibus!</p>
+    </div>
+
+   
+
+
+
+
+</body>
+
+</html>
