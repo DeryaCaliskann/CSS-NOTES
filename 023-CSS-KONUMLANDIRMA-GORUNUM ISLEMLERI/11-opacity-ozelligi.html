@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 250px;
+            height: 50px;
+            border: 2px solid black;
+            background-color: darkblue;
+        }
+
+        .ornek1 {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            filter: Alpha(opacity=100);
+            opacity: 1.0;
+        }
+
+        .ornek2 {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+            filter: Alpha(opacity=80);
+            opacity: 0.8;
+        }
+
+        .ornek3 {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+            filter: Alpha(opacity=60);
+            opacity: 0.6;
+        }
+
+        .ornek4 {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+            filter: Alpha(opacity=40);
+            opacity: 0.4;
+        }
+
+        .ornek5 {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+            filter: Alpha(opacity=20);
+            opacity: 0.2;
+        }
+
+        .ornek6 {
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+            filter: Alpha(opacity=0);
+            opacity: 0.0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>opacity özelliği</h1>
+    <p> Html elementinin opaklık / şeffaflık özelliklerini belirler (0.0 en şeffaf değer / 1.0 şeffaflık yok.). Her
+        tarayıcıda sorunsuz çalışması için bir takım prefix'ler tanımlamak gerekir. Opacity özelliğinde element ve
+        içindeki tüm değerler de şefffalaşır. Sadece arka plana şeffalık vermek istiyorsak rgba renk uzayını
+        kullanabiliriz.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>number ; rakam değeri </li>
+        <li>initial; html elementi varsayılan biçimlendirme değerine döner</li>
+    </ul>
+
+    <h2>Örnek-1 ;</h2>
+
+    <div class="ornek1"> opacity: 1.0;</div>
+    <div class="ornek2"> opacity: 0.8;</div>
+    <div class="ornek3"> opacity: 0.6;</div>
+    <div class="ornek4"> opacity: 0.4;</div>
+    <div class="ornek5"> opacity: 0.2;</div>
+    <div class="ornek6"> opacity: 0.0;</div>
+
+
+
+
+
+
+</body>
+
+</html>

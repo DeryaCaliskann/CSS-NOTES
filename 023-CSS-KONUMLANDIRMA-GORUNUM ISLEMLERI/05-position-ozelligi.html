@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #none {
+            list-style-type: none;
+        }
+
+        .ornek1 {
+            width: 250px;
+            border: 2px solid blue;
+            padding: 20px;
+            text-align: center;
+            position: static;
+        }
+
+        .ornek2 {
+            width: 250px;
+            border: 2px solid blue;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            left: 300px;
+        }
+
+        .ornek3 {
+            width: 250px;
+            border: 2px solid blue;
+            padding: 20px;
+            text-align: center;
+            float: right;
+            position: relative;
+            right: 300px;
+        }
+
+        .ornek4 {
+            width: 250px;
+            border: 2px solid blue;
+            padding: 20px;
+            text-align: center;
+            float: right;
+            position: relative;
+            left: -300px;
+        }
+
+        .ornek5 {
+            width: 250px;
+            border: 2px solid blue;
+            padding: 20px;
+            text-align: center;
+            position: absolute;
+            right: 200px;
+        }
+
+        .ornek6 {
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+
+        }
+
+        #bir {
+            top: 50px;
+            left: 75px;
+            border: 2px solid blue;
+        }
+
+        #iki {
+            top: 50px;
+            left: 175px;
+            border: 2px solid red;
+        }
+
+
+        .ornek7 {
+            width: 250px;
+            padding: 20px;
+            text-align: center;
+            position: absolute;
+
+        }
+
+        #one {
+            top: 1725px;
+            left: 75px;
+            border: 2px solid blue;
+        }
+
+        #two {
+            top: 1725px;
+            left: 175px;
+            border: 2px solid red;
+        }
+
+
+        .ornek8 {
+            text-align: center;
+        }
+
+        #birinci {
+            width: 250px;
+            height: 250px;
+            border: 2px solid blue;
+            position: relative;
+        }
+
+        #ikinci {
+            width: 125px;
+            border: 2px solid red;
+            position: absolute;
+            left: 100px;
+            top: 150px;
+        }
+
+
+        .ornek9 {
+            text-align: center;
+        }
+
+        #first {
+            width: 250px;
+            height: 250px;
+            border: 2px solid blue;
+            position: relative;
+        }
+
+        #secont {
+            width: 125px;
+            border: 2px solid red;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .container {
+            padding: 0;
+            width: 250px;
+            height: 250px;
+            border: 2px solid blue;
+            overflow: auto;
+            position: relative;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            overflow-wrap: break-word;
+        }
+
+        img {
+            top: 120px;
+            left: 120px;
+            position: absolute;
+            max-width: 100%;
+            max-height: 100%;
+            position: sticky;
+        }
+
+        h1 {
+            position: sticky;
+            top: 0;
+        }
+
+        .isim {
+        top:0;
+        right: 0;
+        position: fixed;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>position özelliğinin kullanımı</h1>
+
+    <p>Html elementinin konumlandırma özelliklerini belirler. Html elementinin blok yada satır düzeyli olmasının sayfa
+        akışına etkileri vardır.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>statik ; durağan demek.(varsayılan) Web sayfasını elementlerinin normal halidir.</li>
+        <li>relative ; görecli. </li>
+        <li>absolute ; mutlak / kesin.</li>
+        <li>fixed ; sabit.</li>
+        <li>sticky ; yapışkan</li>
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li>inherit ; Html elementi üst elementinin biçimlendirme değerini alır.</li>
+    </ul>
+    <h2>diğer parametreler ;</h2>
+    <ul>
+        <li>top ; konumlandırılmış bir Html elementinin üstten hizalama konumunu belirler</li>
+        <li>right ; konumlandırılmış bir Html elementinin sağdan hizalama konumunu belirler</li>
+        <li>bottom; konumlandırılmış bir Html elementinin alttan hizalama konumunu belirler</li>
+        <li>left; konumlandırılmış bir Html elementinin soldan hizalama konumunu belirler</li>
+        <ul>
+            <li id="none">Değerleri;</li>
+            <li>auto ; otamatik değer alır</li>
+            <li>length ; uzunluk</li>
+            <li>initial ; varsayılan değere döner.</li>
+        </ul>
+    </ul>
+
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">position: static; </div>
+    <br>
+    <div>Not:Elementin pozisyonu statik iken left right vs. komutlarları birşey değiştirmez. Konumlandırma yapamayız.
+    </div>
+
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2"> float: right;<br>position: relative; <br> left: 300px;</div>
+    <br>
+    <div>Not:Elementin pozisyonu relative iken left, right, top, bottom komutlarıyla hizalayabiliriz. eksi değerde
+        alabilir.</div>
+
+
+    <h3>Örnek-3 ;</h3>
+    <div class="ornek3"> float: right;<br> position: relative; <br> right: 300px;</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <h3>Örnek-4 ;</h3>
+    <div class="ornek4"> float: right;<br> position: relative; <br> left: -300px;</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>Not: Eksi değer verebiliriz.</div>
+
+
+
+    <h3>Örnek-5;</h3>
+    <div class="ornek5">position: absolute; <br> right:200px;</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>Not:Hiç bir şeye bakılmaksızın verilen konuma konumlandırılır.</div>
+
+
+
+
+    <h3>Örnek-6;</h3>
+    <div id="bir" class="ornek6">position: relative;</div>
+    <div id="iki" class="ornek6">position: relative;</div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <h3>Örnek-7;</h3>
+    <div id="one" class="ornek7">position:absolute;</div>
+    <div id="two" class="ornek7">position:absolute;</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>Not: absolite'de ne konum verildiyse onu çalıştırır. Üstünde element varmı bakmaz verilen konuma yerleşir.
+    </div>
+
+    <h3>Örnek-8;</h3>
+    <div id="birinci" class="ornek8">1-position:relative <div id="ikinci" class="ornek8">2-position:absolute;</div>
+    </div>
+    <div>Not: Dıştaki elemente relative değeri verilirse, içerdeki kutu absolute olduğunda dış elemente göre konumlanır.
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3>Örnek-9;</h3>
+    <div id="first" class="ornek9">1-position:relative <div id="secont" class="ornek9">2-position:absolute;</div>
+    </div>
+    <div>Not: Dıştaki elemente relative değeri verilirse, içerdeki kutu absolute olduğunda dış elemente göre konumlanır.
+    </div>
+    <br>
+    <br>
+
+
+    <h3>Örnek-10;</h3>
+
+    <div class="container">
+        <img src="../img/kucukcicek.png" alt="">
+        <p> position: sticky;
+            <br>rikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçeriki
+            çerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçe
+            rikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçeri
+            kiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçeriki
+            çerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçer
+            ikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerikiçerik
+        </p>
+
+    </div>
+
+     <h3>Örnek-11;</h3>
+
+    <div class="isim">Derya Çalışkan</div>
+    <div>Not: Derya Çalışkan ismi position:fixed özelliği ile sağ üst köşeye sabitlendi.</div>
+
+
+  
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 {
+            width: 150px;
+            border: 1px solid blue;
+            margin: 2px;
+            float: left;
+        }
+
+        #uc,
+        #dort,
+        #bes {
+            clear: none;
+        }
+
+        .ornek2 {
+            width: 150px;
+            border: 1px solid blue;
+            margin: 2px;
+            float: left;
+        }
+
+        #ucuncu {
+            clear: left;
+        }
+
+        .ornek3 {
+            width: 150px;
+            border: 1px solid blue;
+            margin: 2px;
+            float: right;
+        }
+
+        #birinci,
+        #ikinci {
+            clear: right;
+        }
+
+        .ornek4 {
+            width: 150px;
+            border: 1px solid blue;
+            margin: 2px;
+            float: left;
+        }
+
+
+        #dordun {
+            clear: both;
+        }
+
+
+        #bb,
+        #ii,
+        #uu,
+        #dd,
+        #ss {
+            width: 150px;
+            border: 1px solid blue;
+            margin: 2px;
+        }
+
+        #ii,
+        #uu {
+            float: left;
+        }
+
+        #dd,
+        #ss {
+            float: right;
+        }
+
+        .temizle1 {
+            clear: left;
+        }
+
+        .temizle2 {
+            clear: right;
+        }
+
+
+      
+    </style>
+</head>
+
+<body>
+    <h1>clear özelliğinin kullanımı</h1>
+    <p>Html elementine atanmış olan kayma (float) özelliğinin temizlenme durumunu belirler. Float özelliğini varsayılan
+        haline döndürme en iyi clear özelliği ile olur.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>none; değer yok (herhangi bir işlem yapmaz.Bunu temzledikten sonra değeri kaldırmak istiyorsak kullanırız.
+        </li>
+        <li>left ; sol</li>
+        <li>right ; sağ</li>
+        <li>both ; her iki yönüde temizle </li>
+        <li>initial; html elementi varsayılan biçimlendirme değerine döner</li>
+        <li>inherit; html elementi üst elementini biçimlendirme değerini alır</li>
+    </ul>
+
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">1-Derya Çalışkan</div>
+    <div class="ornek1">2-Pınar Aküzüm</div>
+    <div id="uc" class="ornek1">3-Emre Çalışkan</div>
+    <div id="dort" class="ornek1">4-Hüseyin Kuzu</div>
+    <div id="bes" class="ornek1">5-Ayşe Kuzu</div>
+    <br>
+    <hr>
+
+    <h3>Örnek-2;</h3>
+    <div class="ornek2">1-Derya Çalışkan</div>
+    <div class="ornek2">2-Pınar Aküzüm</div>
+    <div id="ucuncu" class="ornek2">3-Emre Çalışkan</div>
+    <div class="ornek2">4-Hüseyin Kuzu</div>
+    <div class="ornek2">5-Ayşe Kuzu</div>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <h3>Örnek-3;</h3>
+    <div id="birinci" class="ornek3">1-Derya Çalışkan</div>
+    <div id="ikinci" class="ornek3">2-Pınar Aküzüm</div>
+    <div class="ornek3">3-Emre Çalışkan</div>
+    <div class="ornek3">4-Hüseyin Kuzu</div>
+    <div class="ornek3">5-Ayşe Kuzu</div>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <h3>Örnek-4;</h3>
+    <div class="ornek4">1-Derya Çalışkan</div>
+    <div class="ornek4">2-Pınar Aküzüm</div>
+    <div class="ornek4">3-Emre Çalışkan</div>
+    <div id="dordun" class="ornek4">4-Hüseyin Kuzu</div>
+    <div class="ornek4">5-Ayşe Kuzu</div>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+    <h3>Örnek-5;</h3>
+    <div id="bb" class="ornek5">1-Derya Çalışkan</div>
+    <div class="temizle1"></div>
+    <div id="ii" class="ornek5">2-Pınar Aküzüm</div>
+    <div id="uu" class="ornek5">3-Emre Çalışkan</div>
+    <div id="dd" class="ornek5">4-Hüseyin Kuzu</div>
+    <div class="temizle2"></div>
+    <div id="ss" class="ornek5">5-Ayşe Kuzu</div>
+    <br>
+    <br>
+    <br>
+    <hr>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 {
+            border: 2px solid red;
+            border-spacing: 20px;
+        }
+
+        th,
+        td {
+            border: 2px solid red;
+        }
+
+        .ornek2 {
+            border: 2px solid red;
+            border-spacing: 20px 50px;
+        }
+
+        th,
+        td {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>border-spacing</h1>
+    <p>Html'in table (tablo) elementinde bitişik hücrelerin arasındaki mesafeyi belirler. ilk yazdığımız parametre x
+        (yatay), ikinci parametre y (dikey) ekseninde çalışır. border-collapse: collapse değeri verilecek olur ise
+        border-spacing özelliği devredışı kalır. </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>length; uzunluk</li>
+        <li>initial; html elementi varsayılan biçimlendirme değerine döner</li>
+        <li>inherit; html elementi üst elementini biçimlendirme değerini alır</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    border-spacing: 20px;
+    <table class="ornek1">
+        <tr>
+            <th>İsim</th>
+            <th>Soyisim</th>
+        </tr>
+        <tr>
+            <td>Derya</td>
+            <td>Çalışkan</td>
+        </tr>
+        <tr>
+            <td>Pınar</td>
+            <td>Aküzüm</td>
+        </tr>
+    </table>
+
+    <h3>Örnek-2 ;</h3>
+    border-spacing: 20px 50px;
+    <table class="ornek2">
+        <tr>
+            <th>İsim</th>
+            <th>Soyisim</th>
+        </tr>
+        <tr>
+            <td>Derya</td>
+            <td>Çalışkan</td>
+        </tr>
+        <tr>
+            <td>Pınar</td>
+            <td>Aküzüm</td>
+        </tr>
+    </table>
+
+
+
+
+</body>
+
+</html>

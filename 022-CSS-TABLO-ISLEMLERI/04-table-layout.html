@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 {
+            border: 2px solid red;
+            width: 100%;
+            table-layout: auto;
+        }
+
+        td {
+            border: 2px solid blue;
+        }
+
+        .ornek1a {
+            width: 10%;
+        }
+
+        .ornek1b {
+            width: 90%;
+        }
+
+
+
+        .ornek2 {
+            border: 2px solid red;
+            width: 100%;
+            table-layout: fixed;
+        }
+
+        td {
+            border: 2px solid blue;
+        }
+
+        .ornek2a {
+            width: 10%;
+        }
+
+        .ornek2b {
+            width: 90%;
+        }
+
+
+
+        .ornek3 {
+            border: 2px solid red;
+            width: 100%;           
+            table-layout: fixed;
+        }
+
+        td {
+            border: 2px solid blue;
+        }
+
+        .ornek3a {
+            width: 10%;
+        }
+
+        .ornek3b {
+            width: 90%;
+        }
+
+        .ornek4 {
+            border: 2px solid red;
+            width: 100%;          
+            table-layout: auto;
+        }
+
+        td {
+            border: 2px solid blue;
+        }
+
+        .ornek4a {
+            width: 10%;
+        }
+
+        .ornek4b {
+            width: 90%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>table-layout</h1>
+    <p>Html'in table (tablo) elemtinde bulunan sütünların genişlikleri için düzen algoritması özelliklerini belirler.
+        Tabloların sütunlarda (td) bir düzen aldoritması vardır ve eğer içerik boyuta sığmıyorsa otomatik olarak büyür.
+    </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>auto ; otamatik değer alır.(varsayılan değerdir. Hücre içerik kadar değer alır.)</li>
+        <li>fixed; sabit.</li>
+        <li>initial; html elementi varsayılan biçimlendirme değerine döner</li>
+        <li>inherit; html elementi üst elementini biçimlendirme değerini alır</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    table-layout: auto;
+    <table class="ornek1">
+        <tr>
+            <td class="ornek1a">DeryaÇalışkanPınarAküzümDeryaÇalışkanPınarAküzüm</td>
+            <td class="ornek1b">Derya Çalışkan Pınar Aküzüm</td>
+        </tr>
+    </table>
+
+    <h3>Örnek-2 ;</h3>
+    table-layout:fixed;
+    <table class="ornek2">
+        <tr>
+            <td class="ornek2a">DeryaÇalışkanPınarAküzümDeryaÇalışkanPınarAküzüm</td>
+            <td class="ornek2b">Derya Çalışkan Pınar Aküzüm</td>
+        </tr>
+    </table>
+
+    <h3>Örnek-3 ;</h3>
+    table-layout:fixed;
+    <table class="ornek3">
+        <tr>
+            <td class="ornek3a">Derya Çalışkan Pınar Aküzüm</td>
+            <td class="ornek3b">Derya Çalışkan Pınar Aküzüm</td>
+        </tr>
+    </table>
+
+    <h3>Örnek-4 ;</h3>
+    table-layout:auto;
+    <table class="ornek4">
+        <tr>
+            <td class="ornek4a">Derya Çalışkan Pınar Aküzüm</td>
+            <td class="ornek4b">Derya Çalışkan Pınar Aküzüm</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

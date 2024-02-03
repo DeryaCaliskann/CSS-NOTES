@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 {
+            border: 2px solid blue;
+            border-collapse: separate;
+        }
+
+        th,
+        td {
+            border: 2px solid red;
+        }
+
+        .ornek2 {
+            border: 2px solid blue;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 4px dotted red;
+        }
+
+        /* not: th ve td için farklı stil tanımlayıp collapse dersek hücrenin stili geçerli olur. Tablonun stili yok sayılır. */
+    </style>
+</head>
+
+<body>
+    <h1>border-collapse</h1>
+    <p>Html table (tablo) elementinin kenarlık / çerçeve birleştirme durumunu belirler. th ve td için farklı stil
+        tanımlayıp collapse dersek hücrenin stili geçerli olur. Tablonun stili yok sayılır.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>seperate; ayrı kenarlı /çerçeve (varsayılan)</li>
+        <li>collapse; bitişik kenarlık / çerçeve</li>
+        <li>initial; html elementi varsayılan biçimlendirme değerine döner</li>
+        <li>inherit; html elementi üst elementini biçimlendirme değerini alır</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    border-collapse: separate;
+    <table class="ornek1">
+        <tr>
+            <th>İsim</th>
+            <th>Soyisim</th>
+        </tr>
+        <tr>
+            <td>Derya</td>
+            <td>Çalışkan</td>
+        </tr>
+        <tr>
+            <td>Pınar</td>
+            <td>Aküzüm</td>
+        </tr>
+    </table>
+
+    <h3>Örnek-2 ;</h3>
+    border-collapse: collapse;
+    <table class="ornek2">
+        <tr>
+            <th>İsim</th>
+            <th>Soyisim</th>
+        </tr>
+        <tr>
+            <td>Derya</td>
+            <td>Çalışkan</td>
+        </tr>
+        <tr>
+            <td>Pınar</td>
+            <td>Aküzüm</td>
+        </tr>
+    </table>
+
+
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 {
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+            object-position: 50px 100px;
+            /*1-yatay 2-dikey*/
+        }
+
+        .ornek2 {
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+            object-position: 50% 50%;
+            /*1-yatay 2-dikey*/
+        }
+
+        .ornek3 {
+            width: 200px;
+            height: 250px;
+            object-fit: cover;
+            object-position: center;
+            /*1-yatay 2-dikey*/
+        }
+
+        .ornek4 {
+            width: 200px;
+            height: 400px;
+            object-fit: cover;
+            object-position: left;
+        }
+
+        .ornek5 {
+            width: 200px;
+            height: 400px;
+            object-fit: cover;
+            object-position: right;
+        }
+
+        .ornek6 {
+            width: 200px;
+            height: 400px;
+            object-fit: cover;
+            object-position: left top;
+        }
+
+        .ornek7 {
+            width: 200px;
+            height: 400px;
+            object-fit: cover;
+            object-position: right top;
+        }
+
+        .ornek8 {
+            width: 200px;
+            height: 400px;
+            object-fit: cover;
+            object-position: center center;
+        }
+
+          .ornek9{
+            width: 200px;
+            height: 400px;
+            object-fit: none;
+            object-position: right bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>object-position özelliği</h1>
+    <p> Html elemenin boyutlandırılmış alanına sığmayacak kadar büyük resim veya video içeriklerinin opject-fit özelliği
+        kullanarak yeniden boyutlandırma sorasındaki resmin veya videonun konum özelliklerini belirler.</p>
+    <h2>parametreler ;</h2>
+    <ul>
+        <li>horizontal value ; yatay değer</li>
+        <li>vertical value ;dikey değer</li>
+    </ul>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>length ; uzunluk</li>
+        <li>% ; yüzde</li>
+        <li>center ; orta</li>
+        <li>top ; üst</li>
+        <li>right ; sağ</li>
+        <li>bottom ; alt</li>
+        <li>left ; sol</li>
+        <li>initial; html elementi varsayılan biçimlendirme değerine döner</li>
+    </ul>
+
+    <h2>Örnek-1</h2>
+    object-fit: cover; <br>
+    object-position: 50px 100px; /*1-yatay 2-dikey*/ <br>
+    <img class="ornek1" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
+
+    <h2>Örnek-2</h2>
+    object-fit: cover; <br>
+    object-position: 50% 50%; /*1-yatay 2-dikey*/ <br>
+    <img class="ornek2" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
+
+
+    <h2>Örnek-3</h2>
+    object-fit: cover; <br>
+    object-position:center; <br>
+    <img class="ornek3" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
+
+
+    <h2>Örnek-4</h2>
+    object-fit: cover;<br>
+    object-position: left; <br>
+    <img class="ornek4" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
+
+    <h2>Örnek-5</h2>
+    object-fit: cover;<br>
+    object-position: right <br>
+    <img class="ornek5" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
+
+    <h2>Örnek-6</h2>
+    object-fit: cover; <br>
+    object-position: left top; <br>
+    <img class="ornek6" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
+
+    <h2>Örnek-7</h2>
+    object-fit: cover; <br>
+    object-position: right top; <br>
+    <img class="ornek7" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
+
+    <h2>Örnek-8</h2>
+   object-fit: cover; <br>
+   object-position: center center; <br>
+    <img class="ornek8" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
+
+       <h2>Örnek-9</h2>
+   object-fit: none; <br>
+   object-position: right bottom; <br>
+    <img class="ornek9" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
+
+
+
+
+</body>
+
+</html>

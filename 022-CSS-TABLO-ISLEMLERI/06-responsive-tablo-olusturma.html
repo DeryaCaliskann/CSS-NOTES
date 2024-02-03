@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 100%;
+            border: 1px solid grey;
+            border-collapse: collapse;
+            white-space: nowrap;
+            /* küçülünce alt satıra geçmesin */
+        }
+
+        #baslikSatiri {
+            background-color: #CCCCCC;
+        }
+
+        th,
+        td {
+            border: 1px solid grey;
+            padding: 10px 15px;
+            text-align: left;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+        div {
+        width: 100%;
+        overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>responsive tablo oluşturma</h1>
+    <h3>Örnek-1 ;</h3>
+<div>
+    <table>
+    <caption>BAŞARI ÇİZELGESİ</caption>
+        <tr id="baslikSatiri">
+            <th>Adı</th>
+            <th>Soyadı</th>
+            <th>Adresi</th>
+            <th>HTML Bilgi Seviyesi</th>
+            <th>CSS Bilgi Seviyesi</th>
+            <th>JS Bilgi Seviyesi</th>
+            <th>C# Bilgi Seviyesi</th>
+            <th>ASP Bilgi Seviyesi</th>
+        </tr>
+
+        <tr>
+            <td>Derya</td>
+            <td>Çalışkan</td>
+            <td>Çal - Denizli - Türkiye</td>
+            <td>95</td>
+            <td>85</td>
+            <td>75</td>
+            <td>45</td>
+            <td>55</td>
+        </tr>
+
+        <tr>
+            <td>Hüseyin</td>
+            <td>Kuzu</td>
+            <td>Merkezefendi - Denizli - Türkiye</td>
+            <td>85</td>
+            <td>55</td>
+            <td>75</td>
+            <td>95</td>
+            <td>98</td>
+        </tr>
+
+        <tr>
+            <td>Serhan</td>
+            <td>Aküzüm</td>
+            <td>Sancaktepe - İstanbul - Türkiye</td>
+            <td>75</td>
+            <td>85</td>
+            <td>95</td>
+            <td>85</td>
+            <td>80</td>
+        </tr>
+
+        <tr>
+            <td>Kaya</td>
+            <td>Aküzüm</td>
+            <td>Çal - Denizli - Türkiye</td>
+            <td>95</td>
+            <td>85</td>
+            <td>75</td>
+            <td>45</td>
+            <td>55</td>
+        </tr>
+
+        <tr>
+            <td>Korhan</td>
+            <td>Aküzüm</td>
+            <td>Merkezefendi - Denizli - Türkiye</td>
+            <td>85</td>
+            <td>55</td>
+            <td>75</td>
+            <td>95</td>
+            <td>98</td>
+        </tr>
+
+        <tr>
+            <td>pınar</td>
+            <td>Aküzüm</td>
+            <td>Sancaktepe - İstanbul - Türkiye</td>
+            <td>75</td>
+            <td>85</td>
+            <td>95</td>
+            <td>85</td>
+            <td>80</td>
+        </tr>
+
+    </table>
+    </div>
+
+</body>
+
+</html>

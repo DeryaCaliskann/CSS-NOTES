@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 {
+            -webkit-filter: none;
+            -moz-filter: none;
+            -o-filter: none;
+            -ms-filter: none;
+            filter: none;
+        }
+
+        .ornek2 {
+            -webkit-filter: blur(5px);
+            -moz-filter: blur(5px);
+            -o-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+        }
+
+        .ornek3 {
+            -webkit-filter: brightness(40%);
+            -moz-filter: brightness(40%);
+            -o-filter: brightness(40%);
+            -ms-filter: brightness(40%);
+            filter: brightness(40%);
+        }
+
+        .ornek4 {
+            -webkit-filter: contrast(40%);
+            -moz-filter: contrast(40%);
+            -o-filter: contrast(40%);
+            -ms-filter: contrast(40%);
+            filter: contrast(40%);
+        }
+
+        .ornek5 {
+            -webkit-filter: drop-shadow(5px 5px 5px black);
+            -moz-filter: drop-shadow(5px 5px 5px black);
+            -o-filter: drop-shadow(5px 5px 5px black);
+            -ms-filter: drop-shadow(5px 5px 5px black);
+            filter: drop-shadow(5px 5px 5px black);
+        }
+
+        .ornek6 {
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -o-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+
+        .ornek7 {
+            -webkit-filter: grayscale(180deg);
+            -moz-filter: grayscale(180deg);
+            -o-filter: grayscale(180deg);
+            -ms-filter: grayscale(180deg);
+            filter: hue-rotate(180deg);
+        }
+
+        .ornek8 {
+            -webkit-filter: invert(100%);
+            -moz-filter: invert(100%);
+            -o-filter: invert(100%);
+            -ms-filter: invert(100%);
+            filter: invert(100%);
+        }
+
+        .ornek9 {
+            -webkit-filter: opacity(50%);
+            -moz-filter: opacity(50%);
+            -o-filter: opacity(50%);
+            -ms-filter: opacity(50%);
+            filter: opacity(50%);
+        }
+
+        .ornek10 {
+            -webkit-filter: saturate(30%);
+            -moz-filter: saturate(30%);
+            -o-filter: saturate(30%);
+            -ms-filter: saturate(30%);
+            filter: saturate(30%);
+        }
+
+        .ornek11 {
+            -webkit-filter: sepia(80%);
+            -moz-filter: sepia(80%);
+            -o-filter: sepia(80%);
+            -ms-filter: sepia(80%);
+            filter: sepia(80%);
+        }
+
+        .ornek12 {
+            -webkit-filter: invert(100%) blur(2px);
+            -moz-filter: invert(100%) blur(2px);
+            -o-filter: invert(100%) blur(2px);
+            -ms-filter: invert(100%) blur(2px);
+            filter: invert(100% )blur(2px);
+        }
+
+         .ornek13 {
+            -webkit-filter: blur(1px) hue-rotate(100deg) sepia(50%);
+            -moz-filter: blur(1px) hue-rotate(100deg) sepia(50%);
+            -o-filter:  blur(1px) hue-rotate(100deg) sepia(50%);
+            -ms-filter:  blur(1px) hue-rotate(100deg) sepia(50%);
+            filter: blur(1px) hue-rotate(100deg) sepia(50%);
+        }
+
+        .ornek14a {
+        font-size: 30px;
+            -webkit-filter: sepia(80%);
+            -moz-filter: sepia(80%);
+            -o-filter: sepia(80%);
+            -ms-filter: sepia(80%);
+            filter: blur(2px);
+        }
+         .ornek14{
+           font-size: 30px;
+         }
+
+    </style>
+</head>
+
+<body>
+    <h1>filter özelliği</h1>
+    <p> Html elementine uygulanacak olan efekt özelliklerini belirler. prefix tanımlamak gerekir.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>none ; değer yok </li>
+        <li>blur( ) ; bulanıklık (pixel değer alır) </li>
+        <li>brightness( ) ;parlaklık (0% ile %100 arası değer alır) </li>
+        <li>contrast( ) ; kontrast (0% ile %100 arası değer alır) </li>
+        <li>drop-shadow( ); gölge düşürme. Eksi değer dealabilir</li>
+        <ul>
+            <li> horizontal shadow ; yatay gölge</li>
+            <li>vertical shadow ; dikey gölge</li>
+            <li>blur spread ; bulanıklık yayma</li>
+            <li>color ; renk</li>
+        </ul>
+        <li>grayscale( ) ; gri tonlama (%0 ile %100 arası değer alır)</li>
+        <li>hue-rotate( ) ; renk döndürme (0 ile 360 derece arası değer alır)</li>
+        <li>invert( ) ; ters çevirme (%0 ile %100 arası değer alır)</li>
+        <li>opacity( ) ; opaklık / şeffaflık (%0 ile %100 arası değer alır) </li>
+        <li>saturate( ) ; doyma (%0 ile %100 arası değer alır)</li>
+        <li>sepia( ); kahverengi ağırlıklı antik tonlama (%0 ile %100 arası değer alır)</li>
+    </ul>
+
+    <h2>Örnek-1 ;</h2>
+    <p>filter: none;</p>
+    <img class="ornek1" src="../img/manzara6.jpg" alt="manzara" title="manzara" width="400" height="200">
+
+    <h2>Örnek-2 ;</h2>
+    <p> filter: blur(5px);</p>
+    <img class="ornek2" src="../img/manzara6.jpg" alt="manzara" title="manzara" width="400" height="200">
+
+    <h2>Örnek-3 ;</h2>
+    <p> filter: brightness(40%);</p>
+    <img class="ornek3" src="../img/manzara6.jpg" alt="manzara" title="manzara" width="400" height="200">
+
+    <h2>Örnek-4 ;</h2>
+    <p> filter: contrast(40%);</p>
+    <img class="ornek4" src="../img/manzara6.jpg" alt="manzara" title="manzara" width="400" height="200">
+
+    <h2>Örnek-5 ;</h2>
+    <p> filter: drop-shadow(5px 5px 5px black);</p>
+    <img class="ornek5" src="../img/manzara6.jpg" alt="manzara" title="manzara" width="400" height="200">
+
+    <h2>Örnek-6 ;</h2>
+    <p> filter: grayscale(100%);</p>
+    <img class="ornek6" src="../img/manzara6.jpg" alt="manzara" title="manzara" width="400" height="200">
+
+    <h2>Örnek-7 ;</h2>
+    <p> filter: hue-rotate(180deg);</p>
+    <img class="ornek7" src="../img/manzara6.jpg" alt="manzara" title="manzara" width="400" height="200">
+
+    <h2>Örnek-8 ;</h2>
+    <p> filter: invert(100%);</p>
+    <img class="ornek8" src="../img/manzara6.jpg" alt="manzara" title="manzara" width="400" height="200">
+
+    <h2>Örnek-9 ;</h2>
+    <p> filter: opacity(50%);</p>
+    <img class="ornek9" src="../img/manzara6.jpg" alt="manzara" title="manzara" width="400" height="200">
+
+    <h2>Örnek-10 ;</h2>
+    <p> filter: saturate(30%);</p>
+    <img class="ornek10" src="../img/manzara6.jpg" alt="manzara" title="manzara" width="400" height="200">
+
+    <h2>Örnek-11 ;</h2>
+    <p> filter: sepia(80%);</p>
+    <img class="ornek11" src="../img/manzara6.jpg" alt="manzara" title="manzara" width="400" height="200">
+
+   
+
+     <h2>Örnek-12 ;</h2>
+    <p>   filter: invert(100% )blur(2px);</p>
+    <img class="ornek12" src="../img/manzara6.jpg" alt="manzara" title="manzara" width="400" height="200">
+
+      <h2>Örnek-13 ;</h2>
+    <p>   filter: blur(1px) hue-rotate(100deg) sepia(50%);</p>
+    <img class="ornek13" src="../img/manzara6.jpg" alt="manzara" title="manzara" width="400" height="200">
+
+
+ <h2>Örnek-14 ;</h2>
+    <div class="ornek14">filter:blur(2px)</div>
+    <div class="ornek14a">filter:blur(2px)</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

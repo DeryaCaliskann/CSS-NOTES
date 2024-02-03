@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            border: 1px solid blue;
+            background-color: yellow;
+            clip: auto;
+        }
+
+        .ornek2 {
+            position: absolute;
+            width: 200px;
+            height: 200px;           
+            border: 1px solid blue;
+            background-color: yellow;
+            clip: rect(0px, 100px, 100px, 0px);
+            /*1.üst 2. sağ 3. alt 4.sol*/
+        }
+
+         .ornek3 {
+            position: absolute;
+            width: 200px;
+            height: 200px;          
+            border: 1px solid blue;
+            background-color: yellow;
+            clip: rect(50px, 100px, 100px, 50px);
+                 /*1.üst 2. sağ 3. alt 4.sol*/
+        }
+
+         .ornek4 {
+            position: absolute;
+            width: 200px;
+            height: 200px;          
+            border: 1px solid blue;
+            background-color: yellow;
+            clip: rect(0px, 100px, 100px, 50px);
+                 /*1.üst 2. sağ 3. alt 4.sol*/
+        }
+
+         .ornek5 {
+            position: absolute;
+            width: 200px;
+            height: 200px;          
+            border: 1px solid blue;
+            background-color: yellow;
+            clip: rect(0px, 150px, 100px, 50px);
+                 /*1.üst 2. sağ 3. alt 4.sol*/
+        }
+
+        .ornek6{
+        position: absolute;
+        left: 0px;       
+        clip:auto;
+        }
+
+          .ornek7{
+        position: absolute;
+        left: 0px;       
+        clip: rect(190px,500px,370px,0px);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>clip özelliği</h1>
+    <p> absolute (mutlak/kesin) değeri ile konumlandırılmış bir Html elementinin kırpma/maskeleme özelliklerini
+        belirler.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>auto ; otamatik değer alır(varsayılan). Herhangi bir değişiklik olmaz. </li>
+        <li>shape ; şekil rect( ) fonksiyonu kullanır. (rectangle : dikdörtgen)</li>
+        <li>initial; html elementi varsayılan biçimlendirme değerine döner</li>
+    </ul>
+
+    <h2>Örnek-1 ;</h2>
+    clip:auto;
+    <div class="ornek1">Merhaba Dünya</div>
+    <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br>  
+
+    <h2>Örnek-2 ;</h2>
+    clip: rect(0px,100px,100px,0px); <br>
+              ------------üst----sağ----alt----sol
+    <div class="ornek2">Merhaba Dünya</div>
+   <br> <br> <br> <br> <br> <br> <br> 
+
+
+     <h2>Örnek-3 ;</h2>
+    clip: rect(50px,100px,100px,50px); <br>
+              ------------üst----sağ----alt----sol
+    <div class="ornek3">Merhaba Dünya</div>
+    <br><br><br><br><br><br>
+
+     <h2>Örnek-4;</h2>
+    clip: rect(0px,100px,100px,50px); <br>
+              ------------üst----sağ----alt----sol
+    <div class="ornek4">Merhaba Dünya</div>
+     <br><br><br><br><br><br>
+
+       <h2>Örnek-5;</h2>
+    clip: rect(0px,150px,100px,50px); <br>
+              ------------üst----sağ----alt----sol
+    <div class="ornek5">Merhaba Dünya</div>
+     <br><br><br><br><br><br>
+
+       <h2>Örnek-6;</h2>
+     clip:auto; <br>
+            
+    <img src="../img/manzara6.jpg" class="ornek6"></img>
+       <br><br><br><br><br><br> <br><br><br><br><br><br> <br><br><br><br><br><br> <br><br><br><br><br><br><br><br><br><br><br><br>
+
+       <h2>Örnek-7;</h2>
+     clip: rect(190px,500px,370px,0); <br>
+              ------------üst----sağ----alt----sol
+    <img src="../img/manzara6.jpg" class="ornek7"></img>
+     
+     
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

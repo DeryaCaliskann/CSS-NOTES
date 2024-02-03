@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ornek1 {
+            border: 2px solid red;
+            line-height: 25px;
+            -webkit-box-decoration-break: slice;
+            -moz-box-decoration-break: slice;
+            -o-box-decoration-break: slice;
+            -ms-box-decoration-break: slice;
+            box-decoration-break: slice;
+        }
+
+        #ornek2 {
+            border: 2px solid red;
+            line-height: 25px;
+            -webkit-box-decoration-break: clone;
+            -moz-box-decoration-break: clone;
+            -o-box-decoration-break: clone;
+            -ms-box-decoration-break: clone;
+            box-decoration-break: clone;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>box-decoration-break özelliği</h1>
+    <p> Html elementinin kenarlık / çerçeve özelliklerinin kutu parçalandığındaki satır veya sayfa sonları için davranış
+        özelliklerini belirler. Satır düzeyli elementler için kullanılır. prefixlerle beraber kullanılır. prefix tanımlamadan çalışmıyor.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>slice ; dilimle </li>
+        <li>clone ; copyala</li>
+        <li>initial; html elementi varsayılan biçimlendirme değerine döner</li>
+        <li>inherit; html elementi üst elementini biçimlendirme değerini alır</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    box-decoration-break: slice; <br>
+    <span id="ornek1">Derya Çalışkan <br> Pınar Çalışkan <br> Emre Çalışkan</span>
+
+    <h3>Örnek-2 ;</h3>
+    box-decoration-break: clone;<br>
+    <span id="ornek2">Derya Çalışkan <br> Pınar Çalışkan <br> Emre Çalışkan</span>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

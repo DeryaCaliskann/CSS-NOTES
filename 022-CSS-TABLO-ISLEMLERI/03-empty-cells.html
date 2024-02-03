@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 {          
+            empty-cells: show;
+        }
+
+        th,
+        td {
+            border: 2px solid blue;
+        }
+
+        .ornek2 {
+            empty-cells: hide;
+        }
+        th,
+        td {
+            border: 2px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>empty-cells</h1>
+    <p>Html'in table (tablo) elementinde bulunan ve içeriği boş hücrelerin görüntülenme özelliklerini belirler. </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>show ; göster. (varsayılan)</li>
+        <li>hide ; gizle.</li>
+        <li>initial; html elementi varsayılan biçimlendirme değerine döner</li>
+        <li>inherit; html elementi üst elementini biçimlendirme değerini alır</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    empty-cells: show;
+    <table class="ornek1">
+        <tr>
+            <th>Pazartesi</th>
+            <th>Salı</th>
+            <th>Çarşamba</th>
+            <th>Perşembe</th>
+            <th>Cuma</th>
+            <th>Cumartesi</th>
+            <th>Pazar</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Türkçe</td>
+            <td>Matematik</td>
+            <td></td>
+            <td>Fen</td>
+            <td>Coğrafya</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Türkçe</td>
+            <td>Tarih</td>
+            <td>Beden</td>
+            <td>Müzik</td>
+            <td>Kimya</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Müzik</td>
+            <td>Fizik</td>
+            <td>Din</td>
+            <td>Türkçe</td>
+            <td>Türkçe</td>
+            <td>Beden</td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h3>Örnek-2 ;</h3>
+    empty-cells: hide;
+    <table class="ornek2">
+        <tr>
+            <th>Pazartesi</th>
+            <th>Salı</th>
+            <th>Çarşamba</th>
+            <th>Perşembe</th>
+            <th>Cuma</th>
+            <th>Cumartesi</th>
+            <th>Pazar</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Türkçe</td>
+            <td>Matematik</td>
+            <td></td>
+            <td>Fen</td>
+            <td>Coğrafya</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Türkçe</td>
+            <td>Tarih</td>
+            <td>Beden</td>
+            <td>Müzik</td>
+            <td>Kimya</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Müzik</td>
+            <td>Fizik</td>
+            <td>Din</td>
+            <td>Türkçe</td>
+            <td>Türkçe</td>
+            <td>Beden</td>
+            <td></td>
+        </tr>
+    </table>
+    Not: Genellikle tabloya  kenarlık vermeden kullanılır. Oyunlarda sık kullanılır.
+
+</body>
+
+</html>

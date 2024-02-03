@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 {
+            height: 500px;
+            border: 1px solid blue;
+            margin: 2px;
+            display: inline;
+        }
+
+        .ornek2 {
+            width: 250px;
+            border: 1px solid blue;
+            margin: 2px;
+            display: block;
+        }
+
+        .ornek3 {
+            width: 300px;
+            border: 1px solid blue;
+            margin: 2px;
+            display: inline-block;
+        }
+
+        .ornek4 {
+            width: 300px;
+            border: 1px solid blue;
+            margin: 2px;
+
+        }
+
+        #iki {
+            display: none;
+        }
+
+        .ornek5 {
+            width: 300px;
+            border: 1px solid blue;
+            margin: 2px;
+
+        }
+
+        #bir {
+            display: block;
+        }
+
+        #ik {
+            display: run-in;
+        }
+
+        #uc {
+            display: block;
+        }
+
+        .ornek6 {
+            display: list-item;
+        }
+
+        table,
+        td {
+            border: 1px solid black;
+        }
+
+        .ornek8 {
+            width: 300px;
+            border: 1px solid blue;
+            margin: 2px;
+            display: flex;
+        }
+
+        .ornek9 {
+            width: 300px;
+            border: 1px solid blue;
+            margin: 2px;
+            display: inline-flex;
+        }
+
+        .ornek10 {
+            width: 300px;
+            border: 1px solid blue;
+            margin: 2px;
+            display: grid;
+        }
+
+        .ornek11 {
+            width: 300px;
+            border: 1px solid blue;
+            margin: 2px;
+            display: inline-grid;
+        }
+
+        ul#programlama {
+            display: none;
+        }
+
+        ul#modelleme {
+            display: none;
+        }
+
+        ul#grafik {
+            display: none;
+        }
+
+        li#programlamaAlani:hover ul#programlama {
+            display: block;
+        }
+
+        li#modellemeAlani:hover ul#modelleme {
+            display: block;
+        }
+
+        li#grafikAlani:hover ul#grafik {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>display özelliğinin kullanımı</h1>
+    <p>Html elementinin görüntülenme özelliklerini belirler. </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>inline ; varsayılan değerdir. Html elementi satır düzeyli element olarak kabul edilir ve görüntülenir.
+            Elemente içerik alanından fazla genişlik ve yükseklik atanmasına izin verilmez. </li>
+        <li>block ; Html elementi blok düzeyli element olarak kabul edilir ve görüntülenir.</li>
+        <li>inline-block ; Html elementi hem satır düzeyli hem blok düzeyli element olarak kabul edilir ve
+            görüntülenir.Elemente içerik alanından fazla genişlik ve yükseklik atanmasına izin verir.</li>
+        <li>none ; değer yok. Html elementini görünmez yap demek.</li>
+        <li>run-in ; Html elementi ya satır düzeyli yada blok düzeyli element olarak kabul edilir ve görüntülenir.
+            Elementin kendisi satır düzeyliyse satır, blok düzeyliyse blok düzeyli element olarak kabul edilir.</li>
+        <li>list-item ; Html elementi liste elementi olarak kabul edilir ve görüntülenir.</li>
+        <li>table ; Html elementi tablo elementi (table) olarak kabul edilir ve görüntülenir. </li>
+        <li>table-row ; Html elementi tablo satır (tr) elementi olarak kabul edilir ve görüntülenir. </li>
+        <li>table-cell ; Html elementi tablo sütün (td) elementi olarak kabul edilir ve görüntülenir. </li>
+        <li>table-caption ; Html elementi tablo kısa başlık (caption) olarak kabul edilir ve görüntülenir.</li>
+        <li>table-row-group ; Html elementi tablo gövde elementi (tbody) olarak kabul edilir ve görüntülenir.</li>
+        <li>table-header-group ; Html elementi tablo içi başlık elementi (thead) olarak kabul edilir ve görüntülenir.
+        </li>
+        <li>table-footer-group ; Html elementi tablo içi altlık (tfoot) olarak kabul edilir ve görüntülenir.</li>
+        <li>table-column ; Html elementi tablo içi sütun ortak özellikleri belirleme elementi (col) olarak kabul edilir.
+        </li>
+        <li>table-column-group ; Html elementi tablo içi sütun ortak özellikleri belirleme grubu elementi (colgroup)
+            olarak kabul edilirve görüntülenir.</li>
+        <li>inline-table ; Html elementi satır düzeyli tablo olarak kabul edilir ve görüntülenir. </li>
+        <li>flex ; Html elementi blok düzeyli esnek element olarak kabul edilir ve görüntülenir.</li>
+        <li>inlane-flex ; Html elementi satır düzeyli esnek element olarak kabul edilir ve görüntülenir.</li>
+        <li>grid ; Html elementi blok düzeyli ızgara element olarak kabul edilir ve görüntülenir. </li>
+        <li>inline-grid ; Html elementi satır düzeyli ızgara element olarak kabul edilir ve görüntülenir. </li>
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner. (her özellikte çalışmaz)</li>
+    </ul>
+    Not: Satır kapsamlı elementler sadece içerikleri kadar genişlik ve yükseklik kaplayabilirler.
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1"> 1-display:inline; </div>
+    <div class="ornek1"> 2-display:inline; </div>
+    <div class="ornek1"> 3-display:inline; </div>
+    <br>
+    <br>
+    <div> Not:div blok düzeyli bir elementken display:inline özelliği ile satır düzeyli bir element gibi
+        görüntülenir.Genişlik ve yüksekli değeri alamaz.</div>
+    <hr>
+    <h3>Örnek-2 ;</h3>
+    <span class="ornek2"> 1-display:block; </span>
+    <span class="ornek2"> 2-display:block; </span>
+    <span class="ornek2"> 3-display:block; </span>
+    <br>
+    <div>Not:span satır düzeyli bir elementken display:block özelliği ile blok düzeyli bir element gibi görüntülenir.
+        Genişlik ve yüksekli değeri alabilir.</div>
+    <hr>
+
+    <h3>Örnek-3 ;</h3>
+    <span class="ornek3"> 1-display:inline-block;</span>
+    <span class="ornek3"> 2-display:inline-block;</span>
+    <span class="ornek3"> 3-display:inline-block; </span>
+    <br>
+    <br>
+    <div>Not:inline-block özelliği ile satır içi bir elemente genişlik ve yükseklik verebliriz. Hem satır düzeyinin hem
+        blok düzeyinin özelliklerinden faydalanıyor.</div>
+    <hr>
+
+    <h3>Örnek-4 ;</h3>
+    <span class="ornek4"> 1-display:none;</span>
+    <span id="iki" class="ornek4"> 2-display:none;</span>
+    <span class="ornek4"> 3-display:none;</span>
+    <br>
+    <br>
+    <div>display:none özelliği ile elemente görünme diyoruz.</div>
+    <hr>
+
+    <h3>Örnek-5 ;</h3>
+    <span id="bir" class="ornek5"> 1-display:run-in;</span>
+    <span id="ik" class="ornek5"> 2-display:run-in;</span>
+    <span id="uc" class="ornek5"> 3-display:run-in;</span>
+    <br>
+    <div>Not: Elementin kendisi satır düzeyliyse satır, blok düzeyliyse blok düzeyli element olarak kabul edilir</div>
+    <hr>
+
+    <h3>Örnek-6 ;</h3>
+    <ul>
+        <span class="ornek6"> 1-display:list-item;</span>
+        <span class="ornek6"> 2-display:list-item;</span>
+        <span class="ornek6"> 3-display:list-item;</span>
+    </ul>
+    <div>Not: span yada herhangi bir elemeti liste itemi (li) gibi gösterir.</div>
+    <hr>
+
+    <h3>Örnek-7 ;</h3>
+
+    <table>
+        <caption>Html'in tablo tagları ile Oluşturulmuş tablo</caption>
+        <colgroup span="5" style="background-color: yellow;">
+            <col span="1" width="100">
+            <col span="1" width="150">
+            <col span="1" width="200">
+            <col span="1" width="250">
+            <col span="1" width="300">
+        </colgroup>
+
+        <thead>
+            <tr>
+                <td>İsim</td>
+                <td>Soyisim</td>
+                <td>Cinsiyet</td>
+                <td>Yaşadiği Şehir</td>
+                <td>Harcadığı Tutar</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Derya</td>
+                <td>Çalışkan</td>
+                <td>Kadın</td>
+                <td>Denizli</td>
+                <td>30.50 tl</td>
+            </tr>
+            <tr>
+                <td>Pınar</td>
+                <td>Aküzüm</td>
+                <td>Kadın</td>
+                <td>Denizli</td>
+                <td>100.00 tl</td>
+            </tr>
+            <tr>
+                <td>Korhan</td>
+                <td>Aküzüm</td>
+                <td>Erkek</td>
+                <td>Denizli</td>
+                <td>30.50 tl</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>193.75</td>
+            </tr>
+        </tfoot>
+    </table>
+    <br>
+    <div>Not: Aynı tablo Css'in Diplay table özellikleri ile de yapılabiliyormuş. Ben yapamadım neden bilmem :)</div>
+    <hr>
+    <h3>Örnek-8 ;</h3>
+    <span class="ornek8"> 1-display:flex; </span>
+    <span class="ornek8"> 2-display:flex; </span>
+    <span class="ornek8"> 3-display:flex; </span>
+    <br>
+    <div>Not:Ayrı bir derste ayrıntılı anlatıldı. Blok düzeyli esnek element demek</div>
+    <hr>
+
+    <h3>Örnek-9 ;</h3>
+    <div class="ornek9"> 1-display:inlane-flex; </div>
+    <div class="ornek9"> 2-display:inlane-flex; </div>
+    <div class="ornek9"> 3-display:inlane-flex; </div>
+    <br>
+    <br>
+    <div>Not:Ayrı bir derste ayrıntılı anlatıldı. satır düzeyli esnek element demek</div>
+    <hr>
+
+    <h3>Örnek-10 ;</h3>
+    <span class="ornek10"> 1-display:grid; </span>
+    <span class="ornek10"> 2-display:grid; </span>
+    <span class="ornek10"> 3-display:grid; </span>
+    <br>
+    <div>Not:Ayrı bir derste ayrıntılı anlatıldı. Blok düzeyli ızgara element demek</div>
+    <hr>
+
+    <h3>Örnek-11 ;</h3>
+    <div class="ornek11"> 1-display:inlane-grid; </div>
+    <div class="ornek11"> 2-display:inlane-grid; </div>
+    <div class="ornek11"> 3-display:inlane-grid; </div>
+    <br>
+    <br>
+    <div>Not:Ayrı bir derste ayrıntılı anlatıldı. satır düzeyli ızgara element demek</div>
+    <hr>
+
+    <h3>Örnek-12 ;</h3>
+    <ul id="AnaMenu">
+        <li id="programlamaAlani">Programlama Dilleri
+            <ul id="programlama">
+                <li>Php</li>
+                <li>Asp</li>
+                <li>Javascript</li>
+            </ul>
+        </li>
+        <li id="grafikAlani">Grafik Programları
+            <ul id="grafik">
+                <li>Photoshop</li>
+                <li>Corel</li>
+            </ul>
+        </li>
+
+        <li id="modellemeAlani">Modelleme Programları
+            <ul id="modelleme">
+                <li>3ds max</li>
+                <li>Maya</li>
+                <li>Cinema 3d</li>
+            </ul>
+        </li>
+    </ul>
+    <br>
+    <div>Not: display:none; özelliğinin ul li yapısında kullanımı</div>
+    <br>
+    <br>
+    <br>
+    <br><br>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

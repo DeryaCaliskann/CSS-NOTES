@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.ornek1 {
+            width: 500px;
+            height: 200px;
+            border: double 5px red;
+            overflow-x: hidden;
+            overflow-y: scroll;
+        }
+
+        div.ornek2 {
+            width: 500px;
+            height: 200px;
+            border: 5px double blue;
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+
+        div.ornek2a {
+            width: 750px;
+            height: 300px;
+            border: 5px double red;
+        }
+
+         div.ornek3 {
+            width: 500px;
+            height: 200px;
+            border: 2px solid blue;
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+
+        div.ornek3a {
+            width: 750px;
+            height: 300px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>overflow özelliklerinin birlikte kullanımı</h1>
+
+
+    <h3>Örnek-1 ;</h3>
+    overflow-x: hidden; <br>
+    overflow-y: scroll;
+    <div class="ornek1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab similique recusandae
+        consequatur autem fugiat beatae vel! Hic, ex quas fuga voluptatum omnis iusto ab libero reiciendis. Maiores
+        labore quam sit quibusdam animi tenetur ut porro laborum esse, nulla ipsum voluptatum, fugit quae itaque,
+        explicabo omnis dolorem harum dolorum praesentium eaque rerum hic pariatur maxime temporibus! Id modi mollitia
+        adipisci alias maxime nesciunt expedita quam deserunt sit praesentium repellat vitae, non quae voluptatem
+        minima. Debitis vel sunt, sed eum pariatur numquam quas. Recusandae minus modi exercitationem explicabo
+        obcaecati, beatae possimus fugiat, aperiam tempore, perspiciatis quos nesciunt itaque nulla unde dolore!
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cupiditate rerum ab temporibus deserunt quae.
+        Minus hic sapiente et corrupti! Beatae et culpa dolore consectetur asperiores similique placeat dolorum sit
+        maxime libero numquam explicabo, aliquid architecto reprehenderit eius quo pariatur? Quaerat minus sequi laborum
+        nobis cupiditate delectus ut sit expedita similique voluptas, impedit, cumque reprehenderit sunt aperiam commodi
+    </div>
+
+
+    <h3>Örnek-2;</h3>
+    overflow-x: auto;<br>
+    overflow-y: hidden;
+    <div class="ornek2">
+        <div class="ornek2a"> </div>
+    </div>
+
+     <h3>Örnek-3;</h3>
+    overflow-x: hidden;<br>
+    overflow-y: auto;
+    <div class="ornek3">
+        <div class="ornek3a"> </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 {
+            width: 300px;
+            height: 50px;
+            border: 2px solid blue;
+            margin: 10px;
+        }
+
+        #ikinci {
+            visibility: visible;
+        }
+
+        .ornek2 {
+            width: 300px;
+            height: 50px;
+            border: 2px solid blue;
+            margin: 10px;
+        }
+
+        #iki {
+            visibility: hidden;
+        }
+
+        .ornek3 {
+            width: 300px;
+            height: 50px;
+            border: 2px solid blue;
+            margin: 10px;
+        }
+
+        #ikino {
+            visibility: collapse;
+        }
+
+         .ornek4 {
+            width: 300px;
+            height: 50px;
+            border: 2px solid blue;
+           
+        }
+        table {
+        border: 2px solid blue;        
+        }
+        th,td {
+        border: 2px solid blue;
+        }
+        #ornek4a {
+        visibility: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>visibility özelliğinin kullanımı</h1>
+    <p>Html elementinin görüntülenme ve gizlenme özelliklerini belirler. </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>visible ; görünür. Element gösterilir (varsayılan değer)</li>
+        <li>hidden ; gizli. Element gösterilmez ve elementin kapladığı alan değerleri korunarak boş bir alan oluşur.
+        </li>
+        <li>collapse ; bitişik. Element gösterilmez ve elementin kapladığı alan değerleri korunarak boş bir alan oluşur
+            fakat element bit tablo elementi ise kapladığı alan değerleri korunmaz.</li>
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner.</li>
+        <li>inherit ; Html elementi üst elementinin biçimlendirme değerini alır.</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">visibility:visible; -1</div>
+    <div id="ikinci" class="ornek1">visibility:visible; -2</div>
+    <div class="ornek1">visibility:visible; -3</div>
+    <br>
+    <hr>
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2">visibility:hidden; -1</div>
+    <div id="iki" class="ornek2">visibility:hidden; -2</div>
+    <div class="ornek2">visibility:hidden; -3</div>
+
+    <br>
+    <hr>
+    <h3>Örnek-3 ;</h3>
+    <div class="ornek3">visibility:collapse; -1</div>
+    <div id="ikino" class="ornek3">visibility:collapse; -2</div>
+    <div class="ornek3">visibility:collapse; -3</div>
+
+    <br>
+    <hr>
+    <h3>Örnek-4 ;</h3>
+    <div class="ornek4">visibility:collapse; -1</div>
+    <table id="ornek4a">
+        <tr>
+            <th>İsim</th>
+            <th>Soyisim</th>
+        </tr>
+        <tr>
+            <td>Korhan</td>
+            <td>Aküzüm</td>
+        </tr>
+        <tr>
+            <td>Kaya</td>
+            <td>Aküzüm</td>
+        </tr>
+    </table>
+    <div class="ornek4">visibility:collapse; -3</div>
+<br>
+<br>
+
+
+
+
+
+
+</body>
+
+</html>

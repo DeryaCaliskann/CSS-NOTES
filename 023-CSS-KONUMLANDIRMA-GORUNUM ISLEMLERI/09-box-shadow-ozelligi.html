@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 {
+            width: 200px;
+            height: auto;
+            padding: 25px;
+            text-align: center;
+            border: 2px solid black;
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            -o-box-shadow: none;
+            -ms-box-shadow: none;
+            box-shadow: none;
+        }
+
+        .ornek2 {
+            width: 200px;
+            height: auto;
+            padding: 25px;
+            text-align: center;
+            border: 2px solid black;
+            -webkit-box-shadow: 5px 5px;
+            /*  (yatay-dikey) */
+            -moz-box-shadow: 5px 5x;
+            -o-box-shadow: 5px 5px;
+            -ms-box-shadow: 5px 5px;
+            box-shadow: 5px 5x;
+        }
+
+        .ornek3 {
+            width: 200px;
+            height: auto;
+            padding: 25px;
+            text-align: center;
+            border: 2px solid black;
+            -webkit-box-shadow: -5px -5px;
+            /*  (yatay-dikey) */
+            -moz-box-shadow: -5px -5x;
+            -o-box-shadow: -5px -5px;
+            -ms-box-shadow: -5px -5px;
+            box-shadow: -5px -5x;
+        }
+
+        .ornek4 {
+            width: 200px;
+            height: auto;
+            padding: 25px;
+            text-align: center;
+            border: 2px solid black;
+            -webkit-box-shadow: 5px 5px grey;
+            /*  (yatay-dikey-renk) */
+            -moz-box-shadow: 5px 5x grey;
+            -o-box-shadow: 5px 5px grey;
+            -ms-box-shadow: 5px 5px grey;
+            box-shadow: 5px 5x grey;
+        }
+
+        .ornek5 {
+            width: 200px;
+            height: auto;
+            padding: 25px;
+            text-align: center;
+            border: 2px solid black;
+            -webkit-box-shadow: 5px 5px 5px grey;
+            /*  (yatay-dikey-yayma-renk) */
+            -moz-box-shadow: 5px 5x 5px grey;
+            -o-box-shadow: 5px 5px 5px grey;
+            -ms-box-shadow: 5px 5px grey;
+            box-shadow: 5px 5x 5px grey;
+        }
+
+        .ornek6 {
+            width: 200px;
+            height: auto;
+            padding: 25px;
+            text-align: center;
+            border: 2px solid black;
+            -webkit-box-shadow: 5px 5px 5px 5px  grey;
+            /*  (yatay-dikey-yayma-renk-yayama yarıçapı) */
+            -moz-box-shadow: 5px 5x 5px 5px grey;
+            -o-box-shadow: 5px 5px 5px 5px grey;
+            -ms-box-shadow: 5px 5px 5px grey;
+            box-shadow: 5px 5x 5px 5px grey;
+        }
+
+         .ornek7 {
+            width: 200px;
+            height: auto;
+            padding: 25px;
+            text-align: center;
+            border: 2px solid black;
+            -webkit-box-shadow: 5px 5px 5px  grey inset;
+            /*  (yatay-dikey-yayma-renk-içerde) */
+            -moz-box-shadow: 5px 5x 5px  grey inset;
+            -o-box-shadow: 5px 5px 5px  grey inset;
+            -ms-box-shadow: 5px 5px  grey inset;
+            box-shadow: 5px 5x 5px  grey inset;
+        }
+
+         .ornek8 {
+            width: 200px;
+            height: auto;
+            padding: 25px;
+            text-align: center;
+            border: 2px solid black;
+            -webkit-box-shadow: 5px 5px red,10px 10px blue,15px 15px yellow;
+            /*  (yatay-dikey-renk) */
+            -moz-box-shadow:5px 5px red,10px 10px blue,15px 15px yellow;
+            -o-box-shadow: 5px 5px red,10px 10px blue,15px 15px yellow;
+            -ms-box-shadow: 5px 5px red,10px 10px blue,15px 15px yellow;
+            box-shadow: 5px 5px red,10px 10px blue,15px 15px yellow;
+        }
+
+         .ornek9 {
+            width: 200px;
+            height: auto;
+            padding: 25px;
+            text-align: center;
+            border: 2px solid black;
+            -webkit-box-shadow: 5px 5px 5px red,10px 10px blue,15px 15 15px yellow;
+            /*  (yatay-dikey-renk) */
+            -moz-box-shadow:5px 5px 5px red,10px 10px 10px blue,15px 15px 15px yellow;
+            -o-box-shadow: 5px 5px 5px red,10px 10px 10px blue,15px 15px 15px yellow;
+            -ms-box-shadow: 5px 5px 5px red,10px 10px 10px blue,15px 15px 15px yellow;
+            box-shadow: 5px 5px 5px red,10px 10px 10px blue,15px 15px 15px yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>box-shadow özelliği</h1>
+    <p> Html elementinin gölgelendirme özelliklerini belirler.Prefix'lerle beraber kullanılır.</p>
+    <h2>parametreler ;</h2>
+    <ul>
+        <li>horizontal shadow ; yatay gölge </li>
+        <li>vertical shadow ; dikey gölge</li>
+        <li>blur spread ; bulanıklık yayma</li>
+        <li>spread radius ; yayma yarıçapı</li>
+        <li>color: renk</li>
+
+
+    </ul>
+    <h2>değerler;</h2>
+    <ul>
+        <li>none: değer yok</li>
+        <li>length; uzunlukdeğeri</li>
+        <li>inset ; ilave (içerisinde)</li>
+        <li>initial; html elementi varsayılan biçimlendirme değerine döner</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+
+    <div class="ornek1">box-shadow: none;</div>
+
+    <h3>Örnek-2 ;</h3>
+
+    <div class="ornek2"> box-shadow: 5px 5x; </div>
+
+    <h3>Örnek-3 ;</h3>
+
+    <div class="ornek3"> box-shadow: -5px -5x; </div>
+
+    <h3>Örnek-4;</h3>
+
+    <div class="ornek4">box-shadow: 5px 5x grey;</div>
+
+    <h3>Örnek-5;</h3>
+
+    <div class="ornek5">box-shadow: 5px 5x 5x grey;</div>
+
+    <h3>Örnek-6;</h3>
+
+    <div class="ornek6">box-shadow: 5px 5x 5x 5px grey;</div>
+
+    <h3>Örnek-7;</h3>
+
+    <div class="ornek7">box-shadow: 5px 5x 5x 1px grey inset;</div>
+
+    <h3>Örnek-8;</h3>
+
+    <div class="ornek8">5px 5px red,5px 5px blue,5px 5px yellow;</div>
+
+     <h3>Örnek-9;</h3>
+
+    <div class="ornek9">5px 5px red,5px 5px blue,5px 5px yellow;</div>
+   
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 {
+            width: 150px;
+            border: 1px solid blue;
+            margin: 2px;
+            float: none;
+        }
+
+        .ornek2 {
+            width: 150px;
+            border: 1px solid blue;
+            margin: 2px;
+            float: left;
+        }
+
+        .ornek3 {
+            width: 150px;
+            border: 1px solid blue;
+            margin: 2px;
+            float: right;
+        }
+
+        .ornek4 {
+            width: 150px;
+            border: 1px solid blue;
+            margin: 2px;
+        }
+
+        #bir,
+        #iki,
+        #uc {
+            float: left;
+        }
+
+        #dort,
+        #bes,
+        #altı {
+            float: right;
+        }
+
+        .ornek5 {
+            width: 150px;
+            border: 1px solid blue;
+            margin: 2px;
+        }
+
+
+        #ikinci,
+        #ucuncu {
+            float: right;
+        }
+
+        #dorducu,
+        #besinci {
+            float: left;
+        }
+
+        span {
+            font-size: 80px;
+            float: left;
+            line-height: 53px;
+        }
+
+
+        .menu {
+        width: 597px;
+        margin: 0px auto;
+        }
+
+        ol {
+            width: 597px;
+            height: 19px;
+            list-style-type: none;           
+            margin: 0px;
+            padding: 0px;
+        }
+
+        li {
+            float: left;
+            padding: 0px 30px;
+            height: 19px;
+            background: yellow;
+        }
+
+        li:hover {
+            background: blue;
+            height: 19px;
+        }
+
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>float özelliğinin kullanımı</h1>
+    <p> Html elementinin bulunduğu konumdan kayma özelliklerini belirler.</p>
+    <h2>değerler ;</h2>
+    <div>
+        <p>- none; değer yok (varsayılandır. kayma değeri yok)</p>
+        <p>- left ; sola kay</p>
+        <p>- right ; sağa kay</p>
+        <p>- initial; html elementi varsayılan biçimlendirme değerine döner</p>
+        <p>- inherit; html elementi üst elementini biçimlendirme değerini alır</p>
+    </div>
+
+    <h3>Örnek-1 ;</h3>
+    <div>float: none;</div>
+    <div class="ornek1">1-Derya Çalışkan</div>
+    <div class="ornek1">2-Pınar Aküzüm</div>
+    <div class="ornek1">3-Emre Çalışkan</div>
+    <div class="ornek1">4-Hüseyin Kuzu</div>
+    <div class="ornek1">5-Ayşe Kuzu</div>
+    <div class="ornek1">6-Süleyman Kuzu</div>
+    <br>
+    <hr>
+
+    <h3>Örnek-2 ;</h3>
+    <div>float:left;</div>
+    <div class="ornek2">1-Derya Çalışkan</div>
+    <div class="ornek2">2-Pınar Aküzüm</div>
+    <div class="ornek2">3-Emre Çalışkan</div>
+    <div class="ornek2">4-Hüseyin Kuzu</div>
+    <div class="ornek2">5-Ayşe Kuzu</div>
+    <div class="ornek2">6-Süleyman Kuzu</div>
+    <!--Not: Alan olduğu müddetçe eklene eklene sola geçer alan bitince alt satırdan eklenmeye devam eder.-->
+    <br>
+    <hr>
+    <h3>Örnek-3 ;</h3>
+    <div>float:right;</div>
+    <div class="ornek3">1-Derya Çalışkan</div>
+    <div class="ornek3">2-Pınar Aküzüm</div>
+    <div class="ornek3">3-Emre Çalışkan</div>
+    <div class="ornek3">4-Hüseyin Kuzu</div>
+    <div class="ornek3">5-Ayşe Kuzu</div>
+    <div class="ornek3">6-Süleyman Kuzu</div>
+    <br>
+    <hr>
+    <h3>Örnek-4 ;</h3>
+    <div id="bir" class="ornek4">1-Derya Çalışkan</div>
+    <div id="iki" class="ornek4">2-Pınar Aküzüm</div>
+    <div id="uc" class="ornek4">3-Emre Çalışkan</div>
+    <div id="dort" class="ornek4">4-Hüseyin Kuzu</div>
+    <div id="bes" class="ornek4">5-Ayşe Kuzu</div>
+    <div id="altı" class="ornek4">6-Süleyman Kuzu</div>
+    <br>
+    <hr>
+
+    <h3>Örnek-5 ;</h3>
+    <div id="birici" class="ornek5">1-Derya Çalışkan</div>
+    <div id="ikinci" class="ornek5">2-Pınar Aküzüm</div>
+    <div id="ucuncu" class="ornek5">3-Emre Çalışkan</div>
+    <div id="doducu" class="ornek5">4-Hüseyin Kuzu</div>
+    <div id="besinci" class="ornek5">5-Ayşe Kuzu</div>
+    <div id="altıcı" class="ornek5">6-Süleyman Kuzu</div>
+    <br>
+    <hr>
+    <h3>Örnek-6 ;</h3>
+    <div><span>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Quam eaque debitis cumque nemo recusandae
+        provident
+        accusamus culpa iusto corporis repellat. Blanditiis quisquam facilis, quas soluta repellendus molestias
+        inventore magni a hic eveniet ex doloremque accusamus iste dolore assumenda at quia? Earum numquam eum culpa quo
+        asperiores aspernatur ea nostrum praesentium necessitatibus minus in commodi soluta ab aliquid error, quaerat
+        neque repudiandae, similique dolorem architecto libero? Rerum ipsum doloribus ratione inventore recusandae
+        quidem autem numquam vel maxime quia aperiam cupiditate tempore modi, quaerat, non soluta labore obcaecati a
+        eligendi eos quas assumenda dolore dicta id! Optio totam reiciendis consequatur repellendus enim. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Officia molestiae architecto quibusdam, dolor maxime natus iusto
+        asperiores maiores repellendus omnis molestias eum magnam aliquam itaque nihil dignissimos alias laboriosam.
+        Tempora minima aperiam rem quibusdam. Magni ut facere velit at nisi, quia explicabo. Rem magnam porro magni.
+        Expedita praesentium reprehenderit excepturi.</div>
+    <br>
+    <hr>
+
+    <h3>Örnek-7 ;</h3>
+    <div class="menu">
+    <ol>
+        <li><a href="#?Değer=Anasayfa">Ana Sayfa</a></li>
+        <li><a href="#?Değer=Ürünler">Ürünler</a></li>
+        <li><a href="#?Değer=Kampanya">Kampanya</a></li>
+        <li><a href="#?Değer=Destek">Destek</a></li>
+        <li><a href="#?Değer=İletişim">İletişim</a></li>
+    </ol>
+    </div>
+    <br>
+    <br>
+
+</body>
+
+</html>

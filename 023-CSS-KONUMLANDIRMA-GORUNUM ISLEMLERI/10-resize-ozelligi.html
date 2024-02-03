@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ornek1 {
+            width: 200px;
+            height: auto;
+            border: 2px solid red;
+            overflow: auto;
+            resize: none;
+        }
+
+        textarea {
+            width: 200px;
+            height: auto;
+            border: 2px solid red;
+            resize: none;
+
+        }
+
+        .ornek3 {
+            width: 200px;
+            height: auto;
+            border: 2px solid red;
+            overflow: auto;
+            resize: both;
+        }
+
+        .ornek4 {
+            width: 200px;
+            height: auto;
+            border: 2px solid red;
+            overflow: auto;
+            resize: horizontal;
+        }
+
+        .ornek5 {
+            width: 200px;
+            height: auto;
+            border: 2px solid red;
+            overflow: auto;
+            resize: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>resize özelliği</h1>
+    <p> Html elementinin kullanıcı tarafından yeniden boyutlandırılabilir olup olmadığı durumunu belirler. divlerde vs.
+        kullanırken overflow değeri vermemiz gerekiyor. textarea'a vermemize gerek yok.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>none ; değer yok </li>
+        <li>both ; her ikiside </li>
+        <li>horizontal ; yatay</li>
+        <li>vertical; dikey</li>
+        <li>initial; html elementi varsayılan biçimlendirme değerine döner</li>
+        <li>inherit; html elementi üst elementini biçimlendirme değerini alır</li>
+    </ul>
+
+    <h2>Örnek-1 ;</h2>
+
+    <div class="ornek1">resize:none;</div>
+
+    <h2>Örnek-2 ;</h2>
+
+    <textarea rows="" cols="" placeholder="resize:none;"></textarea>
+
+
+    <h2>Örnek-3;</h2>
+
+    <div class="ornek3">resize:both;</div>
+
+    <h2>Örnek-4;</h2>
+
+    <div class="ornek4">resize:horizontal;</div>
+
+    <h2>Örnek-5;</h2>
+
+    <div class="ornek5">resize:vertical;</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
