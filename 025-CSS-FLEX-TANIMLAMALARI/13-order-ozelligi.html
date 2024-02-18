@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            width: 500px;
+            height: 50px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+        }
+
+        .iceleman1 {
+            border: 1px solid blue;
+            -webkit-flex: 1;
+            -moz-flex: 1;
+            -o-flex: 1;
+            -ms-flex: 1;
+            flex: 1;   /* width: 50px; (width değeride verebiliriz.) */
+        }
+
+        .ilksiraA {
+            -webkit-order: 1;
+            -moz-order: 1;
+            -o-order: 1;
+            -ms-order: 1;
+            order: 1;
+
+        }
+
+        .anaeleman2 {
+            width: 500px;
+            height: 50px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+        }
+
+        .iceleman2 {
+            border: 1px solid blue;
+            -webkit-flex: 1;
+            -moz-flex: 1;
+            -o-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        .ilksiraB {
+            -webkit-order: -1;
+            -moz-order: -1;
+            -o-order: -1;
+            -ms-order: -1;
+            order: -1;
+        }
+
+         .anaeleman3 {
+            width: 500px;
+            height: 50px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+        }
+
+        .iceleman3 {
+            border: 1px solid blue;
+            -webkit-flex: 1;
+            -moz-flex: 1;
+            -o-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        .birA {
+            -webkit-order: 1;
+            -moz-order: 1;
+            -o-order: 1;
+            -ms-order: 1;
+            order: 1;
+        }
+
+        .ikiA {
+            -webkit-order: 2;
+            -moz-order: 2;
+            -o-order: 2;
+            -ms-order: 2;
+            order: 2;
+        }
+
+        .ucA {
+            -webkit-order: 3;
+            -moz-order: 3;
+            -o-order: 3;
+            -ms-order: 3;
+            order: 3;
+        }
+
+        .dortA {
+            -webkit-order: 4;
+            -moz-order: 4;
+            -o-order: 4;
+            -ms-order: 4;
+            order: 4;
+        }
+
+        .besA {
+            -webkit-order: 5;
+            -moz-order: 5;
+            -o-order: 5;
+            -ms-order: 5;
+            order: 5;
+        }
+
+        .altiA {
+            -webkit-order: 6;
+            -moz-order: 6;
+            -o-order: 6;
+            -ms-order: 6;
+            order: 6;
+        }
+
+        .yediA {
+            -webkit-order: 7;
+            -moz-order: 7;
+            -o-order: 7;
+            -ms-order: 7;
+            order: 7;
+        }
+
+        .sekizA {
+            -webkit-order: 8;
+            -moz-order: 8;
+            -o-order: 8;
+            -ms-order: 8;
+            order: 8;
+        }
+
+        .dokuzA{
+            -webkit-order: 9;
+            -moz-order: 9;
+            -o-order: 9;
+            -ms-order: 9;
+            order: 9;
+        }
+
+        .onA {
+            -webkit-order: 10;
+            -moz-order: 10;
+            -o-order: 10;
+            -ms-order: 10;
+            order: 10;
+        }
+
+         .anaeleman4 {
+            width: 500px;
+            height: 50px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+        }
+
+        .iceleman4 {
+            border: 1px solid blue;
+            -webkit-flex: 1;
+            -moz-flex: 1;
+            -o-flex: 1;
+            -ms-flex: 1;
+             flex: 1; 
+        }
+
+        .birB {
+            -webkit-order: -1;
+            -moz-order: -1;
+            -o-order: -1;
+            -ms-order: -1;
+            order: -1;
+        }
+
+        .ikiB {
+            -webkit-order: -2;
+            -moz-order: -2;
+            -o-order: -2;
+            -ms-order: -2;
+            order: -2;
+        }
+
+        .ucB{
+            -webkit-order: -3;
+            -moz-order: -3;
+            -o-order: -3;
+            -ms-order: -3;
+            order: -3;
+        }
+
+        .dorTB {
+            -webkit-order: -4;
+            -moz-order: -4;
+            -o-order: -4;
+            -ms-order: -4;
+            order: -4;
+        }
+
+        .besB {
+            -webkit-order: -5;
+            -moz-order: -5;
+            -o-order: -5;
+            -ms-order: -5;
+            order: -5;
+        }
+
+        .altiB{
+            -webkit-order: -6;
+            -moz-order: -6;
+            -o-order: -6;
+            -ms-order: -6;
+            order: -6;
+        }
+
+        .yediB {
+            -webkit-order: -7;
+            -moz-order: -7;
+            -o-order: -7;
+            -ms-order: -7;
+            order: -7;
+        }
+
+        .sekizB {
+            -webkit-order: -8;
+            -moz-order: -8;
+            -o-order: -8;
+            -ms-order: -8;
+            order: -8;
+        }
+
+        .dokuzB {
+            -webkit-order: -9;
+            -moz-order: -9;
+            -o-order: -9;
+            -ms-order: -9;
+            order: -9;
+        }
+
+        .onB {
+            -webkit-order: -10;
+            -moz-order: -10;
+            -o-order: -10;
+            -ms-order: -10;
+            order: -10;
+        }
+
+          .anaeleman5 {
+            width: 50px;
+            height: 500px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .iceleman5 {
+            border: 1px solid blue;
+            -webkit-flex: 1;
+            -moz-flex: 1;
+            -o-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        .birC {
+            -webkit-order: 1;
+            -moz-order: 1;
+            -o-order: 1;
+            -ms-order: 1;
+            order: 1;
+        }
+
+        .ikiC {
+            -webkit-order: 2;
+            -moz-order: 2;
+            -o-order: 2;
+            -ms-order: 2;
+            order: 2;
+        }
+
+        .ucC {
+            -webkit-order: 3;
+            -moz-order: 3;
+            -o-order: 3;
+            -ms-order: 3;
+            order: 3;
+        }
+
+        .dortC {
+            -webkit-order: 4;
+            -moz-order: 4;
+            -o-order: 4;
+            -ms-order: 4;
+            order: 4;
+        }
+
+        .besC {
+            -webkit-order: 5;
+            -moz-order: 5;
+            -o-order: 5;
+            -ms-order: 5;
+            order: 5;
+        }
+
+        .altiC{
+            -webkit-order: 6;
+            -moz-order: 6;
+            -o-order: 6;
+            -ms-order: 6;
+            order: 6;
+        }
+
+        .yediC {
+            -webkit-order: 7;
+            -moz-order: 7;
+            -o-order: 7;
+            -ms-order: 7;
+            order: 7;
+        }
+
+        .sekizC {
+            -webkit-order: 8;
+            -moz-order: 8;
+            -o-order: 8;
+            -ms-order: 8;
+            order: 8;
+        }
+
+        .dokuzC {
+            -webkit-order: 9;
+            -moz-order: 9;
+            -o-order: 9;
+            -ms-order: 9;
+            order: 9;
+        }
+
+        .onC {
+            -webkit-order: 10;
+            -moz-order: 10;
+            -o-order: 10;
+            -ms-order: 10;
+            order: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>order özelliği</h1>
+    <p>Esnek kutu içerisinde bulunan element veya elementlerin diğer elementlere göre sıralama özelliklerini belirler.
+    </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>number ; rakam</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+    <h3>ornek-1 ;</h3>
+    order: 1;
+    <div class="anaeleman1">
+        <div class="iceleman1">1</div>
+        <div class="iceleman1">2</div>
+        <div class="iceleman1">3</div>
+        <div class="iceleman1">4</div>
+        <div class="iceleman1">5</div>
+        <div class="iceleman1">6</div>
+        <div class="iceleman1">7</div>
+        <div class="iceleman1 ilksiraA">8</div>
+        <div class="iceleman1">9</div>
+        <div class="iceleman1">10</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    order: -1;
+    <div class="anaeleman2">
+        <div class="iceleman2">1</div>
+        <div class="iceleman2">2</div>
+        <div class="iceleman2">3</div>
+        <div class="iceleman2">4</div>
+        <div class="iceleman2">5</div>
+        <div class="iceleman2">6</div>
+        <div class="iceleman2">7</div>
+        <div class="iceleman2 ilksiraB">8</div>
+        <div class="iceleman2">9</div>
+        <div class="iceleman2">10</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>   
+    <div class="anaeleman3">
+        <div class="iceleman3 dokuA">1</div>
+        <div class="iceleman3 ucA">2</div>
+        <div class="iceleman3 altiA">3</div>
+        <div class="iceleman3 sekizA">4</div>
+        <div class="iceleman3 ikiA">5</div>
+        <div class="iceleman3 besA">6</div>
+        <div class="iceleman3 onA">7</div>
+        <div class="iceleman3 birA">8</div>
+        <div class="iceleman3 dortA">9</div>
+        <div class="iceleman3 yediA">10</div>
+    </div>
+
+     <h3>ornek-4 ;</h3>   
+    <div class="anaeleman4">
+        <div class="iceleman4 dokuzB">1</div>
+        <div class="iceleman4 ucB">2</div>
+        <div class="iceleman4 altiB">3</div>
+        <div class="iceleman4 sekizB">4</div>
+        <div class="iceleman4 ikiB">5</div>
+        <div class="iceleman4 besB">6</div>
+        <div class="iceleman4 onB">7</div>
+        <div class="iceleman4 birB">8</div>
+        <div class="iceleman4 dorTB">9</div>
+        <div class="iceleman4 yediB">10</div>
+
+    </div> <h3>ornek-5 ;</h3> 
+    <div class="anaeleman5">
+        <div class="iceleman5 dokuzC">1</div>
+        <div class="iceleman5 ucC">2</div>
+        <div class="iceleman5 altiC">3</div>
+        <div class="iceleman5 sekizC">4</div>
+        <div class="iceleman5 ikiC">5</div>
+        <div class="iceleman5 besC">6</div>
+        <div class="iceleman5 onC">7</div>
+        <div class="iceleman5 birC">8</div>
+        <div class="iceleman5 dortC">9</div>
+        <div class="iceleman5 yediC">10</div>
+    </div>
+
+
+</body>
+
+</html>

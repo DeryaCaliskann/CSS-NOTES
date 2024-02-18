@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -o-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-align-content: stretch;
+            -moz-align-content: stretch;
+            -o-align-content: stretch;
+            -ms-align-content: stretch;
+            align-content: stretch;
+        }
+
+        .iceleman1 {
+            border: 1px solid blue;
+            width: 65px;
+            height: 65px;
+        }
+
+        .anaeleman2 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -o-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-align-content: center;
+            -moz-align-content: center;
+            -o-align-content: center;
+            -ms-align-content: center;
+            align-content: center;
+        }
+
+        .iceleman2 {
+            border: 1px solid blue;
+            width: 65px;
+            height: 65px;
+        }
+
+        .anaeleman3 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -o-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-align-content: flex-start;
+            -moz-align-content: flex-start;
+            -o-align-content: flex-start;
+            -ms-align-content: flex-start;
+            align-content: flex-start;
+        }
+
+        .iceleman3 {
+            border: 1px solid blue;
+            width: 65px;
+            height: 65px;
+        }
+
+        .anaeleman4 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -o-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-align-content: flex-end;
+            -moz-align-content: flex-end;
+            -o-align-content: flex-end;
+            -ms-align-content: flex-end;
+            align-content: flex-end;
+        }
+
+        .iceleman4 {
+            border: 1px solid blue;
+            width: 65px;
+            height: 65px;
+        }
+
+        .anaeleman5 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -o-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-align-content: space-between;
+            -moz-align-content: space-between;
+            -o-align-content: space-between;
+            -ms-align-content: space-between;
+            align-content: space-between;
+        }
+
+        .iceleman5 {
+            border: 1px solid blue;
+            width: 65px;
+            height: 65px;
+        }
+
+        .anaeleman6 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -o-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-align-content: space-around;
+            -moz-align-content: space-around;
+            -o-align-content: space-around;
+            -ms-align-content: space-around;
+            align-content: space-around;
+        }
+
+        .iceleman6 {
+            border: 1px solid blue;
+            width: 65px;
+            height: 65px;
+        }
+
+        .anaeleman7 {
+            width: 250px;
+            height: 250px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -o-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-align-content: space-around;
+            -moz-align-content: space-around;
+            -o-align-content: space-around;
+            -ms-align-content: space-around;
+            align-content: space-around;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -o-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .iceleman7 {
+            border: 1px solid blue;
+            width: 65px;
+            height: 65px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>align-content özelliği</h1>
+    <p>Esnek kutu içerisinde bulunan elementler tüm alanı kullanmadığında ve satır kırılma olduğunda elementlerin
+        hizalama özelliklerini belirler.</p>
+    <h2>değerler ;</h2>
+    <ul>
+
+        <li>stretch ; uzat / esne (varsayılan)</li>
+        <li>center ; orta</li>
+        <li>flex-start ; esnek başlangıç</li>
+        <li>flex-end ; esnek bitiş</li>
+        <li>space-between ; boşluk arasında</li>
+        <li>space-around ; boşluk etrafında</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+    <h3>ornek-1 ;</h3>
+    align-content: stretch;
+    <div class="anaeleman1">
+        <div class="iceleman1">A</div>
+        <div class="iceleman1">B</div>
+        <div class="iceleman1">C</div>
+        <div class="iceleman1">D</div>
+        <div class="iceleman1">E</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    align-content: center;
+    <div class="anaeleman2">
+        <div class="iceleman2">A</div>
+        <div class="iceleman2">B</div>
+        <div class="iceleman2">C</div>
+        <div class="iceleman2">D</div>
+        <div class="iceleman2">E</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    align-content: flex-start;
+    <div class="anaeleman3">
+        <div class="iceleman3">A</div>
+        <div class="iceleman3">B</div>
+        <div class="iceleman3">C</div>
+        <div class="iceleman3">D</div>
+        <div class="iceleman3">E</div>
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    align-content: flex-end;
+    <div class="anaeleman4">
+        <div class="iceleman4">A</div>
+        <div class="iceleman4">B</div>
+        <div class="iceleman4">C</div>
+        <div class="iceleman4">D</div>
+        <div class="iceleman4">E</div>
+    </div>
+
+    <h3>ornek-5 ;</h3>
+    align-content: space-between;
+    <div class="anaeleman5">
+        <div class="iceleman5">A</div>
+        <div class="iceleman5">B</div>
+        <div class="iceleman5">C</div>
+        <div class="iceleman5">D</div>
+        <div class="iceleman5">E</div>
+    </div>
+
+    <h3>ornek-6 ;</h3>
+    align-content: space-around;
+    <div class="anaeleman6">
+        <div class="iceleman6">A</div>
+        <div class="iceleman6">B</div>
+        <div class="iceleman6">C</div>
+        <div class="iceleman6">D</div>
+        <div class="iceleman6">E</div>
+    </div>
+
+    <h3>ornek-7 ;</h3>
+    flex-direction: column; <br>
+    align-content: space-around;
+    <div class="anaeleman7">
+        <div class="iceleman7">A</div>
+        <div class="iceleman7">B</div>
+        <div class="iceleman7">C</div>
+        <div class="iceleman7">D</div>
+        <div class="iceleman7">E</div>
+    </div>
+
+</body>
+
+</html>

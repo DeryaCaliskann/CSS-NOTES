@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            width: 750px;
+            height: 50px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-justify-content: flex-start;
+            -moz-justify-content: flex-start;
+            -o-justify-content: flex-start;
+            -ms-justify-content: flex-start;
+            justify-content: flex-start;
+
+        }
+
+        .iceleman1 {
+            border: 1px solid blue;
+            width: 50px;
+        }
+
+        .anaeleman2 {
+            width: 750px;
+            height: 50px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-justify-content: flex-end;
+            -moz-justify-content: flex-end;
+            -o-justify-content: flex-end;
+            -ms-justify-content: flex-end;
+            justify-content: flex-end;
+        }
+
+        .iceleman2 {
+            border: 1px solid blue;
+            width: 50px;
+        }
+
+        .anaeleman3 {
+            width: 750px;
+            height: 50px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            ;
+            -o-justify-content: center;
+            -ms-justify-content: center;
+            justify-content: center;
+        }
+
+        .iceleman3 {
+            border: 1px solid blue;
+            width: 50px;
+        }
+
+        .anaeleman4 {
+            width: 750px;
+            height: 50px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-justify-content: space-between;
+            -moz-justify-content: space-between;
+            -o-justify-content: space-between;
+            -ms-justify-content: space-between;
+            justify-content: space-between;
+        }
+
+        .iceleman4 {
+            border: 1px solid blue;
+            width: 50px;
+        }
+
+        .anaeleman5 {
+            width: 750px;
+            height: 50px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around;
+            ;
+            -o-justify-content: space-around;
+            -ms-justify-content: space-around;
+            justify-content: space-around;
+        }
+
+        .iceleman5 {
+            border: 1px solid blue;
+            width: 50px;
+        }
+
+        .anaeleman6 {
+            width: 50px;
+            height: 750px;
+            border: 1px solid red;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-justify-content: space-around;
+            -moz-justify-content: space-around;
+            -o-justify-content: space-around;
+            -ms-justify-content: space-around;
+            justify-content: space-around;
+            -webkit-flex-direction: column;
+            -o-flex-direction: column;
+            -moz-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .iceleman6 {
+            border: 1px solid blue;
+            width: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>justify-content özelliği</h1>
+    <p>Esnek kutu içerisinde bulunan elementler tüm alanı kaplamadığında elementlerin arasındaki
+        hizalama özelliklerini belirler.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>flex-start ; esnek başlangıç (varsayılan)</li>
+        <li>flex-end ; esnek bitiş</li>
+        <li>center ; orta</li>
+        <li>space-between ; boşluk arasında</li>
+        <li>space-around ; boşluk etrafında</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+    <h3>ornek-1 ;</h3>
+    justify-content: flex-start;
+    <div class="anaeleman1">
+        <div class="iceleman1">A</div>
+        <div class="iceleman1">B</div>
+        <div class="iceleman1">C</div>
+        <div class="iceleman1">D</div>
+        <div class="iceleman1">E</div>
+        <div class="iceleman1">F</div>
+        <div class="iceleman1">G</div>
+        <div class="iceleman1">H</div>
+        <div class="iceleman1">I</div>
+        <div class="iceleman1">İ</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    justify-content: flex-end;
+    <div class="anaeleman2">
+        <div class="iceleman2">A</div>
+        <div class="iceleman2">B</div>
+        <div class="iceleman2">C</div>
+        <div class="iceleman2">D</div>
+        <div class="iceleman2">E</div>
+        <div class="iceleman2">F</div>
+        <div class="iceleman2">G</div>
+        <div class="iceleman2">H</div>
+        <div class="iceleman2">I</div>
+        <div class="iceleman2">İ</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    justify-content: center;
+    <div class="anaeleman3">
+        <div class="iceleman3">A</div>
+        <div class="iceleman3">B</div>
+        <div class="iceleman3">C</div>
+        <div class="iceleman3">D</div>
+        <div class="iceleman3">E</div>
+        <div class="iceleman3">F</div>
+        <div class="iceleman3">G</div>
+        <div class="iceleman3">H</div>
+        <div class="iceleman3">I</div>
+        <div class="iceleman3">İ</div>
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    justify-content:space-between;
+    <div class="anaeleman4">
+        <div class="iceleman4">A</div>
+        <div class="iceleman4">B</div>
+        <div class="iceleman4">C</div>
+        <div class="iceleman4">D</div>
+        <div class="iceleman4">E</div>
+        <div class="iceleman4">F</div>
+        <div class="iceleman4">G</div>
+        <div class="iceleman4">H</div>
+        <div class="iceleman4">I</div>
+        <div class="iceleman4">İ</div>
+    </div>
+
+    <h3>ornek-5 ;</h3>
+    justify-content: space-around;
+    <div class="anaeleman5">
+        <div class="iceleman5">A</div>
+        <div class="iceleman5">B</div>
+        <div class="iceleman5">C</div>
+        <div class="iceleman5">D</div>
+        <div class="iceleman5">E</div>
+        <div class="iceleman5">F</div>
+        <div class="iceleman5">G</div>
+        <div class="iceleman5">H</div>
+        <div class="iceleman5">I</div>
+        <div class="iceleman5">İ</div>
+    </div>
+
+    <h3>ornek-6 ;</h3>
+     flex-direction: column; <br>
+    justify-content: space-around;
+    <div class="anaeleman6">
+        <div class="iceleman6">A</div>
+        <div class="iceleman6">B</div>
+        <div class="iceleman6">C</div>
+        <div class="iceleman6">D</div>
+        <div class="iceleman6">E</div>
+        <div class="iceleman6">F</div>
+        <div class="iceleman6">G</div>
+        <div class="iceleman6">H</div>
+        <div class="iceleman6">I</div>
+        <div class="iceleman6">İ</div>
+    </div>
+
+
+
+</body>
+
+</html>

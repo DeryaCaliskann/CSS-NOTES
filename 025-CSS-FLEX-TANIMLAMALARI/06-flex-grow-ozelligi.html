@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            width: 500px;
+            height: 100px;
+            border: 1px solid grey;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+        }
+
+        .iceleman1 {
+            border: 1px solid grey;
+            -webkit-flex-grow: 1;
+            -moz-flex-grow: 1;
+            -o-flex-grow: 1;
+            -ms-flex-grow: 1;
+            flex-grow: 1;
+        }
+
+        .anaeleman2 {
+            width: 500px;
+            height: 100px;
+            border: 1px solid grey;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+        }
+
+        .iceleman2 {
+            border: 1px solid grey;
+            -webkit-flex-grow: 1;
+            -moz-flex-grow: 1;
+            -o-flex-grow: 1;
+            -ms-flex-grow: 1;
+            flex-grow: 1;
+        }
+
+        .ornek2 {
+            border: 1px solid grey;
+            -webkit-flex-grow: 2;
+            -moz-flex-grow: 2;
+            -o-flex-grow: 2;
+            -ms-flex-grow: 2;
+            flex-grow: 2;
+        }
+
+        .anaeleman3 {
+            width: 500px;
+            height: 100px;
+            border: 1px solid grey;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+        }
+
+        .iceleman3 {
+            border: 1px solid grey;
+            -webkit-flex-grow: 1;
+            -moz-flex-grow: 1;
+            -o-flex-grow: 1;
+            -ms-flex-grow: 1;
+            flex-grow: 1;
+        }
+
+        .ornek3 {
+            border: 1px solid grey;
+            -webkit-flex-grow: 10;
+            -moz-flex-grow: 10;
+            -o-flex-grow: 10;
+            -ms-flex-grow: 10;
+            flex-grow: 10;
+        }
+
+        .anaeleman4 {
+            width: 500px;
+            height: 500px;
+            border: 1px solid grey;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -o-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .iceleman4 {
+            border: 1px solid grey;
+            -webkit-flex-grow: 1;
+            -moz-flex-grow: 1;
+            -o-flex-grow: 1;
+            -ms-flex-grow: 1;
+            flex-grow: 1;
+        }
+
+        .ornek4 {
+            border: 1px solid grey;
+            -webkit-flex-grow: 5;
+            -moz-flex-grow: 5;
+            -o-flex-grow: 5;
+            -ms-flex-grow: 5;
+            flex-grow: 5;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flex-grow özelliği</h1>
+    <p>Esnek kutu içerisindeki element veya elementlerin diğer elementlere göre büyüklük oranının ne şekilde olması
+        gerektiğini belirler. 0 varsayılan değerdir. Değer vermezsek içerik alanı kadar yer kaplar.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>number ; rakam</li>
+        <li>initial ; html elementi biçimlendirme değerine döner.</li>
+    </ul>
+
+
+    <h3>ornek-1 ;</h3>
+    flex-grow:1;
+    <div class="anaeleman1">
+        <div class="iceleman1">A</div>
+        <div class="iceleman1">B</div>
+        <div class="iceleman1">C</div>
+        <div class="iceleman1">D</div>
+        <div class="iceleman1">E</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    flex-grow: 2;
+    <div class="anaeleman2">
+        <div class="iceleman2">A</div>
+        <div class="iceleman2">B</div>
+        <div class="iceleman2 ornek2">C</div>
+        <div class="iceleman2">D</div>
+        <div class="iceleman2">E</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    flex-grow:10;
+    <div class="anaeleman3">
+        <div class="iceleman3">A</div>
+        <div class="iceleman3">B</div>
+        <div class="iceleman3 ornek3"></div>
+        <div class="iceleman3">D</div>
+        <div class="iceleman3">E</div>
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    flex-direction: column;
+    flex-grow:5;
+    <div class="anaeleman4">
+        <div class="iceleman4">A</div>
+        <div class="iceleman4">B</div>
+        <div class="iceleman4 ornek4">C</div>
+        <div class="iceleman4">D</div>
+        <div class="iceleman4">E</div>
+    </div>
+
+
+</body>
+
+</html>

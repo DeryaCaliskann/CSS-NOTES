@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            background-color: #03ABD1;
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 10px;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+        }
+
+        .iceleman1 {
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid red;
+            color: white;
+
+        }
+
+        .anaeleman2 {
+            background-color: #03ABD1;
+            border: 2px solid blue;
+            padding: 10px;
+            margin: 10px;
+            display: -webkit- inline-flex;
+            display: -moz- inline-flex;
+            display: -o- inline-flex;
+            display: -ms- inline-flex;
+            display: inline-flex;
+        }
+
+
+        .iceleman2 {
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flex (esnek kutu) tanımlamları</h1>
+    <p>Bir elementi veya içerisindeki diğer elementleri esnek yapıya kavuşturmak için kullanılır. İçerisindeki
+        elementleri ama enine ama boyuna olsun sayfaya yaymamıza olanak tanır. Bu yapı sayesinde elementlere istediğimiz
+        gibi hükmedebiliyoruz.</p>
+
+
+
+    <h3>ornek-1 ;</h3>
+    <p> display: flex; (Esnek kutu içerisindeki öğeler ana eksen doğrultusunda kutuya sığmak için büyür yada küçülür. Blok düzeylidir.</p>
+    <div class="anaeleman1">
+        <div class="iceleman1">HTML</div>
+        <div class="iceleman1">CSS</div>
+        <div class="iceleman1">JS</div>
+        <div class="iceleman1">ASP</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    <p> display: inline-flex; (İçindeki kutuların kapladığı alandan sonra sonlandırır. Satır düzeylidir.)
+    </p>
+    <div class="anaeleman2">
+        <div class="iceleman2">HTML</div>
+        <div class="iceleman2">CSS</div>
+        <div class="iceleman2">JS</div>
+        <div class="iceleman2">ASP</div>
+    </div>
+
+</body>
+
+</html>

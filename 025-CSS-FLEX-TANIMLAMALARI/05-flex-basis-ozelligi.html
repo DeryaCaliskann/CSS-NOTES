@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            width: 500px;
+            height: 100px;
+            border: 1px solid grey;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+        }
+
+        .iceleman1 {
+            border: 1px solid grey;
+            -webkit-flex-basis: auto;
+            -moz-flex-basis: auto;
+            -o-flex-basis: auto;
+            -ms-flex-basis: auto;
+            flex-basis: auto;
+        }
+
+        .anaeleman2 {
+            width: 500px;
+            height: 100px;
+            border: 1px solid grey;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+        }
+
+        .iceleman2 {
+            border: 1px solid grey;
+            -webkit-flex-basis: 50px;
+            -moz-flex-basis: 50px;
+            -o-flex-basis: 50px;
+            -ms-flex-basis: 50px;
+            flex-basis: 50px;
+        }
+
+        .anaeleman3 {
+            width: 500px;
+            height: 100px;
+            border: 1px solid grey;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+        }
+
+        .iceleman3 {
+            border: 1px solid grey;
+            -webkit-flex-basis: 50px;
+            -moz-flex-basis: 50px;
+            -o-flex-basis: 50px;
+            -ms-flex-basis: 50px;
+            flex-basis: 50px;
+        }
+
+        .ornek3 {
+            -webkit-flex-basis: 290px;
+            -moz-flex-basis: 290px;
+            -o-flex-basis: 290px;
+            -ms-flex-basis: 290px;
+            flex-basis: 290px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flex-basis özelliği</h1>
+    <p>Esnek kutu içerisindeki element veya elementlerin başlangıç uzunluğu değerlerini belirler. Genişlik değeri vermiş
+        olsak bile sonradan flex-basis değeri verebiliriz.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>auto ; otomatik değer alır. Herhangi bir değişiklik olmaz. </li>
+        <li>number ; rakam</li>
+        <li>initial ; html elementi biçimlendirme değerine döner.</li>
+    </ul>
+
+
+    <h3>ornek-1 ;</h3>
+    flex-basis: auto;
+    <div class="anaeleman1">
+        <div class="iceleman1">A</div>
+        <div class="iceleman1">B</div>
+        <div class="iceleman1">C</div>
+        <div class="iceleman1">D</div>
+        <div class="iceleman1">E</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    flex-basis: 50px;
+    <div class="anaeleman2">
+        <div class="iceleman2">A</div>
+        <div class="iceleman2">B</div>
+        <div class="iceleman2">C</div>
+        <div class="iceleman2">D</div>
+        <div class="iceleman2">E</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    flex-basis: 290px;
+    <div class="anaeleman3">
+        <div class="iceleman3">A</div>
+        <div class="iceleman3">B</div>
+        <div class="iceleman3 ornek3">C</div>
+        <div class="iceleman3">D</div>
+        <div class="iceleman3">E</div>
+    </div>
+
+
+
+
+</body>
+
+</html>

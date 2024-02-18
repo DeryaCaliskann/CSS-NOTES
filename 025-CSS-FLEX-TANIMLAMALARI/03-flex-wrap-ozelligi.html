@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            width: 300px;
+            height: 300px;
+            border: 2px solid grey;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-wrap: nowrap;
+            -moz-flex-wrap: nowrap;
+            -o-flex-wrap: nowrap;
+            -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+        }
+
+        .iceleman1 {
+            width: 50px;
+            height: 50px;
+            border: 2px solid grey;
+        }
+
+        .anaeleman2 {
+            width: 300px;
+            height: 300px;
+            border: 2px solid grey;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -o-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        }
+
+        .iceleman2 {
+            width: 50px;
+            height: 50px;
+            border: 2px solid grey;
+        }
+
+        .anaeleman3 {
+            width: 300px;
+            height: 300px;
+            border: 2px solid grey;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap-reverse;
+            -moz-flex-wrap: wrap-reverse;
+            -o-flex-wrap: wrap-reverse;
+            -ms-flex-wrap: wrap-reverse;
+            flex-wrap: wrap-reverse;
+        }
+
+        .iceleman3 {
+            width: 50px;
+            height: 50px;
+            border: 2px solid grey;
+        }
+
+        .anaeleman4 {
+            width: 300px;
+            height: 300px;
+            border: 2px solid grey;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -o-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-flex-direction: column;
+            -moz-flex-direction: column;
+            -o-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+        }
+
+        .iceleman4 {
+            width: 50px;
+            height: 50px;
+            border: 2px solid grey;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flex-wrap özelliği</h1>
+    <p>Esnek kutuların satır kırılma özelliklerini belirler.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>nowrap ; kırılma yok (varsayılan)</li>
+        <li>wrap ; kırılma</li>
+        <li>wrap-reverse ; ters kırılma</li>       
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+    flex-wrap: nowrap;
+    <div class="anaeleman1">
+        <div class="iceleman1">A</div>
+        <div class="iceleman1">B</div>
+        <div class="iceleman1">C</div>
+        <div class="iceleman1">D</div>
+        <div class="iceleman1">E</div>
+        <div class="iceleman1">F</div>
+        <div class="iceleman1">G</div>
+        <div class="iceleman1">H</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    flex-wrap: wrap;
+    <div class="anaeleman2">
+        <div class="iceleman2">A</div>
+        <div class="iceleman2">B</div>
+        <div class="iceleman2">C</div>
+        <div class="iceleman2">D</div>
+        <div class="iceleman2">E</div>
+        <div class="iceleman2">F</div>
+        <div class="iceleman2">G</div>
+        <div class="iceleman2">H</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    flex-wrap: wrap-reverse;
+    <div class="anaeleman3">
+        <div class="iceleman3">A</div>
+        <div class="iceleman3">B</div>
+        <div class="iceleman3">C</div>
+        <div class="iceleman3">D</div>
+        <div class="iceleman3">E</div>
+        <div class="iceleman3">F</div>
+        <div class="iceleman3">G</div>
+        <div class="iceleman3">H</div>
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    flex-wrap: wrap; <br>
+    flex-direction: column;
+    <div class="anaeleman4">
+        <div class="iceleman4">A</div>
+        <div class="iceleman4">B</div>
+        <div class="iceleman4">C</div>
+        <div class="iceleman4">D</div>
+        <div class="iceleman4">E</div>
+        <div class="iceleman4">F</div>
+        <div class="iceleman4">G</div>
+        <div class="iceleman4">H</div>
+    </div>
+
+
+
+</body>
+
+</html>

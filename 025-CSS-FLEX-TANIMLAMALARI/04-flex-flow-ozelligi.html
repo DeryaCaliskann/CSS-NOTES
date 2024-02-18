@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            width: 300px;
+            height: 300px;
+            border: 2px solid grey;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-flow: column wrap;
+            -moz-flex-flow: column wrap;
+            -o-flex-flow: column wrap;
+            -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+        }
+
+        .iceleman1 {
+            width: 50px;
+            height: 50px;
+            border: 2px solid grey;
+        }
+
+        .anaeleman2 {
+            width: 300px;
+            height: 300px;
+            border: 2px solid grey;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-flow: column-reverse wrap;
+            -moz-flex-flow: column-reverse wrap;
+            -o-flex-flow: column-reverse wrap;
+            -ms-flex-flow: column-reverse wrap;
+            flex-flow: column-reverse wrap;
+        }
+
+        .iceleman2 {
+            width: 50px;
+            height: 50px;
+            border: 2px solid grey;
+        }
+
+        .anaeleman3 {
+            width: 300px;
+            height: 300px;
+            border: 2px solid grey;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -o-flex;
+            display: -ms-flex;
+            display: flex;
+            -webkit-flex-flow: column-reverse wrap-reverse;
+            -moz-flex-flow: column-reverse wrap-reverse;
+            -o-flex-flow: column-reverse wrap-reverse;
+            -ms-flex-flow: column-reverse wrap-reverse;
+            flex-flow: column-reverse wrap-reverse;
+        }
+
+        .iceleman3 {
+            width: 50px;
+            height: 50px;
+            border: 2px solid grey;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>flex-flow özelliği</h1>
+    <p>Esnek kutuların dizilim yönü ve satır kırılma özelliklerini belirler.</p>
+    <h2>parametreler ;</h2>
+    <ul>
+        <li>flex-direction</li>
+        <ul>
+            <li>row ; satır (varsayılan)</li>
+            <li>row-reverse ; ters satır</li>
+            <li>column ; sütun</li>
+            <li>column-reverse ; ters sütun</li>
+        </ul>
+        <li>flex-wrap</li>
+        <ul>
+            <li>nowrap ; kırılma yok (varsayılan)</li>
+            <li>wrap ; kırılma</li>
+            <li>wrap-reverse ; ters kırılma</li>
+        </ul>
+        <li>initial ;html elementi varsaylan biçimlendirme değerine döner.</li>
+    </ul>
+
+    <h3>ornek-1 ;</h3>
+    flex-flow: column wrap;
+    <div class="anaeleman1">
+        <div class="iceleman1">A</div>
+        <div class="iceleman1">B</div>
+        <div class="iceleman1">C</div>
+        <div class="iceleman1">D</div>
+        <div class="iceleman1">E</div>
+        <div class="iceleman1">F</div>
+        <div class="iceleman1">G</div>
+        <div class="iceleman1">H</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    flex-flow: column-reverse wrap;
+    <div class="anaeleman2">
+        <div class="iceleman2">A</div>
+        <div class="iceleman2">B</div>
+        <div class="iceleman2">C</div>
+        <div class="iceleman2">D</div>
+        <div class="iceleman2">E</div>
+        <div class="iceleman2">F</div>
+        <div class="iceleman2">G</div>
+        <div class="iceleman2">H</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    flex-flow: column-reverse wrap-reverse;
+    <div class="anaeleman3">
+        <div class="iceleman3">A</div>
+        <div class="iceleman3">B</div>
+        <div class="iceleman3">C</div>
+        <div class="iceleman3">D</div>
+        <div class="iceleman3">E</div>
+        <div class="iceleman3">F</div>
+        <div class="iceleman3">G</div>
+        <div class="iceleman3">H</div>
+    </div>
+
+
+
+</body>
+
+</html>
