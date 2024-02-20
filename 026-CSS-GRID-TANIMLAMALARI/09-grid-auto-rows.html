@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-auto-rows: auto;
+        }
+
+        .iceleman1 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman2 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-auto-rows: max-content;
+        }
+
+        .iceleman2 {
+            -webkit-writing-mode: vertical-rl;
+            -moz-writing-mode: vertical-rl;
+            -o-writing-mode: vertical-rl;
+            -ms-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman3 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-auto-rows: min-content;
+        }
+
+        .iceleman3 {
+            -webkit-writing-mode: vertical-rl;
+            -moz-writing-mode: vertical-rl;
+            -o-writing-mode: vertical-rl;
+            -ms-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman4 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-auto-rows: 100px;
+        }
+
+        .iceleman4 {
+            -webkit-writing-mode: vertical-rl;
+            -moz-writing-mode: vertical-rl;
+            -o-writing-mode: vertical-rl;
+            -ms-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman5 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-auto-flow: column;
+            grid-auto-rows: 100px;
+        }
+
+        .iceleman5 {
+            -webkit-writing-mode: vertical-rl;
+            -moz-writing-mode: vertical-rl;
+            -o-writing-mode: vertical-rl;
+            -ms-writing-mode: vertical-rl;
+            writing-mode: vertical-rl;
+            padding: 10px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid-auto-rows özelliği</h1>
+    <p>Izgara düzenini içerisindeki element veya elementler için, oluşturulması gereken satırların varsayılan
+        yüksekliğini belirler.
+    </p>
+
+    <h2>değerler ;</h2>
+    <ul>
+        <li>outo; otamatik değer alır(varsayılan)</li>
+        <li>max-content ; maksimum içerik.</li>
+        <li>min-content ; minimum içerik. En uzun kelimeye göre boyut alır. Satır boşluklardan kırılır.</li>
+        <li>length ; uzunluk değeri</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+    grid-auto-rows: auto;
+    <div class="anaeleman1">
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    writing-mode: vertical-rl; <br>
+    grid-auto-rows: max-content;
+    <div class="anaeleman2">
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    writing-mode: vertical-rl; <br>
+    grid-auto-rows: min-content;
+    <div class="anaeleman3">
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    writing-mode: vertical-rl; <br>
+    grid-auto-rows: 100px;
+    <div class="anaeleman4">
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-5;</h3>
+    grid-auto-flow: column; <br>
+    grid-auto-rows: 100px;
+    <div class="anaeleman5">
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            -webkit-justify-content: stretch;
+            -moz-justify-content: stretch;
+            -o-justify-content: stretch;
+            -ms-justify-content: stretch;
+            justify-content: stretch;
+        }
+
+        .iceleman1 {
+            width: 50px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+
+
+
+        .anaeleman2 {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            -webkit-justify-content: center;
+            -moz-justify-content: center;
+            -o-justify-content: center;
+            -ms-justify-content: center;
+            justify-content: center;
+        }
+
+        .iceleman2 {
+            width: 50px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+
+
+        .anaeleman3 {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            -webkit-justify-content: start;
+            -moz-justify-content: start;
+            -o-justify-content: start;
+            -ms-justify-content: start;
+            justify-content: start;
+        }
+
+        .iceleman3 {
+            width: 50px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+
+
+        .anaeleman4 {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            -webkit-justify-content: end;
+            -moz-justify-content: end;
+            -o-justify-content: end;
+            -ms-justify-content: end;
+            justify-content: end;
+        }
+
+        .iceleman4 {
+            width: 50px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+       
+
+          .anaeleman5{
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            -webkit-justify-content:space-between ; 
+            -moz-justify-content: space-between ; 
+            -o-justify-content:space-between ; 
+            -ms-justify-content: space-between ; 
+            justify-content:space-between ; 
+        }
+
+        .iceleman5 {
+            width: 50px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+          .anaeleman6{
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            -webkit-justify-content:space-around ; 
+            -moz-justify-content:space-around ; 
+            -o-justify-content:space-around ;  
+            -ms-justify-content: space-around ;  
+            justify-content:space-around ; 
+        }
+
+        .iceleman6 {
+            width: 50px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+          .anaeleman7{
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            -webkit-justify-content:space-evenly ; 
+            -moz-justify-content:space-evenly ;  
+            -o-justify-content:space-evenly ; 
+            -ms-justify-content:space-evenly ; 
+            justify-content:space-evenly ;  
+        }
+
+        .iceleman7 {
+            width: 50px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>justify-content özelliği</h1>
+    <p>Izgara düzenini içerisinde bulunan elementler tüm alanı kullamadığında elementlerin yatay hizalama özelliklerini
+        belirler.
+    </p>
+
+
+    <h2>değerler ;</h2>
+    <ul>
+        <li>stretch ; uzat / esne (varsayılan)</li>
+        <li>center ; orta</li>
+        <li>start ; başlangıç</li>
+        <li>end ; bitiş</li>
+        <li>space-between ; boşluk arasında</li>
+        <li>space-around ; boşluk etrafında</li>
+        <li>space-evenly ; eşit boşluk</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+    justify-content: stretch;
+    <div class="anaeleman1">
+        <div class="iceleman1">1</div>
+        <div class="iceleman1">2</div>
+        <div class="iceleman1">3</div>
+        <div class="iceleman1">4</div>
+        <div class="iceleman1">5</div>
+        <div class="iceleman1">6</div>
+        <div class="iceleman1">7</div>
+        <div class="iceleman1">8</div>
+        <div class="iceleman1">9</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    justify-content: center;
+    <div class="anaeleman2">
+        <div class="iceleman2">1</div>
+        <div class="iceleman2">2</div>
+        <div class="iceleman2">3</div>
+        <div class="iceleman2">4</div>
+        <div class="iceleman2">5</div>
+        <div class="iceleman2">6</div>
+        <div class="iceleman2">7</div>
+        <div class="iceleman2">8</div>
+        <div class="iceleman2">9</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    justify-content: start;
+    <div class="anaeleman3">
+        <div class="iceleman3">1</div>
+        <div class="iceleman3">2</div>
+        <div class="iceleman3">3</div>
+        <div class="iceleman3">4</div>
+        <div class="iceleman3">5</div>
+        <div class="iceleman3">6</div>
+        <div class="iceleman3">7</div>
+        <div class="iceleman3">8</div>
+        <div class="iceleman3">9</div>
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    justify-content: end;
+    <div class="anaeleman4">
+        <div class="iceleman4">1</div>
+        <div class="iceleman4">2</div>
+        <div class="iceleman4">3</div>
+        <div class="iceleman4">4</div>
+        <div class="iceleman4">5</div>
+        <div class="iceleman4">6</div>
+        <div class="iceleman4">7</div>
+        <div class="iceleman4">8</div>
+        <div class="iceleman4">9</div>
+    </div>
+
+     <h3>ornek-5 ;</h3>
+    justify-content:space-between ; 
+    <div class="anaeleman5">
+        <div class="iceleman5">1</div>
+        <div class="iceleman5">2</div>
+        <div class="iceleman5">3</div>
+        <div class="iceleman5">4</div>
+        <div class="iceleman5">5</div>
+        <div class="iceleman5">6</div>
+        <div class="iceleman5">7</div>
+        <div class="iceleman5">8</div>
+        <div class="iceleman5">9</div>
+    </div>
+
+       <h3>ornek-6 ;</h3>
+    justify-content:space-around ; 
+    <div class="anaeleman6">
+        <div class="iceleman6">1</div>
+        <div class="iceleman6">2</div>
+        <div class="iceleman6">3</div>
+        <div class="iceleman6">4</div>
+        <div class="iceleman6">5</div>
+        <div class="iceleman6">6</div>
+        <div class="iceleman6">7</div>
+        <div class="iceleman6">8</div>
+        <div class="iceleman6">9</div>
+    </div>
+
+       <h3>ornek-7 ;</h3>
+    justify-content:space-evenly ;
+    <div class="anaeleman7">
+        <div class="iceleman7">1</div>
+        <div class="iceleman7">2</div>
+        <div class="iceleman7">3</div>
+        <div class="iceleman7">4</div>
+        <div class="iceleman7">5</div>
+        <div class="iceleman7">6</div>
+        <div class="iceleman7">7</div>
+        <div class="iceleman7">8</div>
+        <div class="iceleman7">9</div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-auto-columns: auto;
+        }
+
+        .iceleman1 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman2 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-auto-columns: max-content;
+        }
+
+        .iceleman2 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman3 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-auto-columns: min-content;
+        }
+
+        .iceleman3 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+
+        .anaeleman4 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-auto-columns: 250px;
+        }
+
+        .iceleman4 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+
+        .anaeleman5 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-auto-flow: column;
+            grid-auto-columns: 75px;
+        }
+
+        .iceleman5 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid-auto-columns özelliği</h1>
+    <p>Izgara düzenini içerisindeki element veya elementler için, oluşturulması gereken sütunların varsayılan
+        genişliğini belirler.
+    </p>
+
+    <h2>değerler ;</h2>
+    <ul>
+        <li>outo; otamatik değer alır(varsayılan)</li>
+        <li>max-content ; maksimum içerik</li>
+        <li>min-content ; minimum içerik</li>
+        <li>length ; uzunluk değeri</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+    grid-auto-columns: auto ;
+    <div class="anaeleman1">
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    grid-auto-columns: max-content;
+    <div class="anaeleman2">
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    grid-auto-columns: min-content;
+    <div class="anaeleman3">
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    grid-auto-columns:250px;
+    <div class="anaeleman4">
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-5 ;</h3>
+    grid-auto-flow: column; <br>
+    grid-auto-columns:75px;
+    <div class="anaeleman5">
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+    </div>
+
+
+</body>
+
+</html>

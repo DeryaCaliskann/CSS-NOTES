@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            -webkit-justify-items: center;
+            -moz-justify-items: center;
+            -o-justify-items: center;
+            -ms-justify-items: center;
+            justify-items: center;
+        }
+
+        .iceleman1 {
+            width: 50px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem1 {
+            -webkit-justify-self: auto;
+            -moz-justify-self: auto;
+            -ms-justify-self: auto;
+            -o-justify-self: auto;
+            justify-self: auto;
+        }
+
+
+        .anaeleman2 {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            -webkit-justify-items: center;
+            -moz-justify-items: center;
+            -o-justify-items: center;
+            -ms-justify-items: center;
+            justify-items: center;
+        }
+
+        .iceleman2 {
+            width: 50px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem2 {
+            -webkit-justify-self: stretch;
+            -moz-justify-self: stretch;
+            -ms-justify-self: stretch;
+            -o-justify-self: stretch;
+            justify-self: stretch;
+        }
+
+
+
+        .anaeleman3 {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            -webkit-justify-items: start;
+            -moz-justify-items: start;
+            -o-justify-items: start;
+            -ms-justify-items: start;
+            justify-items: start;
+        }
+
+        .iceleman3 {
+            width: 50px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem3 {
+            -webkit-justify-self: center;
+            -moz-justify-self: center;
+            -ms-justify-self: center;
+            -o-justify-self: center;
+            justify-self: center;
+        }
+
+
+        .anaeleman4 {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            -webkit-justify-items: center;
+            -moz-justify-items: center;
+            -o-justify-items: center;
+            -ms-justify-items: center;
+            justify-items: center;
+        }
+
+        .iceleman4 {
+            width: 50px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem4 {
+            -webkit-justify-self: start;
+            -moz-justify-self: start;
+            -ms-justify-self: start;
+            -o-justify-self: start;
+            justify-self: start;
+        }
+
+        .anaeleman5 {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            -webkit-justify-items: center;
+            -moz-justify-items: center;
+            -o-justify-items: center;
+            -ms-justify-items: center;
+            justify-items: center;
+        }
+
+        .iceleman5 {
+            width: 50px;
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem5 {
+            -webkit-justify-self: end;
+            -moz-justify-self: end;
+            -ms-justify-self: end;
+            -o-justify-self: end;
+            justify-self: end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>justify-self özelliği</h1>
+    <p>Izgara düzenini içerisinde bulunan ve seçilen element veya elementlerin, yatay hizalama özelliklerini belirler.
+    </p>
+
+
+    <h2>değerler ;</h2>
+    <ul>
+        <li>auto ; otomatik değer alır.(varsayılan)</li>
+        <li>stretch ; uzat / esne </li>
+        <li>center ; orta</li>
+        <li>start ; başlangıç</li>
+        <li>end ; bitiş</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+    justify-items: center;<br>
+    justify-self: auto;
+    <div class="anaeleman1">
+        <div class="iceleman1">1</div>
+        <div class="iceleman1">2</div>
+        <div class="iceleman1 islem1">3 (islem)</div>
+        <div class="iceleman1">4</div>
+        <div class="iceleman1">5</div>
+        <div class="iceleman1">6</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    justify-items: center; <br>
+    justify-self: stretch;
+    <div class="anaeleman2">
+        <div class="iceleman2">1</div>
+        <div class="iceleman2">2</div>
+        <div class="iceleman2 islem2">3 (islem)</div>
+        <div class="iceleman2">4</div>
+        <div class="iceleman2">5</div>
+        <div class="iceleman2">6</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    justify-items: start;<br>
+    justify-self: center;
+    <div class="anaeleman3">
+        <div class="iceleman3">1</div>
+        <div class="iceleman3">2</div>
+        <div class="iceleman3 islem3">3 (islem)</div>
+        <div class="iceleman3">4</div>
+        <div class="iceleman3">5</div>
+        <div class="iceleman3">6</div>
+
+
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    justify-items: center; <br>
+    justify-self: start;
+    <div class="anaeleman4">
+        <div class="iceleman4">1</div>
+        <div class="iceleman4">2</div>
+        <div class="iceleman4 islem4">3 (işlem)</div>
+        <div class="iceleman4">4</div>
+        <div class="iceleman4">5</div>
+        <div class="iceleman4">6</div>
+    </div>
+
+    <h3>ornek-5 ;</h3>
+    justify-items: center; <br>
+    justify-self: end;
+    <div class="anaeleman5">
+        <div class="iceleman5">1</div>
+        <div class="iceleman5">2</div>
+        <div class="iceleman5 islem5">3 (işlem)</div>
+        <div class="iceleman5">4</div>
+        <div class="iceleman5">5</div>
+        <div class="iceleman5">6</div>
+    </div>
+
+
+</body>
+
+</html>

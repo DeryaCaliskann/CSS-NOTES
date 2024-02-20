@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: auto auto auto auto auto;
+            grid-gap: 5px;
+        }
+
+        .iceleman1 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman2 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: auto auto auto auto auto;
+            grid-gap: 20px;
+        }
+
+        .iceleman2 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman3 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: auto auto auto auto auto;
+            grid-gap: 5px 20px;
+        }
+
+        .iceleman3 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman4 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: auto auto auto auto auto;
+            grid-gap: 20px 5px;
+        }
+
+        .iceleman4 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid-gap özelliği</h1>
+    <p>Izgara düzenini içerisindeki element veya elementler için, oluşturulmuş olan satırların ve sütunların
+        aralarındaki boşluk değerini belirler. </p>
+    <h2>parametreler;</h2>
+    <ul>
+        <li>grid-row-gap ; satır araları</li>
+        <li>grid-column-gap ; sütun araları</li>
+    </ul>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>length ; uzunluk</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+    grid-gap:5px;
+    <div class="anaeleman1">
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    grid-gap:20px;
+    <div class="anaeleman2">
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    grid-gap: 5px 20px;
+    <div class="anaeleman3">
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    grid-gap: 20px 5px;
+    <div class="anaeleman4">
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+    </div>
+    
+</body>
+
+</html>

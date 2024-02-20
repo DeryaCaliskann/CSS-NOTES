@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            display: grid;
+            width: 600px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid: none;
+        }
+
+        .iceleman1 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .anaeleman2 {
+            display: grid;
+            width: 600px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            /* grid-template-rows:25px 50px 100px;
+            grid-template-columns: auto auto auto; */
+            grid: 25px 50px 100px/ auto auto auto;
+        }
+
+        .iceleman2 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+
+
+
+        .anaeleman3 {
+            display: grid;
+            width: 600px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid: "..alan3 alan3 alan3..";
+        }
+
+        .iceleman3 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem3 {
+            grid-area: alan3
+        }
+
+
+
+        .anaeleman4 {
+            display: grid;
+            width: 600px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid: "alan4 alan4 alan4";
+            grid-template-rows: 100px 75px 50px;
+        }
+
+        .iceleman4 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem4 {
+            grid-area: alan4;
+        }
+
+        .anaeleman5 {
+            display: grid;
+            width: 600px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid: 75px / auto-flow 100px 150px;
+        }
+
+        .iceleman5 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem5 {
+            grid-column-start: 3;
+        }
+
+        .anaeleman6 {
+            display: grid;
+            width: 600px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid: 50px 75px 100px / auto auto auto;
+            grid-auto-flow: column dense;
+        }
+
+        .iceleman6 {
+            padding: 5px;
+            border: 1px solid blue;
+        }
+
+        .islem6 {
+            grid-column-start: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid özelliği</h1>
+    <p>Izgara düzenini içerisindeki element veya elementler için gelişmiş tüm satır ve sütün işlemlerinin yanı sıra alan
+        yerleştirme özelliklerini belirler.</p>
+    <h2>parametreler - 1 ;</h2>
+    <ul>
+        <li>grid-template-rows ; satır adedi ve boyutu </li>
+        <li>grid-template-colums ; sütun adedi ve boyutu</li>
+        <li>grid-template-areas ; tüm satır ve sütün için alan yerleştirme</li>
+    </ul>
+
+    <h2>parametreler - 2 ;</h2>
+    <ul>
+        <li>grid-template-rows ; satır adedi ve boyutu </li>
+        <li>[grid-auto-flow]</li>
+        <li>grid-template-colums ; sütun adedi ve boyutu</li>
+    </ul>
+
+    <h2>parametreler - 3 ;</h2>
+    <ul>
+        <li>[grid-auto-flow]</li>
+        <li>grid-template-rows ; satır adedi ve boyutu </li>
+        <li>grid-template-colums ; sütun adedi ve boyutu</li>
+    </ul>
+
+    <h2>değerler ;</h2>
+    <ul>
+        <li>none ; değer yok</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+    grid: none;
+    <div class="anaeleman1">
+        <div class="iceleman1">1</div>
+        <div class="iceleman1">2</div>
+        <div class="iceleman1">3</div>
+        <div class="iceleman1">4</div>
+        <div class="iceleman1">5</div>
+        <div class="iceleman1">6</div>
+        <div class="iceleman1">7</div>
+        <div class="iceleman1">8</div>
+        <div class="iceleman1">9</div>
+
+
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    grid:25px 50px 100px/ auto auto auto;
+    <div class="anaeleman2">
+        <div class="iceleman2">1</div>
+        <div class="iceleman2">2</div>
+        <div class="iceleman2">3</div>
+        <div class="iceleman2">4</div>
+        <div class="iceleman2">5</div>
+        <div class="iceleman2">6</div>
+        <div class="iceleman2">7</div>
+        <div class="iceleman2">8</div>
+        <div class="iceleman2">9</div>
+
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    grid:". alan3 alan3 alan3 .";
+    <div class="anaeleman3">
+        <div class="iceleman3">1</div>
+        <div class="iceleman3">2</div>
+        <div class="iceleman3">3</div>
+        <div class="iceleman3">4</div>
+        <div class="iceleman3 islem3 ">5 (işlem)</div>
+        <div class="iceleman3">6</div>
+        <div class="iceleman3">7</div>
+        <div class="iceleman3">8</div>
+        <div class="iceleman3">9</div>
+
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    grid-template:" alan4 alan4 alan4"; <br>
+    grid-template-rows: 100px 75px 50px;
+    <div class="anaeleman4">
+        <div class="iceleman4">1</div>
+        <div class="iceleman4">2</div>
+        <div class="iceleman4">3</div>
+        <div class="iceleman4">4</div>
+        <div class="iceleman4">5</div>
+        <div class="iceleman4">6</div>
+        <div class="iceleman4">7</div>
+        <div class="iceleman4 islem4">8 (islem)</div>
+        <div class="iceleman4">9</div>
+    </div>
+
+    <h3>ornek-5 ;</h3>
+    grid: 25px / auto-flow 50px 75px ; (auto-flow ayrı kullanımı tavsiye edilir.)
+    <div class="anaeleman5">
+        <div class="iceleman5 islem5">1 (islem)</div>
+        <div class="iceleman5">2</div>
+        <div class="iceleman5">3</div>
+        <div class="iceleman5">4</div>
+        <div class="iceleman5">5</div>
+        <div class="iceleman5">6</div>
+        <div class="iceleman5">7</div>
+        <div class="iceleman5">8</div>
+        <div class="iceleman5">9</div>
+    </div>
+
+    <h3>ornek-6 ;</h3>
+    grid:50px 75px 100px / auto auto auto; <br>
+    grid-auto-flow: column dense;
+    <div class="anaeleman6">
+        <div class="iceleman6 islem6">1 (islem)</div>
+        <div class="iceleman6">2</div>
+        <div class="iceleman6">3</div>
+        <div class="iceleman6">4</div>
+        <div class="iceleman6">5</div>
+        <div class="iceleman6">6</div>
+        <div class="iceleman6">7</div>
+        <div class="iceleman6">8</div>
+        <div class="iceleman6">9</div>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(5, auto);
+        }
+
+        .iceleman1 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .islem1 {
+            grid-column-end: auto;
+        }
+
+        .anaeleman2 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(5, auto);
+        }
+
+        .iceleman2 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .islem2 {
+            grid-column-end: 4;
+        }
+
+        .anaeleman3 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(5, auto);
+        }
+
+        .iceleman3 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .islem3 {
+            grid-column-end: span 4;
+        }
+
+        .anaeleman4 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(5, auto);
+        }
+
+        .iceleman4 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .islem4a {
+            grid-column-end: span 2;
+        }
+
+        .islem4b {
+            grid-column-end: span 3;
+        }
+
+        .islem4c {
+            grid-column-end: span 4;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid-column-end özelliği</h1>
+    <p>Izgara düzenini içerisindeki elementin kaçıncı sütunda bitmesi gerektiğini belirler. </p>
+
+    <h2>değerler ;</h2>
+    <ul>
+        <li>outo; otamatik değer alır(varsayılan)</li>
+        <li>column-line ; sütun çizgisi.</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+    grid-column-end: auto;
+    <div class="anaeleman1">
+        <div class="iceleman1 islem1">1 (işlem)</div>
+        <div class="iceleman1">2</div>
+        <div class="iceleman1">3</div>
+        <div class="iceleman1">4</div>
+        <div class="iceleman1">5</div>
+        <div class="iceleman1">6</div>
+        <div class="iceleman1">7</div>
+        <div class="iceleman1">8</div>
+        <div class="iceleman1">9</div>
+        <div class="iceleman1">10</div>
+    </div>
+
+
+    <h3>ornek-2 ;</h3>
+    grid-column-end: 4;
+    <div class="anaeleman2">
+        <div class="iceleman2 islem2">1 (işlem)</div>
+        <div class="iceleman2">2</div>
+        <div class="iceleman2">3</div>
+        <div class="iceleman2">4</div>
+        <div class="iceleman2">5</div>
+        <div class="iceleman2">6</div>
+        <div class="iceleman2">7</div>
+        <div class="iceleman2">8</div>
+        <div class="iceleman2">9</div>
+        <div class="iceleman2">10</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    grid-column-end: span 4;
+    <div class="anaeleman3">
+        <div class="iceleman3 islem3">1 (islem)</div>
+        <div class="iceleman3">2</div>
+        <div class="iceleman3">3</div>
+        <div class="iceleman3">4</div>
+        <div class="iceleman3">5</div>
+        <div class="iceleman3">6</div>
+        <div class="iceleman3">7</div>
+        <div class="iceleman3">8</div>
+        <div class="iceleman3">9</div>
+        <div class="iceleman3">10</div>
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    grid-column-end: span 2; <br>
+    grid-column-end: span 3; <br>
+    grid-column-end: span 4;
+    <div class="anaeleman3">
+        <div class="iceleman3 islem4a">1 (islem)</div>
+        <div class="iceleman3">2</div>
+        <div class="iceleman3">3</div>
+        <div class="iceleman3 islem4b">4 (islem)</div>
+        <div class="iceleman3">5</div>
+        <div class="iceleman3 ">6</div>
+        <div class="iceleman3">7</div>
+        <div class="iceleman3 islem4c">8 (islem)</div>
+        <div class="iceleman3">9</div>
+        <div class="iceleman3">10</div>
+    </div>
+
+
+
+</body>
+
+</html>

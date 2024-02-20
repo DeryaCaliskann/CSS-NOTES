@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(5, auto);
+            grid-column-gap: 5px;
+        }
+
+        .iceleman1 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman2 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(5, auto);
+            grid-column-gap: 20px;
+        }
+
+        .iceleman2 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid-column-gap özelliği</h1>
+    <p>Izgara düzenini içerisindeki element veya elementler için, oluşturulmuş olan sütünların aralarındaki boşluk
+        değerini belirler.
+    </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>length ; uzunluk</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+    grid-template-columns: repeat(5, auto);<br>
+    grid-column-gap:5px;
+    <div class="anaeleman1">
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    grid-template-columns: repeat(5, auto);<br>
+    grid-column-gap:20px;
+    <div class="anaeleman2">
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+    </div>
+
+
+
+</body>
+
+</html>

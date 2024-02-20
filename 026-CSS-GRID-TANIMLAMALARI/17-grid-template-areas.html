@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            display: grid;
+            width: 600px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-areas: none;
+        }
+
+        .iceleman1 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem1 {
+            grid-area: alan;
+        }
+
+        .anaeleman2 {
+            display: grid;
+            width: 600px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-areas: "alan alan alan";
+        }
+
+        .iceleman2 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem2 {
+            grid-area: alan;
+        }
+
+        .anaeleman3 {
+            display: grid;
+            width: 600px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-areas: "alan alan alan . .";
+        }
+
+        .iceleman3 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem3 {
+            grid-area: alan;
+        }
+
+        .anaeleman4 {
+            display: grid;
+            width: 600px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-areas: ". . alan alan alan . .";
+        }
+
+        .iceleman4 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem4 {
+            grid-area: alan;
+        }
+
+        .anaeleman5 {
+            display: grid;
+            width: 600px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-areas: "alan alan alan . ." "alan alan alan . .";
+        }
+
+        .iceleman5 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem5 {
+            grid-area: alan;
+        }
+
+        .anaeleman6 {
+            display: grid;
+            width: 600px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-areas: "alan1 alan1 . . alan2 alan2 alan2";
+        }
+
+        .iceleman6 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem6a {
+            grid-area: alan1;
+        }
+
+        .islem6b {
+            grid-area: alan2;
+        }
+
+        .anaeleman7 {
+            display: grid;
+            width: 600px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-areas: "alan1 alan1 . . alan2 alan2 alan2.." "alan1 alan1 . . alan2 alan2 alan2..";
+        }
+
+        .iceleman7 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem7a {
+            grid-area: alan1;
+        }
+
+        .islem7b {
+            grid-area: alan2;
+        }
+
+        .anaeleman8 {
+            border: 3px solid black;
+            width: 600px;
+            display: grid;
+            grid-template-areas: "headerEtiketi headerEtiketi headerEtiketi headerEtiketi headerEtiketi headerEtiketi headerEtiketi headerEtiketi headerEtiketi headerEtiketi headerEtiketi headerEtiketi" " menuEtiketi  menuEtiketi  menuEtiketi icerikEtiketi icerikEtiketi icerikEtiketi icerikEtiketi icerikEtiketi icerikEtiketi icerikEtiketi icerikEtiketi icerikEtiketi " "footerEtiketi footerEtiketi footerEtiketi footerEtiketi footerEtiketi footerEtiketi footerEtiketi footerEtiketi footerEtiketi footerEtiketi footerEtiketi footerEtiketi";
+        }
+
+        .headerAlani {
+            grid-area: headerEtiketi;
+            background-color: blueviolet;
+            height: 100px;
+
+        }
+
+        .menuAlani {
+            grid-area: menuEtiketi;
+            background-color: yellow;
+            height: 250px;
+
+
+        }
+
+        .icerikAlani {
+            grid-area: icerikEtiketi;
+            background-color: gray;
+            height: 250px;
+
+        }
+
+        .footerAlani {
+            grid-area: footerEtiketi;
+            background-color: green;
+            height: 50px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid-template-areas özelliği</h1>
+    <p>Izgara düzenini içerisindeki alan adı tanımlanmış olan elementin tüm satır ve sütun işlemleri için alan
+        yerleştirme özelliklerini belirler.</p>
+
+
+    <h2>değerler ;</h2>
+    <ul>
+        <li>none ; değer yok</li>
+        <li>area name ; alan adı</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+    grid-template-areas:"none";
+    <div class="anaeleman1">
+        <div class="iceleman1 islem">1 (islem)</div>
+        <div class="iceleman1">2</div>
+        <div class="iceleman1">3</div>
+        <div class="iceleman1">4</div>
+        <div class="iceleman1">5</div>
+        <div class="iceleman1">6</div>
+        <div class="iceleman1">7</div>
+        <div class="iceleman1">8</div>
+        <div class="iceleman1">9</div>
+        <div class="iceleman1">10</div>
+
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    grid-template-areas:"alan alan alan";
+    <div class="anaeleman2">
+        <div class="iceleman2 islem2">1 (islem)</div>
+        <div class="iceleman2">2</div>
+        <div class="iceleman2">3</div>
+        <div class="iceleman2">4</div>
+        <div class="iceleman2">5</div>
+        <div class="iceleman2">6</div>
+        <div class="iceleman2">7</div>
+        <div class="iceleman2">8</div>
+        <div class="iceleman2">9</div>
+        <div class="iceleman2">10</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    grid-template-areas: "alan alan alan . .";
+    <div class="anaeleman3">
+        <div class="iceleman3 islem3">1 (işlem)</div>
+        <div class="iceleman3">2</div>
+        <div class="iceleman3">3</div>
+        <div class="iceleman3">4</div>
+        <div class="iceleman3">5</div>
+        <div class="iceleman3">6</div>
+        <div class="iceleman3">7</div>
+        <div class="iceleman3">8</div>
+        <div class="iceleman3">9</div>
+        <div class="iceleman3">10</div>
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    grid-template-areas: ". . alan alan alan . .";
+    <div class="anaeleman4">
+        <div class="iceleman4 islem4">1 (işlem)</div>
+        <div class="iceleman4">2</div>
+        <div class="iceleman4">3</div>
+        <div class="iceleman4">4</div>
+        <div class="iceleman4">5</div>
+        <div class="iceleman4">6</div>
+        <div class="iceleman4">7</div>
+        <div class="iceleman4">8</div>
+        <div class="iceleman4">9</div>
+        <div class="iceleman4">10</div>
+    </div>
+
+    <h3>ornek-5 ;</h3>
+    grid-template-areas: "alan alan alan . ." "alan alan alan . .";
+    <div class="anaeleman5">
+        <div class="iceleman5 islem5">1 (islem)</div>
+        <div class="iceleman5">2</div>
+        <div class="iceleman5">3</div>
+        <div class="iceleman5">4</div>
+        <div class="iceleman5">5</div>
+        <div class="iceleman5">6</div>
+        <div class="iceleman5">7</div>
+        <div class="iceleman5">8</div>
+        <div class="iceleman5">9</div>
+        <div class="iceleman5">10</div>
+    </div>
+
+    <h3>ornek-6 ;</h3>
+    grid-template-areas: "alan1 alan1 . . alan2 alan2 alan2";
+    <div class="anaeleman6">
+        <div class="iceleman6 islem6a">1 (islem)</div>
+        <div class="iceleman6">2</div>
+        <div class="iceleman6">3</div>
+        <div class="iceleman6">4</div>
+        <div class="iceleman6">5</div>
+        <div class="iceleman6">6</div>
+        <div class="iceleman6 islem6b">7 (islem)</div>
+        <div class="iceleman6">8</div>
+        <div class="iceleman6">9</div>
+        <div class="iceleman6">10</div>
+    </div>
+
+    <h3>ornek-7 ;</h3>
+    grid-template-areas: "alan1 alan1 . . alan2 alan2 alan2.." "alan1 alan1 . . alan2 alan2 alan2.." ;
+    <div class="anaeleman7">
+        <div class="iceleman7 islem7a">1 (işlem)</div>
+        <div class="iceleman7">2</div>
+        <div class="iceleman7">3</div>
+        <div class="iceleman7">4</div>
+        <div class="iceleman7">5</div>
+        <div class="iceleman7">6</div>
+        <div class="iceleman7 islem7b">7 (islem)</div>
+        <div class="iceleman7">8</div>
+        <div class="iceleman7">9</div>
+        <div class="iceleman7">10</div>
+    </div>
+
+    <h3>ornek-8 ;</h3>
+    <div class="anaeleman8">
+        <div class="iceleman8 headerAlani">header</div>
+        <div class="iceleman8 menuAlani">menu</div>
+        <div class="iceleman8 icerikAlani">icerik</div>
+        <div class="iceleman8 footerAlani">footer</div>
+    </div>
+
+
+
+</body>
+
+</html>

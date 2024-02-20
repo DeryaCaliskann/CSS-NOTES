@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: none;
+
+        }
+
+        .iceleman1 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman2 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: auto;
+
+        }
+
+        .iceleman2 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman3 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: auto auto;
+
+        }
+
+        .iceleman3 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman4 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: auto auto auto;
+            /*üç sütüna böl demiş oluyoruz*/
+
+        }
+
+        .iceleman4 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman5 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: max-content max-content;
+
+        }
+
+        .iceleman5 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman6 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: max-content max-content max-content max-content max-content;
+
+        }
+
+        .iceleman6 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman7 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: min-content min-content;
+        }
+
+        .iceleman7 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+
+
+        .anaeleman8 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: min-content min-content min-content min-content min-content min-content min-content min-content;
+        }
+
+        .iceleman8 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman9 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: 100px 150px 250px;
+        }
+
+        .iceleman9 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman10 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: 200px auto 150px;
+        }
+
+        .iceleman10 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman11 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: 100px auto auto;
+        }
+
+        .iceleman11 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman12 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(5, 100px);
+        }
+
+        .iceleman12 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman13 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(4, 70px) auto;
+        }
+
+        .iceleman13 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman14 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(2, 100px) auto 100px;
+        }
+
+        .iceleman14 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman15 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(2, 100px 150px) auto;
+        }
+
+        .iceleman15 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+         .anaeleman16 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(2, 100px)  repeat(2, 150px);
+        }
+
+        .iceleman16 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid-template-columns özelliği</h1>
+    <p>Izgara düzenini içerisindeki element veya elementler için, oluşturulması gereken sütun adedini ve sütun boyutu
+        genişliğini belirler.</p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>none ; değer yok (varsayılan)</li>
+        <li>auto ; otamatik değer alır </li>
+        <li>max-content ; maksimum içerik. İçerik kadar genişlik kaplar. Hiç bir şekilde içerik bölünmez. Alanın dışına
+            taşabilir. </li>
+        <li>min-content ; minimum içerik. Minimum oluşturabileceği genişiliğe göre oluşturur. Boşluklardan aşağı kırar.
+        </li>
+        <li>length ; uzunluk</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+    grid-template-columns: none;
+    <div class="anaeleman1">
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    grid-template-columns: auto;
+    <div class="anaeleman2">
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    grid-template-columns: auto auto;
+    <div class="anaeleman3">
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    grid-template-columns: auto auto auto;
+    <div class="anaeleman4">
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-5 ;</h3>
+    grid-template-columns: max-content max-content;
+    <div class="anaeleman5">
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-6 ;</h3>
+    <br>
+    grid-template-columns: max-content max-content max-content max-content max-content ;<br>
+    sütun fazla olsada içerik bölünmez taşabilir. İçerik alt satıra düşmez.
+    <div class="anaeleman6">
+        <div class="iceleman6">Merhaba Dünya</div>
+        <div class="iceleman6">Merhaba Dünya</div>
+        <div class="iceleman6">Merhaba Dünya</div>
+        <div class="iceleman6">Merhaba Dünya</div>
+        <div class="iceleman6">Merhaba Dünya</div>
+        <div class="iceleman6">Merhaba Dünya</div>
+        <div class="iceleman6">Merhaba Dünya</div>
+        <div class="iceleman6">Merhaba Dünya</div>
+        <div class="iceleman6">Merhaba Dünya</div>
+        <div class="iceleman6">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-7 ;</h3>
+    grid-template-columns: min-content min-content;
+    <div class="anaeleman7">
+        <div class="iceleman7">Merhaba Dünya</div>
+        <div class="iceleman7">Merhaba Dünya</div>
+        <div class="iceleman7">Merhaba Dünya</div>
+        <div class="iceleman7">Merhaba Dünya</div>
+        <div class="iceleman7">Merhaba Dünya</div>
+        <div class="iceleman7">Merhaba Dünya</div>
+        <div class="iceleman7">Merhaba Dünya</div>
+        <div class="iceleman7">Merhaba Dünya</div>
+        <div class="iceleman7">Merhaba Dünya</div>
+        <div class="iceleman7">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-8 ;</h3>
+    grid-template-columns: min-content min-content min-content min-content min-content min-content min-content
+    min-content; <br>
+    sütun fazla olsada içerik bölünmez taşabilir. İçerik alt satıra düşebilir.
+    <div class="anaeleman8">
+        <div class="iceleman8">Merhaba Dünya</div>
+        <div class="iceleman8">Merhaba Dünya</div>
+        <div class="iceleman8">Merhaba Dünya</div>
+        <div class="iceleman8">Merhaba Dünya</div>
+        <div class="iceleman8">Merhaba Dünya</div>
+        <div class="iceleman8">Merhaba Dünya</div>
+        <div class="iceleman8">Merhaba Dünya</div>
+        <div class="iceleman8">Merhaba Dünya</div>
+        <div class="iceleman8">Merhaba Dünya</div>
+        <div class="iceleman8">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-9 ;</h3>
+    grid-template-columns: 100px 150px 250px;
+    <div class="anaeleman9">
+        <div class="iceleman9">Merhaba Dünya</div>
+        <div class="iceleman9">Merhaba Dünya</div>
+        <div class="iceleman9">Merhaba Dünya</div>
+        <div class="iceleman9">Merhaba Dünya</div>
+        <div class="iceleman9">Merhaba Dünya</div>
+        <div class="iceleman9">Merhaba Dünya</div>
+        <div class="iceleman9">Merhaba Dünya</div>
+        <div class="iceleman9">Merhaba Dünya</div>
+        <div class="iceleman9">Merhaba Dünya</div>
+        <div class="iceleman9">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-10 ;</h3>
+    grid-template-columns: 200px auto 150px;
+    <div class="anaeleman10">
+        <div class="iceleman10">Merhaba Dünya</div>
+        <div class="iceleman10">Merhaba Dünya</div>
+        <div class="iceleman10">Merhaba Dünya</div>
+        <div class="iceleman10">Merhaba Dünya</div>
+        <div class="iceleman10">Merhaba Dünya</div>
+        <div class="iceleman10">Merhaba Dünya</div>
+        <div class="iceleman10">Merhaba Dünya</div>
+        <div class="iceleman10">Merhaba Dünya</div>
+        <div class="iceleman10">Merhaba Dünya</div>
+        <div class="iceleman10">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-11 ;</h3>
+    grid-template-columns: 100px auto auto;
+    <div class="anaeleman11">
+        <div class="iceleman11">Merhaba Dünya</div>
+        <div class="iceleman11">Merhaba Dünya</div>
+        <div class="iceleman11">Merhaba Dünya</div>
+        <div class="iceleman11">Merhaba Dünya</div>
+        <div class="iceleman11">Merhaba Dünya</div>
+        <div class="iceleman11">Merhaba Dünya</div>
+        <div class="iceleman11">Merhaba Dünya</div>
+        <div class="iceleman11">Merhaba Dünya</div>
+        <div class="iceleman11">Merhaba Dünya</div>
+        <div class="iceleman11">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-12 ;</h3>
+    grid-template-columns: repeat(5, 100px);
+    <div class="anaeleman12">
+        <div class="iceleman12">Merhaba Dünya</div>
+        <div class="iceleman12">Merhaba Dünya</div>
+        <div class="iceleman12">Merhaba Dünya</div>
+        <div class="iceleman12">Merhaba Dünya</div>
+        <div class="iceleman12">Merhaba Dünya</div>
+        <div class="iceleman12">Merhaba Dünya</div>
+        <div class="iceleman12">Merhaba Dünya</div>
+        <div class="iceleman12">Merhaba Dünya</div>
+        <div class="iceleman12">Merhaba Dünya</div>
+        <div class="iceleman12">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-13 ;</h3>
+    grid-template-columns: repeat(4,70px) auto;
+    <div class="anaeleman13">
+        <div class="iceleman13">Merhaba Dünya</div>
+        <div class="iceleman13">Merhaba Dünya</div>
+        <div class="iceleman13">Merhaba Dünya</div>
+        <div class="iceleman13">Merhaba Dünya</div>
+        <div class="iceleman13">Merhaba Dünya</div>
+        <div class="iceleman13">Merhaba Dünya</div>
+        <div class="iceleman13">Merhaba Dünya</div>
+        <div class="iceleman13">Merhaba Dünya</div>
+        <div class="iceleman13">Merhaba Dünya</div>
+        <div class="iceleman13">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-14 ;</h3>
+    grid-template-columns: repeat(2,100px) auto 100px;
+    <div class="anaeleman14">
+        <div class="iceleman14">Merhaba Dünya</div>
+        <div class="iceleman14">Merhaba Dünya</div>
+        <div class="iceleman14">Merhaba Dünya</div>
+        <div class="iceleman14">Merhaba Dünya</div>
+        <div class="iceleman14">Merhaba Dünya</div>
+        <div class="iceleman14">Merhaba Dünya</div>
+        <div class="iceleman14">Merhaba Dünya</div>
+        <div class="iceleman14">Merhaba Dünya</div>
+        <div class="iceleman14">Merhaba Dünya</div>
+        <div class="iceleman14">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-15 ;</h3>
+    grid-template-columns: repeat(2, 100px 150px) auto;
+    <div class="anaeleman15">
+        <div class="iceleman15">Merhaba Dünya</div>
+        <div class="iceleman15">Merhaba Dünya</div>
+        <div class="iceleman15">Merhaba Dünya</div>
+        <div class="iceleman15">Merhaba Dünya</div>
+        <div class="iceleman15">Merhaba Dünya</div>
+        <div class="iceleman15">Merhaba Dünya</div>
+        <div class="iceleman15">Merhaba Dünya</div>
+        <div class="iceleman15">Merhaba Dünya</div>
+        <div class="iceleman15">Merhaba Dünya</div>
+        <div class="iceleman15">Merhaba Dünya</div>
+    </div>
+
+     <h3>ornek-16 ;</h3>
+            grid-template-columns: repeat(2, 100px)  repeat(2, 150px);
+
+    <div class="anaeleman16">
+        <div class="iceleman16">Merhaba Dünya</div>
+        <div class="iceleman16">Merhaba Dünya</div>
+        <div class="iceleman16">Merhaba Dünya</div>
+        <div class="iceleman16">Merhaba Dünya</div>
+        <div class="iceleman16">Merhaba Dünya</div>
+        <div class="iceleman16">Merhaba Dünya</div>
+        <div class="iceleman16">Merhaba Dünya</div>
+        <div class="iceleman16">Merhaba Dünya</div>
+        <div class="iceleman16">Merhaba Dünya</div>
+        <div class="iceleman16">Merhaba Dünya</div>
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

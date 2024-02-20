@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            width: 500px;
+            display: grid;
+            border: 1px solid red;
+            padding: 10px;
+            grid-template-columns: repeat(4, auto);
+            grid-gap: 5px
+        }
+
+        .iceleman1 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        /* .ornek1 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 5;
+        } */
+        .islem1 {
+            grid-area: 2 / 3 /5 /5;
+        }
+
+
+
+        .anaeleman2 {
+            display: grid;
+            width: 500px;
+            border: 1px solid red;
+            padding: 10px;
+            grid-template-areas: "alanAdi alanAdi alanAdi alanAdi";
+            grid-gap: 5px;
+
+        }
+
+        .iceleman2 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem2 {
+            grid-area: alanAdi;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid-area özelliği</h1>
+    <p>Izgara düzenini içerisindeki elementin tüm satır ve sütun işlemleri için alan yerleştirme özelliklerini belirler.
+        Aynı zamanda ızgara düzenini içerisindeki elementin alan adı değerlerini belirler. (genellikle alan adı tanımlamak için kullanılır)</p>
+    <h2>parametreler</h2>
+    <li>grid-row-start ; satır başalangıcı</li>
+    <li>grid-column-start ;sütun başlangıcı</li>
+    <li>grid-row-end ; satır bitişi</li>
+    <li>grid-column-end ; sütun bitişi</li>
+
+    <h2>değerler ;</h2>
+    <ul>
+        <li>areaname; alan adı</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+    grid-area: 2 / 3 /5 /5;
+    <div class="anaeleman1">
+        <div class="iceleman1 islem1">1 (işlem)</div>
+        <div class="iceleman1">2</div>
+        <div class="iceleman1">3</div>
+        <div class="iceleman1">4</div>
+        <div class="iceleman1">5</div>
+        <div class="iceleman1">6</div>
+        <div class="iceleman1">7</div>
+        <div class="iceleman1">8</div>
+        <div class="iceleman1">9</div>
+        <div class="iceleman1">10</div>
+        <div class="iceleman1">11</div>
+        <div class="iceleman1">12</div>
+        <div class="iceleman1">13</div>
+        <div class="iceleman1">14</div>
+        <div class="iceleman1">15</div>
+        <div class="iceleman1">16</div>
+        <div class="iceleman1">17</div>
+        <div class="iceleman1">18</div>
+        <div class="iceleman1">19</div>
+        <div class="iceleman1">20</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    grid-area: isim; <br>
+    grid-template-areas:"isim isim isim isim";
+    <div class="anaeleman2">
+        <div class="iceleman2 islem2">1 (işlem)</div>
+        <div class="iceleman2">2</div>
+        <div class="iceleman2">3</div>
+        <div class="iceleman2">4</div>
+        <div class="iceleman2">5</div>
+        <div class="iceleman2">6</div>
+        <div class="iceleman2">7</div>
+        <div class="iceleman2">8</div>
+        <div class="iceleman2">9</div>
+        <div class="iceleman2">10</div>
+        <div class="iceleman2">11</div>
+        <div class="iceleman2">12</div>
+        <div class="iceleman2">13</div>
+        <div class="iceleman2">14</div>
+        <div class="iceleman2">15</div>
+        <div class="iceleman2">16</div>
+        <div class="iceleman2">17</div>
+        <div class="iceleman2">18</div>
+        <div class="iceleman2">19</div>
+        <div class="iceleman2">20</div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(5, auto);
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -o-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+        }
+
+        .iceleman1 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem1 {
+            -webkit-align-self: auto;
+            -moz-align-self: auto;
+            -o-align-self: auto;
+            -ms-align-self: auto;
+            align-self: auto;
+        }
+
+        /* auto da aling-items'in değerini baz alır */
+
+
+
+        .anaeleman2 {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(5, auto);
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -o-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+        }
+
+        .iceleman2 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem2 {
+            -webkit-align-self: stretch;
+            -moz-align-self: stretch;
+            -o-align-self: stretch;
+            -ms-align-self: stretch;
+            align-self: stretch;
+        }
+
+
+
+        .anaeleman3 {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(5, auto);
+            -webkit-align-items: start;
+            -moz-align-items: start;
+            -o-align-items: start;
+            -ms-align-items: start;
+            align-items: start;
+        }
+
+        .iceleman3 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem3 {
+            -webkit-align-self: center;
+            -moz-align-self: center;
+            -o-align-self: center;
+            -ms-align-self: center;
+            align-self: center;
+        }
+
+        .anaeleman4 {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(5, auto);
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -o-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+        }
+
+        .iceleman4 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem4 {
+            -webkit-align-self: start;
+            -moz-align-self: start;
+            -o-align-self: start;
+            -ms-align-self: start;
+            align-self: start;
+        }
+
+         .anaeleman5 {
+            display: grid;
+            width: 500px;
+            height: 300px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(5, auto);
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -o-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+        }
+
+        .iceleman5 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem5 {
+            -webkit-align-self: end;
+            -moz-align-self:  end;
+            -o-align-self: end;
+            -ms-align-self: end;
+            align-self:  end;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>align-self özelliği</h1>
+    <p>Izgara düzenini içerisinde bulunan ve seçilen element veya elementlerin dikey hizalama özelliklerini belirler.
+    </p>
+
+
+    <h2>değerler ;</h2>
+    <ul>
+        <li>auto; otamatik değer alır. (varsayılan)</li>
+        <li>stretch ; uzat / esne</li>
+        <li>center ; orta</li>
+        <li>start ; başlangıç</li>
+        <li>end ; bitiş</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+    align-items: center; <br>
+    align-self: auto;
+    <div class="anaeleman1">
+        <div class="iceleman1">1</div>
+        <div class="iceleman1">2</div>
+        <div class="iceleman1 islem1">3 (işlem)</div>
+        <div class="iceleman1">4</div>
+        <div class="iceleman1">5</div>
+        <div class="iceleman1">6</div>
+        <div class="iceleman1">7</div>
+        <div class="iceleman1">8</div>
+        <div class="iceleman1">9</div>
+        <div class="iceleman1">10</div>
+
+
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    align-items: center;<br>
+    align-items: stretch;
+    <div class="anaeleman2">
+        <div class="iceleman2">1</div>
+        <div class="iceleman2">2</div>
+        <div class="iceleman2 islem2">3 (islem)</div>
+        <div class="iceleman2">4</div>
+        <div class="iceleman2">5</div>
+        <div class="iceleman2">6</div>
+        <div class="iceleman2">7</div>
+        <div class="iceleman2">8</div>
+        <div class="iceleman2">9</div>
+        <div class="iceleman2">10</div>
+
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    align-items: start; <br>
+    align-self: center;
+    <div class="anaeleman3">
+        <div class="iceleman3">1</div>
+        <div class="iceleman3">2</div>
+        <div class="iceleman3 islem3">3 (işlem)</div>
+        <div class="iceleman3">4</div>
+        <div class="iceleman3">5</div>
+        <div class="iceleman3">6</div>
+        <div class="iceleman3">7</div>
+        <div class="iceleman3">8</div>
+        <div class="iceleman3">9</div>
+        <div class="iceleman3">10</div>
+
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    align-items: center; <br>
+    align-self: start;
+    <div class="anaeleman4">
+        <div class="iceleman4">1</div>
+        <div class="iceleman4">2</div>
+        <div class="iceleman4 islem4">3 (islem)</div>
+        <div class="iceleman4">4</div>
+        <div class="iceleman4">5</div>
+        <div class="iceleman4">6</div>
+        <div class="iceleman4">7</div>
+        <div class="iceleman4">8</div>
+        <div class="iceleman4">9</div>
+        <div class="iceleman4">10</div>
+    </div>
+
+     <h3>ornek-5;</h3>
+    align-items: center;<br>
+    align-self: end;
+    <div class="anaeleman5">
+        <div class="iceleman5">1</div>
+        <div class="iceleman5">2</div>
+        <div class="iceleman5 islem5">3 (islem)</div>
+        <div class="iceleman5">4</div>
+        <div class="iceleman5">5</div>
+        <div class="iceleman5">6</div>
+        <div class="iceleman5">7</div>
+        <div class="iceleman5">8</div>
+        <div class="iceleman4">9</div>
+        <div class="iceleman4">10</div>
+    </div>
+
+
+</body>
+
+</html>

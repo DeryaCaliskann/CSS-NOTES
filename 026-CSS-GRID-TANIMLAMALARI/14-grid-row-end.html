@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 10px;
+        }
+
+        .iceleman1 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .islem1 {
+            grid-row-end: auto;
+        }
+
+        .anaeleman2 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 10px;
+        }
+
+        .iceleman2 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .islem2 {
+            grid-row-end: 3;
+        }
+
+        .anaeleman3 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 10px;
+        }
+
+        .iceleman3 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .islem3 {
+            grid-row-end: 3 span;
+        }
+
+        .anaeleman4 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 10px;
+        }
+
+        .iceleman4 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .islem4 {
+            grid-row-end: 1;
+        }
+
+        .anaeleman5 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 10px;
+        }
+
+        .iceleman5 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .islem5 {
+            grid-row-end: 4;
+        }
+
+        .anaeleman6 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-columns: repeat(3, auto);
+            grid-gap: 10px;
+        }
+
+        .iceleman6 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .islem6 {
+            grid-column-end: 3;
+            grid-row-end: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid-row-end özelliği</h1>
+    <p>Izgara düzenini içerisindeki elementin kaçıncı satırda bitmesi gerektiğini belirler. </p>
+
+    <h2>değerler ;</h2>
+    <ul>
+        <li>outo; otamatik değer alır(varsayılan)</li>
+        <li>row-line ; satır çizgisi.</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+     grid-row-end: auto;
+    <div class="anaeleman1">
+        <div class="iceleman1 islem1">1 (islem)</div>
+        <div class="iceleman1">2</div>
+        <div class="iceleman1">3</div>
+        <div class="iceleman1">4</div>
+        <div class="iceleman1">5</div>
+        <div class="iceleman1">6</div>
+        <div class="iceleman1">7</div>
+        <div class="iceleman1">8</div>
+        <div class="iceleman1">9</div>
+        <div class="iceleman1">10</div>
+    </div>
+
+
+    <h3>ornek-2 ;</h3>
+     grid-row-end: 3;
+    <div class="anaeleman2">
+        <div class="iceleman2 islem2">1 (islem)</div>
+        <div class="iceleman2">2</div>
+        <div class="iceleman2">3</div>
+        <div class="iceleman2">4</div>
+        <div class="iceleman2">5</div>
+        <div class="iceleman2">6</div>
+        <div class="iceleman2">7</div>
+        <div class="iceleman2">8</div>
+        <div class="iceleman2">9</div>
+        <div class="iceleman2">10</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+     grid-row-end: 3 span;
+    <div class="anaeleman3">
+        <div class="iceleman3 islem3">1 (islem) </div>
+        <div class="iceleman3">2</div>
+        <div class="iceleman3">3</div>
+        <div class="iceleman3">4</div>
+        <div class="iceleman3">5</div>
+        <div class="iceleman3">6</div>
+        <div class="iceleman3">7</div>
+        <div class="iceleman3">8</div>
+        <div class="iceleman3">9</div>
+        <div class="iceleman3">10</div>
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    grid-row-end:1;
+    <div class="anaeleman4">
+        <div class="iceleman4">1</div>
+        <div class="iceleman4">2</div>
+        <div class="iceleman4">3</div>
+        <div class="iceleman4">4</div>
+        <div class="iceleman4">5</div>
+        <div class="iceleman4">6</div>
+        <div class="iceleman4">7</div>
+        <div class="iceleman4 islem4">8 (işlem) </div>
+        <div class="iceleman4">9</div>
+        <div class="iceleman4">10</div>
+    </div>
+
+    <h3>ornek-5 ;</h3>
+    grid-row-end:4;
+    <div class="anaeleman5">
+        <div class="iceleman5">1</div>
+        <div class="iceleman5">2</div>
+        <div class="iceleman5">3</div>
+        <div class="iceleman5">4</div>
+        <div class="iceleman5">5</div>
+        <div class="iceleman5">6</div>
+        <div class="iceleman5">7</div>
+        <div class="iceleman5  islem5">8 (islem)</div>
+        <div class="iceleman5">9</div>
+        <div class="iceleman5">10</div>
+    </div>
+
+    <h3>ornek-6 ;</h3>
+    grid-column-end: 3; <br>
+    grid-row-end: 2;
+    <div class="anaeleman6">
+        <div class="iceleman6">1</div>
+        <div class="iceleman6">2</div>
+        <div class="iceleman6">3</div>
+        <div class="iceleman6">4</div>
+        <div class="iceleman6">5</div>
+        <div class="iceleman6">6</div>
+        <div class="iceleman6">7</div>
+        <div class="iceleman6  islem6">8 (islem)</div>
+        <div class="iceleman6">9</div>
+        <div class="iceleman6">10</div>
+    </div>
+
+
+
+</body>
+
+</html>

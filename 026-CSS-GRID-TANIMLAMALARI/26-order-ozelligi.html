@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            display: grid;
+            width: 500px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(5, auto);
+
+        }
+
+        .iceleman1 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem1 {
+            -webkit-order: 1;
+            -moz-order: 1;
+            -o-order: 1;
+            -ms-order: 1;
+            order: 1;
+        }
+
+
+
+
+        .anaeleman2 {
+            display: grid;
+            width: 500px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(5, auto);
+
+        }
+
+        .iceleman2 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem2 {
+            -webkit-order: -1;
+            -moz-order: -1;
+            -o-order: -1;
+            -ms-order: -1;
+            order: -1;
+        }
+
+
+        .anaeleman3 {
+            display: grid;
+            width: 500px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(5, auto);
+
+        }
+
+        .iceleman3 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .islem3a {
+            -webkit-order: 1;
+            -moz-order: 1;
+            -o-order: 1;
+            -ms-order: 1;
+            order: 1;
+        }
+
+        .islem3b {
+            -webkit-order: 3;
+            -moz-order: 3;
+            -o-order: 3;
+            -ms-order: 3;
+            order: 3;
+        }
+
+        .anaeleman4 {
+            display: grid;
+            width: 500px;
+            border: 1px solid red;
+            grid-gap: 10px;
+            padding: 10px;
+            grid-template-columns: repeat(5, auto);
+
+        }
+
+        .iceleman4 {
+            padding: 10px;
+            border: 1px solid blue;
+        }
+
+        .bir {
+            -webkit-order: 1;
+            -moz-order: 1;
+            -o-order: 1;
+            -ms-order: 1;
+            order: 1;
+        }
+
+        .iki {
+            -webkit-order: 2;
+            -moz-order: 2;
+            -o-order: 2;
+            -ms-order: 2;
+            order: 2;
+        }
+
+        .uc {
+            -webkit-order: 3;
+            -moz-order: 3;
+            -o-order: 3;
+            -ms-order: 3;
+            order: 3;
+        }
+
+        .dort {
+            -webkit-order: 4;
+            -moz-order: 4;
+            -o-order: 4;
+            -ms-order: 4;
+            order: 4;
+        }
+
+        .bes {
+            -webkit-order: 5;
+            -moz-order: 5;
+            -o-order: 5;
+            -ms-order: 5;
+            order: 5;
+        }
+
+        .alti {
+            -webkit-order: 6;
+            -moz-order: 6;
+            -o-order: 6;
+            -ms-order: 6;
+            order: 6;
+        }
+
+        .yedi {
+            -webkit-order: 7;
+            -moz-order: 7;
+            -o-order: 7;
+            -ms-order: 7;
+            order: 7;
+        }
+
+        .sekiz {
+            -webkit-order: 8;
+            -moz-order: 8;
+            -o-order: 8;
+            -ms-order: 8;
+            order: 8;
+        }
+
+        .dokuz {
+            -webkit-order: 9;
+            -moz-order: 9;
+            -o-order: 9;
+            -ms-order: 9;
+            order: 9;
+        }
+
+        .on {
+            -webkit-order: 10;
+            -moz-order: 10;
+            -o-order: 10;
+            -ms-order: 10;
+            order: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>order özelliği</h1>
+    <p>Izgara düzenini içerisindeki element veya elementlerin diğer elementlere göre sıralama özelliklerini belirler.
+        Varsayılan order değeri 0 dır ve algoritmaya göre yerleşir. 0 dan büyük bir sayı verdiğimizde en sona gider ve
+        en büyük sayı her zaman en sonda kalır. </p>
+
+
+    <h2>değerler ;</h2>
+    <ul>
+        <li>number ; rakam</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+    order: 1;
+    <div class="anaeleman1">
+        <div class="iceleman1">1</div>
+        <div class="iceleman1">2</div>
+        <div class="iceleman1 islem1">3(1)</div>
+        <div class="iceleman1">4</div>
+        <div class="iceleman1">5</div>
+        <div class="iceleman1">6</div>
+        <div class="iceleman1">7</div>
+        <div class="iceleman1">8</div>
+        <div class="iceleman1">9</div>
+        <div class="iceleman1">10</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    order: -1;
+    <div class="anaeleman2">
+        <div class="iceleman2">1</div>
+        <div class="iceleman2">2</div>
+        <div class="iceleman2 islem2">3(-1)</div>
+        <div class="iceleman2">4</div>
+        <div class="iceleman2">5</div>
+        <div class="iceleman2">6</div>
+        <div class="iceleman2">7</div>
+        <div class="iceleman2">8</div>
+        <div class="iceleman2">9</div>
+        <div class="iceleman2">10</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    order: 1; <br>
+    order: 3;
+    <div class="anaeleman3">
+        <div class="iceleman3">1</div>
+        <div class="iceleman3">2</div>
+        <div class="iceleman3">3</div>
+        <div class="iceleman3 islem3a">4(1)</div>
+        <div class="iceleman3">5</div>
+        <div class="iceleman3">6</div>
+        <div class="iceleman3">7</div>
+        <div class="iceleman3 islem3b">8(3)</div>
+        <div class="iceleman3">9</div>
+        <div class="iceleman3">10</div>
+    </div>
+
+    <h3>ornek-4 ;</h3>
+
+    <div class="anaeleman4">
+        <div class="iceleman4 on">1 (10)</div>
+        <div class="iceleman4 dokuz">2 (9)</div>
+        <div class="iceleman4 sekiz">3 (8)</div>
+        <div class="iceleman4 yedi">4 (7)</div>
+        <div class="iceleman4 alti">5 (6)</div>
+        <div class="iceleman4 bes">6 (5)</div>
+        <div class="iceleman4 dort">7 (4)</div>
+        <div class="iceleman4 uc">8 (3)</div>
+        <div class="iceleman4 iki">9 (2)</div>
+        <div class="iceleman4 bir">10 (1)</div>
+    </div>
+
+
+
+</body>
+
+</html>

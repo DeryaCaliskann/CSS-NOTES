@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            display: grid;
+            width: 500px;
+            height: 400px;
+            border: 1px solid red;
+            grid-gap: 5px;
+            padding: 5px;
+            grid-template-columns: repeat(2, auto);
+            -webkit-align-items: stretch;
+            -moz-align-items: stretch;
+            -o-align-items: stretch;
+            -ms-align-items: stretch;
+            align-items: stretch;
+        }
+
+        .iceleman1 {
+            padding: 5px;
+            border: 1px solid blue;
+        }
+
+        .anaeleman2 {
+            display: grid;
+            width: 500px;
+            height: 400px;
+            border: 1px solid red;
+            grid-gap: 5px;
+            padding: 5px;
+            grid-template-columns: repeat(2, auto);
+            -webkit-align-items: center;
+            -moz-align-items: center;
+            -o-align-items: center;
+            -ms-align-items: center;
+            align-items: center;
+        }
+
+        .iceleman2 {
+            padding: 5px;
+            border: 1px solid blue;
+        }
+
+        .anaeleman3 {
+            display: grid;
+            width: 500px;
+            height: 400px;
+            border: 1px solid red;
+            grid-gap: 5px;
+            padding: 5px;
+            grid-template-columns: repeat(2, auto);
+            -webkit-align-items: start;
+            -moz-align-items: start;
+            -o-align-items: start;
+            -ms-align-items: start;
+            align-items: start;
+        }
+
+        .iceleman3 {
+            padding: 5px;
+            border: 1px solid blue;
+        }
+
+
+
+        .anaeleman4 {
+            display: grid;
+            width: 500px;
+            height: 400px;
+            border: 1px solid red;
+            grid-gap: 5px;
+            padding: 5px;
+            grid-template-columns: repeat(2, auto);
+            -webkit-align-items: end;
+            -moz-align-items: end;
+            -o-align-items: end;
+            -ms-align-items: end;
+            align-items: end;
+        }
+
+        .iceleman4 {
+            padding: 5px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>align-items özelliği</h1>
+    <p>Izgara düzenini içerisinde bulunan elementlerin dikey hizalama özelliklerini belirler.</p>
+
+
+    <h2>değerler ;</h2>
+    <ul>
+        <li>stretch ; uzat / esne (varsayılan)</li>
+        <li>center ; orta</li>
+        <li>start ; başlangıç</li>
+        <li>end ; bitiş</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+    align-items: stretch;
+    <div class="anaeleman1">
+        <div class="iceleman1">1</div>
+        <div class="iceleman1">2</div>
+        <div class="iceleman1">3</div>
+        <div class="iceleman1">4</div>
+        <div class="iceleman1">5</div>
+        <div class="iceleman1">6</div>
+        <div class="iceleman1">7</div>
+        <div class="iceleman1">8</div>
+        <div class="iceleman1">9</div>
+        <div class="iceleman1">10</div>
+
+
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    align-items: center;
+    <div class="anaeleman2">
+        <div class="iceleman2">1</div>
+        <div class="iceleman2">2</div>
+        <div class="iceleman2">3</div>
+        <div class="iceleman2">4</div>
+        <div class="iceleman2">5</div>
+        <div class="iceleman2">6</div>
+        <div class="iceleman2">7</div>
+        <div class="iceleman2">8</div>
+        <div class="iceleman2">9</div>
+        <div class="iceleman2">10</div>
+
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    align-items: start;
+    <div class="anaeleman3">
+        <div class="iceleman3">1</div>
+        <div class="iceleman3">2</div>
+        <div class="iceleman3">3</div>
+        <div class="iceleman3">4</div>
+        <div class="iceleman3">5</div>
+        <div class="iceleman3">6</div>
+        <div class="iceleman3">7</div>
+        <div class="iceleman3">8</div>
+        <div class="iceleman3">9</div>
+        <div class="iceleman3">10</div>
+
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    align-items: end;
+    <div class="anaeleman4">
+        <div class="iceleman4">1</div>
+        <div class="iceleman4">2</div>
+        <div class="iceleman4">3</div>
+        <div class="iceleman4">4</div>
+        <div class="iceleman4">5</div>
+        <div class="iceleman4">6</div>
+        <div class="iceleman4">7</div>
+        <div class="iceleman4">8</div>
+        <div class="iceleman4">9</div>
+        <div class="iceleman4">10</div>
+    </div>
+
+
+</body>
+
+</html>

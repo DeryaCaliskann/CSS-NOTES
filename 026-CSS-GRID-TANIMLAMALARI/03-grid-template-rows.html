@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .anaeleman1 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-rows: none none none none none;
+        }
+
+        .iceleman1 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman2 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-rows: auto auto auto auto auto;
+        }
+
+        .iceleman2 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman3 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-rows: max-content max-content max-content max-content max-content;
+        }
+
+        .iceleman3 {
+            padding: 10px;
+            border: 1px solid red;
+            -webkit-writing-mode: vertical-lr;
+            -moz-writing-mode: vertical-lr;
+            -o-writing-mode: vertical-lr;
+            -ms-writing-mode: vertical-lr;
+            writing-mode: vertical-lr;
+        }
+
+        .anaeleman4 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-rows: min-content min-content min-content min-content min-content;
+        }
+
+        .iceleman4 {
+            padding: 10px;
+            border: 1px solid red;
+            -webkit-writing-mode: vertical-lr;
+            -moz-writing-mode: vertical-lr;
+            -o-writing-mode: vertical-lr;
+            -ms-writing-mode: vertical-lr;
+            writing-mode: vertical-lr;
+        }
+
+        .anaeleman5 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-rows: 200px;
+
+        }
+
+        .iceleman5 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman6 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-rows: 50px 75px 100px 125px 150px;
+        }
+
+        .iceleman6 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman7 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-rows: repeat(5, 50px);
+        }
+
+        .iceleman7 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+
+
+        .anaeleman8 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-rows: repeat(2, 50px 100px)
+        }
+
+        .iceleman8 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman9 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-rows: 100px 150px 250px;
+        }
+
+        .iceleman9 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .anaeleman10 {
+            display: grid;
+            width: 500px;
+            border: 1px solid blue;
+            padding: 10px;
+            grid-template-rows: repeat(2, 100px) repeat(2, 50px);
+        }
+
+        .iceleman10 {
+            padding: 10px;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>grid-template-rows özelliği</h1>
+    <p>Izgara düzenini içerisindeki element veya elementlerin, oluşturulması gereken satır boyutu yüksekliğini belirler.
+    </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>none ; değer yok (varsayılan)</li>
+        <li>auto ; otamatik değer alır </li>
+        <li>max-content ; maksimum içerik. </li>
+        <li>min-content ; minimum içerik. </li>
+        <li>length ; uzunluk</li>
+        <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>ornek-1 ;</h3>
+    grid-template-rows:none none none none none;
+    <div class="anaeleman1">
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+        <div class="iceleman1">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-2 ;</h3>
+    grid-template-rows: auto auto auto auto auto;
+    <div class="anaeleman2">
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+        <div class="iceleman2">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-3 ;</h3>
+    grid-template-rows: max-content max-content max-content max-content max-content;
+    <div class="anaeleman3">
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+        <div class="iceleman3">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-4 ;</h3>
+    grid-template-rows: min-content min-content min-content min-content min-content min-content min-content
+    min-content;
+    <div class="anaeleman4">
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+        <div class="iceleman4">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-5 ;</h3>
+    grid-template-rows:200px;
+    <div class="anaeleman5">
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+        <div class="iceleman5">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-6 ;</h3>
+    grid-template-rows: 50px 75px 100px 125px 150px;
+    <div class="anaeleman6">
+        <div class="iceleman6">Merhaba Dünya</div>
+        <div class="iceleman6">Merhaba Dünya</div>
+        <div class="iceleman6">Merhaba Dünya</div>
+        <div class="iceleman6">Merhaba Dünya</div>
+        <div class="iceleman6">Merhaba Dünya</div>
+
+    </div>
+
+    <h3>ornek-7 ;</h3>
+    grid-template-rows: repeat(5,50px);
+    <div class="anaeleman7">
+        <div class="iceleman7">Merhaba Dünya</div>
+        <div class="iceleman7">Merhaba Dünya</div>
+        <div class="iceleman7">Merhaba Dünya</div>
+        <div class="iceleman7">Merhaba Dünya</div>
+        <div class="iceleman7">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-8 ;</h3>
+    grid-template-rows: repeat(2, 50px 100px)
+    <div class="anaeleman8">
+        <div class="iceleman8">Merhaba Dünya</div>
+        <div class="iceleman8">Merhaba Dünya</div>
+        <div class="iceleman8">Merhaba Dünya</div>
+        <div class="iceleman8">Merhaba Dünya</div>
+        <div class="iceleman8">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-9 ;</h3>
+    grid-template-rows: 100px 150px 250px;
+    <div class="anaeleman9">
+        <div class="iceleman9">Merhaba Dünya</div>
+        <div class="iceleman9">Merhaba Dünya</div>
+        <div class="iceleman9">Merhaba Dünya</div>
+        <div class="iceleman9">Merhaba Dünya</div>
+        <div class="iceleman9">Merhaba Dünya</div>
+    </div>
+
+    <h3>ornek-10 ;</h3>
+    grid-template-rows: repeat(2,100px) repeat(2,50px) ;
+    <div class="anaeleman10">
+        <div class="iceleman10">Merhaba Dünya</div>
+        <div class="iceleman10">Merhaba Dünya</div>
+        <div class="iceleman10">Merhaba Dünya</div>
+        <div class="iceleman10">Merhaba Dünya</div>
+        <div class="iceleman10">Merhaba Dünya</div>
+    </div>
+
+</body>
+
+</html>
