@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body{
+    margin-left: 50px;
+    }
+        .ornek1 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 50px;
+            border: 1px solid red;
+            -webkit-perspective: none;
+            -moz-perspective: none;
+            -o-perspective: none;
+            -ms-perspective: none;
+            perspective: none;
+        }
+
+        .iceleman1 {
+            position: absolute;
+            padding: 50px;
+            border: 1px solid blue;
+            background-color: yellow;
+            -webkit-transform: rotateX(45deg);
+            -moz-transform: rotateX(45deg);
+            -o-transform: rotateX(45deg);
+            -ms-transform: rotateX(45deg);
+            transform: rotateX(45deg);
+        }
+
+        .ornek2 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 50px;
+            border: 1px solid red;
+            -webkit-perspective: 150px;
+            -moz-perspective: 150px;
+            -o-perspective: 150px;
+            -ms-perspective: 150px;
+            perspective: 150px;
+        }
+
+        .iceleman2 {
+            position: absolute;
+            padding: 50px;
+            border: 1px solid blue;
+            background-color: yellow;
+            -webkit-transform: rotateX(45deg);
+            -moz-transform: rotateX(45deg);
+            -o-transform: rotateX(45deg);
+            -ms-transform: rotateX(45deg);
+            transform: rotateX(45deg);
+        }
+
+        .ornek3 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 50px;
+            border: 1px solid red;
+            -webkit-perspective: 100px;
+            -moz-perspective: 100px;
+            -o-perspective: 100px;
+            -ms-perspective: 100px;
+            perspective: 100px;
+        }
+
+        .iceleman3 {
+            position: absolute;
+            padding: 50px;
+            border: 1px solid blue;
+            background-color: yellow;
+            -webkit-transform: rotateX(45deg);
+            -moz-transform: rotateX(45deg);
+            -o-transform: rotateX(45deg);
+            -ms-transform: rotateX(45deg);
+            transform: rotateX(45deg);
+        }
+
+        .ornek4 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 50px;
+            border: 1px solid red;
+            -webkit-perspective: 150px;
+            -moz-perspective: 150px;
+            -o-perspective: 150px;
+            -ms-perspective: 150px;
+            perspective: 150px;
+        }
+
+        .iceleman4 {
+            position: absolute;
+            padding: 50px;
+            border: 1px solid blue;
+            background-color: yellow;
+            -webkit-transform: rotateY(45deg);
+            -moz-transform: rotateY(45deg);
+            -o-transform: rotateY(45deg);
+            -ms-transform: rotateY(45deg);
+            transform: rotateY(45deg);
+        }
+
+          .ornek5 {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            margin: 50px;
+            border: 1px solid red;
+            -webkit-perspective: 150px;
+            -moz-perspective: 150px;
+            -o-perspective: 150px;
+            -ms-perspective: 150px;
+            perspective: 150px;
+        }
+
+        .iceleman5 {
+            position: absolute;
+            padding: 50px;
+            border: 1px solid blue;
+            background-color: yellow;
+            -webkit-transform: rotateY(-45deg);
+            -moz-transform: rotateY(-45deg);
+            -o-transform: rotateY(-45deg);
+            -ms-transform: rotateY(-45deg);
+            transform: rotateY(-45deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>perspective özelliği</h1>
+    <p> Html elementinin 3d dönüştürme sonrasındaki perspektif derinliği özelliklerini belirler.</p>
+
+    <h2>değerler ; </h2>
+    <ul>
+        <li>none ; değer yok(varsayılan)</li>
+        <li>length ; uzunluk</li>
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>örnek-1 ;</h3>
+    transform: rotateX(45deg);<br>
+    perspective: none;
+    <div class="ornek1">
+        <div class="iceleman1">Merhaba Dünya </div>
+    </div>
+
+    <h3>örnek-2 ;</h3>
+    transform: rotateX(45deg);<br>
+    perspective: 150px;
+    <div class="ornek2">
+        <div class="iceleman2">Merhaba Dünya </div>
+    </div>
+
+    <h3>örnek-3;</h3>
+    perspective: 100px;
+    <div class="ornek3">
+        <div class="iceleman3">Merhaba Dünya </div>
+    </div>
+
+    <h3>örnek-4;</h3>
+    transform: rotateY(45deg);<br>
+    perspective: 150px;
+    <div class="ornek4">
+        <div class="iceleman4">Merhaba Dünya </div>
+    </div>
+
+     <h3>örnek-5;</h3>
+    transform: rotateY(-45deg);<br>
+    perspective: 150px;
+    <div class="ornek5">
+        <div class="iceleman5">Merhaba Dünya </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

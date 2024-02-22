@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin-left: 50px;
+        }
+
+        .cerceve {
+            width: 150px;
+            height: 150px;
+            border: solid 1px blue;
+            padding: 10px;
+          
+        }
+
+        .ornek1 {      
+         
+            width: 105px;
+            height: 105px;         
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+            -webkit-backface-visibility: visible;
+            -moz-backface-visibility: visible;
+            -o-backface-visibility: visible;
+            -ms-backface-visibility: visible;
+            backface-visibility: visible;
+        }
+
+        .ornek2 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            -webkit-transform: rotateY(180deg);
+            -moz-transform: rotateY(180deg);
+            -o-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -o-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>backface-visility özelliği</h1>
+    <p> Belirtilen Html elementinin dönüştürme geçiş veya animasyon işlemlerinde arka yüzeyinin görüntülenme veya
+        gizlenme özelliklerini belirler.</p>
+    <h2>parametreler ;</h2>
+    <ul>
+        <li>x ; varsayılan 50%</li>
+        <li>y ; varsayılan 50%</li>
+    </ul>
+
+
+    <h2>değerler ; </h2>
+    <ul>
+        <li>visible; göster</li>
+        <li>hidden; gizle</li>
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+    <h3>örnek-1 ;</h3>
+    transform: rotateY(180deg); <br>
+    backface-visibility: visible;
+    <div class="cerceve">
+        <div class="ornek1">Merhaba Dünya</div>
+    </div>
+    <h3>örnek-2 ;</h3>
+    transform: rotateY(180deg); <br>
+    backface-visibility: hidded;
+    <div class="cerceve">
+        <div class="ornek2">Merhaba Dünya</div>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>

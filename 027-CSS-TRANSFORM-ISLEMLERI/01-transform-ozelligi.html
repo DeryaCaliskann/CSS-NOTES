@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin-left: 50px;
+        }
+
+        .ornek1 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: none;
+        }
+
+        .ornek2 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: translate(100px);
+            /*x ekseninde (eksi değer alabilir.)*/
+        }
+
+        .ornek3 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: translate(100px, 25px);
+            /*x ve y ekseninde*/
+        }
+
+        .ornek4 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: perspective(1000px) translate3d(10px, 20px, -200px);
+            /*x , y , z (derinlik) ekseninde*/
+        }
+
+        .ornek5 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: perspective(1000px) translate3d(10px, 20px, 200px);
+            /*x , y , z (derinlik) ekseninde*/
+        }
+
+        .ornek6 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: translateX(100px);
+        }
+
+        .ornek7 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: translateY(25px);
+        }
+
+        .ornek8 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: perspective(1000px) translateZ(-100px);
+        }
+
+        .ornek9 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: skew(10deg);
+        }
+
+        .ornek10 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: skew(-10deg, -10deg);
+        }
+
+        .ornek11 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: skewX(5deg);
+        }
+
+        .ornek12 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: skewY(7deg);
+        }
+
+        .ornek13 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: scale(0.5);
+            /* yarıya düşür (tek parametre verirsek hem x hem y ekseninde boyutlanır)*/
+        }
+
+        .ornek14 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: scale(1.5);
+            /*bir buçuk katı*/
+        }
+
+        .ornek15 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: scale(0.5, 1.0);
+            /*x yarıya düşür, y sabit kal*/
+        }
+
+        .ornek16 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: scale(1.0, 0.5);
+            /*x sabit kal, y yarıya düş*/
+        }
+
+        .ornek17 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: perspective(1000px) scale3d(0.5, 0.5, 0.8) translateZ(100px);
+        }
+
+        .ornek18 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: scaleX(0.5);
+        }
+
+        .ornek19 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: scaleY(0.5);
+        }
+
+        .ornek20 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: perspective(1000px) scaleZ(1.8) translateZ(100px);
+        }
+
+        .ornek21 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: rotate(10deg);
+        }
+
+        .ornek22 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: rotate3d(1, 0, 0, 45deg);
+        }
+
+        .ornek23 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: rotate3d(0, 1, 0, 45deg);
+        }
+
+        .ornek24 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: rotate3d(0, 0, 1, 45deg);
+        }
+
+        .ornek25 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: rotateX(180deg);
+        }
+
+        .ornek26 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: rotateY(180deg);
+        }
+
+        .ornek27 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: rotateZ(180deg);
+        }
+
+        .ornek28 {
+            position: relative;
+            width: 200px;
+            height: 100px;
+            margin: 50px;
+            padding: 10px;
+            border: 1px solid red;
+            perspective: 150px;
+        }
+
+        .iceleman28 {
+            padding: 30px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: rotateY(45deg);
+        }
+
+        .ornek29 {
+            position: relative;
+            width: 200px;
+            height: 100px;
+            margin: 50px;
+            padding: 10px;
+            border: 1px solid red;
+            perspective: 150px;
+        }
+
+        .iceleman29 {
+            padding: 30px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: rotateX(45deg);
+        }
+
+        .ornek30 {
+            position: relative;
+            width: 200px;
+            height: 100px;
+            margin: 50px;
+            padding: 10px;
+            border: 1px solid red;
+            perspective: 150px;
+        }
+
+        .iceleman30 {
+            padding: 30px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: rotateX(25deg);
+        }
+
+        .anaeleman {
+            perspective: 1000px;
+        }
+
+        #zar {
+            font-size: 100px;
+            width: 130px;
+            margin: 97.5;
+            transform-style: preserve-3d;
+            transform: rotateX(-40deg) rotateY(32deg);
+        }
+
+        .yuz {
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            background-color: rgba(255, 0, 4, 0.6);
+            border: 1px solid rgba(255, 0, 4, 0.5);
+            color: white;
+            text-align: center;
+            line-height: 130px;
+        }
+
+        .birli {
+            transform: translateZ(65px);
+        }
+
+        .ikili {
+            transform: rotateX(-90deg) translateZ(65px);
+        }
+
+        .uclu {
+            transform: rotateY(-90deg) translateZ(65px);
+        }
+
+        .dortlu {
+            transform: rotateY(90deg) translateZ(65px);
+        }
+
+        .besli {
+            transform: rotateX(90deg) translateZ(65px);
+        }
+
+        .altili {
+            transform: rotateY(-180deg) translateZ(65px);
+        }
+
+        .ornek32 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: matrix(1.5, 0.5, 0.5, 0.8, 10, 10);
+        }
+        
+
+        .ornek33 {
+            width: 105px;
+            height: 105px;
+            padding: 10px;
+            border: 1px solid blue;
+            background-color: cornflowerblue;
+            transform: matrix3d(0.7641625395056671, 0.03332958246796086, 0, 0.0001108601040601828,
+                    0.5264501084036208, 0.946763498754182, 0, -0.0005827081954572572,
+                    0, 0, 1, 0,
+                    111, 63, 0, 1);
+            /*( https://codepen.io/fta/pen/ifnqH )*/
+        }
+    </style>
+</head>
+
+<body>
+    <h1>tansform (dönüşüm) özelliği</h1>
+    <p>Html elementinin 2D veya 3D dönüştürme özelliklerini belirler. Yapılan işlemler boyutlandırma için değil
+        animasyonlar içindir. Özellikler eksi değerde alabilir. </p>
+    <h2>değerler ;</h2>
+    <ul>
+        <li>none ; değer yok (varsayılan)</li>
+        <li>translate () ; Html elementinin x ve y ekseni doğrultusunda konumunu değiştirir.</li>
+        <li>translate3d () ; Html elementinin x , y ve z ekseni doğrultusunda konumunu değiştirir.</li>
+        <li>translateX () ; Html elementinin x ekseni doğrultusunda konumunu değiştirir. </li>
+        <li>translateY () ; Html elementinin y ekseni doğrultusunda konumunu değiştirir. </li>
+        <li>translateZ () ; Html elementinin z ekseni doğrultusunda konumunu değiştirir. </li>
+        <li>skew () ; Html elementini x ve y ekseni doğtultusunda eğer. ;</li>
+        <li>skewX () ; Html elementini x ekseni doğtultusunda eğer.</li>
+        <li>skewY () ; Html elementini y ekseni doğtultusunda eğer.</li>
+        <li>scale () ; Html elementini x ve y ekseni doğtultusunda boyutunu değiştirir.</li>
+        <li>scale3d() ; Html elementini x , y ve z ekseni doğtultusunda boyutunu değiştirir.</li>
+        <li>scaleX () ; Html elementini x ekseni doğtultusunda boyutunu değiştirir.</li>
+        <li>scaleY () ; Html elementini y ekseni doğtultusunda boyutunu değiştirir.</li>
+        <li>scaleZ () ; Html elementini z ekseni doğtultusunda boyutunu değiştirir.</li>
+        <li>rotate () ; Html elementini saat yönü doğrultusunda döndürür.</li>
+        <li>rotate3d () ; Html elementini x , y ve z ekseni doğrultusunda döndürür. </li>
+        <li>rotateX () ; Html elementini x ekseni doğrultusunda döndürür.</li>
+        <li>rotateY () ; Html elementini y ekseni doğrultusunda döndürür.</li>
+        <li>rotateZ () ; Html elementini z ekseni doğrultusunda döndürür.</li>
+        <li>perspective () ; Html elementinin perspektif görünüşünü belirler.</li>
+        <li>matrix () ; Html elementine altı farklı dönüşüm özelliği belirler. (scaleX(), skewY(), skewX(), scaleY(),
+            translateX(),translateY())</li>
+        <li>matrix3d () ; Html elementine 4*4 dönüşüm özelliği belirler.( https://codepen.io/fta/pen/ifnqH )</li>
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+
+    <h3>örnek-1 ;</h3>
+    transform: none;
+    <div class="ornek1">Merhaba Dünya</div>
+
+    <h3>örnek-2 ;</h3>
+    transform: translate(100px);
+    <div class="ornek2">Merhaba Dünya</div>
+
+    <h3>örnek-3 ;</h3>
+    transform: translate(100px,25px;);
+    <div class="ornek3">Merhaba Dünya</div>
+
+    <h3>örnek-4 ;</h3>
+    transform:perspective(1000px) translate3d(10px,20px,-100px);
+    <div class="ornek4">Merhaba Dünya</div>
+
+    <h3>örnek-5 ;</h3>
+    transform:perspective(1000px) translate3d(10px,20px,100px);
+    <div class="ornek5">Merhaba Dünya</div>
+    <br>
+    <br>
+    <h3>örnek-6 ;</h3>
+    transform:translateX(100px);
+    <div class="ornek6">Merhaba Dünya</div>
+
+    <h3>örnek-7 ;</h3>
+    transform:translateY(25px);
+    <div class="ornek7">Merhaba Dünya</div>
+    <br>
+
+    <h3>örnek-8 ;</h3>
+    transform: perspective(1000px) translateZ(-100px);
+    <div class="ornek8">Merhaba Dünya</div>
+
+    <h3>örnek-9 ;</h3>
+    transform:skew(10deg);
+    <div class="ornek9">Merhaba Dünya</div>
+
+
+    <h3>örnek-10 ;</h3>
+    transform:skew(-10deg, -10deg);
+    <br>
+    <br>
+    <div class="ornek10">Merhaba Dünya</div>
+
+    <h3>örnek-11;</h3>
+    transform:skewX(5deg);
+    <div class="ornek11">Merhaba Dünya</div>
+
+    <h3>örnek-12;</h3>
+    transform:skewY(7deg);
+    <br>
+    <br>
+    <div class="ornek12">Merhaba Dünya</div>
+
+    <h3>örnek-13 ;</h3>
+    transform: scale(0.5);
+    <div class="ornek13">Merhaba Dünya</div>
+    <br>
+    <br>
+    <br>
+
+    <h3>örnek-14 ;</h3>
+    transform: scale(1.5);
+    <br>
+    <br>
+    <br>
+    <div class="ornek14">Merhaba Dünya</div>
+    <br>
+    <br>
+
+    <h3>örnek-15 ;</h3>
+    transform: scale(0.5,1.0);
+    <div class="ornek15">Merhaba Dünya</div>
+
+    <h3>örnek-16;</h3>
+    transform: scale(1.0,0.5);
+    <div class="ornek16">Merhaba Dünya</div>
+
+    <h3>örnek-17;</h3>
+    transform: perspective(1000px) scale3d(0.5, 0.5, 0.8) translateZ(100px);
+    <div class="ornek17">Merhaba Dünya</div>
+
+    <h3>örnek-18 ;</h3>
+    transform:scaleX(0.5);
+    <div class="ornek18">Merhaba Dünya</div>
+
+    <h3>örnek-19 ;</h3>
+    transform:scaleY(0.5);
+    <div class="ornek19">Merhaba Dünya</div>
+
+    <h3>örnek-20 ;</h3>
+    transform:perspective(1000px) scaleZ(1.8) translateZ(100px);
+    <br>
+    <br>
+    <div class="ornek20">Merhaba Dünya</div>
+    <br>
+
+    <h3>örnek-21 ;</h3>
+    transform: rotate(10deg);
+    <br>
+    <br>
+    <div class="ornek21">Merhaba Dünya</div>
+
+    <h3>örnek-22 ;</h3>
+    transform: rotate3d(1, 0, 0, 45deg);
+    <div class="ornek22">Merhaba Dünya</div>
+
+    <h3>örnek-23 ;</h3>
+    transform: rotate3d(0, 1, 0, 45deg);
+    <div class="ornek23">Merhaba Dünya</div>
+
+    <h3>örnek-24 ;</h3>
+    transform: rotate3d(0, 0, 1, 45deg);
+    <br>
+    <br>
+    <br>
+    <div class="ornek24">Merhaba Dünya</div>
+    <br>
+
+    <h3>örnek-25 ;</h3>
+    transform: rotateX(180deg);
+    <div class="ornek25">Merhaba Dünya</div>
+
+    <h3>örnek-26 ;</h3>
+    transform: rotateY(180deg);
+    <div class="ornek26">Merhaba Dünya</div>
+
+    <h3>örnek-27 ;</h3>
+    transform: rotateZ(180deg);
+    <div class="ornek27">Merhaba Dünya</div>
+
+    <h3>örnek-28 ;</h3>
+    perspective:150px; <br>
+    transform: rotateY(45deg);
+    <div class="ornek28">
+        <div class="iceleman28">Merhaba Dünya</div>
+    </div>
+
+    <h3>örnek-29 ;</h3>
+    perspective:150px; <br>
+    transform: rotateX(45deg);
+    <div class="ornek29">
+        <div class="iceleman29">Merhaba Dünya</div>
+    </div>
+
+    <h3>örnek-30 ;</h3>
+    perspective:150px; <br>
+    transform: rotateX(25deg);
+    <div class="ornek30">
+        <div class="iceleman30">Merhaba Dünya</div>
+    </div>
+
+
+
+    <h3>örnek-31 ;</h3>
+    <br>
+    <br>
+    <br>
+
+    <div class="anaeleman">
+        <div id="zar">
+            <div class="yuz birli">1</div>
+            <div class="yuz ikili">2</div>
+            <div class="yuz uclu">3</div>
+            <div class="yuz dortlu">4</div>
+            <div class="yuz besli">5</div>
+            <div class="yuz altili">6</div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <h3>örnek-32 ;</h3>
+    transform:matrix(1.5, 0.5,0.5, 0.8, 10, 10);
+    <br>
+    <br>
+    <br>
+    <div class="ornek32">Merhaba Dünya</div>
+    <br>
+    <br>
+
+
+    <h3>örnek-33 ;</h3>
+     transform: matrix3d (sık kullanılmaz)
+    <div class="ornek33">Merhaba Dünya</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+
+</html>
