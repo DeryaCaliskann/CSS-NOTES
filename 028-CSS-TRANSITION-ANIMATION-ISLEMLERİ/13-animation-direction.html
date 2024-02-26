@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .ornek1 {
+            width: 105px;
+            height: 105px;
+            margin: 25px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;          
+            animation-name: ornek1;
+            animation-duration: 5s;           
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction:normal;
+        }
+
+         @keyframes ornek1 {
+            from {
+                width: 105px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        /* ================================================== */
+        .ornek2 {
+            width: 105px;
+            height: 105px;
+            margin: 25px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;         
+            animation-name: ornek2;
+            animation-duration: 5s;          
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction:alternate;
+
+        }
+
+         @keyframes ornek2 {
+            from {
+                width: 105px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        /* ================================================== */
+        .ornek3 {
+            width: 105px;
+            height: 105px;
+            margin: 25px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;         
+            animation-name:ornek3;
+            animation-duration: 5s;           
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction:reverse;
+        }
+
+         @keyframes ornek3{
+            from {
+                width: 105px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+          /* ================================================== */
+        .ornek4 {
+            width: 105px;
+            height: 105px;
+            margin: 25px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;           
+            animation-name:ornek4;
+            animation-duration: 5s;          
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction:alternate-reverse;
+        }
+
+        @keyframes ornek4{
+            from {
+                width: 105px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>animation-direction özelliği</h1>
+    <p> Html elementine tanımlanmış olan animasyonun oynatma yönü özelliklerini belirler. Prefix tanımlanır.
+    </p>
+    <h2>değerler;</h2>
+    <ul>
+        <li>normal ; normal</li>
+        <li>reverse ; ters</li>
+        <li>altarnate ; alternatif (oynatma bittiğinde kesiklik olmaz)</li>
+        <li>alternate reverse ; ters alternatif</li>
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+    <h3>örnek-1 ;</h3>
+    animation-direction: normal;
+    <div class="ornek1">Merhaba Dünya </div>
+
+    <h3>örnek-2 ;</h3>
+    animation-direction: alternate;
+    <div class="ornek2">Merhaba Dünya </div>
+
+    <h3>örnek-3 ;</h3>
+    animation-direction: reverse;
+    <div class="ornek3">Merhaba Dünya </div>
+
+    <h3>örnek-4 ;</h3>
+    animation-direction: alternate-reverse;
+    <div class="ornek4">Merhaba Dünya </div>
+
+
+</body>
+
+</html>

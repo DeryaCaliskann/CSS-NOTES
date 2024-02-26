@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            margin: 50px;
+        }
+
         .ornek1 {
             border: 2px solid black;
             padding: 10px;
@@ -13,28 +17,26 @@
             -moz-column-count: 2;
             -o-column-count: 2;
             -ms-column-count: 2;
-            column-count: 2;           
-        } 
+            column-count: 2;
+        }
 
-        .orneka{
-        break-before: auto;
-        }   
+        .orneka {
+            break-before: auto;
+        }
 
-          .ornek2 {
+        .ornek2 {
             border: 2px solid black;
             padding: 10px;
             -webkit-column-count: 2;
             -moz-column-count: 2;
             -o-column-count: 2;
             -ms-column-count: 2;
-            column-count: 2;           
-        } 
+            column-count: 2;
+        }
 
         .ornekb {
-        break-before: column;
-        }         
-
-      
+            break-before: column;
+        }
     </style>
 </head>
 
@@ -51,12 +53,12 @@
         <li>initial ; html elementi varsayılan biçimlendirme değerine döner.</li>
     </ul>
 
-     <h3>Örnek-1</h3> 
+    <h3>Örnek-1</h3>
     <div class="ornek1">
         <h2> break-before: auto;</h2>
-        <p > Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae molestias nemo tenetur.
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae molestias nemo tenetur.
             Consequatur dignissimos perferendis nesciunt modi possimus voluptatibus est ducimus? Explicabo, dolorum?
-            </p>
+        </p>
         <h2 class="orneka"> break-before: auto;</h2>
         <p> minus neque ipsam perspiciatis id ut necessitatibus
             ducimus libero, perferendis dignissimos temporibus qui quidem molestias veritatis eius vitae iure doloremque
@@ -68,13 +70,14 @@
             cupiditate. Doloremque dolores quod blanditiis asperiores voluptatibus!</p>
     </div>
 
-    <h3>Örnek-2</h3> 
+    <h3>Örnek-2</h3>
+    
     <div class="ornek2">
-        <h2> break-before: auto;</h2>
+        <h2> break-before: column;</h2>
         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae molestias nemo tenetur.
             Consequatur dignissimos perferendis nesciunt modi possimus voluptatibus est ducimus? Explicabo, dolorum?
-            </p>
-        <h2 class="ornekb"> break-before: auto;</h2>
+        </p>
+        <h2 class="ornekb"> break-before: column;</h2>
         <p> minus neque ipsam perspiciatis id ut necessitatibus
             ducimus libero, perferendis dignissimos temporibus qui quidem molestias veritatis eius vitae iure doloremque
             non
@@ -85,7 +88,7 @@
             cupiditate. Doloremque dolores quod blanditiis asperiores voluptatibus!</p>
     </div>
 
-   
+
 
 
 

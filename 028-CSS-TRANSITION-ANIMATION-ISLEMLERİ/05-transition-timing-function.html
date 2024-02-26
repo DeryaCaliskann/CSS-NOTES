@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .ornek1 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: ease;
+        }
+
+        .ornek1:hover {
+            width: 600px;
+        }
+
+        /* ============================================================ */
+        .ornek2 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: linear;
+        }
+
+        .ornek2:hover {
+            width: 600px;
+        }
+
+        /* ============================================================ */
+        .ornek3 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: ease-in;
+        }
+
+        .ornek3:hover {
+            width: 600px;
+        }
+
+        /* ============================================================ */
+
+        .ornek4 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: ease-out;
+        }
+
+        .ornek4:hover {
+            width: 600px;
+        }
+
+        /* ============================================================ */
+
+        .ornek5 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .ornek5:hover {
+            width: 600px;
+        }
+
+        /* ============================================================ */
+
+        .ornek6 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: step-start;
+        }
+
+        .ornek6:hover {
+            width: 600px;
+        }
+
+        /* ============================================================ */
+
+        .ornek7 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: step-end;
+        }
+
+        .ornek7:hover {
+            width: 600px;
+        }
+
+        /* ============================================================ */
+
+        .ornek8 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: steps(3);
+        }
+
+        .ornek8:hover {
+            width: 600px;
+        }
+
+        /* ============================================================ */
+
+        .ornek9 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: steps(3, end);
+        }
+
+        .ornek9:hover {
+            width: 600px;
+        }
+
+
+        /* ============================================================ */
+
+        .ornek10 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: steps(3, start);
+        }
+
+        .ornek10:hover {
+            width: 600px;
+        }
+
+        /* ============================================================ */
+
+        .ornek11 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: cubic-bezier(0, 1, 1, 0);
+        }
+
+        .ornek11:hover {
+            width: 600px;
+        }
+
+        /* ============================================================ */
+
+        .ornek12 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 3s;
+            transition-timing-function: cubic-bezier(.98, -0.01, .98, .01)
+        }
+
+        .ornek12:hover {
+            width: 600px;
+        }
+
+        /* ============================================================ */
+
+        .islem {
+            float: left;
+            width: 25px;
+            height: 25px;
+            margin: 2px;
+            border: thin solid black;
+            background-color: grey;
+            border-radius: 50%;
+            transition-property: all;
+            transition-duration: 5s;
+        }
+
+        .anaeleman:hover div {
+            transform: translateX(1000px);
+        }
+
+        .iceleman1 {
+            background-color: blue;
+            transition-timing-function: linear;
+
+        }
+
+        .iceleman2 {
+            background-color: yellow;
+            transition-timing-function: ease;
+        }
+
+        .iceleman3 {
+            background-color: green;
+            transition-timing-function: ease-in;
+        }
+
+        .iceleman4 {
+            background-color: red;
+            transition-timing-function: ease-out;
+        }
+
+        .iceleman5 {
+            background-color: purple;
+            transition-timing-function: ease-in-out;
+        }
+
+        .iceleman6 {
+            background-color: brown;
+            transition-timing-function: step-start;
+        }
+
+        .iceleman7 {
+            background-color: crimson;
+            transition-timing-function: step-end;
+        }
+
+        .iceleman8 {
+            background-color: fuchsia;
+            transition-timing-function: steps(3, end);
+        }
+
+        .iceleman9 {
+            background-color: indigo;
+            transition-timing-function: steps(3, start);
+        }
+
+        .iceleman10 {
+            background-color: orangered;
+            transition-timing-function: cubic-bezier(0, 1, 1, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>transition-timing-function özelliği</h1>
+    <p> Html elementinine tanımlanmış olan geçiş özelliğinin hız eğrisi özelliklerini belirler.Prefix tanımlanır.</p>
+
+
+    <h2>değerler ; </h2>
+    <ul>
+        <li>ease ; yavaş olarak başlayarak hızlanır ve sona doğru yavaşlar.(varsayılan)</li>
+        <li>linear ; başlangıçtan sona kadar aynı hız.</li>
+        <li>ease-in ; yavaş olarak başlayarak sona doğru hızlanır.</li>
+        <li>ease-out ; hızlı olarak başlayarak sona doğru yavaşlar. </li>
+        <li>ease-in-out ; yavaş olarak başlayarak ortada hızlanır ve sona doğru tekrar yavaşlar. </li>
+        <li>step-start ; geçiş süresine bakılmaksızın doğrudan sona ulaşır.</li>
+        <li>step-end ; geçiş süresine bakılarak, geçiş süresi kadar bekleyerek, doğrudan sona ulaşır.</li>
+        <li>steps ; başlangıç ve bitiş arasında adımlamalı geçiş işlemi yapar.</li>
+        <li>cubic-bezier ;bezier eğrisi. 4 parametre alır.(x,y,x1,y1) (http://cubic-bezier.com)</li>
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    transition-timing-function: ease;
+    <div class="ornek1">Merhaba Dünya</div>
+
+    <h3>Örnek-2 ;</h3>
+    transition-timing-function: linear;
+    <div class="ornek2">Merhaba Dünya</div>
+
+    <h3>Örnek-3 ;</h3>
+    transition-timing-function: ease-in;
+    <div class="ornek3">Merhaba Dünya</div>
+
+    <h3>Örnek-4 ;</h3>
+    transition-timing-function: ease-out;
+    <div class="ornek4">Merhaba Dünya</div>
+
+    <h3>Örnek-5 ;</h3>
+    transition-timing-function: ease-in-out;
+    <div class="ornek5">Merhaba Dünya</div>
+
+    <h3>Örnek-6 ;</h3>
+    transition-timing-function: step-start;
+    <div class="ornek6">Merhaba Dünya</div>
+
+    <h3>Örnek-7;</h3>
+    transition-timing-function: step-end;
+    <div class="ornek7">Merhaba Dünya</div>
+
+    <h3>Örnek-8;</h3>
+    transition-timing-function: steps(3) /(varsayılan end);
+    <div class="ornek8">Merhaba Dünya</div>
+
+    <h3>Örnek-9;</h3>
+    transition-timing-function: sters(3,end);
+    <div class="ornek9">Merhaba Dünya</div>
+
+    <h3>Örnek-10;</h3>
+    transition-timing-function: sters(3,start)/(beklemeden başlıyor);
+    <div class="ornek10">Merhaba Dünya</div>
+
+    <h3>Örnek-11;</h3>
+    transition-timing-function: cubic-bezier(0,1,1,0);
+    <div class="ornek11">Merhaba Dünya</div>
+
+    <h3>Örnek-12;</h3>
+    transition-timing-function: cubic-bezier(.98,-0.01,.98,.01)
+    <div class="ornek12">Merhaba Dünya</div>
+
+    <h3>Örnek-13;</h3>
+    <div class="anaeleman">
+        linear <div class=" iceleman1 islem"></div>
+        <hr>
+        ease <div class=" iceleman2 islem"></div>
+        <hr>
+        ease-in <div class=" iceleman3 islem"></div>
+        <hr>
+        ease-out<div class=" iceleman4 islem"></div>
+        <hr>
+        ease-in-out <div class=" iceleman5 islem"></div>
+        <hr>
+        step-start<div class=" iceleman6 islem"></div>
+        <hr>
+        step-end <div class=" iceleman7 islem"></div>
+        <hr>
+        steps(3, end);<div class=" iceleman8 islem"></div>
+        <hr>
+        steps(3, start);<div class=" iceleman9 islem"></div>
+        <hr>
+        cubic-bezier <div class=" iceleman10 islem"></div>
+        <hr>
+    </div>
+
+</body>
+
+</html>

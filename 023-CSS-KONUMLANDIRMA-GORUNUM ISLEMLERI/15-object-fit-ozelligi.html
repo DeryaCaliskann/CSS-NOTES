@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            margin: 50px;
+        }
+
         .ornek1 {
             width: 200px;
             height: 400px;
             object-fit: fill;
         }
 
-         .ornek2 {
+        .ornek2 {
             width: 800px;
             height: 600px;
             object-fit: fill;
@@ -21,41 +25,38 @@
         .ornek3 {
             width: 200px;
             height: 400px;
-            object-fit:cover;
+            object-fit: cover;
         }
 
-         .ornek4 {
+        .ornek4 {
             width: 800px;
             height: 600px;
-            object-fit:cover;
+            object-fit: cover;
         }
 
-         .ornek5 {
+        .ornek5 {
             width: 200px;
             height: 400px;
-            object-fit:contain;
+            object-fit: contain;
         }
 
-          .ornek6 {       
+        .ornek6 {
             width: 800px;
             height: 600px;
-            object-fit:contain;
+            object-fit: contain;
         }
 
-         .ornek7 {
+        .ornek7 {
             width: 200px;
             height: 400px;
-            object-fit:none;
+            object-fit: none;
         }
 
-         .ornek8 {
+        .ornek8 {
             width: 200px;
             height: 400px;
-            object-fit:scale-down;
+            object-fit: scale-down;
         }
-
-
-         
     </style>
 </head>
 
@@ -81,48 +82,49 @@
     </ul>
 
     <h2>Örnek-1</h2>
-     object-fit: fill; <br><br>
-     resim img elementine verilen boyuta göre küçültülür. kırpılmaz. <br>
+    object-fit: fill; <br><br>
+    resim img elementine verilen boyuta göre küçültülür. kırpılmaz. <br>
     <img class="ornek1" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
 
-      <h2>Örnek-2</h2>
-     object-fit: fill; <br><br>
-     resmi img  elementine verilen boyuta göre esnetilir.<br>
+    <h2>Örnek-2</h2>
+    object-fit: fill; <br><br>
+    resmi img elementine verilen boyuta göre esnetilir.<br>
     <img class="ornek2" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
 
-    
+
 
     <h2>Örnek-3</h2>
-     object-fit: cover;<br><br>
-img elementine verilen boyut resimden  küçükse resmi, verilen boyuta göre resmin tam ortasından kırpar.<br>
+    object-fit: cover;<br><br>
+    img elementine verilen boyut resimden küçükse resmi, verilen boyuta göre resmin tam ortasından kırpar.<br>
     <img class="ornek3" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
 
-    
-      <h2>Örnek-4</h2>
-     object-fit: cover;<br><br>
-img elementine verilen boyut resimden büyükse, verilen boyuta göre esnetir. <br>
+
+    <h2>Örnek-4</h2>
+    object-fit: cover;<br><br>
+    img elementine verilen boyut resimden büyükse, verilen boyuta göre esnetir. <br>
     <img class="ornek4" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
 
-        <h2>Örnek-5</h2>
-     object-fit: contain;<br>
-img elemenetinin width ve height değerlerin den ufak olan hangisiyse ona göre resmi orantılı olarak küçültür. Büyük olan değer sayfada yer kaplar. Resim sayfada orantılı olarak ortalanır.<br><br><br>
+    <h2>Örnek-5</h2>
+    object-fit: contain;<br>
+    img elemenetinin width ve height değerlerin den ufak olan hangisiyse ona göre resmi orantılı olarak küçültür. Büyük
+    olan değer sayfada yer kaplar. Resim sayfada orantılı olarak ortalanır.<br><br><br>
     <img class="ornek5" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
 
-        <h2>Örnek-6</h2>
-     object-fit: contain;<br><br>
+    <h2>Örnek-6</h2>
+    object-fit: contain;<br><br>
     <img class="ornek6" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
 
-       <h2>Örnek-7</h2>
-     object-fit: none;<br><br>
-img elementine sığmayan kısmı kırpar. 
-<br>    
+    <h2>Örnek-7</h2>
+    object-fit: none;<br><br>
+    img elementine sığmayan kısmı kırpar.
+    <br>
     <img class="ornek7" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
 
-      <h2>Örnek-8</h2>
-        object-fit:scale-down;<br>
-  
-       Genellikle orantılı boyutlandırma yapar <br> 
-   
+    <h2>Örnek-8</h2>
+    object-fit:scale-down;<br>
+
+    Genellikle orantılı boyutlandırma yapar <br>
+
     <img class="ornek8" src="../img/araba.jpg" width="500" height="500" alt="araba" title="araba">
 
 

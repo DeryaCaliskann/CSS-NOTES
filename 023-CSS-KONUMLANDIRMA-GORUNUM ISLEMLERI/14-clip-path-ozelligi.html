@@ -2,463 +2,472 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .ornek1 {
-            position: absolute;
-            width: 250px;
-            height: 250px;
-            background-color: yellow;
-            clip-path: auto;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 50px;
+    }
 
-         .ornek2 {
-            position: absolute;
-            width: 250px;
-            height: 250px;
-            background-color: yellow;
-            clip-path:inset(0px 25px 50px 30px ); /* 1-üst, 2-sağ, 3-alt, 4-sol */ 
-        }
+    .ornek1 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      background-color: yellow;
+      clip-path: auto;
+    }
 
-         .ornek3 {
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:inset(75px 10px 45px 15px ); /* 1-üst, 2-sağ, 3-alt, 4-sol */ 
-        }
+    .ornek2 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      background-color: yellow;
+      clip-path: inset(0px 25px 50px 30px);
+      /* 1-üst, 2-sağ, 3-alt, 4-sol */
+    }
 
-         .ornek4 {
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:circle(50% at 50% 50%); /*1-yarı çapı, at ,2-yatay pozisyon,3-dikey pozisyon */ 
-        }
+    .ornek3 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: inset(75px 10px 45px 15px);
+      /* 1-üst, 2-sağ, 3-alt, 4-sol */
+    }
 
-         .ornek5 {
-              position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:circle(25% at 0% 50%); 
-        }
+    .ornek4 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: circle(50% at 50% 50%);
+      /*1-yarı çapı, at ,2-yatay pozisyon,3-dikey pozisyon */
+    }
 
-         .ornek6 {
-              position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:circle(25% at 0% 0%); 
-        }
+    .ornek5 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: circle(25% at 0% 50%);
+    }
 
-         .ornek7 {
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:circle(25% at 75% 0%); 
-        }
+    .ornek6 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: circle(25% at 0% 0%);
+    }
 
-          .ornek8 {
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:circle(25% at 100% 0%); 
-        }
+    .ornek7 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: circle(25% at 75% 0%);
+    }
 
-         .ornek9 {
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:circle(100% at 100% 0%); 
-        }
+    .ornek8 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: circle(25% at 100% 0%);
+    }
 
-          .ornek10 {
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:circle(100% at 100% 50%); 
-        }
+    .ornek9 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: circle(100% at 100% 0%);
+    }
 
-          .ornek11 {
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:circle(50% at 100% 50%); 
-        }
+    .ornek10 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: circle(100% at 100% 50%);
+    }
 
-          .ornek12 {
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:ellipse(25% 50% at 50% 50%); /* 1-yatay yarıçapı, 2-dikey yarıçapı, 3-yatay pozisyon, 4-dikey pozisyon*/
-        }
+    .ornek11 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: circle(50% at 100% 50%);
+    }
 
-          .ornek13 {
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:ellipse(50% 25% at 50% 50%);
-        }
+    .ornek12 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: ellipse(25% 50% at 50% 50%);
+      /* 1-yatay yarıçapı, 2-dikey yarıçapı, 3-yatay pozisyon, 4-dikey pozisyon*/
+    }
 
-           .ornek14 {
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:ellipse(25% 50% at 0% 50%);
-        }
+    .ornek13 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: ellipse(50% 25% at 50% 50%);
+    }
 
-         .ornek15 {
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:ellipse(25% 50% at 50% 0%);
-        }
+    .ornek14 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: ellipse(25% 50% at 0% 50%);
+    }
 
-          .ornek16 {
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:ellipse(50% 100% at 50% 100%);
-        }
+    .ornek15 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: ellipse(25% 50% at 50% 0%);
+    }
 
-          .ornek17 {
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(50% 0%,0% 100%,100% 100%); /* (part (yol)/ dolddurma kuralı),(yatay  pozisyon / dikey pozisyon) */
-        } 
+    .ornek16 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: ellipse(50% 100% at 50% 100%);
+    }
 
-         .ornek18 {
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(25% 0%,100% 0%,75% 100%,0% 100%); 
-        } 
+    .ornek17 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+      /* (part (yol)/ dolddurma kuralı),(yatay  pozisyon / dikey pozisyon) */
+    }
 
-          .ornek19{
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%); 
-        } 
+    .ornek18 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    }
 
-          .ornek20{
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(50% 0%,100% 38%,82% 100%,18% 100%,0% 38%); 
-        } 
+    .ornek19 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
 
-          .ornek21{
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(30% 0%,70% 0%,100% 30%,100% 70%,70% 100%,30% 100%,0%  70%,0% 30%); 
-        } 
+    .ornek20 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    }
 
-           .ornek22{
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(20% 0%,80% 0%,100% 20%,100% 80%,80% 100%,20% 100%,0%  80%,0% 20%); 
-        } 
+    .ornek21 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+    }
 
-           .ornek23{
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(0% 15%,15% 15%,15% 0%,85% 0%,85% 15%,100% 15%,100% 85%,85% 85%,85% 100%,15% 100%,15% 85%,0% 85%); 
-        } 
+    .ornek22 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+    }
 
-            .ornek24{
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(40% 0%,40% 20%,100% 20%,100% 80%,40% 80%,40% 100%,0% 50%); 
-        } 
+    .ornek23 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+    }
 
-         .ornek25{
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(0% 20%,60% 20%,60% 0%,100% 50%,60% 100%,60% 80%,0% 80%); 
-        } 
+    .ornek24 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%);
+    }
 
-           .ornek26{
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(25% 0%,100% 1%,100% 100%,25% 100%,0% 50%); 
-        } 
+    .ornek25 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+    }
 
-          .ornek27{
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(0% 0%,75% 0%,100% 50%,75% 100%,0% 100%); 
-        } 
-          .ornek28{
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(100% 0%,75% 50%,100% 100%,25% 100%,0% 50%,25% 0%); 
-        } 
-          .ornek29{
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(75% 0%,100% 50%,75% 100%,0% 100%,25% 50%,0% 0%); 
-        } 
+    .ornek26 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    }
 
-          .ornek30{
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%); 
-        } 
+    .ornek27 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
 
-         .ornek31{
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(0% 0%,100% 0%,100% 75%,75% 75%,75% 100%,50% 75%,0% 75%); 
-        } 
+    .ornek28 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+    }
 
-           .ornek32{
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(20% 0%,0% 20%,30% 50%,0% 80%,20% 100%,50% 70%,80% 100%,100% 80%,70% 50%,100% 20%,80% 0%,50% 30%); 
-        } 
+    .ornek29 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+    }
 
-           .ornek33{
-            position: absolute;
-            width: 250px;
-            height: 250px;           
-            clip-path:polygon(0% 0%,0% 100%,25% 100%,25% 25%,75% 25%,75% 75%,25% 75%,25% 100%,100% 100%,100% 0%); 
-        } 
-    </style>
+    .ornek30 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+
+    .ornek31 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    }
+
+    .ornek32 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    }
+
+    .ornek33 {
+      position: absolute;
+      width: 250px;
+      height: 250px;
+      clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+    }
+  </style>
 </head>
 
 <body>
-    <h1>clip-path özelliği</h1>
-    <p> absolute (mutlak/kesin) değeri ile konumlandırılmış bir Html elementinin gelişmiş kırpma/maskeleme özelliklerini
-        belirler.</p>
-    <h2>değerler ;</h2>
+  <h1>clip-path özelliği</h1>
+  <p> absolute (mutlak/kesin) değeri ile konumlandırılmış bir Html elementinin gelişmiş kırpma/maskeleme özelliklerini
+    belirler.</p>
+  <h2>değerler ;</h2>
+  <ul>
+    <li>auto ; otamatik değer alır(varsayılan). Herhangi bir kırpma olmaz. </li>
+    <li>shape ; şekil rect( ) fonksiyonu kullanır. (rectangle : dikdörtgen)</li>
     <ul>
-        <li>auto ; otamatik değer alır(varsayılan). Herhangi bir kırpma olmaz. </li>
-        <li>shape ; şekil rect( ) fonksiyonu kullanır. (rectangle : dikdörtgen)</li>
-        <ul>
-            <li>inset ; ilave (1-üst, 2-sağ, 3-alt, 4-sol)</li>
-            <li>circle ; daire (1-yarı çapı, at ,2-yatay pozisyon,3-dikey pozisyon)</li>
-            <li>ellipse ; elips (1-yatay yarıçapı, 2-dikey yarıçapı, 3-yatay pozisyon, 4-dikey pozisyon)</li>
-            <li>polygon ; poligon (serbest seçim aracı gibi çalışır) (part (yol)/ dolddurma kuralı),(yatay  pozisyon / dikey pozisyon) </li>
-        </ul>
+      <li>inset ; ilave (1-üst, 2-sağ, 3-alt, 4-sol)</li>
+      <li>circle ; daire (1-yarı çapı, at ,2-yatay pozisyon,3-dikey pozisyon)</li>
+      <li>ellipse ; elips (1-yatay yarıçapı, 2-dikey yarıçapı, 3-yatay pozisyon, 4-dikey pozisyon)</li>
+      <li>polygon ; poligon (serbest seçim aracı gibi çalışır) (part (yol)/ dolddurma kuralı),(yatay pozisyon / dikey
+        pozisyon) </li>
     </ul>
+  </ul>
 
-    <h2>Örnek-1 ;</h2>
-    clip-path: auto;   
-    <div class="ornek1">Merhaba Dünya</div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h2>Örnek-1 ;</h2>
+  clip-path: auto;
+  <div class="ornek1">Merhaba Dünya</div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-     <h2>Örnek-2 ;</h2>
-    clip-path:inset(0px 25px 50px 30px );  <br>
-    1-üst, 2-sağ, 3-alt, 4-sol 
-    <div class="ornek2">Merhaba Dünya</div>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    
-      <h2>Örnek-3;</h2>
-      clip-path:inset(0px 25px 50px 30px ); <br>
-      1-üst, 2-sağ, 3-alt, 4-sol 
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek3"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-     <h2>Örnek-4;</h2>
-      clip-path:circle(50% at 50% 50%);  <br>
-     1-yarı çapı, at ,2-yatay pozisyon,3-dikey pozisyon
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek4"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-       <h2>Örnek-5;</h2>
-       clip-path:circle(25% at 0% 50%);     
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek5"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-     <h2>Örnek-6;</h2>
-       clip-path:circle(25% at 0% 0%);     
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek6"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-     <h2>Örnek-7;</h2>
-      clip-path:circle(25% at 75% 0%);   
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek7"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-      <h2>Örnek-8;</h2>
-      clip-path:circle(25% at 100% 0%);  
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek8"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-      <h2>Örnek-9;</h2>
-      clip-path:circle(100% at 100% 0%);  
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek9"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-     <h2>Örnek-10;</h2>
-      clip-path:circle(100% at 100% 50%);  
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek10"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-      <h2>Örnek-11;</h2>
-      clip-path:circle(50% at 100% 50%);  
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek11"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-      <h2>Örnek-12;</h2>
-       clip-path:ellipse(25% 50% at 50% 50%); <br>
-     1-yatay yarıçapı, 2-dikey yarıçapı, 3-yatay pozisyon, 4-dikey pozisyon
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek12"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-       <h2>Örnek-13;</h2>
-       clip-path:ellipse(25% 50% at 50% 50%); <br>
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek13"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-     <h2>Örnek-14;</h2>
-       clip-path:ellipse(25% 50% at 0% 50%); <br>
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek14"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-     <h2>Örnek-15;</h2>
-       clip-path:ellipse(25% 50% at 50% 0%); <br>
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek15"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <h2>Örnek-16;</h2>
-       clip-path:ellipse(50% 100% at 50% 100%); <br>
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek16"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <h2>Örnek-17;</h2>
-       clip-path:polygon(50% 0%,0% 100%,100% 100%); <br>
-    (part (yol)/ dolddurma kuralı),(yatay  pozisyon / dikey pozisyon)
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek17"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-      <h2>Örnek-18;</h2>
-       clip-path:polygon(25% 0%,100% 0%,75% 100%,0% 100%); 
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek18"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <h2>Örnek-19;</h2>
-        clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%);  
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek19"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-      <h2>Örnek-20;</h2>
-        clip-path:polygon(50% 0%,100% 38%,82% 100%,18% 100%,0% 38%  
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek20"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-     <h2>Örnek-21;</h2>
-            clip-path:polygon(30% 0%,70% 0%,100% 30%,100% 70%,70% 100%,30% 100%,0%  70%,0% 30%); 
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek21"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-     <h2>Örnek-22;</h2>
-            clip-path:polygon(20% 0%,80% 0%,100% 20%,100% 80%,80% 100%,20% 100%,0%  80%,0% 20%); 
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek22"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-      <h2>Örnek-23;</h2>
-            clip-path:polygon(0% 15%,15% 15%,15% 0%,85% 0%,85% 15%,100% 15%,100% 85%,85% 85%,85% 100%,15% 100%,15% 85%,0% 85%); 
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek23"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-       <h2>Örnek-24;</h2>
-            clip-path:polygon(40% 0%,40% 20%,100% 20%,100% 80%,40% 80%,40% 100%,0% 50%); 
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek24"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-        <h2>Örnek-25;</h2>
-            clip-path:polygon(0% 20%,60% 20%,60% 0%,100% 50%,60% 100%,60% 80%,0% 80%); 
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek25"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-       <h2>Örnek-26;</h2>
-            clip-path:polygon(25% 0%,100% 1%,100% 100%,25% 100%,0% 50%); 
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek26"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-     <h2>Örnek-27;</h2>
-            clip-path:polygon(0% 0%,75% 0%,100% 50%,75% 100%,0% 100%); 
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek27"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-     <h2>Örnek-28;</h2>
-            clip-path:polygon(100% 0%,75% 50%,100% 100%,25% 100%,0% 50%,25% 0%); 
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek28"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-      <h2>Örnek-29;</h2>
-            clip-path:polygon(75% 0%,100% 50%,75% 100%,0% 100%,25% 50%,0% 0%); 
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek29"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-      <h2>Örnek-30;</h2>
-            clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%); 
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek30"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-      <h2>Örnek-31;</h2>
-            clip-path:polygon(0% 0%,100% 0%,100% 75%,75% 75%,75% 100%,50% 75%,0% 75%); 
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek31"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-      <h2>Örnek-32;</h2>
-            clip-path:polygon(20% 0%,0% 20%,30% 50%,0% 80%,20% 100%,50% 70%,80% 100%,100% 80%,70% 50%,100% 20%,80% 0%,50% 30%); 
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek32"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-      <h2>Örnek-33;</h2>
-            clip-path:polygon(0% 0%,0% 100%,25% 100%,25% 25%,75% 25%,75% 75%,25% 75%,25% 100%,100% 100%,100% 0%); 
-      <br><br>
-    <img src="../img/manzara6.jpg" class="ornek33"></img>
-    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h2>Örnek-2 ;</h2>
+  clip-path:inset(0px 25px 50px 30px ); <br>
+  1-üst, 2-sağ, 3-alt, 4-sol
+  <div class="ornek2">Merhaba Dünya</div>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
+  <h2>Örnek-3;</h2>
+  clip-path:inset(0px 25px 50px 30px ); <br>
+  1-üst, 2-sağ, 3-alt, 4-sol
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek3"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+  <h2>Örnek-4;</h2>
+  clip-path:circle(50% at 50% 50%); <br>
+  1-yarı çapı, at ,2-yatay pozisyon,3-dikey pozisyon
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek4"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-5;</h2>
+  clip-path:circle(25% at 0% 50%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek5"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-6;</h2>
+  clip-path:circle(25% at 0% 0%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek6"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-7;</h2>
+  clip-path:circle(25% at 75% 0%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek7"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-8;</h2>
+  clip-path:circle(25% at 100% 0%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek8"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-9;</h2>
+  clip-path:circle(100% at 100% 0%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek9"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-10;</h2>
+  clip-path:circle(100% at 100% 50%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek10"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-11;</h2>
+  clip-path:circle(50% at 100% 50%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek11"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-12;</h2>
+  clip-path:ellipse(25% 50% at 50% 50%); <br>
+  1-yatay yarıçapı, 2-dikey yarıçapı, 3-yatay pozisyon, 4-dikey pozisyon
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek12"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-13;</h2>
+  clip-path:ellipse(25% 50% at 50% 50%); <br>
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek13"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-14;</h2>
+  clip-path:ellipse(25% 50% at 0% 50%); <br>
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek14"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-15;</h2>
+  clip-path:ellipse(25% 50% at 50% 0%); <br>
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek15"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-16;</h2>
+  clip-path:ellipse(50% 100% at 50% 100%); <br>
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek16"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-17;</h2>
+  clip-path:polygon(50% 0%,0% 100%,100% 100%); <br>
+  (part (yol)/ dolddurma kuralı),(yatay pozisyon / dikey pozisyon)
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek17"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-18;</h2>
+  clip-path:polygon(25% 0%,100% 0%,75% 100%,0% 100%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek18"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-19;</h2>
+  clip-path:polygon(50% 0%,100% 50%,50% 100%,0% 50%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek19"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-20;</h2>
+  clip-path:polygon(50% 0%,100% 38%,82% 100%,18% 100%,0% 38%
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek20"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-21;</h2>
+  clip-path:polygon(30% 0%,70% 0%,100% 30%,100% 70%,70% 100%,30% 100%,0% 70%,0% 30%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek21"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-22;</h2>
+  clip-path:polygon(20% 0%,80% 0%,100% 20%,100% 80%,80% 100%,20% 100%,0% 80%,0% 20%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek22"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-23;</h2>
+  clip-path:polygon(0% 15%,15% 15%,15% 0%,85% 0%,85% 15%,100% 15%,100% 85%,85% 85%,85% 100%,15% 100%,15% 85%,0% 85%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek23"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-24;</h2>
+  clip-path:polygon(40% 0%,40% 20%,100% 20%,100% 80%,40% 80%,40% 100%,0% 50%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek24"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-25;</h2>
+  clip-path:polygon(0% 20%,60% 20%,60% 0%,100% 50%,60% 100%,60% 80%,0% 80%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek25"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-26;</h2>
+  clip-path:polygon(25% 0%,100% 1%,100% 100%,25% 100%,0% 50%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek26"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-27;</h2>
+  clip-path:polygon(0% 0%,75% 0%,100% 50%,75% 100%,0% 100%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek27"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-28;</h2>
+  clip-path:polygon(100% 0%,75% 50%,100% 100%,25% 100%,0% 50%,25% 0%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek28"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-29;</h2>
+  clip-path:polygon(75% 0%,100% 50%,75% 100%,0% 100%,25% 50%,0% 0%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek29"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-30;</h2>
+  clip-path:polygon(50% 0%,61% 35%,98% 35%,68% 57%,79% 91%,50% 70%,21% 91%,32% 57%,2% 35%,39% 35%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek30"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-31;</h2>
+  clip-path:polygon(0% 0%,100% 0%,100% 75%,75% 75%,75% 100%,50% 75%,0% 75%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek31"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-32;</h2>
+  clip-path:polygon(20% 0%,0% 20%,30% 50%,0% 80%,20% 100%,50% 70%,80% 100%,100% 80%,70% 50%,100% 20%,80% 0%,50% 30%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek32"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  <h2>Örnek-33;</h2>
+  clip-path:polygon(0% 0%,0% 100%,25% 100%,25% 25%,75% 25%,75% 75%,25% 75%,25% 100%,100% 100%,100% 0%);
+  <br><br>
+  <img src="../img/manzara6.jpg" class="ornek33"></img>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 
@@ -467,12 +476,15 @@
 
 
 
-     
-     
-     
-     
-     
-     
+
+
+
+
+
+
+
+
+
 
 
 

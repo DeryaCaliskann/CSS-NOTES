@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .ornek1 {
+            width: 105px;
+            height: 105px;
+            margin: 25px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;
+            transform: rotate(360deg);
+            animation-name: ornek1;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-iteration-count: 1;
+        }
+
+        @keyframes ornek1 {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* ================================================== */
+        .ornek2 {
+            width: 105px;
+            height: 105px;
+            margin: 25px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;
+            transform: rotate(360deg);
+            animation-name: ornek2;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-iteration-count: 2;
+        }
+
+        @keyframes ornek2 {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* ================================================== */
+        .ornek3 {
+            width: 105px;
+            height: 105px;
+            margin: 25px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;
+            transform: rotate(360deg);
+            animation-name: ornek3;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes ornek3 {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>animation-iteration-count özelliği</h1>
+    <p> Html elementine tanımlanmış olan animasyonun kaç defa oynatılacağını belirler. Prefix tanımlanır.
+    </p>
+    <h2>değerler;</h2>
+    <ul>
+        <li>number ; rakam</li>
+        <li>infinite ; sonsuz</li>
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+    <h3>örnek-1 ;</h3>
+    animation-iteration-count: 1;
+    <div class="ornek1">Merhaba Dünya </div>
+
+    <h3>örnek-2 ;</h3>
+    animation-iteration-count: 2;
+    <div class="ornek2">Merhaba Dünya </div>
+
+    <h3>örnek-3 ;</h3>
+    animation-iteration-count: infinity;
+    <div class="ornek3">Merhaba Dünya </div>
+
+
+</body>
+
+</html>

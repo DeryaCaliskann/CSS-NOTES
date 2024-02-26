@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .ornek1 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation-name: ornek1;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-fill-mode: normal;
+        }
+
+        @keyframes ornek1 {
+            from {
+                transform: translateX(0px);
+            }
+
+            to {
+                transform: translateX(500px);
+            }
+        }
+
+        /* ================================================== */
+        .ornek2 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation-name: ornek2;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+
+        }
+
+        @keyframes ornek2 {
+            from {
+                transform: translateX(0px);
+            }
+
+            to {
+                transform: translateX(500px);
+            }
+        }
+
+        /* ================================================== */
+        .ornek3 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation-name: ornek3;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-fill-mode: backwards;
+        }
+
+        @keyframes ornek3 {
+            from {
+                transform: translateX(0px);
+            }
+
+            to {
+                transform: translateX(500px);
+            }
+        }
+
+        /* ================================================== */
+        .ornek4 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation-name: ornek4;
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-fill-mode: both;
+        }
+
+        @keyframes ornek4 {
+            from {
+                transform: translateX(0px);
+            }
+
+            to {
+                transform: translateX(500px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>animation-fiil-mode özelliği</h1>
+    <p> Html elementine tanımlanmış olan animasyon oynatma işlemi tamamlandığında, html elementinin konum özelliklerini
+        belirler. Döngü olan animasyonlarda pek kullanılmaz. Prefix tanımlanır.
+    </p>
+    <h2>değerler;</h2>
+    <ul>
+        <li>none ; değer yok</li>
+        <li>forwards ; ileride </li>
+        <li>backwards ; geride</li>
+        <li>both ; her ikiside</li>
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+    <h3>örnek-1 ;</h3>
+    animation-fill-mode: normal;
+    <div class="ornek1"></div>
+
+    <h3>örnek-2 ;</h3>
+    animation-fill-mode: forwards;
+    <div class="ornek2"></div>
+
+    <h3>örnek-3 ;</h3>
+    animation-fill-mode: backwards;
+    <div class="ornek3"></div>
+
+    <h3>örnek-4 ;</h3>
+    animation-fill-mode:both;
+    <div class="ornek4"></div>
+
+
+</body>
+
+</html>

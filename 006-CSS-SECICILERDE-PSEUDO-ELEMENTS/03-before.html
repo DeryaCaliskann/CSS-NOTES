@@ -1,50 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-    ::before{
-    font-size: 25px;
-    }
-    p.deneme::before {
-    content: "Belirtilen ";
-    color: green;
-    }
-    p#ornek::before{
-    content: "\2600 \2601 \2602 \2603  ";
-    }
-    button::before{
-    content: "\2705";
-    }
-    
+        body {
+            margin: 50px;
+        }
+
+        ::before {
+            font-size: 25px;
+        }
+
+        p.deneme::before {
+            content: "Belirtilen ";
+            color: green;
+        }
+
+        p#ornek::before {
+            content: "\2600 \2601 \2602 \2603  ";
+        }
+
+        button::before {
+            content: "\2705";
+        }
     </style>
 </head>
+
 <body>
     <h1>3-before pseudo element</h1>
     <p class="deneme">Html elementinin öncesine içerik atayarak stil tanımlar. </p>
     <p id="ornek">Not:Html Unicode sembollerinide before sahte elementiyle ekleyebiliriz.</p>
-    <p ><button>Buton</button> tag'larınada before sahte elementini kullanarak içerik atayabiliriz.</p>
+    <p><button>Buton</button> tag'larınada before sahte elementini kullanarak içerik atayabiliriz.</p>
 
     <h3>Örnek ;</h3>
     <p>
         ::before{ <br>
-    font-size: 25px; <br>
-    } <br>
-    <br>
-    p.deneme::before { <br>
-    content: "Belirtilen "; <br>
-    color: green; <br>
-    } <br>
-    <br>
-    p#ornek::before{ <br>
-    content: "\2600 \2601 \2602 \2603 "; <br>
-    } <br>
-    <br>
-    button::before{ <br>
-    content: "\2705"; <br>    
-    }     
+        font-size: 25px; <br>
+        } <br>
+        <br>
+        p.deneme::before { <br>
+        content: "Belirtilen "; <br>
+        color: green; <br>
+        } <br>
+        <br>
+        p#ornek::before{ <br>
+        content: "\2600 \2601 \2602 \2603 "; <br>
+        } <br>
+        <br>
+        button::before{ <br>
+        content: "\2705"; <br>
+        }
     </p>
 </body>
+
 </html>

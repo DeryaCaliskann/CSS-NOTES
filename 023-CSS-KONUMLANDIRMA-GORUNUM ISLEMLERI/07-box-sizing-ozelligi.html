@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            margin: 50px;
+        }
+
         .ornek1 {
             width: 500px;
             height: 300px;
@@ -14,9 +18,6 @@
             box-sizing: content-box;
         }
 
-        /* sol kenarlık genişliği + sol dolgu genişliği + içerik genişliği +sağ dolgu genişliği+sağ kenarlık genişliği = 620px*/
-        /* üst kenarlık genişliği + üst dolgu genişliği + içerik yüksekliği + alt dolgu yüksekiği+ alt kenarlık yüksekliği = 420px*/
-
         .ornek2 {
             width: 500px;
             height: 300px;
@@ -24,9 +25,6 @@
             padding: 50px;
             box-sizing: border-box;
         }
-
-        /* içerik genişliği = 500px*/
-        /* içerik yüksekliği = 300px*/
     </style>
 </head>
 
@@ -37,26 +35,40 @@
     <h2>değerler ;</h2>
     <ul>
         <li>content-box ; İçerik kutusu (varsayılan)</li>
-        <li>border-bax ; Kenarlık kutusu</li>
+        <ul>
+            <li> sol kenarlık genişliği + sol dolgu genişliği + içerik genişliği +sağ dolgu genişliği+sağ kenarlık
+                genişliği = genişlik </li>
+            <li> üst kenarlık genişliği + üst dolgu genişliği + içerik yüksekliği + alt dolgu yüksekiği+ alt kenarlık
+                yüksekliği =yükseklik </li>
+        </ul>
+        <li>border-box ; Kenarlık kutusu</li>
+        <ul>
+            <li> içerik genişliği = genişlik</li>
+            <li> içerik yüksekliği = yükseklik</li>
+        </ul>
+
         <li>initial; html elementi varsayılan biçimlendirme değerine döner</li>
         <li>inherit; html elementi üst elementini biçimlendirme değerini alır</li>
     </ul>
+    sol kenarlık genişliği + sol dolgu genişliği + içerik genişliği +sağ dolgu genişliği+sağ kenarlık genişliği =
+    genişlik <br>
+    üst kenarlık genişliği + üst dolgu genişliği + içerik yüksekliği + alt dolgu yüksekiği+ alt kenarlık yüksekliği =
+    yükseklik <br>
+
 
     <h3>Örnek-1 ;</h3>
+    10px + 50px + 500px + 50px+ 10px = 620px genişlik<br>
+    10px + 50px + 300px + 50px + 10px = 420px yükseklik<br>
 
     <div class="ornek1">content-box </div>
-    <p> sol kenarlık genişliği + sol dolgu genişliği + içerik genişliği +sağ dolgu genişliği+sağ kenarlık genişliği =
-        620px</p>
-    <p> üst kenarlık genişliği + üst dolgu genişliği + içerik yüksekliği + alt dolgu yüksekiği+ alt kenarlık yüksekliği
-        = 420px</p>
-
 
     <h3>Örnek-2 ;</h3>
+    500px = genişlik<br>
+    300px = yükseklik <br>
 
     <div class="ornek2">border-box </div>
 
-    <p>içerik genişliği = 500px</p>
-    <p>içerik yüksekliği = 300px</p>
+
 
 
 

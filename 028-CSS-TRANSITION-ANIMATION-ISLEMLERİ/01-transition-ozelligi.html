@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .ornek1 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: width 2s;
+        }
+
+        .ornek1:hover {
+            width: 400px;
+        }
+
+        /* ============================================================ */
+        .ornek2 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: width 2s, height 2s;
+        }
+
+        .ornek2:hover {
+            width: 400px;
+            height: 200px;
+        }
+
+        /* ============================================================ */
+
+        .ornek3 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: width 2s, height 2s;
+        }
+
+        .ornek3:hover {
+            width: 400px;
+            height: 200px;
+        }
+
+        /* ============================================================ */
+        .ornek4 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: width 3s linear;
+        }
+
+        .ornek4:hover {
+            width: 400px;
+            height: 200px;
+        }
+
+        /* ============================================================ */
+        .ornek5 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: width 4s, ease 2s;
+
+        }
+
+        .ornek5:hover {
+            width: 400px;
+        }
+
+        /* ============================================================ */
+        .ornek6 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: width 4s, height 4s, background-color 4s, border 4s, color 4s, text-align 4s;
+
+        }
+
+        .ornek6:hover {
+            width: 400px;
+            height: 200px;
+            background-color: blue;
+            border: 1px solid yellow;
+            color: white;
+            text-align: center;
+        }
+
+        /* ============================================================ */
+        .ornek7 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: transform 5s;
+
+        }
+
+        .ornek7:hover {
+            transform: translateX(500px);
+        }
+
+        /* ============================================================ */
+        .ornek8 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: transform 4s;
+
+        }
+
+        .ornek8:hover {
+            transform: rotate(90deg);
+        }
+
+        /* ============================================================ */
+        .ornek9 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: transform 4s;
+
+        }
+
+        .ornek9:hover {
+            transform: rotate(180deg);
+        }
+
+        /* ============================================================ */
+        .ornek10 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: transform 4s;
+
+        }
+
+        .ornek10:hover {
+            transform: rotate(1800deg);
+        }
+
+        /* ============================================================ */
+        .ornek11 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: transform 3s, width 1s;
+
+        }
+
+        .ornek11:hover {
+            width: 200px;
+            transform: rotate(180deg);
+        }
+
+        /* ============================================================ */
+        .ornek12 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: transform 3s;
+
+        }
+
+        .ornek12:hover {
+            transform: rotate(900deg) scale(2);
+        }
+
+        /* ============================================================ */
+        .ornek13 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: transform 3s;
+
+        }
+
+        .ornek13:hover {
+            transform: rotate(900deg) scale(2) translateY(100px);
+        }
+
+        /* ============================================================ */
+        .ornek14 {
+            width: 150px;
+            height: 22px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: width 3s, background-color 3s, color 3s, border 3s;
+
+        }
+
+        .ornek14:focus {
+            width: 300px;
+            background-color: grey;
+            color: white;
+            border: 1px solid green;
+        }
+
+        /* ============================================================ */
+        .ornek15 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: border-radius 1s;
+
+        }
+
+        .ornek15:hover {
+            border-radius: 50%;
+        }
+
+        /* ============================================================ */
+        .ornek16 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: border-radius 4s, background-color 4s;
+
+        }
+
+        .ornek16:hover {
+            border-radius: 50%;
+            background-color: green;
+        }
+
+        /* ============================================================ */
+        #kisiKartiAlani1 {
+            position: relative;
+            cursor: pointer;
+            width: 150px;
+            height: 150px;
+            perspective: 600px;
+        }
+
+        #kisiKarti1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 1s linear;
+        }
+
+        #kisiKarti1:hover {
+            transform: rotateX(180deg);
+        }
+
+        .onYuz1 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+            backface-visibility: hidden;
+        }
+
+        .arkaYuz1 {
+            position: absolute;
+            line-height: 150px;
+            text-align: center;
+            background-color: grey;
+            font-size: 20px;
+            color: white;
+            transform: rotateX(180deg);
+        }
+
+        /* ============================================================ */
+
+        #kisiKartiAlani2 {
+            position: relative;
+            cursor: pointer;
+            width: 150px;
+            height: 150px;
+            perspective: 600px;
+        }
+
+        #kisiKarti2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: all 1s linear;
+        }
+
+        #kisiKarti2:hover {
+            transform: rotateY(180deg);
+        }
+
+        .onYuz2 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border-radius: 8px;
+            backface-visibility: hidden;
+        }
+
+        .arkaYuz2 {
+            position: absolute;
+            line-height: 150px;
+            text-align: center;
+            background-color: grey;
+            font-size: 20px;
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        /* ============================================================ */
+        .ornek19 {
+            width: 760px;
+            border: 4px double black;
+            padding: 50px;
+            padding-top: 0;
+        }
+
+
+        .ornek19a {
+            width: 250px;
+            display: inline-block;
+        }
+
+        h4 {
+            color: grey;
+            font-size: 20px;
+            padding: 50px;
+            padding-top: 0px;
+            text-align: center;
+
+        }
+
+        .kutu {
+            width: 50px;
+            height: 50px;
+            margin: 50px auto;
+            border-radius: 50%;
+            background-color: #60d4c8;
+        }
+
+        .kutu1 {
+            background-color: #60D4C8;
+            transition: all 500ms;
+        }
+
+        .kutu2 {
+            background-color: #46AAAF;
+            transition: all 2s;
+        }
+
+        .kutu3 {
+            background-color: #25D193;
+            transition: all 4s;
+        }
+
+        .ornek19:hover .ornek19a .kutu1,
+        .ornek19:hover .ornek19a .kutu2,
+        .ornek19:hover .ornek19a .kutu3 {
+            transform: scale(4);
+        }
+
+        /* ============================================================ */
+
+        #bir {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border-radius: 3px;
+            transition: transform 1s;
+        }
+
+
+        #iki {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 3px;
+            transition: transform 1s;
+        }
+
+        #iki:hover {
+            transform: translate(50px, 50px);
+        }
+
+        /* ============================================================ */
+
+
+        .ornek21 {
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            border: 1px solid gray;
+            border-radius: 5px 50%;
+            transition: transform 2s;
+            transform-origin: 0px 0px;
+        }
+
+        .ornek21:hover {
+            transform: rotate(360deg);
+        }
+
+        /* ============================================================ */
+
+
+        .ornek22 {
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            border: 1px solid gray;
+            border-radius: 5px 50%;
+            transition: transform 1s;
+            transform-origin: 100px 100px;
+        }
+
+        .ornek22:hover {
+            transform: rotate(360deg);
+        }
+
+        /* ============================================================ */
+
+
+        .ornek23 {
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            border: 1px solid gray;
+            border-radius: 5px 50%;
+            transition: transform 4s;
+            transform-origin: 100px 100px;
+        }
+
+        .ornek23:hover {
+            transform: rotate(3600deg);
+        }
+
+        /* ============================================================ */
+        .ornek24 {
+            position: absolute;
+            width: 100%;
+
+        }
+
+        .kapsamaAlani1 {
+            position: relative;
+        }
+
+        .kutular1 {
+            position: relative;
+            display: inline-block;
+            width: 105px;
+            height: 105px;
+            text-align: center;
+            line-height: 105px;
+            transition: all 500ms;
+            transform: scale(1);
+        }
+
+        .kutular1:hover {
+            transform: scale(1.5);
+            box-shadow: 0px 0px 150px black;
+            z-index: 2;
+        }
+
+             /* ============================================================ */
+        .ornek25 {
+            position: absolute;
+            width: 100%;
+
+        }
+
+        .kapsamaAlani2 {
+            position: relative;
+        }
+
+        .kutular2 {
+            position: relative;
+            display: inline-block;
+            width: 105px;
+            height: 105px;
+            text-align: center;
+            line-height: 105px;
+            transition: all 1s;
+            transform: scale(1) rotate(360deg);
+        }
+
+        .kutular2:hover {
+            transform: scale(1.5);
+            box-shadow: 0px 0px 150px black;
+            z-index: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>transition özelliği</h1>
+    <p> Html elementinin tüm geçiş özelliklerini belirler. Prefix tanımlamak gerekir.</p>
+    <h2>parametreler ;</h2>
+    <ul>
+        <li>transition-property ; özellik adı</li>
+        <li>transition-duration ; geçiş süresi</li>
+        <li>transition-timing-function ; hız eğrisi </li>
+        <li>transition-delay ; duraksama süresi</li>
+    </ul>
+
+    <h2>değerler ; </h2>
+    <ul>
+        <li>property value; özellik değeri</li>
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    transition: width 2s;
+    <div class="ornek1"></div>
+
+    <h3>Örnek-2 ;</h3>
+    transition: width 2s, height 2s;
+    <div class="ornek2"></div>
+
+    <h3>Örnek-3 ;</h3>
+    transition: width 2s, height 2s;
+    <div class="ornek3"></div>
+
+    <h3>Örnek-4 ;</h3>
+    transition: width 4s linear ;
+    <div class="ornek4"></div>
+
+    <h3>Örnek-5 ;</h3>
+    transition: width 4s ease 2s;
+    <div class="ornek5"></div>
+
+    <h3>Örnek-6 ;</h3>
+    transition: width 4s, height 4s, background-color 4s, border 4s, color 4s, text-align 4s;
+    <div class="ornek6"></div>
+
+    <h3>Örnek-7 ;</h3>
+    transition: transform 5s;
+    <div class="ornek7"></div>
+
+    <h3>Örnek-8 ;</h3>
+    transition: transform 4s;
+    <div class="ornek8"></div>
+
+    <h3>Örnek-9 ;</h3>
+    transition: transform 4s;
+    <div class="ornek9"></div>
+
+    <h3>Örnek-10 ;</h3>
+    transition: transform 4s;
+    <div class="ornek10"></div>
+
+    <h3>Örnek-11 ;</h3>
+    transition: transform 3s, width 1s;
+    <div class="ornek11"></div>
+
+    <h3>Örnek-12 ;</h3>
+    transition: transform 3s;
+    <div class="ornek12"></div>
+
+    <h3>Örnek-13 ;</h3>
+    transition: transform 3s;
+    <div class="ornek13"></div>
+
+    <h3>Örnek-14 ;</h3>
+    transition: width 3s, background-color 3s, color 3s, border 3s; <br>
+    <input class="ornek14" type="text" value="aranacak metni giriniz">
+
+    <h3>Örnek-15 ;</h3>
+    transition: border-radius 1s;
+    <div class="ornek15"></div>
+
+    <h3>Örnek-16 ;</h3>
+    transition: border-radius 4s, background-color 4s;
+    <div class="ornek16"></div>
+
+    <h3>Örnek-17 ;</h3>
+    transition: all 1s linear;
+    }
+    <div id="kisiKartiAlani1">
+        <div id="kisiKarti1">
+            <div class="onYuz1"><img src="../img/person.jpeg" width="150px" height="150px" alt=""></div>
+            <div class="onYuz1 arkaYuz1"> John Doe</div>
+        </div>
+    </div>
+
+    <h3>Örnek-18 ;</h3>
+    transition: all 1s linear;
+    }
+    <div id="kisiKartiAlani2">
+        <div id="kisiKarti2">
+            <div class="onYuz2"><img src="../img/person.jpeg" width="150px" height="150px" alt=""></div>
+            <div class="onYuz2 arkaYuz2"> John Doe</div>
+        </div>
+    </div>
+
+    <h3>Örnek-19 ;</h3>
+    transition: all 500ms; <br>
+    transition: all 2s; <br>
+    transition: all 4s; <br>
+
+    <div class="ornek19">
+        <div class="ornek19a">
+            <h4>500 milisaniye</h4>
+            <div class="kutu kutu1"></div>
+        </div>
+        <div class="ornek19a">
+            <h4>2 saniye</h4>
+            <div class="kutu kutu2"></div>
+        </div>
+        <div class="ornek19a">
+            <h4>4 saniye</h4>
+            <div class="kutu kutu3"></div>
+        </div>
+    </div>
+
+    <h3>Örnek-20 ;</h3>
+    transition: transform 1s;
+    <div id="bir"></div>
+    <div id="iki"></div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <h3>Örnek-21 ;</h3>
+    transition: transform 2s;
+    <div class="ornek21"></div>
+
+    <h3>Örnek-22 ;</h3>
+    transition: transform 1s;
+    <div class="ornek22"></div>
+
+    <h3>Örnek-23 ;</h3>
+    transition: transform 4s;
+    <div class="ornek23"></div>
+    <br>
+
+    <h3>Örnek-24 ;</h3>
+    transition: all 500ms;
+    <div class="ornek24">
+        <div class="kapasamaAlani1">
+            <div class="kutular1" style="background-color: orange;">Merhaba Dünya</div>
+            <div class="kutular1" style="background-color: blue;">Merhaba Dünya</div>
+            <div class="kutular1" style="background-color: green;">Merhaba Dünya</div>
+            <div class="kutular1" style="background-color: red;">Merhaba Dünya</div>
+            <div class="kutular1" style="background-color: purple;">Merhaba Dünya</div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br>
+
+     <h3>Örnek-25;</h3>
+    transition: all 1s;
+    <div class="ornek25">
+        <div class="kapasamaAlani2">
+            <div class="kutular2" style="background-color: orange;">Merhaba Dünya</div>
+            <div class="kutular2" style="background-color: blue;">Merhaba Dünya</div>
+            <div class="kutular2" style="background-color: green;">Merhaba Dünya</div>
+            <div class="kutular2" style="background-color: red;">Merhaba Dünya</div>
+            <div class="kutular2" style="background-color: purple;">Merhaba Dünya</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

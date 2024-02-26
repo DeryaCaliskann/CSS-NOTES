@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .ornek1 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+
+        .ornek1:hover {
+            width: 400px;
+        }
+
+        /* ============================================================ */
+        .ornek2 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: width, color;
+            transition-duration: 3s, 1ms;
+        }
+
+        .ornek2:hover {
+            width: 400px;
+            color: red;
+        }
+
+        /* ============================================================ */
+
+        .ornek3 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: transform;
+            transition-duration: 2000ms;
+        }
+
+        .ornek3:hover {
+            transform: skew(-20deg);
+        }
+
+        /* ============================================================ */
+        .ornek4 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: width, transform;
+            transition-duration: 100ms, 3000ms;
+        }
+
+        .ornek4:hover {
+            width: 400px;
+            transform: skewX(20deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>transition-duration özelliği</h1>
+    <p> Html elementinine tanımlanmış olan geçiş özelliğinin kaç saniye veya kaç milisaniye sonunda tamamlanacağını
+        belirler. Prefix tanımlanır.</p>
+
+
+    <h2>değerler ; </h2>
+    <ul>
+        <li>time ; zaman (saniye: s, milisamiye: ms).</li>
+
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    transition-property:all; <br>
+    transition-duration: 3s;
+    <div class="ornek1">Merhaba Dünya</div>
+
+    <h3>Örnek-2 ;</h3>
+    transition-property: width,color; <br>
+    transition-duration: 3s,1ms;
+    <div class="ornek2">Merhaba Dünya</div>
+
+    <h3>Örnek-3 ;</h3>
+    transition-property: transform; <br>
+    transition-duration: 2000ms; <br>
+    transform: skew(-20deg);
+    <div class="ornek3">Merhaba Dünya</div>
+
+    <h3>Örnek-4 ;</h3>
+    transition-property: width, transform; <br>
+    transition-duration: 100ms, 3000ms;
+
+    <div class="ornek4">Merhaba Dünya</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

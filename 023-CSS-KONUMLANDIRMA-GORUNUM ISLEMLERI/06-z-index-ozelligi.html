@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-
+    body {
+    margin:50px;
+    }
         div {
             position: absolute;
             width: 200px;
@@ -19,6 +21,7 @@
             top: 0;
             left: 0;
             background-color: yellow;
+            z-index: 3;
         }
 
         #iki {
@@ -31,7 +34,7 @@
             top: 80px;
             left: 80px;
             background-color: red;
-            z-index:1;
+            z-index: 1;
         }
 
         #dort {
@@ -61,16 +64,19 @@
     </ul>
 
     <h3>Örnek-1 ;</h3>
-        
+    background-color: red; / z-index:1; <br>
+    background-color: gray; / z-index: 2;<br>
+    background-color: yellow; / z-index:3;<br>
+
     <div class="container">
-        <div id="bir">1</div>
-        <div id="iki">2</div>
-        <div id="uc">3</div>
-        <div id="dort">4</div>
-        <div id="bes">5</div>
+        <div id="bir"></div>
+        <div id="iki"></div>
+        <div id="uc"></div>
+        <div id="dort"></div>
+        <div id="bes"></div>
     </div>
 
-    
+
 
 
 </body>

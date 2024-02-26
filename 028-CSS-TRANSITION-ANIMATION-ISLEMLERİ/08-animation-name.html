@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .ornek1 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: 5s;
+            animation-name: none;
+        }    
+
+        /* ================================================== */
+
+        .ornek2 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: 5s infinite;
+            animation-name: ornek2;
+        }
+
+        @keyframes ornek2 {
+            from {
+                width: 100px;
+            }
+
+            to {
+                width: 600px;
+            }
+        }
+
+        /* ================================================== */
+
+        .ornek3 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: 5s infinite;
+            animation-name: ornek3;
+        }
+
+        @keyframes ornek3 {
+            0% {
+                width: 100px;
+            }
+
+            25% {
+                width: 200px;
+            }
+
+            35% {
+                width: 300px;
+            }
+
+            65% {
+                width: 400px;
+            }
+
+            80% {
+                width: 0px;
+            }
+
+            100% {
+                width: 100px;
+            }
+
+        }
+
+        /* ================================================== */
+    </style>
+</head>
+
+<body>
+    <h1>animation-name özelliği</h1>
+    <p> Html elementine atanmış olan animasyonun, @keyframes özelliği için tanımlanmasını belirler. Prefix tanımlanır.
+    </p>
+    <h2>değerler;</h2>
+    <ul>
+        <li>none ; değer yok (varsayılan)</li>
+        <li>@keyframes name ; animasyon aşamaları adı.</li>
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    animation-name: none;
+    <div class="ornek1"> </div>
+    <br>
+
+    <h3>Örnek-2 ;</h3>
+    animation-name: ornek2;
+    <div class="ornek2"> </div>
+    <br>
+
+    <h3>Örnek-3 ;</h3>
+    animation-name: ornek3;
+    <div class="ornek3"> </div>
+    <br>
+
+
+
+</body>
+
+</html>

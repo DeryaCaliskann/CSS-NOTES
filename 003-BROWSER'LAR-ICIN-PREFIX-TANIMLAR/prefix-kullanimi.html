@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            margin: 50px;
+        }
+
         div {
             border: 3px solid gray;
             -webkit-border-radius: 10px;
@@ -18,46 +22,48 @@
 </head>
 
 <body>
-<div>
-    <h1>Css'de Browserler İçin PREFİX (ÖNEK) Kullanımı </h1>
-    <p>Hemen hemen her browser'in geliştirici firması ve browser visualization (tarayıcı görüntüleme motorları) farklı
-        olduğu için, bazı durumlarda Css özelliklerine prefix tanımlanmalıdır. Css özelliklerinin tüm browser'lar
-        tarafından algılanarak yorumlanabilmesi ve kusursuz şekilde çalıştırılabilmesini prefix tanımları sağlar.
-    </p>
-    <ul>
-        <li>Internet Explorer / -ms-</li>
-        <li>Microsoft Edge / -ms-</li>
-        <li>Microsoft Office / -mso- (posta içermiyorsa kullanılması gerekmez)</li>
-        <li>Mozilla Firefox / -moz-</li>
-        <li>Google Chorome / -webkit-</li>
-        <li>Yandex Browser / -webkit-</li>
-        <li>Safari / -webkit-</li>
-        <li>Opera / -o-</li>
-    </ul>
-    <h2>Css özellikleri için prefix tanımlarının ,W3C tarafından belirtilmiş en doğru sıralaması aşağıdaki şekildedir.
-    </h2>
-    <ul>
-        <li>-webkit-</li>
-        <li>-moz-</li>
-        <li>-o-</li>
-        <li>-ms-</li>
-        <li>-mso-(gerekli ise)</li>
-        <li>standart kodlama</li>
-    </ul>
-    <h3>NOT: Border-radius, animasyon, opacity (şeffaflık) vb. özellikler kullanılacaksa prefix kullanmalıyız.</h3>
+    <div>
+        <h1>Css'de Browserler İçin PREFİX (ÖNEK) Kullanımı </h1>
+        <p>Hemen hemen her browser'in geliştirici firması ve browser visualization (tarayıcı görüntüleme motorları)
+            farklı
+            olduğu için, bazı durumlarda Css özelliklerine prefix tanımlanmalıdır. Css özelliklerinin tüm browser'lar
+            tarafından algılanarak yorumlanabilmesi ve kusursuz şekilde çalıştırılabilmesini prefix tanımları sağlar.
+        </p>
+        <ul>
+            <li>Internet Explorer / -ms-</li>
+            <li>Microsoft Edge / -ms-</li>
+            <li>Microsoft Office / -mso- (posta içermiyorsa kullanılması gerekmez)</li>
+            <li>Mozilla Firefox / -moz-</li>
+            <li>Google Chorome / -webkit-</li>
+            <li>Yandex Browser / -webkit-</li>
+            <li>Safari / -webkit-</li>
+            <li>Opera / -o-</li>
+        </ul>
+        <h2>Css özellikleri için prefix tanımlarının ,W3C tarafından belirtilmiş en doğru sıralaması aşağıdaki
+            şekildedir.
+        </h2>
+        <ul>
+            <li>-webkit-</li>
+            <li>-moz-</li>
+            <li>-o-</li>
+            <li>-ms-</li>
+            <li>-mso-(gerekli ise)</li>
+            <li>standart kodlama</li>
+        </ul>
+        <h3>NOT: Border-radius, animasyon, opacity (şeffaflık) vb. özellikler kullanılacaksa prefix kullanmalıyız.</h3>
 
-    <h3>Örnek ;</h3>
-    <p>
-        div { <br>
-        border: 3px solid gray; <br>
-        -webkit-border-radius: 10px; <br>
-        -moz-border-radius: 10px;<br>
-        -o-border-radius: 10px; <br>
-        -ms-border-radius: 10px; <br>
-        border-radius: 10px; <br>
-        }
-    </p>
-</div>
+        <h3>Örnek ;</h3>
+        <p>
+            div { <br>
+            border: 3px solid gray; <br>
+            -webkit-border-radius: 10px; <br>
+            -moz-border-radius: 10px;<br>
+            -o-border-radius: 10px; <br>
+            -ms-border-radius: 10px; <br>
+            border-radius: 10px; <br>
+            }
+        </p>
+    </div>
 </body>
 
 </html>

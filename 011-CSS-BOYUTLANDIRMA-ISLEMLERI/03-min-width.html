@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            margin: 50px;
+        }
+
         /* LENGTH  */
 
         div.ornek1 {
@@ -18,7 +22,7 @@
             width: 80%;
         }
 
-        p.ornek2{
+        p.ornek2 {
             background-color: yellow;
             min-width: 500px;
         }
@@ -38,7 +42,8 @@
             background-color: blue;
             width: 80%;
         }
-        p.ornek4{
+
+        p.ornek4 {
             background-color: yellow;
             min-width: 50%;
         }
@@ -48,6 +53,7 @@
             background-color: blue;
             min-width: 750px;
         }
+
         div.ornek5 {
             background-color: yellow;
             min-width: initial;
@@ -58,6 +64,7 @@
             background-color: blue;
             min-width: 500px;
         }
+
         p.ornek6 {
             background-color: yellow;
             min-width: inherit;
@@ -86,31 +93,31 @@
 
 
     <h3>Örnek-1 ;</h3>
-    <div class="ornek1">div: min-width;750px</div>    
+    <div class="ornek1">div: min-width;750px</div>
 
     <h3>Örnek-2 ;</h3>
     <div class="ornek2">
         <p class="ornek2">div: width;80% (mavi) > p:min-width;500px (sarı)</p>
     </div>
-    
+
     <h3>Örnek-3;</h3>
     <div class="ornek3">
         <p class="ornek3">div: width;500px (mavi) > div:min-width;750px (sarı)</p>
     </div>
-    
+
     <h3>Örnek-4 ;</h3>
     <div class="ornek4">
         <p class="ornek4">div: width;80% (mavi) > div: min-width;50% (sarı)</p>
-    </div>    
+    </div>
 
     <h3>Örnek-5 ;</h3>
-    <div class="ornek5">div: min-width;750px / div: min-width;initial(varsayılan)</div>    
+    <div class="ornek5">div: min-width;750px / div: min-width;initial(varsayılan)</div>
 
     <h3>Örnek-6;</h3>
     <div class="ornek6">
         <p class="ornek6">div: min-width;500px (mavi) > p:min-width;inherit(miras) (sarı)</p>
     </div>
-    
+
 </body>
 
 </html>

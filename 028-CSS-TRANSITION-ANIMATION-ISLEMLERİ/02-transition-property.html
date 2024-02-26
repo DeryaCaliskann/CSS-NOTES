@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .ornek1 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: 3s;
+            transition-property: all;
+        }
+
+        .ornek1:hover {
+            width: 400px;
+        }
+
+        /* ============================================================ */
+        .ornek2 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: 3s;
+            transition-property: width;
+        }
+
+        .ornek2:hover {
+            width: 400px;
+
+        }
+
+        /* ============================================================ */
+
+        .ornek3 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: 3s;
+            transition-property: width, height;
+        }
+
+        .ornek3:hover {
+            width: 400px;
+            height: 200px;
+        }
+
+        /* ============================================================ */
+        .ornek4 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: 1s, 3s;
+            transition-property: width, height;
+        }
+
+        .ornek4:hover {
+            width: 400px;
+            height: 200px;
+        }
+
+        /* ============================================================ */
+        .ornek5 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            background-color: yellow;
+            transition: 5s;
+            transition-property: transform;
+        }
+
+        .ornek5:hover {
+            transform: rotate(1800deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>transition-property özelliği</h1>
+    <p> Html elementinine tanımlanmış olan geçiş özelliği için kullanılması gereken css'de tanımlı olan özellik adını
+        belirler. Prefix tanımlanır.</p>
+
+
+    <h2>değerler ; </h2>
+    <ul>
+        <li>all ; hepsi.</li>
+        <li>property ; özellik.</li>
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    transition: 3s; <br>
+    transition-property: all;
+    <div class="ornek1"></div>
+
+    <h3>Örnek-2 ;</h3>
+    transition: 3s; <br>
+    transition-property: width;
+    <div class="ornek2"></div>
+
+    <h3>Örnek-3 ;</h3>
+    transition: 3s;<br>
+    transition-property: width,height;
+    <div class="ornek3"></div>
+
+    <h3>Örnek-4 ;</h3>
+    transition: 1s, 3s;<br>
+    transition-property: width,height;
+    <div class="ornek4"></div>
+
+    <h3>Örnek-5 ;</h3>
+    transition: 5s; <br>
+    transition-property: transform; <br>
+    transform:rotate(1800deg);
+    <div class="ornek5"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

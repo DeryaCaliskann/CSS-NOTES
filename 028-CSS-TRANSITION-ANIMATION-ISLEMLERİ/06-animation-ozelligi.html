@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .ornek1 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: ornek1 4s linear 0s infinite normal none running;
+        }
+
+        @keyframes ornek1 {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 500px
+            }
+        }
+
+        /* ============================================================ */
+
+        .ornek2 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: ornek2 4s linear 0s infinite alternate none running;
+        }
+
+        @keyframes ornek2 {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: 500px
+            }
+        }
+
+        /* ============================================================ */
+
+        .ornek3 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: ornek3 4s linear 0s infinite normal none running;
+        }
+
+        @keyframes ornek3 {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(180deg);
+            }
+        }
+
+        /* ============================================================ */
+
+        .ornek4 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: ornek4 4s linear 0s infinite alternate none running;
+        }
+
+        @keyframes ornek4 {
+            from {
+                transform: rotate(0deg) scale(1.0);
+                background-color: skyblue;
+            }
+
+            to {
+                transform: rotate(180deg) scale(0.5);
+                background-color: blue;
+            }
+        }
+
+        /* ============================================================ */
+
+        .ornek5 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: ornek5 4s linear 0s infinite alternate none running;
+        }
+
+        @keyframes ornek5 {
+            from {
+                width: 100px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        /* ============================================================ */
+
+        .ornek6 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: ornek6 4s linear 0s infinite alternate none running;
+        }
+
+        @keyframes ornek6 {
+            from {
+                width: 500px;
+            }
+
+            to {
+                width: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>animation özelliği</h1>
+    <p> Html elementinin tüm animasyon özelliklerini belirler. Animasyonu transition dan (geçiş) farkı, animasyon bir
+        döngü oluşturur ve bu animasyonu biz sonalandırana kadar bitmez. Parametrelerin sırası önemlidir. Prefix
+        tanımlanır. </p>
+    <h2>parametreler ;</h2>
+    <ul>
+        <li>animation-name ; animasyonun adı.(@keyframes tanımlamasıyla yapılır) Varsayılan değer none</li>
+        <li>animation-duration ; animasyonun ne kadar sürede tamamlanacağı. Varsayılan değer 0</li>
+        <li>animation-timing-function; animasyonun hız eğrisi. Varsayılan değer ease</li>
+        <li>animation-delay ; animasyonu bekleme süresi. Varsayılan değer 0</li>
+        <li>animation-iteration-count; animasyonun tekrarlanma işlemi. Varsayılan değer 1</li>
+        <li>animation-direction ; animasyonun oynatma yönü. Varsayılan değer normal</li>
+        <li>animation-fill-mode ; animasyonun oynatma işlemi tamamlandığındaki konumu. Varsayılan değer none.</li>
+        <li>animation-play-state ; animasyonu çalışıp çalışmadığını bildirir. Varsayılan değer running</li>
+    </ul>
+    <h2>değerler ; </h2>
+    <ul>
+        <li>animation value ; animasyon özelliği değerleri</li>
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    animation: ornek1 4s linear 0s infinite normal none running;
+    <div class="ornek1"></div>
+    <br>
+
+    <h3>Örnek-2 ;</h3>
+    animation: ornek2 4s linear 0s infinite alternate none running;
+    <div class="ornek2"></div>
+    <br>
+
+    <h3>Örnek-3 ;</h3>
+    animation: ornek3 4s linear 0s infinite normal none running;
+    <div class="ornek3"></div>
+    <br>
+    <br>
+
+    <h3>Örnek-4 ;</h3>
+    animation: ornek4 4s linear 0s infinite alternate none running;
+    <div class="ornek4"></div>
+    <br>
+
+    <h3>Örnek-5 ;</h3>
+    animation: ornek5 4s linear 0s infinite alternate none running;
+    <div class="ornek5"></div>
+    <br>
+
+    <h3>Örnek-6 ;</h3>
+    animation: ornek6 4s linear 0s infinite alternate none running;
+    <div class="ornek6"></div>
+    <br>
+
+
+
+</body>
+
+</html>

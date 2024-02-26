@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            margin: 50px;
+        }
+
         .ornek1 {
             border: 2px solid red;
             width: 100%;
@@ -24,7 +28,7 @@
             width: 90%;
         }
 
-
+        /* ======================================================= */
 
         .ornek2 {
             border: 2px solid red;
@@ -44,11 +48,11 @@
             width: 90%;
         }
 
-
+        /* ======================================================= */
 
         .ornek3 {
             border: 2px solid red;
-            width: 100%;           
+            width: 100%;
             table-layout: fixed;
         }
 
@@ -64,9 +68,10 @@
             width: 90%;
         }
 
+        /* ======================================================= */
         .ornek4 {
             border: 2px solid red;
-            width: 100%;          
+            width: 100%;
             table-layout: auto;
         }
 
@@ -99,6 +104,7 @@
 
     <h3>Örnek-1 ;</h3>
     table-layout: auto;
+    (kelimeler arasında boşluk yok)
     <table class="ornek1">
         <tr>
             <td class="ornek1a">DeryaÇalışkanPınarAküzümDeryaÇalışkanPınarAküzüm</td>
@@ -108,6 +114,7 @@
 
     <h3>Örnek-2 ;</h3>
     table-layout:fixed;
+    (kelimeler arasında boşluk yok)
     <table class="ornek2">
         <tr>
             <td class="ornek2a">DeryaÇalışkanPınarAküzümDeryaÇalışkanPınarAküzüm</td>
@@ -117,6 +124,7 @@
 
     <h3>Örnek-3 ;</h3>
     table-layout:fixed;
+    (kelimeler arasında boşluk var)
     <table class="ornek3">
         <tr>
             <td class="ornek3a">Derya Çalışkan Pınar Aküzüm</td>
@@ -125,6 +133,7 @@
     </table>
 
     <h3>Örnek-4 ;</h3>
+    (kelimeler arasında boşluk var)
     table-layout:auto;
     <table class="ornek4">
         <tr>

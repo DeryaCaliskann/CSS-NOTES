@@ -6,36 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .ornek1 {                  
+        body {
+            margin: 50px;
+        }
+
+        .ornek1 {
             border: 2px solid black;
             padding: 10px;
             -webkit-column-count: 3;
             -moz-column-count: 3;
             -o-column-count: 3;
             -ms-column-count: 3;
-            column-count: 3;           
+            column-count: 3;
         }
 
         .ornek1a {
-         -webkit-column-span: none;
+            -webkit-column-span: none;
             -moz-column-span: none;
             -o-column-span: none;
             -ms-column-span: none;
             column-span: none;
         }
 
-         .ornek2 {                  
+        .ornek2 {
             border: 2px solid black;
             padding: 10px;
             -webkit-column-count: 3;
             -moz-column-count: 3;
             -o-column-count: 3;
             -ms-column-count: 3;
-            column-count: 3;           
+            column-count: 3;
         }
 
         .ornek2a {
-         -webkit-column-span: all;
+            -webkit-column-span: all;
             -moz-column-span: all;
             -o-column-span: all;
             -ms-column-span: all;
@@ -46,7 +50,8 @@
 
 <body>
     <h1>column-span özelliği</h1>
-    <p> Html elementinin çok sütunlu düzeni için bölünen sütunların içerisindeki bir elementin sütun veya sütunlara yayılması durumunu belirler. Prefix'lerle
+    <p> Html elementinin çok sütunlu düzeni için bölünen sütunların içerisindeki bir elementin sütun veya sütunlara
+        yayılması durumunu belirler. Prefix'lerle
         beraber kullanılır.</p>
 
     <h2>değerler ;</h2>
@@ -57,30 +62,32 @@
         <li>inherit ; html elementi üst elementinin biçimlendirme değerini alır.</li>
     </ul>
 
-    <h3>Örnek-1</h3>   
+    <h3>Örnek-1</h3>
     <div class="ornek1">
-    <h2 class="ornek1a"> column-span: none;</h2>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae molestias nemo tenetur.
+        <h2 class="ornek1a"> column-span: none;</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae molestias nemo tenetur.
         Consequatur dignissimos perferendis nesciunt modi possimus voluptatibus est ducimus? Explicabo, dolorum?
         Reiciendis id, esse maiores error dicta ullam? Ea cumque eum minus neque ipsam perspiciatis id ut necessitatibus
         ducimus libero, perferendis dignissimos temporibus qui quidem molestias veritatis eius vitae iure doloremque non
         nobis dicta? Perferendis fugit doloremque veniam, delectus nobis eos eligendi dolorum accusantium. Deleniti,
         dolore. Tempore repudiandae tenetur reprehenderit magnam quisquam possimus, ullam minima obcaecati porro neque
         voluptatem dicta vitae, molestiae exercitationem iusto commodi id voluptatibus modi aspernatur nostrum amet
-        cupiditate. Doloremque dolores quod blanditiis asperiores voluptatibus!</div>
+        cupiditate. Doloremque dolores quod blanditiis asperiores voluptatibus!
+    </div>
 
 
-    <h3>Örnek-2</h3>   
+    <h3>Örnek-2</h3>
     <div class="ornek2">
-    <h2 class="ornek2a"> column-span: all;</h2>
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae molestias nemo tenetur.
+        <h2 class="ornek2a"> column-span: all;</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae molestias nemo tenetur.
         Consequatur dignissimos perferendis nesciunt modi possimus voluptatibus est ducimus? Explicabo, dolorum?
         Reiciendis id, esse maiores error dicta ullam? Ea cumque eum minus neque ipsam perspiciatis id ut necessitatibus
         ducimus libero, perferendis dignissimos temporibus qui quidem molestias veritatis eius vitae iure doloremque non
         nobis dicta? Perferendis fugit doloremque veniam, delectus nobis eos eligendi dolorum accusantium. Deleniti,
         dolore. Tempore repudiandae tenetur reprehenderit magnam quisquam possimus, ullam minima obcaecati porro neque
         voluptatem dicta vitae, molestiae exercitationem iusto commodi id voluptatibus modi aspernatur nostrum amet
-        cupiditate. Doloremque dolores quod blanditiis asperiores voluptatibus!</div>
+        cupiditate. Doloremque dolores quod blanditiis asperiores voluptatibus!
+    </div>
 
 </body>
 

@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            margin: 50px;
+        }
+
         div.ornek1::before {
             color: red;
             content: "başa eklenen değer";
@@ -16,6 +20,7 @@
             content: "sona eklene değer";
         }
 
+        /* ================================================== */
         div.ornek2::before {
             content: open-quote;
         }
@@ -24,6 +29,7 @@
             content: close-quote;
         }
 
+        /* ================================================== */
         q.ornek3::before {
             content: no-open-quote;
         }
@@ -32,6 +38,7 @@
             content: no-close-quote;
         }
 
+        /* ================================================== */
 
         div.ornek4::before {
             content: url(../img/manzara.jpeg);
@@ -41,6 +48,7 @@
             content: url(../img/manzara.jpeg);
         }
 
+        /* ================================================== */
 
         a::before {
             content: attr(href)"---";
@@ -55,21 +63,20 @@
         }
 
         /* attr değeri sadece a tagında değil tüm elementletde kullanılabilir */
-
-        li{
-            counter-increment:sayac;
+        /* ================================================== */
+        li {
+            counter-increment: sayac;
         }
 
-        li::before {         
-            content:counter(sayac)".";
+        li::before {
+            content: counter(sayac)".";
         }
     </style>
 </head>
 
 <body>
     <h1>content özelliği</h1>
-    <p>before veya after sahte elementi ile birlikte üretilecek olan içeriği metne eklemek için kullanılır
-        belirler.
+    <p>before veya after sahte elementi ile birlikte üretilecek olan içeriği metne eklemek için kullanılır.
     </p>
     <h2>değerler ;</h2>
     <ul>
@@ -89,38 +96,36 @@
 
 
     <h3>Örnek-1 ;</h3>
+    content: "sona eklene değer"; <br>
+    content: "sona eklene değer"; <br><br>
     <div class="ornek1">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
 
 
     <h3>Örnek-2 ;</h3>
+    content: open-quote; <br>
+    content: close-quote;<br> <br>
     <div class="ornek2">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
 
 
     <h3>Örnek-3 ;</h3>
+    content: no-open-quote; <br>
+    content: no-close-quote;<br> <br>
     <q class="ornek3">Lorem ipsum dolor sit amet consectetur adipisicing elit. </q>
 
     <h3>Örnek-4 ;</h3>
+    content: url(../img/manzara.jpeg);<br>
+    content: url(../img/manzara.jpeg); <br> <br>
+
     <div class="ornek4">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
 
     <h3>Örnek-5 ;</h3>
+    content: attr(href)"---"; <br>
+    content: "---" attr(target); <br>
+    content: "---" attr(title); <br> <br>
     <a href="https://www.Google.com" target="top" title="arama motoru">Google</a>
 
-    <h3>örnek-6</h3>
-    <h2>değerler ;</h2>
-    <ul>
-        <li>normal; normal </li>
-        <li>none; değer yok</li>
-        <li>string; içeriğe yeni bir dize ekler</li>
-        <li>open-quote; içeriğe açılış tırnak işareti ekler </li>
-        <li>close-quote; içeriğe kapanış tırnak işareti ekler</li>
-        <li>no-open-quote; içeriğin açılış tırnak işaretini kaldırır</li>
-        <li>no-close-quote; içeriğin kapanış tırnak işaretini kaldırır</li>
-        <li>url; içeriğe medya dosyası ekler</li>
-        <li>attr; içeriğin bulunduğu elementin belirtilecek olan herhangi bir özellik bilgisine erişerek değerini ekler
-        </li>
-        <li>counter; belirtilecek olan herhangi bir elementin sayaç bilgisine erişerek değerini ekler</li>
-        <li>İnitial; html elementi varsayılan biçimlendirme değerine döner.</li>
-    </ul>
+
+  
 
 </body>
 

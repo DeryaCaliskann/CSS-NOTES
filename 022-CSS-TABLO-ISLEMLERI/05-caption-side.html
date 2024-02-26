@@ -6,31 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .ornek1 {          
-           border:2px solid blue;
-           caption-side: top;
+        body {
+            margin: 50px;
         }
+
+        .ornek1 {
+            border: 2px solid blue;
+            caption-side: top;
+        }
+
         th,
         td {
             border: 2px solid blue;
         }
 
-         .ornek2 {          
-           border:2px solid blue;
-           caption-side: bottom;
-        }
-        th,
-        td {
+        .ornek2 {
             border: 2px solid blue;
+            caption-side: bottom;
         }
 
-       
+        th,
+        td {
+            border: 1px solid blue;
+        }
     </style>
 </head>
 
 <body>
     <h1>caption-side</h1>
-    <p>Html'in table elementinde bulunan başlık elementinin konum özelliklerini beklirler. </p>
+    <p>Html'in table elementinde bulunan başlık elementinin konum özelliklerini belirler. </p>
     <h2>değerler ;</h2>
     <ul>
         <li>top ; üstte(varsayılan)</li>
@@ -42,7 +46,7 @@
     <h3>Örnek-1 ;</h3>
     caption-side: top;
     <table class="ornek1">
-    <caption>DERS PROGRAMI</caption>
+        <caption>DERS PROGRAMI</caption>
         <tr>
             <th>Pazartesi</th>
             <th>Salı</th>
@@ -82,9 +86,9 @@
     </table>
 
     <h3>Örnek-2 ;</h3>
-      caption-side: bottom;
+    caption-side: bottom;
     <table class="ornek2">
-    <caption>DERS PROGRAMI</caption>
+        <caption>DERS PROGRAMI</caption>
         <tr>
             <th>Pazartesi</th>
             <th>Salı</th>

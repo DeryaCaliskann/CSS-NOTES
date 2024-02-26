@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+    body {
+    margin:50px;
+    }
         .ornek1 {
             height: 500px;
             border: 1px solid blue;
@@ -145,7 +148,7 @@
         <li>table-column ; Html elementi tablo içi sütun ortak özellikleri belirleme elementi (col) olarak kabul edilir.
         </li>
         <li>table-column-group ; Html elementi tablo içi sütun ortak özellikleri belirleme grubu elementi (colgroup)
-            olarak kabul edilirve görüntülenir.</li>
+            olarak kabul edilir ve görüntülenir.</li>
         <li>inline-table ; Html elementi satır düzeyli tablo olarak kabul edilir ve görüntülenir. </li>
         <li>flex ; Html elementi blok düzeyli esnek element olarak kabul edilir ve görüntülenir.</li>
         <li>inlane-flex ; Html elementi satır düzeyli esnek element olarak kabul edilir ve görüntülenir.</li>
@@ -156,27 +159,30 @@
     Not: Satır kapsamlı elementler sadece içerikleri kadar genişlik ve yükseklik kaplayabilirler.
 
     <h3>Örnek-1 ;</h3>
-    <div class="ornek1"> 1-display:inline; </div>
-    <div class="ornek1"> 2-display:inline; </div>
-    <div class="ornek1"> 3-display:inline; </div>
+    -display:inline; <br>
+    <div class="ornek1"> 1.element</div>
+    <div class="ornek1"> 2.element</div>
+    <div class="ornek1"> 3.element </div>
     <br>
     <br>
     <div> Not:div blok düzeyli bir elementken display:inline özelliği ile satır düzeyli bir element gibi
         görüntülenir.Genişlik ve yüksekli değeri alamaz.</div>
     <hr>
     <h3>Örnek-2 ;</h3>
-    <span class="ornek2"> 1-display:block; </span>
-    <span class="ornek2"> 2-display:block; </span>
-    <span class="ornek2"> 3-display:block; </span>
+    display:block; <br>
+    <span class="ornek2"> 1 </span>
+    <span class="ornek2"> 2</span>
+    <span class="ornek2"> 3</span>
     <br>
     <div>Not:span satır düzeyli bir elementken display:block özelliği ile blok düzeyli bir element gibi görüntülenir.
         Genişlik ve yüksekli değeri alabilir.</div>
     <hr>
 
     <h3>Örnek-3 ;</h3>
-    <span class="ornek3"> 1-display:inline-block;</span>
-    <span class="ornek3"> 2-display:inline-block;</span>
-    <span class="ornek3"> 3-display:inline-block; </span>
+    -display:inline-block; <br>
+    <span class="ornek3"> 1</span>
+    <span class="ornek3"> 2</span>
+    <span class="ornek3"> 3</span>
     <br>
     <br>
     <div>Not:inline-block özelliği ile satır içi bir elemente genişlik ve yükseklik verebliriz. Hem satır düzeyinin hem
@@ -184,27 +190,30 @@
     <hr>
 
     <h3>Örnek-4 ;</h3>
-    <span class="ornek4"> 1-display:none;</span>
-    <span id="iki" class="ornek4"> 2-display:none;</span>
-    <span class="ornek4"> 3-display:none;</span>
+    display:none; (2 için) <br>
+    <span class="ornek4"> 1.element</span>
+    <span id="iki" class="ornek4"> 2.element</span>
+    <span class="ornek4"> 3.element</span>
     <br>
     <br>
     <div>display:none özelliği ile elemente görünme diyoruz.</div>
     <hr>
 
     <h3>Örnek-5 ;</h3>
-    <span id="bir" class="ornek5"> 1-display:run-in;</span>
-    <span id="ik" class="ornek5"> 2-display:run-in;</span>
-    <span id="uc" class="ornek5"> 3-display:run-in;</span>
+    display:run-in;(2 için) <br>
+    <span id="bir" class="ornek5">1.element</span>
+    <span id="ik" class="ornek5">2.element</span>
+    <span id="uc" class="ornek5"> 3.element</span>
     <br>
     <div>Not: Elementin kendisi satır düzeyliyse satır, blok düzeyliyse blok düzeyli element olarak kabul edilir</div>
     <hr>
 
     <h3>Örnek-6 ;</h3>
+    display:list-item <br>
     <ul>
-        <span class="ornek6"> 1-display:list-item;</span>
-        <span class="ornek6"> 2-display:list-item;</span>
-        <span class="ornek6"> 3-display:list-item;</span>
+        <span class="ornek6"> 1.element</span>
+        <span class="ornek6"> 2.element</span>
+        <span class="ornek6"> 3.element</span>
     </ul>
     <div>Not: span yada herhangi bir elemeti liste itemi (li) gibi gösterir.</div>
     <hr>
@@ -267,37 +276,41 @@
     <div>Not: Aynı tablo Css'in Diplay table özellikleri ile de yapılabiliyormuş. Ben yapamadım neden bilmem :)</div>
     <hr>
     <h3>Örnek-8 ;</h3>
-    <span class="ornek8"> 1-display:flex; </span>
-    <span class="ornek8"> 2-display:flex; </span>
-    <span class="ornek8"> 3-display:flex; </span>
+    display:flex; <br>
+    <span class="ornek8"> 1</span>
+    <span class="ornek8"> 2</span>
+    <span class="ornek8"> 3</span>
     <br>
-    <div>Not:Ayrı bir derste ayrıntılı anlatıldı. Blok düzeyli esnek element demek</div>
+    <div>Not:Ayrı bir derste ayrıntılı anlatıldı. Blok düzeyli esnek element demek.</div>
     <hr>
 
     <h3>Örnek-9 ;</h3>
-    <div class="ornek9"> 1-display:inlane-flex; </div>
-    <div class="ornek9"> 2-display:inlane-flex; </div>
-    <div class="ornek9"> 3-display:inlane-flex; </div>
+    display:inlane-flex; <br> 
+    <div class="ornek9"> 1</div>
+    <div class="ornek9"> 2 </div>
+    <div class="ornek9"> 3</div>
     <br>
     <br>
-    <div>Not:Ayrı bir derste ayrıntılı anlatıldı. satır düzeyli esnek element demek</div>
+    <div>Not:Ayrı bir derste ayrıntılı anlatıldı. satır düzeyli esnek element demek.</div>
     <hr>
 
     <h3>Örnek-10 ;</h3>
-    <span class="ornek10"> 1-display:grid; </span>
-    <span class="ornek10"> 2-display:grid; </span>
-    <span class="ornek10"> 3-display:grid; </span>
+    display:grid; <br>
+    <span class="ornek10"> 1 </span>
+    <span class="ornek10"> 2 </span>
+    <span class="ornek10"> 3 </span>
     <br>
-    <div>Not:Ayrı bir derste ayrıntılı anlatıldı. Blok düzeyli ızgara element demek</div>
+    <div>Not:Ayrı bir derste ayrıntılı anlatıldı. Blok düzeyli ızgara element demek.</div>
     <hr>
 
     <h3>Örnek-11 ;</h3>
-    <div class="ornek11"> 1-display:inlane-grid; </div>
-    <div class="ornek11"> 2-display:inlane-grid; </div>
-    <div class="ornek11"> 3-display:inlane-grid; </div>
+    display:inlane-grid; <br>
+    <div class="ornek11"> 1 </div>
+    <div class="ornek11"> 2 </div>
+    <div class="ornek11"> 3</div>
     <br>
     <br>
-    <div>Not:Ayrı bir derste ayrıntılı anlatıldı. satır düzeyli ızgara element demek</div>
+    <div>Not:Ayrı bir derste ayrıntılı anlatıldı. satır düzeyli ızgara element demek.</div>
     <hr>
 
     <h3>Örnek-12 ;</h3>

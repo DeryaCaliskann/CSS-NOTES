@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .ornek1 {
+            width: 105px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: infinite;
+            animation-name: ornek1;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-timing-function: ease;
+        }
+
+        @keyframes ornek1 {
+            from {
+                width: 105px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        /* ================================================== */
+
+        .ornek2 {
+            width: 105px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: infinite;
+            animation-name: ornek2;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-timing-function: linear;
+        }
+
+        @keyframes ornek2 {
+            from {
+                width: 105px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        /* ================================================== */
+
+        .ornek3 {
+            width: 105px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: infinite;
+            animation-name: ornek3;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes ornek3 {
+            from {
+                width: 105px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        /* ================================================== */
+
+        .ornek4 {
+            width: 105px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: infinite;
+            animation-name: ornek4;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes ornek4 {
+            from {
+                width: 105px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        /* ================================================== */
+
+        .ornek5 {
+            width: 105px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: infinite;
+            animation-name: ornek5;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes ornek5 {
+            from {
+                width: 105px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        /* ================================================== */
+        .ornek6 {
+            width: 105px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation-name: ornek6;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: step-start;
+
+        }
+
+        @keyframes ornek6 {
+            from {
+                width: 105px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        /* ================================================== */
+        .ornek7 {
+            width: 105px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation-name: ornek7;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: step-end;
+        }
+
+        @keyframes ornek7 {
+            from {
+                width: 105px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        /* ================================================== */
+        .ornek8 {
+            width: 105px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: infinite;
+            animation-name: ornek8;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-timing-function: steps(4, start);
+        }
+
+        @keyframes ornek8 {
+            from {
+                width: 105px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        /* ================================================== */
+        .ornek9 {
+            width: 105px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: infinite;
+            animation-name: ornek9;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-timing-function: steps(4, end);
+        }
+
+        @keyframes ornek9 {
+            from {
+                width: 105px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        /* ================================================== */
+        .ornek10 {
+            width: 105px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: infinite;
+            animation-name: ornek10;
+            animation-duration: 5s;
+            animation-delay: 0s;
+            animation-timing-function: cubic-bezier(1, 0, 0, 1);
+        }
+
+        @keyframes ornek10 {
+            from {
+                width: 105px;
+            }
+
+            to {
+                width: 500px;
+            }
+        }
+
+        /* ================================================== */
+
+        div.anaeleman {
+            width: 1000px;
+            border: 1px solid black;
+        }
+
+        div.iceleman {
+            width: 100px;
+            height: 25px;
+            margin: 5px;
+            line-height: 25px;
+            text-align: center;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+        div.islem1 {
+            background-color: red;
+            animation-name: islem1;
+            animation-timing-function: ease;
+        }
+
+        @keyframes islem1 {
+            form {
+                width: 100px;
+            }
+
+            to {
+                width: 996px;
+            }
+        }
+
+        /* =========================================== */
+
+        div .islem2 {
+            background-color: blue;
+            animation-name: islem2;
+            animation-timing-function: linear;
+        }
+
+        @keyframes islem2 {
+            form {
+                width: 100px;
+            }
+
+            to {
+                width: 996px;
+            }
+        }
+
+        /* =========================================== */
+
+        div .islem3 {
+            background-color: green;
+            animation-name: islem3;
+            animation-timing-function: ease-in;
+        }
+
+        @keyframes islem3 {
+            form {
+                width: 100px;
+            }
+
+            to {
+                width: 996px;
+            }
+        }
+
+        /* =========================================== */
+
+        div .islem4 {
+            background-color: yellow;
+            animation-name: islem4;
+            animation-timing-function: ease-out;
+        }
+
+        @keyframes islem4 {
+            form {
+                width: 100px;
+            }
+
+            to {
+                width: 996px;
+            }
+        }
+
+        /* =========================================== */
+
+        div .islem5 {
+            background-color: purple;
+            animation-name: islem5;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes islem5 {
+            form {
+                width: 100px;
+            }
+
+            to {
+                width: 996px;
+            }
+        }
+
+        /* =========================================== */
+
+        div .islem6 {
+            background-color: orange;
+            animation-name: islem6;
+            animation-timing-function: step-start;
+        }
+
+        @keyframes islem6 {
+            form {
+                width: 100px;
+            }
+
+            to {
+                width: 996px;
+            }
+        }
+
+
+        /* =========================================== */
+
+        div .islem7 {
+            background-color: brown;
+            animation-name: islem7;
+            animation-timing-function: step-end;
+        }
+
+        @keyframes islem7 {
+            form {
+                width: 100px;
+            }
+
+            to {
+                width: 996px;
+            }
+        }
+
+        /* =========================================== */
+
+        div .islem8 {
+            background-color: fuchsia;
+             animation-name: islem8;
+            animation-timing-function: steps(5,end);
+        }
+
+         @keyframes islem8 {
+            form {
+                width: 100px;
+            }
+
+            to {
+                width: 996px;
+            }
+        }
+
+        /* =========================================== */
+
+        div .islem9 {
+            background-color: palevioletred;
+             animation-name: islem9;
+            animation-timing-function: steps(5,start);
+        }
+          @keyframes islem9 {
+            form {
+                width: 100px;
+            }
+
+            to {
+                width: 996px;
+            }
+        }
+
+        /* =========================================== */
+
+        div .islem10 {
+            background-color: skyblue;
+              animation-name: islem10;
+            animation-timing-function: cubic-bezier(0.72,1.83,0.22,-1.42);
+        }
+          @keyframes islem10 {
+            form {
+                width: 100px;
+            }
+
+            to {
+                width: 996px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>animation-timing-function özelliği</h1>
+    <p> Html elementine tanımlanmış olan animasyon döngüsünün hız eğrisi özelliklerini belirler . Prefix tanımlanır.
+    </p>
+    <h2>değerler;</h2>
+    <ul>
+        <li>ease ; yavaş olarak başlayarak hızlanır. Sona doğru yavaşlar. (Varsayılan değer)</li>
+        <li>linear ; başlangıçta sona kadar aynı hız.</li>
+        <li>ease-in ; yavaş olarak başlayarak sona doğru hızlanır.</li>
+        <li>ease-out ;hızlı olarak başlayarak sona doğru yavaşlar.</li>
+        <li>ease-in-out ; yavaş olarak başlayarak ortalarda hızlanır sona doğru tekrar yavaşlar.</li>
+        <li>step-start ; animasyon süresine bakılmaksızın doğrudan sona ulaşır</li>
+        <li>step-end ; animasyon süresine bakılarak, geçiş süresi kadar bekleyerek doğrudan sona ulaşur.</li>
+        <li>steps() ; başlangıç ve bitiş arasında adımlamalı animasyon işlemi yapar.(1.parametreadım sayısı 2. parametre
+            end/start)</li>
+        <li>cubic-bezier; bezier eğrisi (hhtp://cubic-bezier.com)</li>
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+
+    <h3>örnek-1 ;</h3>
+    animation-timing-function: ease;
+    <div class="ornek1">Merhaba Dünya </div>
+
+    <h3>örnek-2 ;</h3>
+    animation-timing-function: linear;
+    <div class="ornek2">Merhaba Dünya </div>
+
+    <h3>örnek-3 ;</h3>
+    animation-timing-function: ease-in;
+    <div class="ornek3">Merhaba Dünya </div>
+
+    <h3>örnek-4 ;</h3>
+    animation-timing-function: ease-out;
+    <div class="ornek4">Merhaba Dünya </div>
+
+    <h3>örnek-5 ;</h3>
+    animation-timing-function: ease-in-out;
+    <div class="ornek5">Merhaba Dünya </div>
+
+    <h3>örnek-6;</h3>
+    animation-timing-function:step-start;
+    <div class="ornek6">Merhaba Dünya </div>
+
+    <h3>örnek-7 ;</h3>
+    animation-timing-function: step-end;
+    <div class="ornek7">Merhaba Dünya </div>
+
+    <h3>örnek-8 ;</h3>
+    animation-timing-function:steps(4,end) ;
+    <div class="ornek8">Merhaba Dünya </div>
+
+    <h3>örnek-9 ;</h3>
+    animation-timing-function: steps(4,start);
+    <div class="ornek9">Merhaba Dünya </div>
+
+    <h3>örnek-10 ;</h3>
+    animation-timing-function: cubic-bezier(1, 0, 0, 1);
+    <div class="ornek10">Merhaba Dünya </div>
+
+    <h3>örnek-11</h3>
+
+    <div class="anaeleman">
+        <div class=" iceleman islem1">linear</div>
+        <div class=" iceleman islem2">ease</div>
+        <div class=" iceleman islem3">ease-in</div>
+        <div class=" iceleman islem4">ease-out</div>
+        <div class=" iceleman islem5">ease-in-out</div>
+        <div class=" iceleman islem6">step-start</div>
+        <div class=" iceleman islem7">step-end</div>
+        <div class=" iceleman islem8">steps(4,end)</div>
+        <div class=" iceleman islem9">steps(4,start)</div>
+        <div class=" iceleman islem10"> cubic-bezier</div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

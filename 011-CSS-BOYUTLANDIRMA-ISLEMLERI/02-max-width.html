@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            margin: 50px;
+        }
+
         /* NONE  */
         div.ornek1 {
             background-color: yellow;
@@ -24,7 +28,8 @@
             background-color: red;
             width: 750px;
         }
-        p.ornek3{
+
+        p.ornek3 {
             background-color: yellow;
             max-width: 500px;
         }
@@ -34,7 +39,8 @@
             background-color: red;
             width: 500px;
         }
-        p.ornek4{
+
+        p.ornek4 {
             background-color: yellow;
             max-width: 750px;
         }
@@ -45,7 +51,8 @@
             background-color: red;
             width: 75%;
         }
-        p.ornek5{
+
+        p.ornek5 {
             background-color: yellow;
             max-width: 50%;
         }
@@ -55,7 +62,8 @@
             background-color: red;
             width: 50%;
         }
-        p.ornek6{
+
+        p.ornek6 {
             background-color: yellow;
             max-width: 75%;
         }
@@ -65,6 +73,7 @@
             background-color: red;
             max-width: 750px;
         }
+
         div.ornek7 {
             max-width: initial;
         }
@@ -74,6 +83,7 @@
             background-color: red;
             max-width: 75%;
         }
+
         p.ornek8 {
             background-color: yellow;
             max-width: inherit;
@@ -92,22 +102,24 @@
     <p>Html elementinin maksimum genişliğini belirler.</p>
     <h2>değerler ;</h2>
     <ol>
-        <li><span>none; </span>Değer yok. Üst elemanının kapladığı alan kadar yer kaplar. Maksimum genişlik değeri verilmemiş anlamına gelir.Kapsayabileceği maksimum genişliği kapsar.</li>
-        <li><span>length;</span>Uzunluk değeri. Sayfa küçülünce küçülür. Maksimum verilen uzunluk değerine kadar göster demek. </li>
+        <li><span>none; </span>Değer yok. Üst elemanının kapladığı alan kadar yer kaplar. Maksimum genişlik değeri
+            verilmemiş anlamına gelir.Kapsayabileceği maksimum genişliği kapsar.</li>
+        <li><span>length;</span>Uzunluk değeri. Sayfa küçülünce küçülür. Maksimum verilen uzunluk değerine kadar göster
+            demek. </li>
         <li><span>% ;</span> Yüzde değeridir.</li>
         <li><span>İnitial(varsayılan);</span> Html elementi varsayılan biçimlendirme değerine döner.</li>
         <li><span>İnherit(miras);</span> Html elementi üst elementinin biçimlendirme değerini alır.</li>
     </ol>
     <h3>Örnek-1 ;</h3>
-    <div class="ornek1">div: max-width;none</div>    
+    <div class="ornek1">div: max-width;none</div>
 
     <h3>Örnek-2 ;</h3>
-    <div class="ornek2">div: max-width;750px</div>    
+    <div class="ornek2">div: max-width;750px</div>
 
     <h3>Örnek-3</h3>
     <div class="ornek3">
         <p class="ornek3">div: width;750px (kırmızı) > p: max-width;500px (sarı)</p>
-    </div>    
+    </div>
 
     <h3>Örnek-4</h3>
     <div class="ornek4">
@@ -125,13 +137,13 @@
     </div>
 
     <h3>Örnek-7 ;</h3>
-    <div class="ornek7">div: max-width;initial(varsayılan)</div>    
+    <div class="ornek7">div: max-width;initial(varsayılan)</div>
 
     <h3>Örnek-8</h3>
     <div class="ornek8">
         <p class="ornek8">div: max-width;75% (kırmızı) > p: max-width;inherit(miras) (sarı)</p>
     </div>
-    
+
 </body>
 
 </html>

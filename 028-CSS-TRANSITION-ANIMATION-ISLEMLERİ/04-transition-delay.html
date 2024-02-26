@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .ornek1 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 3s;
+            transition-delay: 2s;
+        }
+
+        .ornek1:hover {
+            width: 400px;
+        }
+
+        /* ============================================================ */
+        .ornek2 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: width, color;
+            transition-duration: 2s, 2s;
+            transition-delay: 2s, 4s;
+        }
+
+        .ornek2:hover {
+            width: 400px;
+            color: red;
+        }
+
+        /* ============================================================ */
+
+        .ornek3 {
+            width: 105px;
+            height: 105px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            line-height: 105px;
+            text-align: center;
+            transition-property: all;
+            transition-duration: 8s;
+            transition-delay: 1s, 3s, 5s, 7s;
+        }
+
+        .ornek3:hover {
+            width: 500px;
+            border: 3px double red;
+            background-color: coral;
+            color: yellowgreen;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>transition-delay özelliği</h1>
+    <p> Html elementinine tanımlanmış olan geçiş özelliğinin kaç saniye yada kaç milisaniye sonra başlayacağını
+        belirler. Prefix tanımlanır.</p>
+
+
+    <h2>değerler ; </h2>
+    <ul>
+        <li>time ; zaman (saniye: s, milisamiye: ms).</li>
+        <li>initial ; Html elementi varsayılan biçimlendirme değerine döner.</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    transition-delay: 2s;
+    <div class="ornek1">Merhaba Dünya</div>
+
+    <h3>Örnek-2 ;</h3>
+    transition-delay: 2s,4s;
+    <div class="ornek2">Merhaba Dünya</div>
+
+    <h3>Örnek-3 ;</h3>
+    transition-delay: 1s, 3s, 5s, 7s;
+    <div class="ornek3">Merhaba Dünya</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

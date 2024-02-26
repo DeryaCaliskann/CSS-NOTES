@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            margin: 50px;
+        }
+
         div.ornek1 {
             width: 400px;
             height: 200px;
             border: 30px solid transparent;
             border-image-source: url(../img/desen1.jpg);
-        }       
-    
+        }
+
 
         div.ornek2 {
             width: 400px;
@@ -53,7 +57,7 @@
 </head>
 
 <body>
-    <h1>border-imsge-source</h1>
+    <h1>border-image-source</h1>
     <p>Html elementinin kenarlık resmini belirler. Prefix olmadan kullanabiliriz.</p>
     <h2>değerler ;</h2>
     <ul>
@@ -65,13 +69,13 @@
 
     <h3>Örnek-1 :</h3>
     <div class="ornek1"> border-image-source: url(../img/desen1.jpg);</div>
-    
+
     <h3>Örnek-2 :</h3>
     <div class="ornek2"> border-image-source:none; </div>
-    
+
     <h3>Örnek-3 :</h3>
     <div class="ornek3"> border-image-source: initial; </div>
-    
+
     <h3>Örnek-4 :</h3>
     <div class="ornek4"> border-image-source: url(../img/desen1.jpg);
         <p class="ornek4"> border-image-source: inherit;</p>

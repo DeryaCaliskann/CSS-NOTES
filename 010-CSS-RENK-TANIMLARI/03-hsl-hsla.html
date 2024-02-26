@@ -7,6 +7,10 @@
     <title>Document</title>
 
     <style>
+        body {
+            margin: 50px;
+        }
+
         h1 {
             color: hsl(0, 100%, 50%)
         }
@@ -19,18 +23,23 @@
         adını almış olan bir renk uzayıdır. Doğada ki tüm renkleri tanımlayabilir.</p>
     <p>Renk tanımlaması bu üç referans ile belirtilir. Aslında hsl bir renk kontrol ve düzeltme metodu olarak bilinir.
         En önemli kullanım alanı bir resim üzerinde detay kaybetmeden renk değişiklikleri yapama olanağı verir.</p>
-    <p>HUE (Renk özü) ; rengin baskın olan dalga uzunluğunu belirleyerek işlem yapar. Hue açısal derece değeri alır ve
-        bu değer 0 derece ile 360 derece arasındaki kombinasyon değeridir. Derece değiştikçe farklı renkler elde edilir.
+    <p> rengin baskın olan dalga uzunluğunu belirleyerek işlem yapar.
+    <h2>hue (renk özü) ;</h2>
+    Hue açısal derece değeri alır ve bu değer 0 derece ile 360 derece arasındaki kombinasyon değeridir. Derece
+    değiştikçe farklı renkler elde edilir.
     </p>
-    <p>SATURATION (doygunluk) ; rengin canlılığını belirler. Yüzdesel değer alır ve bu değer %0 ile %100 arasındaki
+    <h2>saturation (doygunluk) ;</h2>
+    <p> Rengin canlılığını belirler. Yüzdesel değer alır ve bu değer %0 ile %100 arasındaki
         kombinasyon değeridir. Yüzde değeri düştükçe renk tonu değeri grileşir. Değer yükseldikçe canlı reklere neden
         olur.</p>
-    <p>LIGHTNESS (açıklık) ; rengin aydınlığını belirleyerek işlem yapar. Diğer bir değişle rengin içerisindeki beyaz
+
+    <h2>lightness (açıklık) ;</h2>
+    <p> Rengin aydınlığını belirleyerek işlem yapar. Diğer bir değişle rengin içerisindeki beyaz
         oranını belirler. Yüzdesel değer alır. Bu değer %0 ile %100 arasındaki kombinasyon değeridir.Yüzde değeri
         düştükçe renk tonu değeri koyulaşır. Değer yükseldikçe renk tonu değeri açıklaşır. </p>
     <p>Bu renkler Css kodları içerisinde yazılarak kullanılabilir.</p>
     <p>hsl (0,%0,%0) siyah ,hsl (360,100%,100%) beyaz ,hsl (0,100%,50%) kırmızı vs</p>
-    <p>Bir de hsl renk tanımlama işleminde alpha (alfa) kanalı mevcuttur. Alpha şeffalık/saydamlık ölçüsü
+    <p>* Bir de hsl renk tanımlama işleminde alpha (alfa) kanalı mevcuttur. Alpha şeffalık/saydamlık ölçüsü
         özelliği taşır. Hsla olarak kullanılır. Ölçü değer 0.0 ile 1.0 arasında yazılır.</p>
     <p>hsla (0,0%,0%,0.5) siyah ve %50 saydam </p>
     <p>hsla (360,100%,100%,0.7) beyaz ve %30 saydam</p>
@@ -42,7 +51,6 @@
         color:hsl(0, 100%, 50%) <br>
         } <br>
     </p>
-
 
 
 </body>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+
+
+        .ornek1 {
+            position: relative;
+            width: 200px;
+            height: 250px;
+            border: 1px solid blue;
+            background-color: skyblue;
+        }
+
+        .iceleman1 {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: darkblue;
+            border-radius: 50%;
+            left: calc(50% - 12.5px);
+            animation: top1 5s linear 0s 1 normal forwards running;
+        }
+
+        @keyframes top1 {
+
+            25% {
+                transform: translateY(225px);
+            }
+
+            35% {
+                transform: translateY(150px);
+            }
+
+            50% {
+                transform: translateY(225px);
+            }
+
+            60% {
+                transform: translateY(187.5px);
+            }
+
+            70% {
+                transform: translateY(225px);
+            }
+
+            75% {
+                transform: translateY(212.5px);
+            }
+
+            85% {
+                transform: translateY(225px);
+            }
+
+            90% {
+                transform: translateY(220px);
+            }
+
+            95% {
+                transform: translateY(225px);
+            }
+
+            100% {
+                transform: translateY(225px);
+            }
+        }
+
+        /* ================================================== */
+
+        .ornek2 {
+            position: relative;
+            width: 200px;
+            height: 250px;
+            border: 1px solid blue;
+            background-color: skyblue;
+        }
+
+        .iceleman2 {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: darkblue;
+            border-radius: 50%;
+            left: calc(50% - 12.5px);
+            animation: top2 1s ease 0s infinite normal none running;
+        }
+
+        @keyframes top2 {
+            from {
+                transform: translateY(0px);
+            }
+
+            to {
+                transform: translateY(225px);
+            }
+        }
+
+        /* ================================================== */
+
+        .ornek3 {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border: 1px solid blue;
+            background-color: skyblue;
+            animation: ornek3 10s ease 0s infinite alternate none running;
+
+        }
+
+        @keyframes ornek3 {
+            25% {
+                transform: rotate(90deg);
+            }
+
+            50% {
+                transform: skewX(45deg);
+                background-color: black;
+            }
+
+            75% {
+                transform: scale(0.5);
+                background-color: black;
+            }
+
+            100% {
+                transform: skewX(0deg);
+                background-color: darkblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>@keyframes özelliği</h1>
+    <p> Html elementine tanımlanmış olan animasyonun, animasyon sırasındaki ara aşamalarını belirler. Prefix tanımlanır.
+    </p>
+    <h2>değerler;</h2>
+    <ul>
+        <li>from ; başlangıç</li>
+        <li>to ; bitiş</li>
+        <li>% ; yüzde değeri</li>
+    </ul>
+
+    <h3>Örnek-1 ;</h3>
+    <div class="ornek1">
+        <div class="iceleman1"></div>
+    </div>
+    <br>
+
+    <h3>Örnek-2 ;</h3>
+    <div class="ornek2">
+        <div class="iceleman2"></div>
+    </div>
+    <br>
+
+    <h3>Örnek-3 ;</h3>
+    <div class="ornek3"> </div>
+    <br>
+
+
+
+</body>
+
+</html>
