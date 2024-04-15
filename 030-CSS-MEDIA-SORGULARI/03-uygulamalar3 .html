@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen and (min-width:1200px) {
+            div {
+                font-size: 30px;
+                color: blue
+            }
+        }
+
+        @media only screen and (min-width:992px) and (max-width:1199px) {
+            div {
+                font-size: 25px;
+                color: red
+            }
+        }
+
+        @media only screen and (min-width:768px) and (max-width:992px) {
+            div {
+                font-size: 20px;
+                color: yellow
+            }
+        }
+
+        @media only screen and (min-width:576px) and (max-width:767px) {
+            div {
+                font-size: 15px;
+                color: green
+            }
+        }
+
+        @media only screen and (max-width:575px) {
+            div {
+                font-size: 10px;
+                color: purple
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div><h1>@media sorguları için yaygın ekran ölçüleri ;</h1></div>
+    <div>
+        <h2>x-large cihazlar için ;</h2>
+        @media only screen and (min-width:1200px) { <br>
+        div{ <br>
+        font-size: 30px; <br>
+        color:blue; <br>
+        } <br>
+        } <br>
+    </div>
+    <br>
+
+    <div>
+        <h2> large cihazlar için ;</h2>
+        @media only screen and (min-width:992px) and (max-width:1199px) { <br>
+        div{ <br>
+        color:red; <br>
+        font-size: 25px; <br>
+        } <br>
+        } <br>
+    </div>
+    <br>
+
+    <div>
+        <h2>medium cihazlar için ;</h2>
+        @media only screen and (min-width:768px) and (max-width:991px) { <br>
+        div{ <br>
+        font-size: 20px; <br>
+        color:yellow; <br>
+        } <br>
+        } <br>
+    </div>
+    <br>
+
+
+    <div>
+        <h2>small cihazlar için ;</h2>
+        @media only screen and (min-width:576px) and (max-width:767px) { <br>
+        div{ <br>
+        font-size: 15px; <br>
+        color:green; <br>
+        } <br>
+        } <br>
+    </div>
+    <br>
+
+    <div>
+        <h2>x-small cihazlar için ;</h2>
+        @media only screen and (max-width:575px) { <br>
+        div{ <br>
+        font-size: 10px; <br>
+        color:purple; <br>
+        } <br>
+        } <br>
+    </div>
+    <br>
+
+</body>
+
+</html>

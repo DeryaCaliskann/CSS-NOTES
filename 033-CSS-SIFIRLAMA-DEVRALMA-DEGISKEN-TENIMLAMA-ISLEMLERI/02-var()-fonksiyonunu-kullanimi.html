@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        :root {
+            --kirmiziRenk: red;
+            --maviBorder: 2px solid blue;
+            --kalinYazi: bold;
+            --sariArkaplan: yellow;
+            --genislik: 600px;
+            --yukseklik: 100px;
+            --yaziOrtalama: center;
+        }
+
+        div {
+            width: var(--genislik);
+            height: var(--yukseklik);
+            border: var(--maviBorder);
+            color: var(--kirmiziRenk);
+            text-align: var(--yaziOrtalama);
+            font-weight: var(--kalinYazi);
+            background-color: var(--sariArkaplan);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>var() fonksiyonunun kullanımı ;</h1>
+    <p>Önceden tanımlanmış olan ve tüm css kodları içerisinde kullanılmak üzere belirli değerler içeren verilerin
+        tutulduğu değişkenlerin çağırılma durumunu belirler.Bu bize sitelerimizi yaparken büyük kolaylık sağlar.
+        Değişkenler ya belgenin kök dizinine tanımlanır (yani :root sahte sınıfına) ya da elementlerin içerisinde olduğu
+        üst elemente
+        tanımlanmalıdır. Aksi takdirde çalışmaz. Kök dizine tanımlamak daha mantıklıdır. Böyle bütün belge içerisinde
+        kullanabiliriz. Değişken isimlerini anlamlı oluşturmak, kullanmak karışıklığa mahal vermemek açısından
+        önemlidir.</p>
+
+    <h3>örnek-1 ;</h3>
+    <pre>
+     :root {
+        --kirmiziRenk:red;
+        --maviBorder:2px solid blue;
+        --kalinYazi:bold;
+        --sariArkaplan:yellow;
+        --genislik:600px;
+        --yukseklik:100px;
+        --yaziOrtalama:center;       
+        }
+
+     div {
+        width: var(--genislik);
+        height: var(--yukseklik);
+        border: var(--maviBorder);
+        color: var(--kirmiziRenk);
+        text-align: var(--yaziOrtalama);
+        font-weight: var(--kalinYazi);
+        background-color: var(--sariArkaplan);
+        }    
+    </pre>
+
+    <div>Merhaba Dünya</div>
+
+</body>
+
+</html>

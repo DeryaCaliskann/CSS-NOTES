@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        span {
+            border: 1px solid black;
+            padding: 15px;
+            margin: 5px;
+            background: yellow;
+
+        }
+
+        .ornek1 {
+            cursor: auto;
+        }
+
+        .ornek2 {
+            cursor: default;
+        }
+
+        .ornek3 {
+            cursor: none;
+        }
+
+        .ornek4 {
+            cursor: pointer;
+        }
+
+        .ornek5 {
+            cursor: text;
+        }
+
+        .ornek6 {
+            cursor: vertical-text;
+        }
+
+        .ornek7 {
+            cursor: crosshair;
+        }
+
+        .ornek8 {
+            cursor: cell;
+        }
+
+        .ornek9 {
+            cursor: help;
+        }
+
+        .ornek10 {
+            cursor: alias;
+        }
+
+        .ornek11 {
+            cursor: copy;
+        }
+
+        .ornek12 {
+            cursor: progress;
+        }
+
+        .ornek13 {
+            cursor: wait;
+        }
+
+        .ornek14 {
+            cursor: zoom-in;
+        }
+
+        .ornek15 {
+            cursor: zoom-out;
+        }
+
+        .ornek16 {
+            cursor: -webkit-grab;
+            cursor: -moz-grab;
+            cursor: -o-grab;
+            cursor: -ms-grab;
+            cursor: grab;
+        }
+
+        .ornek17 {
+            cursor: -webkit-grabbing;
+            cursor: -moz-grabbing;
+            cursor: -moz-grabbing;
+            cursor: -ms-grabbing;
+            cursor: grabbing;
+        }
+
+        .ornek18 {
+            cursor: move;
+        }
+
+        .ornek19 {
+            cursor: no-drop;
+        }
+
+        .ornek20 {
+            cursor: not-allowed;
+        }
+
+        .ornek21 {
+            cursor: all-scroll;
+        }
+
+        .ornek22 {
+            cursor: row-resize;
+        }
+
+        .ornek23 {
+            cursor: col-resize;
+        }
+
+        .ornek24 {
+            cursor: nwse-resize;
+        }
+
+        .ornek25 {
+            cursor: se-resize;
+        }
+
+        .ornek26 {
+            cursor: nw-resize;
+        }
+
+        .ornek27 {
+            cursor: nesw-resize;
+        }
+
+        .ornek28 {
+            cursor: sw-resize;
+        }
+
+        .ornek29 {
+            cursor: ne-resize;
+        }
+
+        .ornek30 {
+            cursor: ns-resize;
+        }
+
+        .ornek31 {
+            cursor: s-resize;
+        }
+
+        .ornek32 {
+            cursor: n-resize;
+        }
+
+        .ornek33 {
+            cursor: e-resize;
+        }
+
+        .ornek34 {
+            cursor: w-resize;
+        }
+
+        .ornek35 {
+            cursor: ew-resize;
+        }
+
+        .ornek36 {
+            cursor: url(mouse1.cur), auto;
+        }
+
+        .ornek37 {
+            cursor: url(mouse2.cur), auto;
+        }
+
+        .ornek38 {
+            cursor: url(mouse3.cur), auto;
+        }
+
+        .ornek39 {
+            cursor: url(mouse4.cur), auto;
+        }
+
+        .ornek40 {
+            cursor: url(mouse5.cur), auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>cursor özelliği;</h1>
+    <p>Mause (fare) işaretçisini stilini belirler. </p>
+    <p>Not: Bazı komutlar aynı işaretleri verir. Bunun nedeni işletim sistemlerine göre değişiklik göstermelerinden
+        dolayıdır.</p>
+
+    <h2>değerler ;</h2>
+    <ol>
+        <li>auto ; otomatik</li>
+        <li>default ; mause imleci ok şeklinde görünür.</li>
+        <li>none ; değer yok. imleç görünmez.</li>
+        <li>pointer ; el görüntüsü.</li>
+        <li>text ; imleç görüntüsü.</li>
+        <li>vertical-text ; yatık imleç.</li>
+        <li>crosshair ; artı şekli.</li>
+        <li>cell ; dolgulu artı.</li>
+        <li>help ; soru işareti.</li>
+        <li>alias ;küçük ok görüntüsü ekler.</li>
+        <li>copy ;küçük artı değer ekler.</li>
+        <li>progress ; dönen daire (yükleniyor)</li>
+        <li>wait ; dönen daire oksuz.</li>
+        <li>zoom-in ;büyüteç, yaklaş (+)</li>
+        <li>zoom-out ; büyüteç, uzaklaş (-)</li>
+        <li>grab ;açık el şekli sürükle bırak (prefix tanımlanır)</li>
+        <li>grabbing ; el kapalı</li>
+        <li>move ; sürükleme işareti</li>
+        <li>no-drop ; dur işareti</li>
+        <li>not-allowed ; dur işareti</li>
+        <li>all-scroll ; sürükleme işareti</li>
+        <li>row-resize ; satır boyutlandırma imleci</li>
+        <li>col-resize ; sütun boyutlandırma imleci</li>
+        <li>nwse-resize ; sol üstten sağ alta doğru çift taraflı ok</li>
+        <li>se-resize ; sol üstten sağ alta doğru çift taraflı ok ok</li>
+        <li>nw-resize ; sol üstten sağ alta doğru çift taraflı ok</li>
+        <li>nesw-resize ; sağ üstten sol alta doğru çift taraflı ok</li>
+        <li>sw-resize ; sağ üstten sol alta doğru çift taraflı ok</li>
+        <li>ne-resize ; sağ üstten sol alta doğru çift taraflı ok</li>
+        <li>ns-resize ; dik çift taraflı ok</li>
+        <li>n-resize ; dik çift taraflı ok</li>
+        <li>es-resize ; dik çift taraflı ok</li>
+        <li>ew-resize ; yatık çift taraflı ok</li>
+        <li>e-resize ; yatık çift taraflı ok</li>
+        <li>e-resize ; yatık çift taraflı ok</li>
+        <li>w-resize ; yatık çift taraflı ok</li>
+        <li>url ; "cur"uzantılı resim koyar.</li>
+        <li>initial ; varsayılan değere döner.</li>
+        <li>inherit ;üst elementini miras alır.</li>
+    </ol>
+
+    <h3>örnek-1 ;</h3>
+    <span class="ornek1"> cursor:auto;</span>
+
+    <h3>örnek-2 ;</h3>
+    <span class="ornek2"> cursor:default;</span>
+
+    <h3>örnek-3 ;</h3>
+    <span class="ornek3"> cursor:none;</span>
+
+    <h3>örnek-4 ;</h3>
+    <span class="ornek4"> cursor:pointer;</span>
+
+    <h3>örnek-5 ;</h3>
+    <span class="ornek5"> cursor:text;</span>
+
+    <h3>örnek-6 ;</h3>
+    <span class="ornek6"> cursor:vertical-text;</span>
+
+    <h3>örnek-7 ;</h3>
+    <span class="ornek7"> cursor: crosshair;</span>
+
+    <h3>örnek-8 ;</h3>
+    <span class="ornek8"> cursor: cell;</span>
+
+    <h3>örnek-9 ;</h3>
+    <span class="ornek9"> cursor:help;</span>
+
+    <h3>örnek-10 ;</h3>
+    <span class="ornek10"> cursor: alias;</span>
+
+    <h3>örnek-11 ;</h3>
+    <span class="ornek11"> cursor: copy;</span>
+
+    <h3>örnek-12 ;</h3>
+    <span class="ornek12"> cursor: progress;</span>
+
+    <h3>örnek-13 ;</h3>
+    <span class="ornek13"> cursor: wait;</span>
+
+    <h3>örnek-14 ;</h3>
+    <span class="ornek14"> cursor: zoom-in;</span>
+
+    <h3>örnek-15 ;</h3>
+    <span class="ornek15"> cursor: zoom-out;</span>
+
+    <h3>örnek-16 ;</h3>
+    <span class="ornek16"> cursor: grab;</span>
+
+    <h3>örnek-17 ;</h3>
+    <span class="ornek17"> cursor:grabbing;</span>
+
+    <h3>örnek-18 ;</h3>
+    <span class="ornek18"> cursor: move;</span>
+
+    <h3>örnek-19 ;</h3>
+    <span class="ornek19"> cursor: no-drop;</span>
+
+    <h3>örnek-20 ;</h3>
+    <span class="ornek20"> cursor: not-allowed;</span>
+
+    <h3>örnek-21 ;</h3>
+    <span class="ornek21"> cursor: all-scroll;</span>
+
+    <h3>örnek-22 ;</h3>
+    <span class="ornek22"> cursor: row-resize;</span>
+
+    <h3>örnek-23 ;</h3>
+    <span class="ornek23"> cursor: col-resize;</span>
+
+    <h3>örnek-24 ;</h3>
+    <span class="ornek24"> cursor: nwse-resize;</span>
+
+    <h3>örnek-25 ;</h3>
+    <span class="ornek25"> cursor: se-resize;</span>
+
+    <h3>örnek-26 ;</h3>
+    <span class="ornek26"> cursor: nw-resize;</span>
+
+    <h3>örnek-27 ;</h3>
+    <span class="ornek27"> cursor: nesw-resize;</span>
+
+    <h3>örnek-28;</h3>
+    <span class="ornek28">cursor: sw-resize;</span>
+
+    <h3>örnek-29 ;</h3>
+    <span class="ornek29"> cursor: ne-resize;</span>
+
+    <h3>örnek-30 ;</h3>
+    <span class="ornek30"> cursor:ns-resize;</span>
+
+    <h3>örnek-31 ;</h3>
+    <span class="ornek31"> cursor:n-resize;</span>
+
+    <h3>örnek-32 ;</h3>
+    <span class="ornek32"> cursor:es-resize;</span>
+
+    <h3>örnek-33 ;</h3>
+    <span class="ornek33"> cursor:ew-resize;</span>
+
+    <h3>örnek-34 ;</h3>
+    <span class="ornek34"> cursor:e-resize;</span>
+
+    <h3>örnek-35 ;</h3>
+    <span class="ornek35"> cursor:w-resize;</span>
+
+    <h3>örnek-36 ;</h3>
+    <span class="ornek36"> cursor:url(mouse1.cur),auto;</span>
+
+    <h3>örnek-37 ;</h3>
+    <span class="ornek37"> cursor:url(mouse2.cur),auto;</span>
+
+    <h3>örnek-38 ;</h3>
+    <span class="ornek38"> cursor:url(mouse3.cur),auto;</span>
+
+    <h3>örnek-39 ;</h3>
+    <span class="ornek39"> cursor:url(mouse4.cur),auto;</span>
+
+    <h3>örnek-40 ;</h3>
+    <span class="ornek40"> cursor:url(mouse5.cur),auto;</span>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

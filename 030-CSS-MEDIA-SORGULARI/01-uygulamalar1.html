@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media only screen {
+            .ornek1 {
+                color: red;
+            }
+        }
+
+        @media only print {
+            .ornek2 {
+                color: red;
+            }
+        }
+
+        @media only all {
+            .ornek3 {
+                font-style: italic;
+            }
+        }
+
+        @media only screen,
+        print {
+            .ornek4 {
+                font-size: 15px;
+            }
+        }
+
+        @media not screen {
+            .ornek5 {
+                background-color: yellow;
+            }
+        }
+
+
+
+        @media only screen and (min-width:1200px) {
+            .ornek6 {
+                color: blue;
+            }
+        }
+
+        @media only screen and (min-width:400px) and (max-width:800px) {
+            .ornek7 {
+                color: green;
+            }
+        }
+
+
+        @media only screen and (min-height:200px) and (max-height:400px) {
+            .ornek8 {
+                color: purple;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>@media sorguları kullanım örnekleri ;</h1>
+    <div class="ornek1">
+        <h2>örnek-1 ;</h2>
+        <h3>Not :Sadece ekran cihazlarında metin rengi kırmızı olur</h3>
+        @media only screen { <br>
+        .ornek1 { <br>
+        color:red; <br>
+        } <br>
+        } <br>
+        <br>
+    </div>
+
+    <div class="ornek2">
+        <h2>örnek-2 ;</h2>
+        <h3>Not :Sadece yazdırıken (baskı makinelerinde) metin rengi kırmızı olur</h3>
+        @media only print { <br>
+        ornek2 { <br>
+        color:red; <br>
+        } <br>
+        } <br>
+        <br>
+         <p>not; ekran çıktısını görmek için ctrl+p</p>
+    </div>
+
+    <div class="ornek3">
+        <h2>örnek-3 ;</h2>
+        <h3>Not :tüm chazlar için metnin stili italik olur.</h3>
+        @media only all { <br>
+        .ornek3 { <br>
+        font-style:italic; <br>
+        } <br>
+        } <br>
+        <br>
+    </div>
+
+    <div class="ornek4">
+        <h2>örnek-4 ;</h2>
+        <h3>Not : ekranda ve(,) yazdırırken font-size' 15px olur.</h3>
+        @media only screen, print { <br>
+        ornek4 { <br>
+        font-size:15px; <br>
+        } <br>
+        } <br>
+        <br>
+         <p>not; ekran çıktısını görmek için ctrl+p</p>
+    </div>
+
+    <div class="ornek5">
+        <h2>örnek-5;</h2>
+        <h3>Not :not (değil)operatörü ile kullanım.(ekran hariç tüm cihazlarda arka plan rengi sarı ol demek.)</h3>
+        @media not screen { <br>
+        ornek5 { <br>
+        backgroun-color:yellow; <br>
+        } <br>
+        } <br>
+        <br>
+        <p>not; ekran çıktısını görmek için ctrl+p</p>
+    </div>
+
+    <div class="ornek6">
+        <h2>örnek-6;</h2>
+        <h3>Not :ekran genişliği en az 1200 px ve üzerindeyse mavi ol demek. 1200px altına indiğinde renk siyah olur.
+        </h3>
+        @media only screen and (min-width:1200px) { <br>
+        .ornek6 { <br>
+        color:blue;<br>
+        } <br>
+        } <br>
+        <br>
+    </div>
+
+    <div class="ornek7">
+        <h2>örnek-7;</h2>
+        <h3>Not :ekran genişliği en az 400 px ve en fazla 800px genişliğindeyse yeşil ol demek. Yani 400px ve 800px
+            arası metin rengi yeşil olur, bunun dışındaki genişliklerde siyaha döner. </h3>
+        @media only screen and (min-width:400px) and (max-width:800px) { <br>
+        .ornek7 { <br>
+        color:green;<br>
+        } <br>
+        } <br>
+        <br>
+    </div>
+
+    <div class="ornek8">
+        <h2>örnek-8;</h2>
+        <h3>Not :ekran yüksekliği 200px ve 400px arasındaysa mor ol demek. </h3>
+        @media only screen and (min-height:200px) and (max-height:400px) { <br>
+        .ornek8{ <br>
+        color:purple<br>
+        } <br>
+        } <br>
+        <br>
+    </div>
+
+    <div class="ornek9">
+        <h2>örnek-9;</h2>
+        <h3>Not :ekran yüksekliği 200px ve 400px arasındaysa mor ol demek. </h3>
+        @media only screen and (min-height:200px) and (max-height:400px) { <br>
+        .ornek9{ <br>
+        color:purple;<br>
+        } <br>
+        } <br>
+        <br>
+    </div>
+
+
+
+
+</body>
+
+</html>

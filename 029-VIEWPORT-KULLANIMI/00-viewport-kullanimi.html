@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid grey;
+            border-collapse: collapse;
+            white-space: nowrap;
+            /* küçülünce alt satıra geçmesin */
+        }
+
+        #baslikSatiri {
+            background-color: #CCCCCC;
+        }
+
+        th,
+        td {
+            border: 1px solid grey;
+            padding: 10px 15px;
+            text-align: left;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+
+        div {
+            width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>html'in meta tag'ı içerisinde viewport (görünür alan)kullanimi ;</h1>
+    <p>Html'in meta tag'ı içerisinde viewpot değeri kullanarak web sayfasının görünür alanını, kullanıcını
+        kullandığı browser'ın görünür alanı olarak tanımlamak mümkündür. Görünür alan
+        kullanıcının cihazına göre değişiklik gösterebilir. Viewport'un amacı, mobil browser'lardaki tasarım düzenini
+        sağlamaktır. Görüntüyü zoom yapmak için shift tuşuyla beraber maouse'un sol tuşuna basarak yukarı aşağı hareket ettiriyoruz. viewport değeri head tagları arasındaki meta tagıyla belirlenir. </p>
+
+    <div>
+        <table>
+            <caption>html'in meta tag'ı içerisinde viewport değerlerinin özellikleri için kullanılan değerler.</caption>
+            <tr id="baslikSatiri">
+                <th>attribute (özellik)</th>
+                <th>value (değer)</th>
+                <th>description (tanım)</th>
+                <th>standart value (standart değer)</th>
+            </tr>
+
+            <tr>
+                <td>width</td>
+                <td>device-width pixel değer</td>
+                <td> genişlik değeridir</td>
+                <td>device width</td>
+            </tr>
+
+            <tr>
+                <td>height</td>
+                <td>device-height pixel değer</td>
+                <td>yükseklik değeridir</td>
+                <td>device-height</td>
+            </tr>
+
+            <tr>
+                <td>initial-scale</td>
+                <td>0.1 - 10.0</td>
+                <td>zoom seviyesi değeridir.</td>
+                <td>1.0</td>
+            </tr>
+
+            <tr>
+                <td>minimum-scale</td>
+                <td>0.1 - 10.0</td>
+                <td>minimum zoom seviyesi değeridir.</td>
+                <td>0.1</td>
+
+            </tr>
+            <tr>
+                <td>maximum-scale</td>
+                <td>0.1 - 10.0</td>
+                <td>maksimum zoom seviyesi değeridir.</td>
+                <td>10.0</td>
+            </tr>
+
+            <tr>
+                <td>user-scalable</td>
+                <td>yes-no</td>
+                <td>kullanıcını zoom yapabilme yetkisi değeridir.</td>
+                <td>yes</td>
+            </tr>
+            <tr>
+                <td>target-densitydpi</td>
+                <td>device-dpi/ low-dpi/ medium-dpi-/high-dpi</td>
+                <td>dpi(inç başına nokta sayısı) değeridir</td>
+                <td>device-dpi</td>
+
+            </tr>
+
+
+
+        </table>
+    </div>
+
+
+
+</body>
+
+</html>

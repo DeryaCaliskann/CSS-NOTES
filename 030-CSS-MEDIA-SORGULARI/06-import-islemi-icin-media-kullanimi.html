@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/anadosya.css">
+
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid grey;
+            border-collapse: collapse;
+            white-space: nowrap;
+            /* küçülünce alt satıra geçmesin */
+        }
+
+        #baslikSatiri {
+            background-color: #CCCCCC;
+        }
+
+        th,
+        td {
+            border: 1px solid grey;
+            padding: 10px 15px;
+            text-align: left;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f1f1f1;
+        }
+
+        div {
+            width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>css'de import işlemi için media özelliklerinin ve değerlerinin kullanımı;</h1>
+    <p>Css'de import işlemi için media özelliklerini ve değerlerini kullanılarak atanacak olan tip, değer yada değerlere
+        göre Css dosyalarının çalışma durumları belirlenebilmekte ve aynı zamanda duyarlı web yazılımları
+        yapılabilmektedir.</p>
+    <div>
+        <table>
+            <caption>Css'de import işleminde media özelliği için kullanılan değerler.</caption>
+            <tr id="baslikSatiri">
+                <th>value (değer)</th>
+                <th>descrirtion (tanım)</th>
+
+            </tr>
+
+            <tr>
+                <td>all</td>
+                <td>tüm aygıtlar (varsayılan değer)</td>
+
+            </tr>
+
+            <tr>
+                <td>print</td>
+                <td>baskı ve yazdırma cihazları</td>
+            </tr>
+
+            <tr>
+                <td>screen</td>
+                <td>bilgisayar, tablet, telefon vb.</td>
+            </tr>
+
+            <tr>
+                <td>speach</td>
+                <td>ses sentezleme ve ekran okuyucu cihazları</td>
+            </tr>
+        </table>
+    </div>
+
+    <br><br>
+
+    <div>
+        <table>
+            <caption>Css'de import işleminde media özelliği için kullanılan operatörler.</caption>
+            <tr id="baslikSatiri">
+                <th>operatör ismi</th>
+                <th>descrirtion (tanım)</th>
+
+            </tr>
+
+            <tr>
+                <td>only</td>
+                <td>sadece operatörü</td>
+
+            </tr>
+
+            <tr>
+                <td>and</td>
+                <td>ve operatörü</td>
+            </tr>
+
+            <tr>
+                <td>not</td>
+                <td>değil operatörü</td>
+            </tr>
+
+            <tr>
+                <td>,(virgül)</td>
+                <td>veya operatörü</td>
+            </tr>
+        </table>
+    </div>
+    <br><br>
+
+    <div>
+        <table>
+            <caption>Css'de import işleminde media özelliği için kullanılan ek değerler.</caption>
+
+            <tr id="baslikSatiri">
+                <th>value (değer)</th>
+                <th>descrirtion (tanım)</th>
+
+            </tr>
+
+            <tr>
+                <td>aspect-ratio</td>
+                <td>Hedef görüntü alanının genişlik ve yüksekliği. min ve max değerlerini kullanabilir.
+                    Örnek:"(min-aspect-ratio:16/9)"</td>
+            </tr>
+
+            <tr>
+                <td>width</td>
+                <td>Hedef görüntü alanının genişliği. min ve max değerlerini kullanabilir. Örnek:"screen
+                    and(max-width:1200px)"</td>
+            </tr>
+
+            <tr>
+                <td>height</td>
+                <td>Hedef görüntü alanının yüksekliği. min ve max değerlerini kullanabilir. Örnek:"screen
+                    and(min-height:800px)"</td>
+            </tr>
+
+            <tr>
+                <td>resolition</td>
+                <td>Hedef ekran ve kağıdın dpi veya dpcm türünderenk çözünürlüğü/yoğunluğu. min ve max değerlerini
+                    kullanabilir. Örnek:"print and(min-resolition:300dpi)"</td>
+            </tr>
+            <tr>
+                <td>light-level</td>
+                <td>Hedef ekranın ışık seviyesi. dim(sönük),normal veya washed (parlak) değerlerini kullanabilir.
+                    Örnek:"(light-level:dim)"</td>
+            </tr>
+            <tr>
+                <td>display-mode</td>
+                <td>Hedef uygulamanın görüntülenme modu. fullscreen(tam ekran),standalone(bağımsız),minimal-ui (minimum
+                    kullanıcı arayüzü) veya browser değerlerini kullanabilir. Örnek:"all and(display-mode:fullscreen)"
+                </td>
+            </tr>
+            <tr>
+                <td>color</td>
+                <td>Hedef ekranın renk başına bit sayısı. min ve max değerlerini kullanabilir. Örnek:"screen
+                    and(min-color:3)"</td>
+            </tr>
+
+            <tr>
+                <td>color-index</td>
+                <td>Hedef ekranın işleyebilceği renk sayısı. min ve max değerlerini kullanabilir. Örnek:"screen
+                    and(min-color-index:256)"</td>
+            </tr>
+            <tr>
+                <td>color-gamut</td>
+                <td>Hedef ekranın destklediği renk gamı/yelpazesi. srgp, p3 veya rec2020 değerlerini kullanabilir.
+                    Örnek:"(color-gamut:srgp)"</td>
+            </tr>
+            <tr>
+                <td>inverted-colors</td>
+                <td>Hedeflenen cihazın OS (işletim sistemi} renklerini tersine çevirilebilmesi durumu. none (yok) veya
+                    inverted (ters) değerlerini kullanabilir. Örnek:"(inverted-colors:inverted)"</td>
+            </tr>
+            <tr>
+                <td>orientation</td>
+                <td>Hedeflenen ekranın veya kağıdın yönü. portrait (portre) veya landscape (manzara) değerlerini
+                    kullanabilir. Örnek:"all and(orientation:landscape)"</td>
+            </tr>
+            <tr>
+                <td>monachrome</td>
+                <td>Hedeflenen tek renkli ekranın grey scale (gri tonlama) piksel başına düşen bit sayısı . min ve max
+                    değerlerini kullanabilir. Örnek:"(monachrome)" /tek renkli cihaz. Örnek:"(monachrome:0)" /tek renkli
+                    olmayan cihaz</td>
+            </tr>
+            <tr>
+                <td>grid</td>
+                <td>Hedeflenen cihazın kullanıldığı ekran (ızgara veya bitmap) tabanı. 0 veya 1 değeri kullanabilir.
+                    Örnek:"(grid:0)"</td>
+            </tr>
+            <tr>
+                <td>scan</td>
+                <td>Hedeflenen cihazın ekran tarama türü.interlace (karıştırarak) veya progressive (ilerleyerek)
+                    değerierini kullanılabilir. Örnek:"(scan:progressive)"</td>
+            </tr>
+            <tr>
+                <td>update</td>
+                <td>Hedeflenen cihazın görüntü yenileme sıklığı. non(olmayan), slow (yavaş) veya fast (hızlı).
+                    Örnek:"(update:fast)"</td>
+            </tr>
+            <tr>
+                <td>scripting</td>
+                <td>Hedeflenen cihazın komut dosyası kullanabilme durumu. none (yok), initial-only (sadece başlangıçta)
+                    veya enabled (etkin) değerlerini kullanabilir. Örnek:"(scripting:enabled)"</td>
+            </tr>
+            <tr>
+                <td>pointer</td>
+                <td>Hedeflenen cihazın birincil giriş mekanizması işaretleme aygıtı ise. none (yok), coarse (kalitesiz)
+                    veya fine (iyi) değerlerini kullanabilir. Örnek:"(pointer:fine)"</td>
+            </tr>
+            <tr>
+                <td>any-pointer</td>
+                <td>Hedeflenen cihazın kullanılabilir bir giriş mekanizması işaretleme aygıtı ise. none (yok), coarse
+                    (kalitesiz)
+                    veya fine (iyi) değerlerini kullanabilir. Örnek:"(any-pointer:fine)"</td>
+            </tr>
+            <tr>
+                <td>hover</td>
+                <td>Hedeflenen cihazın birincil giriş mekanizması elementin üzerine gelebilme durumu. none (yok) veya
+                    hover (üzerinde) değerlerini kullanır. Örnek:"(hover:hover)"</td>
+            </tr>
+            <tr>
+                <td>any-hover</td>
+                <td>Hedeflenen cihazın kullanılabilir bir giriş mekanizması elementin üzerine gelebilme durumu. none
+                    (yok) veya
+                    hover (üzerinde) değerlerini kullanır. Örnek:"(any-hover:hover)"</td>
+            </tr>
+            <tr>
+                <td>overflow-block</td>
+                <td>Hedeflenen cihazın görüntüleme alanı blok ekseni boyunca taşan içerik durumu. none (yok), scroll
+                    (kaydırma),opinal-paged(isteğe bağlı sayfalı) veya paged (sayfalı) değerlerini kullanır.
+                    Örnek:"(overflow-block:scroll)"</td>
+            </tr>
+            <tr>
+                <td>overflow-inline</td>
+                <td>Hedeflenen cihazın görüntüleme alanı satıriçi ekseni boyunca taşan içerik durumu. none (yok) veya
+                    scroll (kaydırma) değerlerini kullanır. Örnek:"(overflow-inline:scroll)"</td>
+            </tr>
+
+        </table>
+    </div>
+    <p>Not ; en çok kullanılan değerler screen ve print, operatörler (only, and,not, virgül ) ve ek değerlerden width ve
+        height'tır.</p>
+    <br><br>
+
+
+</body>
+
+</html>

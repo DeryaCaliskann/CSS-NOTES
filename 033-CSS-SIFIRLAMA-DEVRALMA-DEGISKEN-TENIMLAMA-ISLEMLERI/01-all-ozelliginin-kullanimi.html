@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .orneka,
+        .ornekb,
+        .ornekc {
+            border: 2px solid red;
+            padding: 10px;
+            font-size: 25px;
+            font-weight: bold;
+            color: blue;
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        .ornekb {
+            all: initial
+        }
+
+        /* =============================================================================================================== */
+        .anaeleman {
+            font-size: 25px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .iceleman2 {
+            font-size: 10px;
+            font-weight: normal;
+            color: blue;
+            all: inherit;
+        }
+
+        /* =============================================================================================================== */
+
+        .alteleman2 {
+            font-size: small;
+            font-weight: normal;
+            color: orangered;
+            all: unset;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>all özelliğinin kullanımı ;</h1>
+    <p>direction ve unicode-bidi hariç diğer tüm css özelliklerini sıfırlanacağı veya devralınacağı durumunu belirler.
+    </p>
+
+    <h2>değerler ;</h2>
+    <ul>
+        <li>initial ;Belirtilecek olan html elementinin,tüm özellikleri varsayılan biçimlendirme değerine döner.</li>
+        <li>inherit ;Belirtilecek olan html elementinin, üst elementinden normalde devralınmayan tüm css özelliklerini
+            devralır. </li>
+        <li>unset ; Belirtilecek olan html elementinin, üst elementinden normalde devralınmayan tüm css özelliklerini
+            devralır. Fakat üst elementinde tanımlı herhangi bir özellik yoksa tüm css özellikleri varsayılan
+            biçimlendirme değerine döner.</li>
+    </ul>
+
+    <h3>örnek-1 ;</h3>
+    Ortada ki elemente all:initial değeri verildiğinde direction ve unicode-bidi hariç bütün biçimlendirme değerleri
+    varsayılan biçimlendirme değerine döner.
+    <div class="orneka">merhaba dünya</div>
+    <div class="ornekb">merhaba dünya</div>
+    <div class="ornekc">merhaba dünya</div>
+
+
+    <h3>örnek-2 ;</h3>
+    iç eleman all:inherit özelliği ile üst elementinin biçimlendirme değerini alır.
+    <div class="anaeleman">
+        <div class="iceleman1">merhaba dünya</div>
+        <div class="iceleman2">merhaba dünya</div>
+        <div class="iceleman3">merhaba dünya</div>
+    </div>
+
+    <h3>örnek-3 ;</h3>
+    iç eleman all:unset özelliği ile üst elementinin biçimlendirme değerini alır. üst elementinde herhangi bir
+    biçimlendirme değeri yok ise varsayılan biçimlendirme değerini alır.
+    <br><br>
+    <div class="usteleman">
+        <div class="alteleman1">merhaba dünya</div>
+        <div class="alteleman2">merhaba dünya</div>
+        <div class="alteleman3">merhaba dünya</div>
+    </div>
+</body>
+
+</html>
